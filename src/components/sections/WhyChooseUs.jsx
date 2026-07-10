@@ -1,5 +1,5 @@
-import { cycleGirl } from "../assets/about";
-import { iconBicycle, iconMountain, iconPerson } from "../assets/journey-icons";
+import { cycleGirl } from "../../assets/about";
+import { iconBicycle, iconMountain, iconPerson } from "../../assets/journey-icons";
 
 const features = [
   {

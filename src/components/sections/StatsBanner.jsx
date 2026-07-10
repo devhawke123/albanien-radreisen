@@ -1,4 +1,4 @@
-import { cyclistDecoration, mountainDecoration } from "../assets/about";
+import { cyclistDecoration, mountainDecoration } from "../../assets/about";
 
 const stats = [
   { value: "20+", label: "Scenic Cycling Routes" },

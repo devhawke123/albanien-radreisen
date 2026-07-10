@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@assets/*": ["Assest/*"]
+      "@assets/*": ["src/assets/*"]
     }
   },
   "include": ["src"]

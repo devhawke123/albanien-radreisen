@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { cycleGirl, faqMountainDecoration } from "../assets/sections";
+import { cycleGirl, faqMountainDecoration } from "../../assets/sections";
 
 const faqs = [
   {

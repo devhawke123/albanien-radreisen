@@ -6,8 +6,8 @@ export { default as iconStarAlt } from "@assets/icons/Icon-6.svg";
 export { default as iconPhoto } from "@assets/icons/tabler_photo.svg";
 
 // Footer assets
-export { default as footerBg } from "@assets/bg-removebg-preview 1.png";
-export { default as footerCyclist } from "@assets/footer-cyclist-pointing.png";
+export { default as footerBg } from "@assets/images/bg-removebg-preview 1.png";
+export { default as footerCyclist } from "@assets/images/footer-cyclist-pointing.png";
 export { default as iconFacebook } from "@assets/icons/social-facebook.svg";
 export { default as iconTwitter } from "@assets/icons/social-twitter.svg";
 export { default as iconSocialCircleBg } from "@assets/icons/social-circle-bg.svg";
@@ -18,5 +18,5 @@ export { default as iconMail } from "@assets/icons/footer-mail.svg";
 export { default as iconPin } from "@assets/icons/footer-pin.svg";
 
 // CTA / newsletter section
-export { default as ctaBackground } from "@assets/journeybg.png";
+export { default as ctaBackground } from "@assets/images/journeybg.png";
 export { default as iconEnvelope } from "@assets/icons/cta-envelope.svg";

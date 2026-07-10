@@ -1,4 +1,4 @@
-import { logo } from "../assets/hero";
+import { logo } from "../../assets/hero";
 import {
   footerBg,
   footerCyclist,
@@ -10,7 +10,7 @@ import {
   iconPhone,
   iconMail,
   iconPin,
-} from "../assets/shared";
+} from "../../assets/shared";
 
 const generalLinks = ["Home", "Tours", "Services", "Testimonials"];
 const aboutLinks = ["About Us", "Gallery", "Contact us", "Privacy policy"];

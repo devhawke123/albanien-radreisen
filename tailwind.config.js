@@ -77,6 +77,9 @@ export default {
         "footer-heading": ["clamp(1.25rem, 2vw, 1.75rem)", { lineHeight: "1.2", letterSpacing: "-0.02em" }],
         "footer-link": ["clamp(1rem, 1.6vw, 1.5rem)", { lineHeight: "1.4" }],
         "footer-body": ["clamp(1rem, 1.8vw, 1.75rem)", { lineHeight: "1.5" }],
+
+        // Testimonials — Playfair italic quote, Inter name/role
+        "testimonial-quote": ["clamp(1.125rem, 2vw, 1.875rem)", { lineHeight: "1.4" }],
       },
       height: {
         "btn-sm": "clamp(2.75rem, 6.5vh, 3.9375rem)",

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ctaBackground, iconEnvelope } from "../assets/shared";
+import { ctaBackground, iconEnvelope } from "../../assets/shared";
 
 export default function ExploreCta() {
   const [email, setEmail] = useState("");

@@ -1,12 +1,12 @@
-import AboutUs from "./components/AboutUs";
-import ExploreCta from "./components/ExploreCta";
-import FaqSection from "./components/FaqSection";
-import FeaturedTours from "./components/FeaturedTours";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import HowItWorks from "./components/HowItWorks";
-import StatsBanner from "./components/StatsBanner";
-import WhyChooseUs from "./components/WhyChooseUs";
+import AboutUs from "./components/sections/AboutUs";
+import FaqSection from "./components/sections/FaqSection";
+import FeaturedTours from "./components/sections/FeaturedTours";
+import Hero from "./components/sections/Hero";
+import HowItWorks from "./components/sections/HowItWorks";
+import PageFooter from "./components/layout/PageFooter";
+import StatsBanner from "./components/sections/StatsBanner";
+import Testimonials from "./components/sections/Testimonials";
+import WhyChooseUs from "./components/sections/WhyChooseUs";
 
 function App() {
   return (
@@ -18,8 +18,8 @@ function App() {
       <WhyChooseUs />
       <HowItWorks />
       <FaqSection />
-      <ExploreCta />
-      <Footer />
+      <Testimonials />
+      <PageFooter />
     </main>
   );
 }

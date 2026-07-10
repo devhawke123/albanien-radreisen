@@ -2,7 +2,7 @@ import {
   howItWorksCardBg,
   howItWorksStep2,
   howItWorksStep3,
-} from "../assets/sections";
+} from "../../assets/sections";
 
 const steps = [
   {

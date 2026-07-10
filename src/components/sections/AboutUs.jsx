@@ -1,4 +1,4 @@
-import { aboutUsImage } from "../assets/about";
+import { aboutUsImage } from "../../assets/about";
 
 export default function AboutUs() {
   return (

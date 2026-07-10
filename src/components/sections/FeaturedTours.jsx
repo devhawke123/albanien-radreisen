@@ -5,9 +5,9 @@ import {
   featuredSlide3,
   featuredSlideHero,
   hilltopGroupPic,
-} from "../assets/tours";
-import { iconPhoto } from "../assets/shared";
-import TourCard from "./TourCard";
+} from "../../assets/tours";
+import { iconPhoto } from "../../assets/shared";
+import TourCard from "../ui/TourCard";
 
 const ROTATION_MS = 10_000;
 

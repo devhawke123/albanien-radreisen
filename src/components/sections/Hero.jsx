@@ -4,7 +4,7 @@ import {
   iconCalendar,
   iconLocation,
   iconPeople,
-} from "../assets";
+} from "../../assets";
 
 export default function Hero() {
   return (
