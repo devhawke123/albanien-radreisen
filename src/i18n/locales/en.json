@@ -1,0 +1,200 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "cyclingTours": "Cycling Tours",
+    "imprint": "Imprint",
+    "contact": "Contact",
+    "getStarted": "Get Started",
+    "cartLabel": "Cart"
+  },
+  "hero": {
+    "titleLine1": "Discover Albania,",
+    "titleLine2": "One Ride at a Time",
+    "body": "Explore Albania's breathtaking mountains, scenic coastlines, and historic villages through expertly guided cycling tours designed for unforgettable adventures.",
+    "exploreNow": "Explore Now",
+    "watchVideos": "Watch Videos",
+    "destination": "Destination",
+    "people": "2 People",
+    "date": "Date",
+    "exploreTours": "Explore Tours"
+  },
+  "about": {
+    "label": "About Us",
+    "quote": "“At Albanien Radreisen, we believe the best way to experience Albania is on two wheels. Our expertly guided cycling tours take you through breathtaking landscapes, historic towns, and authentic local communities, creating unforgettable adventures with comfort, safety, and local expertise”",
+    "exploreMore": "Explore More"
+  },
+  "stats": {
+    "items": [
+      { "value": "20+", "label": "Scenic Cycling Routes" },
+      { "value": "20+", "label": "Scenic Cycling Routes" },
+      { "value": "20+", "label": "Scenic Cycling Routes" },
+      { "value": "20+", "label": "Scenic Cycling Routes" }
+    ]
+  },
+  "tours": {
+    "label": "Featured Tours",
+    "title": "Find Your Perfect Cycling Adventure",
+    "showcaseTitle": "Explore Albania's Best Routes",
+    "showcaseBody": "Discover scenic cycling journeys designed for adventure, culture, and nature lovers.",
+    "seeAll": "See all",
+    "slideAlts": [
+      "Hikers on an Albanian mountain trail",
+      "Cyclists in an Albanian poppy field",
+      "Cyclists on a scenic Albanian route",
+      "Cycling group adventure in Albania"
+    ]
+  },
+  "tourCard": {
+    "location": "Albania",
+    "people": "12 People",
+    "date": "12 Sep 2025",
+    "duration": "8 days",
+    "reviews": "reviews",
+    "title": "8-day cycling & discovery tour through Albania (2026)",
+    "from": "From",
+    "priceSuffix": "/ person",
+    "bookNow": "Book Now",
+    "amenities": ["Hotel", "Guide", "Bike"],
+    "moreAmenities": "+3 more",
+    "imageAlt": "Cycling tour in Albania",
+    "saveTour": "Save tour"
+  },
+  "whyChooseUs": {
+    "label": "Why Choose Us",
+    "title": "Why Ride With TARKO?",
+    "exploreMore": "Explore More",
+    "lead": "From expertly planned routes to local guides, we create authentic cycling experiences that let you discover Albania safely, comfortably, and at your own pace.",
+    "features": [
+      {
+        "title": "Expertly Planned Tours",
+        "description": "Ride carefully designed routes that showcase Albania's most breathtaking landscapes and hidden gems."
+      },
+      {
+        "title": "Local Guides & Authentic Experiences",
+        "description": "Ride carefully designed routes that showcase Albania's most breathtaking landscapes and hidden gems."
+      },
+      {
+        "title": "Comfortable & Safe Adventures",
+        "description": "Ride carefully designed routes that showcase Albania's most breathtaking landscapes and hidden gems."
+      }
+    ]
+  },
+  "howItWorks": {
+    "label": "Featured Tours",
+    "title": "How It Works",
+    "bookYourTour": "Book Your Tour",
+    "steps": [
+      {
+        "title": "Choose Your Tour",
+        "description": "Browse our collection of guided cycling tours and select the route that best matches your interests, fitness level, and travel dates."
+      },
+      {
+        "title": "Complete Your Booking",
+        "description": "Reserve your spot by submitting your booking details. We'll take care of the planning, accommodation, and tour arrangements."
+      },
+      {
+        "title": "Confirm Availability",
+        "description": "Get in touch with us to check tour availability. We'll answer your questions and help you choose the perfect departure date."
+      }
+    ]
+  },
+  "faq": {
+    "label": "FAQ's",
+    "title": "Answers You Need, Anytime You Ask",
+    "viewAll": "View All",
+    "items": [
+      {
+        "question": "Do I need previous cycling experience?",
+        "answer": "No. Our tours welcome riders of all levels, and our guides adapt the pace and support to match your experience."
+      },
+      {
+        "question": "Are bikes included in the tour package?",
+        "answer": "Yes. High-quality touring bikes are included, along with helmets and basic repair support on the road."
+      },
+      {
+        "question": "What should I bring for the tour?",
+        "answer": "Pack comfortable cycling clothing, sunscreen, a refillable water bottle, and any personal items you need for a multi-day ride."
+      },
+      {
+        "question": "Are the tours suitable for beginners?",
+        "answer": "Yes. Our tours are designed for all experience levels, from beginners to experienced cyclists, with expert guidance throughout the journey."
+      },
+      {
+        "question": "Can I book a private cycling tour?",
+        "answer": "Absolutely. We can arrange private departures for groups, families, or custom dates depending on availability."
+      }
+    ]
+  },
+  "testimonials": {
+    "label": "Testimonials",
+    "title": "Loved By Travelers Like You",
+    "body": "Hear directly from our travelers — their stories, in their own words, on video.",
+    "exploreMore": "Explore More",
+    "previous": "Previous testimonial",
+    "next": "Next testimonial",
+    "showTestimonial": "Show testimonial",
+    "items": [
+      {
+        "quote": "The routes were breathtaking, the organization was excellent, and our guide made every day unforgettable. Albania completely exceeded our expectations.",
+        "name": "Sarah Mitchell",
+        "role": "Adventure Traveler · New York, USA"
+      },
+      {
+        "quote": "Every detail was taken care of. The scenery, the food, the people — riding through Albania felt like discovering a country most tourists never see.",
+        "name": "James Carter",
+        "role": "Adventure Traveler · London, UK"
+      },
+      {
+        "quote": "Our guide's local knowledge turned every stop into a story. This was hands down the best cycling trip our group has ever taken.",
+        "name": "Elena Rossi",
+        "role": "Adventure Traveler · Milan, Italy"
+      },
+      {
+        "quote": "From the mountain descents to the coastal villages, everything was paced perfectly for our group. We're already planning our next trip back.",
+        "name": "Marco Alves",
+        "role": "Adventure Traveler · Lisbon, Portugal"
+      }
+    ]
+  },
+  "gallery": {
+    "label": "Gallery",
+    "title": "Moments from the Journey",
+    "viewAll": "View All",
+    "alts": [
+      "Cyclists posing together on a coastal ride",
+      "Cyclist overlooking the Albanian coast",
+      "Cycling group in a poppy field",
+      "Cyclists resting on a hillside trail"
+    ]
+  },
+  "journey": {
+    "label": "Journey Overview",
+    "title": "Follow the Route. Discover Albania.",
+    "body": "Find answers to the most common questions about our cycling tours, services, and travel experience in Albania.",
+    "getStarted": "Get Started",
+    "mapAlt": "Illustrated map of Albanian cycling tour routes",
+    "activities": [
+      { "title": "Cycling Routes", "description": "Pedal through breathtaking landscapes and hidden villages." },
+      { "title": "Boat Crossings", "description": "Enjoy scenic ferry rides across lakes and coastal waters." },
+      { "title": "Mountain Hiking", "description": "Walk beautiful trails with panoramic mountain viewpoints." },
+      { "title": "Local Transfers", "description": "Comfortable transport between selected tour stages." }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Explore Albania on Two Wheels?",
+    "body": "Join us for an unforgettable cycling adventure through breathtaking landscapes, charming villages, and historic routes—guided by local experts every step of the way.",
+    "emailPlaceholder": "Enter your email",
+    "submit": "Submit"
+  },
+  "footer": {
+    "description": "Creating unforgettable cycling adventures across Albania with expertly guided tours and authentic travel experiences.",
+    "socialMedia": "Social Media",
+    "general": "General",
+    "about": "About",
+    "contact": "Contact",
+    "generalLinks": ["Home", "Tours", "Services", "Testimonials"],
+    "aboutLinks": ["About Us", "Gallery", "Contact us", "Privacy policy"],
+    "copyright": "© 2026 Albanien Radreisen. Design and Developed bY Blue Hawke."
+  }
+}

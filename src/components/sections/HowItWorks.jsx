@@ -1,47 +1,33 @@
-import {
-  howItWorksCardBg,
-  howItWorksStep2,
-  howItWorksStep3,
-} from "../../assets/sections";
+import { useTranslation } from "react-i18next";
+import { howItWorksCardBg, howItWorksStep3 } from "../../assets/sections";
+import { journeyBackground } from "../../assets/shared";
 
-const steps = [
+const stepAssets = [
   {
-    number: 1,
-    title: "Choose Your Tour",
-    description:
-      "Browse our collection of guided cycling tours and select the route that best matches your interests, fitness level, and travel dates.",
     image: howItWorksCardBg,
     imageClass: "h-[158%] w-full max-w-none object-cover object-top",
     gradient: "from-white to-[#c6eafd]",
-    imageHeight: "h-[255px]",
+    imageHeight: "h-[180px] sm:h-[220px] md:h-[248px] lg:h-[255px]",
   },
   {
-    number: 2,
-    title: "Complete Your Booking",
-    description:
-      "Reserve your spot by submitting your booking details. We'll take care of the planning, accommodation, and tour arrangements.",
-    image: howItWorksStep2,
+    image: journeyBackground,
     imageClass: "h-full w-full object-cover object-center",
     gradient: "from-white to-[#aedcf9]/85",
-    imageHeight: "h-[248px]",
+    imageHeight: "h-[180px] sm:h-[220px] md:h-[248px]",
   },
   {
-    number: 3,
-    title: "Confirm Availability",
-    description:
-      "Get in touch with us to check tour availability. We'll answer your questions and help you choose the perfect departure date.",
     image: howItWorksStep3,
     imageClass: "h-[254%] w-full max-w-none object-cover object-top",
     gradient: "from-white to-[#9cd2fa]",
-    imageHeight: "h-[248px]",
+    imageHeight: "h-[180px] sm:h-[220px] md:h-[248px]",
   },
 ];
 
 function StepBadge({ number }) {
   return (
-    <div className="relative mb-6 flex h-[69px] w-[68px] items-center justify-center">
+    <div className="relative mb-4 flex h-12 w-12 items-center justify-center sm:mb-6 sm:h-[69px] sm:w-[68px]">
       <div className="absolute inset-0 rounded-full bg-brand" />
-      <span className="relative font-sans text-[clamp(1.75rem,3vw,2.5rem)] font-semibold leading-none text-white">
+      <span className="relative font-sans text-[clamp(1.5rem,3vw,2.5rem)] font-semibold leading-none text-white">
         {number}
       </span>
     </div>
@@ -50,18 +36,18 @@ function StepBadge({ number }) {
 
 function HowItWorksCard({ step }) {
   return (
-    <article className="flex w-full max-w-[505px] flex-col overflow-hidden rounded-b-[36px]">
-      <div className={`flex flex-col bg-gradient-to-b ${step.gradient} px-8 pb-6 pt-7`}>
+    <article className="mx-auto flex w-full max-w-[505px] flex-col overflow-hidden rounded-b-[24px] sm:rounded-b-[36px]">
+      <div
+        className={`flex flex-col bg-gradient-to-b ${step.gradient} px-5 pb-5 pt-6 sm:px-8 sm:pb-6 sm:pt-7`}
+      >
         <StepBadge number={step.number} />
-        <h3 className="font-sans text-[clamp(1.5rem,2.5vw,2.1875rem)] font-bold leading-tight text-black">
-          {step.title}
-        </h3>
-        <p className="mt-3 font-sans text-[clamp(1rem,1.8vw,1.375rem)] font-semibold leading-snug text-black">
-          {step.description}
-        </p>
+        <h3 className="font-sans text-step-title font-bold text-black">{step.title}</h3>
+        <p className="mt-2 font-sans text-step-body font-semibold text-black sm:mt-3">{step.description}</p>
       </div>
 
-      <div className={`relative ${step.imageHeight} w-full overflow-hidden rounded-b-[36px]`}>
+      <div
+        className={`relative ${step.imageHeight} w-full overflow-hidden rounded-b-[24px] sm:rounded-b-[36px]`}
+      >
         <img src={step.image} alt="" className={step.imageClass} />
       </div>
     </article>
@@ -69,21 +55,30 @@ function HowItWorksCard({ step }) {
 }
 
 export default function HowItWorks() {
+  const { t } = useTranslation();
+  const steps = t("howItWorks.steps", { returnObjects: true }).map((step, index) => ({
+    number: index + 1,
+    ...step,
+    ...stepAssets[index],
+  }));
+
   return (
     <section id="how-it-works" className="bg-white px-hero-x py-16 md:py-20 lg:py-24">
       <div className="mx-auto max-w-hero">
         <div className="mx-auto max-w-[727px] text-center">
-          <p className="font-sans text-section-label font-semibold text-brand">Featured Tours</p>
-          <h2 className="mt-4 font-serif text-section-title font-semibold capitalize text-black">How It Works</h2>
+          <p className="font-sans text-section-label font-semibold text-brand">{t("howItWorks.label")}</p>
+          <h2 className="mt-4 font-serif text-section-title font-semibold capitalize text-black">
+            {t("howItWorks.title")}
+          </h2>
           <button
             type="button"
-            className="mt-7 h-btn-sm cursor-pointer rounded-[11px] bg-brand px-10 text-btn leading-none text-white"
+            className="mt-5 h-btn-sm w-full cursor-pointer rounded-[11px] bg-brand px-10 text-btn leading-none text-white sm:mt-7 sm:w-auto"
           >
-            Book Your Tour
+            {t("howItWorks.bookYourTour")}
           </button>
         </div>
 
-        <div className="mt-12 grid gap-8 lg:grid-cols-3 lg:gap-[89px] xl:gap-16">
+        <div className="mt-8 grid grid-cols-1 justify-items-center gap-6 sm:mt-12 sm:gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-10 xl:gap-16">
           {steps.map((step) => (
             <HowItWorksCard key={step.number} step={step} />
           ))}

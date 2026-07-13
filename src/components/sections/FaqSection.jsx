@@ -1,39 +1,13 @@
 import { useState } from "react";
-import { cycleGirl, faqMountainDecoration } from "../../assets/sections";
-
-const faqs = [
-  {
-    question: "Do I need previous cycling experience?",
-    answer:
-      "No. Our tours welcome riders of all levels, and our guides adapt the pace and support to match your experience.",
-  },
-  {
-    question: "Are bikes included in the tour package?",
-    answer: "Yes. High-quality touring bikes are included, along with helmets and basic repair support on the road.",
-  },
-  {
-    question: "What should I bring for the tour?",
-    answer:
-      "Pack comfortable cycling clothing, sunscreen, a refillable water bottle, and any personal items you need for a multi-day ride.",
-  },
-  {
-    question: "Are the tours suitable for beginners?",
-    answer:
-      "Yes. Our tours are designed for all experience levels, from beginners to experienced cyclists, with expert guidance throughout the journey.",
-  },
-  {
-    question: "Can I book a private cycling tour?",
-    answer:
-      "Absolutely. We can arrange private departures for groups, families, or custom dates depending on availability.",
-  },
-];
+import { useTranslation } from "react-i18next";
+import { cycleGirl, mountainIllustration } from "../../assets/shared";
 
 function ChevronIcon({ open }) {
   return (
     <svg
       viewBox="0 0 24 24"
       aria-hidden
-      className={`h-5 w-5 transition-transform duration-200 ${open ? "rotate-0 text-white" : "rotate-180 text-brand"}`}
+      className={`h-4 w-4 transition-transform duration-200 sm:h-5 sm:w-5 ${open ? "rotate-0 text-white" : "rotate-180 text-brand"}`}
       fill="none"
       stroke="currentColor"
       strokeWidth="2"
@@ -46,23 +20,21 @@ function ChevronIcon({ open }) {
 function FaqItem({ item, isOpen, onToggle }) {
   if (isOpen) {
     return (
-      <div className="rounded-xl bg-[#fee] px-6 py-5">
+      <div className="rounded-xl bg-[#fee] px-4 py-4 sm:px-6 sm:py-5">
         <button
           type="button"
           onClick={onToggle}
-          className="flex w-full items-center justify-between gap-4 text-left"
+          className="flex w-full items-start justify-between gap-3 text-left sm:items-center sm:gap-4"
           aria-expanded={isOpen}
         >
-          <span className="font-sans text-[clamp(1.125rem,2vw,1.75rem)] font-medium leading-snug text-[#070707]">
+          <span className="min-w-0 font-sans text-faq-question font-medium text-[#070707]">
             {item.question}
           </span>
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand">
+          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand sm:h-10 sm:w-10">
             <ChevronIcon open={isOpen} />
           </span>
         </button>
-        <p className="mt-4 max-w-[740px] font-sans text-[clamp(1rem,1.8vw,1.5rem)] leading-relaxed text-black">
-          {item.answer}
-        </p>
+        <p className="mt-3 font-sans text-faq-answer text-black sm:mt-4">{item.answer}</p>
       </div>
     );
   }
@@ -72,54 +44,56 @@ function FaqItem({ item, isOpen, onToggle }) {
       <button
         type="button"
         onClick={onToggle}
-        className="flex w-full items-center justify-between gap-4 rounded-xl bg-white px-6 py-4 text-left"
+        className="flex w-full items-start justify-between gap-3 rounded-xl bg-white px-4 py-3.5 text-left sm:items-center sm:gap-4 sm:px-6 sm:py-4"
         aria-expanded={isOpen}
       >
-        <span className="font-sans text-[clamp(1.125rem,2vw,1.625rem)] font-medium leading-snug text-[#070707]">
+        <span className="min-w-0 font-sans text-faq-question font-medium text-[#070707]">
           {item.question}
         </span>
-        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#ffe8e8]">
+        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#ffe8e8] sm:h-10 sm:w-10">
           <ChevronIcon open={isOpen} />
         </span>
       </button>
-      <div className="mt-6 border-b border-black/10" />
+      <div className="mt-4 border-b border-black/10 sm:mt-6" />
     </div>
   );
 }
 
 export default function FaqSection() {
+  const { t } = useTranslation();
+  const faqs = t("faq.items", { returnObjects: true });
   const [openIndex, setOpenIndex] = useState(3);
 
   return (
     <section id="faq" className="bg-brand-pale/45 px-hero-x py-16 md:py-20 lg:py-24">
       <div className="mx-auto max-w-hero">
-        <div className="grid gap-12 lg:grid-cols-[minmax(0,651px)_1fr] lg:gap-16 xl:gap-24">
-          <div className="relative min-h-[420px] pb-8 lg:min-h-[520px] lg:pb-0">
-            <p className="font-sans text-section-label font-semibold text-brand">FAQ&apos;s</p>
+        <div className="grid gap-8 sm:gap-12 lg:grid-cols-[minmax(0,651px)_1fr] lg:gap-16 xl:gap-24">
+          <div className="relative lg:min-h-[520px]">
+            <p className="font-sans text-section-label font-semibold text-brand">{t("faq.label")}</p>
             <h2 className="mt-4 max-w-[671px] font-serif text-section-title font-semibold capitalize text-black">
-              Answers You Need, Anytime You Ask
+              {t("faq.title")}
             </h2>
             <button
               type="button"
-              className="mt-6 h-btn-sm cursor-pointer rounded-[11px] bg-brand px-10 text-btn leading-none text-white"
+              className="mt-5 h-btn-sm w-full cursor-pointer rounded-[11px] bg-brand px-10 text-btn leading-none text-white sm:mt-6 sm:w-auto"
             >
-              View All
+              {t("faq.viewAll")}
             </button>
 
             <img
-              src={faqMountainDecoration}
+              src={mountainIllustration}
               alt=""
               aria-hidden
-              className="pointer-events-none absolute -left-2 bottom-0 hidden w-[min(100%,833px)] opacity-70 lg:block"
+              className="pointer-events-none absolute -left-2 bottom-0 hidden w-[min(100%,833px)] opacity-70 md:block"
             />
             <img
               src={cycleGirl}
               alt="Cyclist with map planning a tour"
-              className="pointer-events-none relative z-10 mt-10 w-full max-w-[321px] object-contain lg:absolute lg:bottom-0 lg:left-0 lg:mt-0"
+              className="pointer-events-none relative z-10 mx-auto mt-8 w-full max-w-[260px] object-contain xs:max-w-[300px] sm:max-w-[321px] lg:absolute lg:bottom-0 lg:left-0 lg:mx-0 lg:mt-0"
             />
           </div>
 
-          <div className="flex flex-col gap-8 lg:gap-10">
+          <div className="flex min-w-0 flex-col gap-6 sm:gap-8 lg:gap-10">
             {faqs.map((item, index) => (
               <FaqItem
                 key={item.question}
