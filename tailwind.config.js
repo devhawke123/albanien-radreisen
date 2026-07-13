@@ -80,6 +80,19 @@ export default {
 
         // Testimonials — Playfair italic quote, Inter name/role
         "testimonial-quote": ["clamp(1.125rem, 2vw, 1.875rem)", { lineHeight: "1.4" }],
+
+        // Tour card — Manrope
+        "card-title": ["clamp(0.875rem, 2.5vw, 1rem)", { lineHeight: "1.4" }],
+        "card-price": ["clamp(1.25rem, 4vw, 1.5rem)", { lineHeight: "1.2" }],
+        "card-meta": ["clamp(0.625rem, 1.5vw, 0.75rem)", { lineHeight: "1.3" }],
+
+        // How it works step cards — Manrope
+        "step-title": ["clamp(1.25rem, 2.5vw, 2.1875rem)", { lineHeight: "1.2" }],
+        "step-body": ["clamp(0.9375rem, 1.8vw, 1.375rem)", { lineHeight: "1.45" }],
+
+        // FAQ — Manrope
+        "faq-question": ["clamp(1rem, 2vw, 1.625rem)", { lineHeight: "1.35" }],
+        "faq-answer": ["clamp(0.9375rem, 1.8vw, 1.5rem)", { lineHeight: "1.5" }],
       },
       height: {
         "btn-sm": "clamp(2.75rem, 6.5vh, 3.9375rem)",

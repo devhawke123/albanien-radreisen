@@ -1,0 +1,200 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "cyclingTours": "Radtouren",
+    "imprint": "Impressum",
+    "contact": "Kontakt",
+    "getStarted": "Jetzt Starten",
+    "cartLabel": "Warenkorb"
+  },
+  "hero": {
+    "titleLine1": "Entdecke Albanien,",
+    "titleLine2": "Eine Fahrt nach der Anderen",
+    "body": "Erkunde Albaniens atemberaubende Berge, malerische Küsten und historische Dörfer auf fachkundig geführten Radtouren für unvergessliche Abenteuer.",
+    "exploreNow": "Jetzt Entdecken",
+    "watchVideos": "Videos Ansehen",
+    "destination": "Reiseziel",
+    "people": "2 Personen",
+    "date": "Datum",
+    "exploreTours": "Touren Entdecken"
+  },
+  "about": {
+    "label": "Über Uns",
+    "quote": "„Bei Albanien Radreisen glauben wir, dass man Albanien am besten mit dem Fahrrad erleben kann. Unsere fachkundig geführten Radtouren führen dich durch atemberaubende Landschaften, historische Städte und authentische Gemeinden – für unvergessliche Abenteuer mit Komfort, Sicherheit und lokaler Expertise.“",
+    "exploreMore": "Mehr Entdecken"
+  },
+  "stats": {
+    "items": [
+      { "value": "20+", "label": "Malerische Radrouten" },
+      { "value": "20+", "label": "Malerische Radrouten" },
+      { "value": "20+", "label": "Malerische Radrouten" },
+      { "value": "20+", "label": "Malerische Radrouten" }
+    ]
+  },
+  "tours": {
+    "label": "Ausgewählte Touren",
+    "title": "Finde Dein Perfektes Radabenteuer",
+    "showcaseTitle": "Entdecke Albaniens Schönste Routen",
+    "showcaseBody": "Erlebe malerische Radreisen für Abenteuer-, Kultur- und Naturliebhaber.",
+    "seeAll": "Alle ansehen",
+    "slideAlts": [
+      "Wanderer auf einem albanischen Bergpfad",
+      "Radfahrer in einem albanischen Mohnfeld",
+      "Radfahrer auf einer malerischen albanischen Route",
+      "Radgruppen-Abenteuer in Albanien"
+    ]
+  },
+  "tourCard": {
+    "location": "Albanien",
+    "people": "12 Personen",
+    "date": "12. Sep. 2025",
+    "duration": "8 Tage",
+    "reviews": "Bewertungen",
+    "title": "8-tägige Rad- und Entdeckungstour durch Albanien (2026)",
+    "from": "Ab",
+    "priceSuffix": "/ Person",
+    "bookNow": "Jetzt Buchen",
+    "amenities": ["Hotel", "Guide", "Fahrrad"],
+    "moreAmenities": "+3 weitere",
+    "imageAlt": "Radtour in Albanien",
+    "saveTour": "Tour merken"
+  },
+  "whyChooseUs": {
+    "label": "Warum Wir",
+    "title": "Warum Mit TARKO Radfahren?",
+    "exploreMore": "Mehr Entdecken",
+    "lead": "Von fachkundig geplanten Routen bis zu lokalen Guides – wir schaffen authentische Radreisen, mit denen du Albanien sicher, komfortabel und in deinem eigenen Tempo entdeckst.",
+    "features": [
+      {
+        "title": "Fachkundig Geplante Touren",
+        "description": "Fahre auf sorgfältig gestalteten Routen, die Albaniens atemberaubendste Landschaften und versteckte Schätze zeigen."
+      },
+      {
+        "title": "Lokale Guides & Authentische Erlebnisse",
+        "description": "Fahre auf sorgfältig gestalteten Routen, die Albaniens atemberaubendste Landschaften und versteckte Schätze zeigen."
+      },
+      {
+        "title": "Komfortable & Sichere Abenteuer",
+        "description": "Fahre auf sorgfältig gestalteten Routen, die Albaniens atemberaubendste Landschaften und versteckte Schätze zeigen."
+      }
+    ]
+  },
+  "howItWorks": {
+    "label": "Ausgewählte Touren",
+    "title": "So Funktioniert's",
+    "bookYourTour": "Tour Buchen",
+    "steps": [
+      {
+        "title": "Wähle Deine Tour",
+        "description": "Durchstöbere unsere geführten Radtouren und wähle die Route, die am besten zu deinen Interessen, deiner Fitness und deinen Reisedaten passt."
+      },
+      {
+        "title": "Buchung Abschließen",
+        "description": "Sichere dir deinen Platz, indem du deine Buchungsdaten übermittelst. Wir kümmern uns um Planung, Unterkunft und Tourorganisation."
+      },
+      {
+        "title": "Verfügbarkeit Bestätigen",
+        "description": "Kontaktiere uns, um die Verfügbarkeit der Tour zu prüfen. Wir beantworten deine Fragen und helfen dir, den perfekten Abreisetermin zu finden."
+      }
+    ]
+  },
+  "faq": {
+    "label": "Häufige Fragen",
+    "title": "Antworten, Wann Immer Du Sie Brauchst",
+    "viewAll": "Alle Ansehen",
+    "items": [
+      {
+        "question": "Brauche ich Vorerfahrung im Radfahren?",
+        "answer": "Nein. Unsere Touren heißen Fahrer aller Erfahrungsstufen willkommen, und unsere Guides passen Tempo und Unterstützung an dein Niveau an."
+      },
+      {
+        "question": "Sind Fahrräder im Tourpaket enthalten?",
+        "answer": "Ja. Hochwertige Tourenräder sind inklusive, ebenso wie Helme und grundlegende Reparaturunterstützung unterwegs."
+      },
+      {
+        "question": "Was sollte ich für die Tour mitbringen?",
+        "answer": "Packe bequeme Radbekleidung, Sonnencreme, eine wiederbefüllbare Wasserflasche und alle persönlichen Gegenstände, die du für eine mehrtägige Fahrt benötigst."
+      },
+      {
+        "question": "Sind die Touren für Anfänger geeignet?",
+        "answer": "Ja. Unsere Touren sind für alle Erfahrungsstufen konzipiert, von Anfängern bis zu erfahrenen Radfahrern, mit fachkundiger Begleitung während der gesamten Reise."
+      },
+      {
+        "question": "Kann ich eine private Radtour buchen?",
+        "answer": "Auf jeden Fall. Wir organisieren private Abfahrten für Gruppen, Familien oder individuelle Termine, je nach Verfügbarkeit."
+      }
+    ]
+  },
+  "testimonials": {
+    "label": "Erfahrungsberichte",
+    "title": "Von Reisenden Wie Dir Geliebt",
+    "body": "Höre direkt von unseren Reisenden — ihre Geschichten, in ihren eigenen Worten, auf Video.",
+    "exploreMore": "Mehr Entdecken",
+    "previous": "Vorheriger Erfahrungsbericht",
+    "next": "Nächster Erfahrungsbericht",
+    "showTestimonial": "Erfahrungsbericht anzeigen",
+    "items": [
+      {
+        "quote": "Die Routen waren atemberaubend, die Organisation hervorragend, und unser Guide machte jeden Tag unvergesslich. Albanien hat unsere Erwartungen vollkommen übertroffen.",
+        "name": "Sarah Mitchell",
+        "role": "Abenteuerreisende · New York, USA"
+      },
+      {
+        "quote": "Jedes Detail war durchdacht. Die Landschaft, das Essen, die Menschen — mit dem Rad durch Albanien zu fahren fühlte sich an, als würde man ein Land entdecken, das die meisten Touristen nie sehen.",
+        "name": "James Carter",
+        "role": "Abenteuerreisender · London, UK"
+      },
+      {
+        "quote": "Die lokale Kenntnis unseres Guides machte aus jedem Halt eine Geschichte. Das war mit Abstand die beste Radreise, die unsere Gruppe je unternommen hat.",
+        "name": "Elena Rossi",
+        "role": "Abenteuerreisende · Mailand, Italien"
+      },
+      {
+        "quote": "Von den Bergabfahrten bis zu den Küstendörfern war alles perfekt für unsere Gruppe getaktet. Wir planen schon unsere nächste Reise dorthin.",
+        "name": "Marco Alves",
+        "role": "Abenteuerreisender · Lissabon, Portugal"
+      }
+    ]
+  },
+  "gallery": {
+    "label": "Galerie",
+    "title": "Momente Der Reise",
+    "viewAll": "Alle Ansehen",
+    "alts": [
+      "Radfahrer posieren gemeinsam bei einer Küstenfahrt",
+      "Radfahrer mit Blick auf die albanische Küste",
+      "Radgruppe in einem Mohnfeld",
+      "Radfahrer ruhen sich auf einem Hügelweg aus"
+    ]
+  },
+  "journey": {
+    "label": "Reiseüberblick",
+    "title": "Folge Der Route. Entdecke Albanien.",
+    "body": "Finde Antworten auf die häufigsten Fragen zu unseren Radtouren, Leistungen und dem Reiseerlebnis in Albanien.",
+    "getStarted": "Jetzt Starten",
+    "mapAlt": "Illustrierte Karte der albanischen Radtourrouten",
+    "activities": [
+      { "title": "Radrouten", "description": "Fahre durch atemberaubende Landschaften und versteckte Dörfer." },
+      { "title": "Bootsüberfahrten", "description": "Genieße malerische Fährfahrten über Seen und Küstengewässer." },
+      { "title": "Bergwandern", "description": "Wandere auf schönen Pfaden mit herrlichem Bergpanorama." },
+      { "title": "Lokale Transfers", "description": "Komfortabler Transport zwischen den ausgewählten Touretappen." }
+    ]
+  },
+  "cta": {
+    "title": "Bereit, Albanien Auf Zwei Rädern Zu Entdecken?",
+    "body": "Erlebe mit uns ein unvergessliches Radabenteuer durch atemberaubende Landschaften, charmante Dörfer und historische Routen — begleitet von lokalen Experten bei jedem Schritt.",
+    "emailPlaceholder": "Gib deine E-Mail-Adresse ein",
+    "submit": "Absenden"
+  },
+  "footer": {
+    "description": "Wir schaffen unvergessliche Radabenteuer in ganz Albanien mit fachkundig geführten Touren und authentischen Reiseerlebnissen.",
+    "socialMedia": "Soziale Medien",
+    "general": "Allgemein",
+    "about": "Über Uns",
+    "contact": "Kontakt",
+    "generalLinks": ["Startseite", "Touren", "Leistungen", "Erfahrungsberichte"],
+    "aboutLinks": ["Über Uns", "Galerie", "Kontakt", "Datenschutz"],
+    "copyright": "© 2026 Albanien Radreisen. Design und Entwicklung von Blue Hawke."
+  }
+}

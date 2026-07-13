@@ -1,4 +1,4 @@
-// Gallery section — import when building that section
-export { default as galleryImage1 } from "@assets/images/Rectangle 161125054.png";
-export { default as galleryImage2 } from "@assets/images/Rectangle 161125056.png";
-export { default as galleryImage3 } from "@assets/images/Rectangle 161125057.png";
+export { default as galleryImageLeft } from "@assets/images/hilltopGroupPic.png";
+export { default as galleryImageBottom } from "@assets/images/Rectangle 161125054.png";
+export { default as galleryImageRight } from "@assets/images/Rectangle 161125056.png";
+export { default as galleryImageTop } from "@assets/images/Rectangle 161125057.png";

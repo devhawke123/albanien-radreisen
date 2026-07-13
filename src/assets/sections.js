@@ -1,9 +1,6 @@
-export { default as cycleGirl } from "@assets/images/cycleGirl.png";
-export { default as cyclePinkGirl } from "@assets/images/cyclepinkGirl.png";
 export { default as howItWorksCardBg } from "@assets/images/howitworksCardbgforpinkcyclegirl.png";
-export { default as howItWorksStep2 } from "@assets/images/journeybg.png";
 export { default as howItWorksStep3 } from "@assets/images/mapPic.jpg";
-export { default as faqMountainDecoration } from "@assets/images/bg-removebg-preview 1.png";
+export { default as cyclePinkGirl } from "@assets/images/cyclepinkGirl.png";
 export { default as lovedByTravelersHero } from "@assets/images/lovedByTravelersHero.jpg";
 export { default as testimonialAvatar1 } from "@assets/images/testimonial-avatar-1.png";
 export { default as iconStarFilled } from "@assets/icons/star-filled.svg";
