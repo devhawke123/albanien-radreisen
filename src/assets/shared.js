@@ -9,6 +9,7 @@ export { default as iconCart } from "@assets/icons/cart.svg";
 // Shared decorative images — each reused across multiple sections, so they
 // live here once instead of being re-exported under a different name per file.
 export { default as cycleGirl } from "@assets/images/cycleGirl.png";
+export { default as cyclepinkGirl } from "@assets/images/cyclepinkGirl.png";
 export { default as mountainIllustration } from "@assets/images/mountain-illustration.png";
 export { default as journeyBackground } from "@assets/images/journeybg.png";
 

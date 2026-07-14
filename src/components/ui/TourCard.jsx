@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { iconCalendar, iconLocation, iconPeople } from "../../assets/hero";
 import { iconClock, iconHeart, iconStar } from "../../assets/shared";
@@ -17,6 +18,7 @@ export default function TourCard({
   amenities,
   moreAmenitiesLabel,
   faded = false,
+  to = "/tours/8-day-cycling",
 }) {
   const { t } = useTranslation();
   imageAlt ??= t("tourCard.imageAlt");
@@ -86,14 +88,14 @@ export default function TourCard({
               {price} <span className="text-card-meta font-medium text-gray-400">{priceSuffix}</span>
             </p>
           </div>
-          <button
-            type="button"
-            className={`shrink-0 rounded-md px-4 py-2 text-card-meta font-medium text-white sm:px-5 sm:text-sm ${
+          <Link
+            to={to}
+            className={`shrink-0 rounded-md px-4 py-2 text-card-meta font-medium text-white no-underline sm:px-5 sm:text-sm ${
               faded ? "bg-brand/45" : "bg-brand"
             }`}
           >
             {t("tourCard.bookNow")}
-          </button>
+          </Link>
         </div>
 
         <div className="flex flex-wrap items-center gap-2 border-t border-gray-100 pt-2.5 text-card-meta text-gray-500 sm:gap-3 sm:pt-3">

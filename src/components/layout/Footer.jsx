@@ -33,12 +33,16 @@ export default function Footer() {
 
   return (
     <footer className="relative overflow-hidden px-hero-x pb-8 pt-12 sm:pb-10 sm:pt-16 md:pt-20">
-      <img
-        src={mountainIllustration}
-        alt=""
+      <div
         aria-hidden
-        className="pointer-events-none absolute inset-x-0 bottom-0 hidden h-auto w-full opacity-[0.73] sm:block"
-      />
+        className="pointer-events-none absolute bottom-0 left-0 h-[37.3vw] max-h-[715.965px] w-full overflow-hidden opacity-[0.73]"
+      >
+        <img
+          src={mountainIllustration}
+          alt=""
+          className="absolute left-0 top-[-0.13%] h-[129.43%] w-full max-w-none"
+        />
+      </div>
       <img
         src={footerCyclist}
         alt=""

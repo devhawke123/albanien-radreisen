@@ -6,7 +6,74 @@
     "imprint": "Impressum",
     "contact": "Kontakt",
     "getStarted": "Jetzt Starten",
-    "cartLabel": "Warenkorb"
+    "cartLabel": "Warenkorb",
+    "gallery": "Galerie",
+    "faq": "Häufige Fragen",
+    "testimonials": "Erfahrungsberichte",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen"
+  },
+  "reviewsPage": {
+    "title": "Von Radfahrern Weltweit Geliebt",
+    "body": "Höre von Reisenden, die Albaniens atemberaubende Landschaften auf unseren fachkundig geführten Radtouren erlebt haben."
+  },
+  "contactPage": {
+    "title": "Kontaktiere Uns",
+    "body": "Hast du eine Frage zu unseren Touren? Wir freuen uns von dir zu hören. Unser Team antwortet in der Regel innerhalb von 24 Stunden.",
+    "formTitle": "Sende Uns Eine Nachricht",
+    "nameLabel": "Dein Name *",
+    "namePlaceholder": "Max Mustermann",
+    "emailLabel": "E-Mail-Adresse *",
+    "emailPlaceholder": "max@beispiel.de",
+    "phoneLabel": "Telefonnummer *",
+    "phonePlaceholder": "+355 6X XXX XXXX",
+    "subjectLabel": "Betreff *",
+    "subjectPlaceholder": "z. B. Buchungsanfrage",
+    "messageLabel": "Deine Nachricht *",
+    "messagePlaceholder": "Erzähl uns von deinem Radfahrniveau, bevorzugten Terminen, Gruppengröße und besonderen Wünschen...",
+    "submit": "Nachricht Senden",
+    "note": "Wir antworten in der Regel innerhalb von 24 Stunden an Werktagen.",
+    "mapAlt": "Karte mit unserem Bürostandort in Tirana, Albanien",
+    "mapLabel": "Unseren Standort in Google Maps öffnen"
+  },
+  "faqPage": {
+    "title": "Häufig Gestellte Fragen",
+    "body": "Antworten auf die häufigsten Fragen zu unseren Radtouren, Buchungen und dem Reiseerlebnis in Albanien."
+  },
+  "imprintPage": {
+    "title": "Impressum",
+    "body": "Rechtliche Informationen und Unternehmensangaben gemäß dem deutschen Telemediengesetz (TMG).",
+    "companyInfoTitle": "Unternehmensangaben",
+    "companyName": "ADA – Reiseagentur Tarko",
+    "addressLabel": "Adresse",
+    "address": "Rr. Qemal Stafa P.17 AP.1, AL-1005 Tirana, Albanien",
+    "telephoneLabel": "Telefon",
+    "telephone": "+355 42 236 7254",
+    "mobileLabel": "Mobil",
+    "mobile": "+355 6838 16 275",
+    "emailLabel": "E-Mail",
+    "emails": ["alba.reisen@yahoo.de", "tarkogezim@gmail.com"],
+    "websiteLabel": "Webseite",
+    "website": "www.albanien-radreisen.de",
+    "legalRepTitle": "Gesetzlicher Vertreter",
+    "legalRepLabel": "Vertreten Durch",
+    "legalRep": "Geschäftsführer, Herr Gezim Tarko",
+    "registrationTitle": "Unternehmensregistrierung",
+    "registrationLabel": "Registrierungsdetails",
+    "registration": "USt-IdNr. (NIPT): L71325031A",
+    "disclaimerTitle": "Haftungsausschluss",
+    "liabilityContentTitle": "Haftung für Inhalte",
+    "liabilityContentBody": "Als Diensteanbieter sind wir gemäß dem geltenden deutschen Recht für unsere eigenen Website-Inhalte verantwortlich. Wir sind nicht verpflichtet, Informationen Dritter zu überwachen oder nach Hinweisen auf mögliche rechtswidrige Tätigkeiten zu forschen, sofern uns keine konkrete Rechtsverletzung bekannt wird. Bei Bekanntwerden einer solchen Verletzung werden die betreffenden Inhalte umgehend entfernt.",
+    "liabilityLinksTitle": "Haftung für externe Links",
+    "liabilityLinksBody": "Unsere Website kann Links zu Websites Dritter enthalten. Wir haben keinen Einfluss auf die Inhalte dieser Websites und übernehmen daher keine Verantwortung dafür. Werden uns Rechtsverletzungen auf verlinkten Websites bekannt, werden die betreffenden Links umgehend entfernt.",
+    "copyrightTitle": "Urheberrechtshinweis",
+    "copyrightBody": "Alle auf dieser Website veröffentlichten Inhalte, Texte, Bilder und Materialien sind durch das deutsche Urheberrecht geschützt. Vervielfältigung, Verbreitung oder kommerzielle Nutzung ohne vorherige schriftliche Genehmigung sind untersagt. Solltest du glauben, dass Inhalte Urheberrechte verletzen, kontaktiere uns bitte, damit wir dies prüfen und entsprechend handeln können.",
+    "contactTitle": "Brauchst Du Weitere Informationen?",
+    "contactCta": "Kontaktiere Uns"
+  },
+  "toursPage": {
+    "title": "Finde Dein Perfektes Radabenteuer",
+    "body": "Von Küstenfahrten bis zu Bergabenteuern – entdecke unsere sorgfältig gestalteten Radreisen durch ganz Albanien."
   },
   "hero": {
     "titleLine1": "Entdecke Albanien,",
@@ -168,6 +235,26 @@
       "Radfahrer ruhen sich auf einem Hügelweg aus"
     ]
   },
+  "galleryPage": {
+    "title": "Galerie",
+    "body": "Die Planung deines Radabenteuers ist einfach — und hier siehst du die unvergesslichen Momente, die dich erwarten.",
+    "libraryTitle": "Momente Der Reise",
+    "featuredAlt": "Radgruppe posiert gemeinsam auf einem Aussichtspunkt",
+    "previousPage": "Vorherige Galerieseite",
+    "nextPage": "Nächste Galerieseite",
+    "showPage": "Galerieseite {{page}} anzeigen",
+    "alts": [
+      "Fahrrad mit Blick auf die albanische Küste",
+      "Radfahrer posieren auf einem Küstenhügel",
+      "Reisende erkunden eine albanische Altstadt",
+      "Radgruppe fährt durch ein Mohnfeld",
+      "Radfahrer in einer albanischen Landschaft",
+      "Malerische Route durch die albanische Landschaft",
+      "Radfahrer ruhen sich auf einem Hügelweg aus",
+      "Reisende genießen einen Kulturstopp",
+      "Unser Radreise-Team gemeinsam"
+    ]
+  },
   "journey": {
     "label": "Reiseüberblick",
     "title": "Folge Der Route. Entdecke Albanien.",
@@ -186,6 +273,182 @@
     "body": "Erlebe mit uns ein unvergessliches Radabenteuer durch atemberaubende Landschaften, charmante Dörfer und historische Routen — begleitet von lokalen Experten bei jedem Schritt.",
     "emailPlaceholder": "Gib deine E-Mail-Adresse ein",
     "submit": "Absenden"
+  },
+  "tourPage": {
+    "back": "Zurück zu den Touren",
+    "title": "8-Tage Rad- & Entdeckungstour durch Albanien (2026)",
+    "bookNow": "Jetzt Buchen",
+    "rating": "4.9",
+    "reviewsMeta": "· 38 Bewertungen",
+    "meta": {
+      "duration": "8 Tage",
+      "group": "Bis zu 12 Personen",
+      "next": "Nächster: 12. Sep 2026"
+    },
+    "tabs": {
+      "overview": "Übersicht",
+      "itinerary": "Reiseverlauf",
+      "included": "Inklusive",
+      "reviews": "Bewertungen"
+    },
+    "stats": [
+      { "label": "Dauer", "value": "8 Tage" },
+      { "label": "Treffpunkt", "value": "Flughafen Tirana" },
+      { "label": "Gruppengröße", "value": "Max. 12" },
+      { "label": "Nächster Start", "value": "12. Sep 2026" }
+    ],
+    "aboutTitle": "Über Diese Tour",
+    "aboutBody": "Erlebe das Hidden Gem des Balkans auf zwei Rädern. Diese 8-Tage-Tour führt dich durch Albaniens atemberaubendste Landschaften — von den rauen Bergen im Norden bis zur unberührten Riviera. Fahre durch alte Dörfer, genieße lokale Küche und tauche ein in Geschichte und Kultur — begleitet von unserem erfahrenen lokalen Team.",
+    "highlightsTitle": "Tour-Highlights",
+    "highlights": [
+      "Radeln durch die UNESCO-Stadt Berat",
+      "Entlang der atemberaubenden albanischen Riviera",
+      "Besuch der antiken Ruinen im Nationalpark Butrint",
+      "Traditionelle Bergdörfer der Accursed Mountains",
+      "Authentische albanische Küche in lokalen Familienrestaurants",
+      "Professionelles Begleitfahrzeug während der gesamten Tour"
+    ],
+    "photosTitle": "Fotos",
+    "itineraryTitle": "Tagesablauf",
+    "itinerary": [
+      { "title": "Ankunft in Tirana", "body": "Willkommensabendessen und Briefing. Erkunde die bunten Basare und checke im Hotel ein." },
+      { "title": "Tirana nach Kruja", "body": "Fahrt nach historischem Kruja mit Burgblick und Besuch des traditionellen Basars." },
+      { "title": "Komani-See & Valbona", "body": "Malerische Fährfahrt auf dem Komani-See, weiter ins Valbona-Tal." },
+      { "title": "Valbona-Tal", "body": "Radeln durch alpine Landschaft und abgelegene Bergdörfer in Valbona." },
+      { "title": "Valbona nach Theth", "body": "Über den Gebirgspass nach Theth mit dramatischen Gipfeln und lokalen Gästehäusern." },
+      { "title": "Abfahrt nach Berat", "body": "Transfer nach Süden und Einfahrt in die UNESCO-Stadt Berat." },
+      { "title": "Berat nach Gjirokastër", "body": "Küsten- und Hochlandfahrt zur Steinstadt Gjirokastër." },
+      { "title": "Butrint & Abreise", "body": "Besuch des Nationalparks Butrint, danach Transfer zum Flughafen." }
+    ],
+    "includedTitle": "Was ist inklusive",
+    "includedLabel": "Inklusivleistungen",
+    "notIncludedLabel": "Nicht inklusive",
+    "included": [
+      "7 Übernachtungen (3★–4★ Hotels & Gästehäuser)",
+      "Tägliches Frühstück und 4 Abendessen",
+      "Qualitäts-Road-/Gravelbike",
+      "Erfahrener englischsprachiger Guide",
+      "Begleitfahrzeug mit Gepäcktransfer",
+      "Helme, Trinkflaschen, Packtaschen",
+      "Flughafentransfers",
+      "24/7 Notfall-Support",
+      "Eintrittsgelder für Nationalparks und Denkmäler"
+    ],
+    "notIncluded": [
+      "Flüge von/nach Albanien",
+      "Reiseversicherung",
+      "Mittagessen (Tag 2–7)",
+      "Persönliche Ausgaben",
+      "Optionale Aktivitäten"
+    ],
+    "featuresTitle": "Tour-Features",
+    "features": ["Hotel", "Guide", "Bike", "Transfer", "Mahlzeiten", "Aktivitäten"],
+    "reviewsTitle": "Gästebewertungen",
+    "reviews": [
+      {
+        "rating": "5.0",
+        "quote": "Die Routen waren atemberaubend, die Organisation exzellent, und unser Guide machte jeden Tag unvergesslich. Albanien hat unsere Erwartungen übertroffen.",
+        "name": "Sarah Mitchell",
+        "role": "Abenteuerreisende · New York, USA"
+      },
+      {
+        "rating": "4.9",
+        "quote": "Jedes Detail war durchdacht. Landschaft, Essen, Menschen — Albanien mit dem Rad fühlte sich an wie eine Entdeckung.",
+        "name": "James Carter",
+        "role": "Abenteuerreisender · London, UK"
+      },
+      {
+        "rating": "5.0",
+        "quote": "Das lokale Wissen unseres Guides machte jeden Stopp zu einer Geschichte. Die beste Radreise unserer Gruppe.",
+        "name": "Elena Rossi",
+        "role": "Abenteuerreisende · Mailand, Italien"
+      }
+    ],
+    "booking": {
+      "from": "Ab",
+      "price": "€ 1.290,00",
+      "bookingTab": "Buchungsformular",
+      "requestTab": "Anfrageformular",
+      "chooseTime": "Zeitraum wählen",
+      "timeOption": "Vom 10. Juni 2027 bis 17. Juni 2027",
+      "checkIn": "Check-in",
+      "checkOut": "Check-out",
+      "checkInValue": "10-06-2027",
+      "checkOutValue": "17-06-2027",
+      "guests": "Gäste",
+      "adult": "Erwachsener",
+      "decreaseGuests": "Gäste verringern",
+      "increaseGuests": "Gäste erhöhen",
+      "addonsTitle": "Zusatzleistungen",
+      "addons": [
+        { "id": "bike", "label": "Unisex-Räder (Marken KTM & Pegasus u. a.): Aufpreis 120 EUR" },
+        { "id": "ebike", "label": "E-Bikes (Marken KTM & Pegasus u. a.): Aufpreis 225 EUR" },
+        { "id": "single", "label": "Einzelzimmerzuschlag: 200 EUR pro Person" }
+      ],
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht",
+      "total": "Gesamt:",
+      "submit": "Jetzt buchen",
+      "sendRequest": "Anfrage senden"
+    },
+    "relatedLabel": "Ähnliche Touren",
+    "relatedTitle": "Das Könnte Dir Auch Gefallen",
+    "viewTour": "Tour ansehen →",
+    "related": [
+      {
+        "title": "5-Tage Radtour an der albanischen Riviera",
+        "location": "Albanien",
+        "duration": "5 Tage",
+        "group": "Max. 12",
+        "rating": "4.8",
+        "reviews": "24",
+        "price": "€790"
+      },
+      {
+        "title": "7-Tage Bergabenteuer Nordalbanien",
+        "location": "Albanien",
+        "duration": "7 Tage",
+        "group": "Max. 10",
+        "rating": "5",
+        "reviews": "16",
+        "price": "€1.150"
+      },
+      {
+        "title": "5-Tage Radtour an der albanischen Riviera",
+        "location": "Albanien",
+        "duration": "5 Tage",
+        "group": "Max. 12",
+        "rating": "4.8",
+        "reviews": "24",
+        "price": "€790"
+      }
+    ]
+  },
+  "aboutHero": {
+    "title": "Über Uns"
+  },
+  "aboutIntro": {
+    "label": "Ausgewählte Touren",
+    "title": "Über Tarko Albanian",
+    "paragraph1": "Willkommen bei Albania Travel — deiner Quelle für unvergessliche Erlebnisse in Albanien. Wir verbinden modernen Komfort mit atemberaubenden Landschaften und professioneller Unterstützung, um deine Reise zu einem besonderen Abenteuer zu machen.",
+    "paragraph2": "Mit langjähriger Erfahrung, lokalem Wissen und einem engagierten Team gestalten wir maßgeschneiderte Touren, die zu deinen Bedürfnissen passen. Von Kultur- und Geschichtstouren bis hin zu Rad- und Wanderreisen — wir kümmern uns um jedes Detail, damit du dich auf die Reise konzentrieren kannst.",
+    "exploreNow": "Jetzt Entdecken",
+    "stats": [
+      { "value": "15+", "label": "Jahre Erfahrung" },
+      { "value": "20+", "label": "Malerische Radrouten" },
+      { "value": "100%", "label": "Geführte Touren" }
+    ]
+  },
+  "team": {
+    "label": "Unser Team",
+    "title": "Lerne Das Team Kennen",
+    "body": "Unser leidenschaftliches Team aus Radreiseleitern und Reiseprofis sorgt dafür, dass jede Reise sicher, angenehm und unvergesslich wird.",
+    "members": [
+      { "name": "Artan Koci", "role": "Gründer & Chefguide" },
+      { "name": "Elira Hoxha", "role": "Leitende Radreiseleiterin" },
+      { "name": "Driton Berisha", "role": "Leiter Tourorganisation" }
+    ]
   },
   "footer": {
     "description": "Wir schaffen unvergessliche Radabenteuer in ganz Albanien mit fachkundig geführten Touren und authentischen Reiseerlebnissen.",
