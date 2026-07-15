@@ -14,6 +14,7 @@ export { default as mountainIllustration } from "@assets/images/mountain-illustr
 export { default as journeyBackground } from "@assets/images/journeybg.png";
 
 // Footer assets
+export { default as footerLogo } from "@assets/images/footerLogo.png";
 export { default as footerCyclist } from "@assets/images/footer-cyclist-pointing.png";
 export { default as iconFacebook } from "@assets/icons/social-facebook.svg";
 export { default as iconTwitter } from "@assets/icons/social-twitter.svg";

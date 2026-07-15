@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
-import { logo } from "../../assets/hero";
 import {
   mountainIllustration,
+  footerLogo,
   footerCyclist,
   iconFacebook,
   iconTwitter,
@@ -52,7 +52,7 @@ export default function Footer() {
 
       <div className="relative mx-auto grid max-w-hero gap-10 sm:gap-16 lg:grid-cols-[1fr_auto] lg:gap-20">
         <div className="flex max-w-[661px] flex-col items-start gap-6 sm:gap-10">
-          <img src={logo} alt="Albanien Radreisen" className="h-auto w-[120px] sm:w-[140px]" />
+          <img src={footerLogo} alt="Albanien Radreisen" className="h-auto w-[120px] sm:w-[140px]" />
           <p className="font-sans text-footer-body font-medium capitalize text-black">
             {t("footer.description")}
           </p>

@@ -203,7 +203,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="relative z-10 mx-auto grid w-full max-w-hero shrink-0 grid-cols-[1fr_auto] items-center gap-3 xs:gap-4 md:grid-cols-[auto_1fr_auto] md:gap-6 lg:gap-8">
+      <header className="relative z-50 mx-auto grid w-full max-w-hero shrink-0 grid-cols-[1fr_auto] items-center gap-3 xs:gap-4 md:grid-cols-[auto_1fr_auto] md:gap-6 lg:gap-8">
         <img
           className="h-auto w-24 justify-self-start xs:w-28 sm:w-32 md:w-36 lg:w-[168px]"
           src={logo}
