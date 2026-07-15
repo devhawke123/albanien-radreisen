@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import {
   featuredSlide1,
@@ -110,13 +111,13 @@ function FeaturedTourShowcase() {
             );
           })}
 
-          <button
-            type="button"
-            className="inline-flex h-12 items-center gap-2 rounded-lg bg-black/45 px-3 text-xs text-white sm:h-16 sm:rounded-xl sm:px-4 sm:text-sm md:h-20"
+          <Link
+            to="/tours/8-day-cycling"
+            className="inline-flex h-12 items-center gap-2 rounded-lg bg-black/45 px-3 text-xs text-white no-underline sm:h-16 sm:rounded-xl sm:px-4 sm:text-sm md:h-20"
           >
             <img src={iconPhoto} alt="" className="h-4 w-4" aria-hidden />
             {t("tours.seeAll")}
-          </button>
+          </Link>
         </div>
       </div>
     </article>

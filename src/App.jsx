@@ -1,30 +1,31 @@
-import AboutUs from "./components/sections/AboutUs";
-import FaqSection from "./components/sections/FaqSection";
-import FeaturedTours from "./components/sections/FeaturedTours";
-import Gallery from "./components/sections/Gallery";
-import Hero from "./components/sections/Hero";
-import HowItWorks from "./components/sections/HowItWorks";
-import JourneyOverview from "./components/sections/JourneyOverview";
-import PageFooter from "./components/layout/PageFooter";
-import StatsBanner from "./components/sections/StatsBanner";
-import Testimonials from "./components/sections/Testimonials";
-import WhyChooseUs from "./components/sections/WhyChooseUs";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import GalleryPage from "./pages/GalleryPage";
+import TourPage from "./pages/TourPage";
+import ReviewsPage from "./pages/ReviewsPage";
+import FaqPage from "./pages/FaqPage";
+import ContactPage from "./pages/ContactPage";
+import ImprintPage from "./pages/ImprintPage";
+import ToursPage from "./pages/ToursPage";
 
 function App() {
   return (
-    <main className="bg-white">
-      <Hero />
-      <AboutUs />
-      <StatsBanner />
-      <FeaturedTours />
-      <WhyChooseUs />
-      <HowItWorks />
-      <FaqSection />
-      <Testimonials />
-      <Gallery />
-      <JourneyOverview />
-      <PageFooter />
-    </main>
+    <BrowserRouter>
+      <main className="bg-white">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/tours" element={<ToursPage />} />
+          <Route path="/tours/8-day-cycling" element={<TourPage />} />
+          <Route path="/testimonials" element={<ReviewsPage />} />
+          <Route path="/faq" element={<FaqPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/imprint" element={<ImprintPage />} />
+        </Routes>
+      </main>
+    </BrowserRouter>
   );
 }
 

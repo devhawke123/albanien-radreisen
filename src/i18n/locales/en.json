@@ -6,7 +6,74 @@
     "imprint": "Imprint",
     "contact": "Contact",
     "getStarted": "Get Started",
-    "cartLabel": "Cart"
+    "cartLabel": "Cart",
+    "gallery": "Gallery",
+    "faq": "FAQ's",
+    "testimonials": "Testimonials",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "reviewsPage": {
+    "title": "Loved by Cyclists Worldwide",
+    "body": "Hear from travelers who experienced Albania's breathtaking landscapes through our expertly guided cycling tours."
+  },
+  "contactPage": {
+    "title": "Get in Touch",
+    "body": "Have a question about our tours? We'd love to hear from you. Our team typically replies within 24 hours.",
+    "formTitle": "Send Us a Message",
+    "nameLabel": "Your Name *",
+    "namePlaceholder": "John Smith",
+    "emailLabel": "Email Address *",
+    "emailPlaceholder": "john@example.com",
+    "phoneLabel": "Phone Number *",
+    "phonePlaceholder": "+355 6X XXX XXXX",
+    "subjectLabel": "Subject *",
+    "subjectPlaceholder": "e.g. Booking inquiry",
+    "messageLabel": "Your Message *",
+    "messagePlaceholder": "Tell us about your cycling experience level, preferred dates, group size, and any special requirements...",
+    "submit": "Send Message",
+    "note": "We typically reply within 24 hours during business days.",
+    "mapAlt": "Map showing our office location in Tirana, Albania",
+    "mapLabel": "Open our location in Google Maps"
+  },
+  "faqPage": {
+    "title": "Frequently Asked Questions",
+    "body": "Answers to the most common questions about our cycling tours, bookings, and travel experience across Albania."
+  },
+  "imprintPage": {
+    "title": "Imprint",
+    "body": "Legal information and company details in accordance with German Telemedia Act (TMG).",
+    "companyInfoTitle": "Company Information",
+    "companyName": "ADA – Travel Agency Tarko",
+    "addressLabel": "Address",
+    "address": "Rr. Qemal Stafa P.17 AP.1, AL-1005 Tirana, Albania",
+    "telephoneLabel": "Telephone",
+    "telephone": "+355 42 236 7254",
+    "mobileLabel": "Mobile",
+    "mobile": "+355 6838 16 275",
+    "emailLabel": "Email",
+    "emails": ["alba.reisen@yahoo.de", "tarkogezim@gmail.com"],
+    "websiteLabel": "Website",
+    "website": "www.albanien-radreisen.de",
+    "legalRepTitle": "Legal Representative",
+    "legalRepLabel": "Represented By",
+    "legalRep": "Managing Director, Mr. Gezim Tarko",
+    "registrationTitle": "Business Registration",
+    "registrationLabel": "Registration Details",
+    "registration": "VAT ID (NIPT): L71325031A",
+    "disclaimerTitle": "Disclaimer",
+    "liabilityContentTitle": "Liability for Content",
+    "liabilityContentBody": "As a service provider, we are responsible for our own website content in accordance with applicable German law. We are not obligated to monitor third-party information or investigate potential illegal activity unless we become aware of a specific legal violation. If such a violation is identified, the content will be removed immediately.",
+    "liabilityLinksTitle": "Liability for External Links",
+    "liabilityLinksBody": "Our website may contain links to third-party websites. We have no control over the content of these websites and therefore cannot accept responsibility for their content. If we become aware of any legal violations on linked websites, the relevant links will be removed promptly.",
+    "copyrightTitle": "Copyright Notice",
+    "copyrightBody": "All content, text, images, and materials published on this website are protected by German copyright law. Reproduction, distribution, or commercial use without prior written permission is prohibited. If you believe any content infringes copyright, please contact us so we can investigate and take appropriate action.",
+    "contactTitle": "Need More Information?",
+    "contactCta": "Contact Us"
+  },
+  "toursPage": {
+    "title": "Find Your Perfect Cycling Adventure",
+    "body": "From coastal rides to mountain adventures, explore our carefully designed cycling holidays across Albania."
   },
   "hero": {
     "titleLine1": "Discover Albania,",
@@ -168,6 +235,26 @@
       "Cyclists resting on a hillside trail"
     ]
   },
+  "galleryPage": {
+    "title": "Gallery",
+    "body": "Planning your cycling adventure is simple — and here you can see the unforgettable moments that await.",
+    "libraryTitle": "Moments from the Journey",
+    "featuredAlt": "Cycling group posing together on a scenic overlook",
+    "previousPage": "Previous gallery page",
+    "nextPage": "Next gallery page",
+    "showPage": "Show gallery page {{page}}",
+    "alts": [
+      "Bicycle overlooking the Albanian coastline",
+      "Cyclists posing on a coastal hilltop",
+      "Travelers exploring an Albanian old town",
+      "Cycling group riding through a poppy field",
+      "Cyclists in an Albanian landscape",
+      "Scenic route through Albanian countryside",
+      "Cyclists resting on a hillside trail",
+      "Travelers enjoying a cultural stop",
+      "Our cycling tour team together"
+    ]
+  },
   "journey": {
     "label": "Journey Overview",
     "title": "Follow the Route. Discover Albania.",
@@ -186,6 +273,182 @@
     "body": "Join us for an unforgettable cycling adventure through breathtaking landscapes, charming villages, and historic routes—guided by local experts every step of the way.",
     "emailPlaceholder": "Enter your email",
     "submit": "Submit"
+  },
+  "tourPage": {
+    "back": "Back to tours",
+    "title": "8-Day Cycling & Discovery Tour Through Albania (2026)",
+    "bookNow": "Book Now",
+    "rating": "4.9",
+    "reviewsMeta": "· 38 reviews",
+    "meta": {
+      "duration": "8 days",
+      "group": "Up to 12 people",
+      "next": "Next: 12 Sep 2026"
+    },
+    "tabs": {
+      "overview": "Overview",
+      "itinerary": "Itinerary",
+      "included": "Included",
+      "reviews": "Reviews"
+    },
+    "stats": [
+      { "label": "Duration", "value": "8 days" },
+      { "label": "Location", "value": "Tirana Airport" },
+      { "label": "Group Size", "value": "Max 12" },
+      { "label": "Next Departure", "value": "12 Sep 2026" }
+    ],
+    "aboutTitle": "About This Tour",
+    "aboutBody": "Experience the hidden gem of the Balkans on two wheels. This 8-day tour takes you through Albania's most breathtaking landscapes, from the rugged mountains of the north to the pristine Riviera coast. Ride through ancient villages, taste local cuisine, and connect with Albania's rich history and culture — all guided by our expert local team.",
+    "highlightsTitle": "Tour Highlights",
+    "highlights": [
+      "Cycle through the UNESCO-listed city of Berat",
+      "Ride along the stunning Albanian Riviera coastline",
+      "Visit the ancient ruins of Butrint National Park",
+      "Experience the traditional mountain villages of the Accursed Mountains",
+      "Taste authentic Albanian cuisine at local family restaurants",
+      "Professional support vehicle throughout the journey"
+    ],
+    "photosTitle": "Photos",
+    "itineraryTitle": "Day-by-Day Itinerary",
+    "itinerary": [
+      { "title": "Arrival in Tirana", "body": "Welcome dinner and briefing. Explore the colorful bazaars and settle into your hotel." },
+      { "title": "Tirana to Kruja", "body": "Ride to historic Kruja with castle views and a visit to the traditional bazaar." },
+      { "title": "Lake Komani & Valbona", "body": "Scenic ferry crossing on Lake Komani, then continue into the Valbona valley." },
+      { "title": "Valbona Valley Ride", "body": "Cycle through alpine scenery and remote mountain villages in Valbona." },
+      { "title": "Valbona to Theth", "body": "Cross the mountain pass into Theth with dramatic peaks and local guesthouses." },
+      { "title": "Descent to Berat", "body": "Transfer south and ride into the UNESCO city of Berat, the city of a thousand windows." },
+      { "title": "Berat to Gjirokastër", "body": "Coastal and highland riding toward the stone city of Gjirokastër." },
+      { "title": "Butrint & Departure", "body": "Visit Butrint National Park, then transfer to the airport for departure." }
+    ],
+    "includedTitle": "What's Included",
+    "includedLabel": "Included",
+    "notIncludedLabel": "Not Included",
+    "included": [
+      "7 nights accommodation (3★–4★ hotels & guesthouses)",
+      "Daily breakfast and 4 dinners",
+      "Quality road/gravel bike rental",
+      "Experienced English-speaking guide",
+      "Support van with luggage transfer",
+      "Helmets, water bottles, panniers",
+      "Airport transfers",
+      "24/7 emergency support",
+      "Entry fees to national parks and monuments"
+    ],
+    "notIncluded": [
+      "Flights to/from Albania",
+      "Travel insurance",
+      "Lunches (days 2–7)",
+      "Personal expenses",
+      "Optional activities"
+    ],
+    "featuresTitle": "Tour Features",
+    "features": ["Hotel", "Guide", "Bike", "Transfer", "Meals", "Activities"],
+    "reviewsTitle": "Guest Reviews",
+    "reviews": [
+      {
+        "rating": "5.0",
+        "quote": "The routes were breathtaking, the organization was excellent, and our guide made every day unforgettable. Albania completely exceeded our expectations.",
+        "name": "Sarah Mitchell",
+        "role": "Adventure Traveler · New York, USA"
+      },
+      {
+        "rating": "4.9",
+        "quote": "Every detail was taken care of. The scenery, the food, the people — riding through Albania felt like discovering a country most tourists never see.",
+        "name": "James Carter",
+        "role": "Adventure Traveler · London, UK"
+      },
+      {
+        "rating": "5.0",
+        "quote": "Our guide's local knowledge turned every stop into a story. This was hands down the best cycling trip our group has ever taken.",
+        "name": "Elena Rossi",
+        "role": "Adventure Traveler · Milan, Italy"
+      }
+    ],
+    "booking": {
+      "from": "From",
+      "price": "€ 1,290.00",
+      "bookingTab": "Booking Form",
+      "requestTab": "Request Form",
+      "chooseTime": "Choose time",
+      "timeOption": "From June 10, 2027 to June 17, 2027",
+      "checkIn": "Check in",
+      "checkOut": "Check out",
+      "checkInValue": "10-06-2027",
+      "checkOutValue": "17-06-2027",
+      "guests": "Guests",
+      "adult": "Adult",
+      "decreaseGuests": "Decrease guests",
+      "increaseGuests": "Increase guests",
+      "addonsTitle": "Additional services",
+      "addons": [
+        { "id": "bike", "label": "Unisex bikes (brands KTM & Pegasus, among others): surcharge 120 EUR" },
+        { "id": "ebike", "label": "E-bikes (brand KTM & Pegasus etc.): surcharge 225 EUR" },
+        { "id": "single", "label": "Single room supplement: EUR 200 per person" }
+      ],
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "total": "Total:",
+      "submit": "Book now",
+      "sendRequest": "Send request"
+    },
+    "relatedLabel": "Related Tours",
+    "relatedTitle": "You May Also Like",
+    "viewTour": "View Tour →",
+    "related": [
+      {
+        "title": "5-Day Albanian Riviera Coastal Cycling",
+        "location": "Albania",
+        "duration": "5 days",
+        "group": "12 max",
+        "rating": "4.8",
+        "reviews": "24",
+        "price": "€790"
+      },
+      {
+        "title": "7-Day Northern Albania Mountain Adventure",
+        "location": "Albania",
+        "duration": "7 days",
+        "group": "10 max",
+        "rating": "5",
+        "reviews": "16",
+        "price": "€1,150"
+      },
+      {
+        "title": "5-Day Albanian Riviera Coastal Cycling",
+        "location": "Albania",
+        "duration": "5 days",
+        "group": "12 max",
+        "rating": "4.8",
+        "reviews": "24",
+        "price": "€790"
+      }
+    ]
+  },
+  "aboutHero": {
+    "title": "About Us"
+  },
+  "aboutIntro": {
+    "label": "Featured Tours",
+    "title": "About Tarko Albanian",
+    "paragraph1": "Welcome to Albania Travel — your source for unforgettable experiences in Albania. We combine modern comfort with breathtaking landscapes and professional assistance to make your trip a special adventure.",
+    "paragraph2": "With years of experience, local knowledge and a dedicated team we create tailor-made tours to fit your needs. From cultural and historical tours to cycling trips and hiking — we handle every detail so you can focus on the journey.",
+    "exploreNow": "Explore Now",
+    "stats": [
+      { "value": "15+", "label": "Years of Experience" },
+      { "value": "20+", "label": "Scenic Cycling Routes" },
+      { "value": "100%", "label": "Guided Tours" }
+    ]
+  },
+  "team": {
+    "label": "Our People",
+    "title": "Meet the Team",
+    "body": "Our passionate team of cycling guides and travel professionals is dedicated to making every journey safe, enjoyable, and unforgettable.",
+    "members": [
+      { "name": "Artan Koci", "role": "Founder & Head Guide" },
+      { "name": "Elira Hoxha", "role": "Senior Cycling Guide" },
+      { "name": "Driton Berisha", "role": "Tour Operations Manager" }
+    ]
   },
   "footer": {
     "description": "Creating unforgettable cycling adventures across Albania with expertly guided tours and authentic travel experiences.",
