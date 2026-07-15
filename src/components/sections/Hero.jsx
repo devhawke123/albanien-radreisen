@@ -71,7 +71,7 @@ export default function Hero() {
         </div>
       
 
-      <div className="relative z-10 mx-auto flex h-auto w-[min(100%,808px)] mt-20 shrink-0 flex-col items-stretch justify-center gap-2 rounded-xl border border-white/30 bg-white/15 px-3 py-2 backdrop-blur-sm xs:h-search-bar xs:flex-row xs:flex-wrap xs:items-center sm:gap-3 sm:px-4 lg:gap-4">
+      <div className="relative z-10 mx-auto flex h-auto w-[min(100%,808px)] mt-20 shrink-0 flex-col items-stretch justify-center gap-2 rounded-xl border border-white/30 bg-white/15 px-3 py-0 backdrop-blur-sm xs:h-search-bar xs:flex-row xs:flex-wrap xs:items-center sm:gap-3 sm:px-4 lg:gap-4">
        
         <button
           type="button"
