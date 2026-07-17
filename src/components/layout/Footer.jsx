@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import {
   mountainIllustration,
@@ -21,15 +22,31 @@ const socialIcons = [
 ];
 
 const contactDetails = [
-  { icon: iconPhone, text: "+355 (0) 68 381 6275" },
-  { icon: iconMail, text: "alba.reisen@yahoo.de" },
-  { icon: iconPin, text: "ADA - Travel Agency Tarko Rr.Qemal Stafa P.17 Ap.1 AL-1005 Tirana, Albania." },
+  { icon: iconPhone, text: "+355 (0) 68 381 6275", href: "tel:+355683816275" },
+  { icon: iconMail, text: "alba.reisen@yahoo.de", href: "mailto:alba.reisen@yahoo.de" },
+  {
+    icon: iconPin,
+    text: "ADA - Travel Agency Tarko Rr.Qemal Stafa P.17 Ap.1 AL-1005 Tirana, Albania.",
+    href: "https://maps.google.com/?q=ADA+Travel+Agency+Tarko+Tirana",
+  },
+];
+
+const GENERAL_LINKS = [
+  { key: "home", to: "/" },
+  { key: "tours", to: "/tours" },
+  { key: "services", to: "/#how-it-works" },
+  { key: "testimonials", to: "/testimonials" },
+];
+
+const ABOUT_LINKS = [
+  { key: "aboutUs", to: "/about" },
+  { key: "gallery", to: "/gallery" },
+  { key: "contact", to: "/contact" },
+  { key: "privacy", to: "/imprint" },
 ];
 
 export default function Footer() {
   const { t } = useTranslation();
-  const generalLinks = t("footer.generalLinks", { returnObjects: true });
-  const aboutLinks = t("footer.aboutLinks", { returnObjects: true });
 
   return (
     <footer className="relative overflow-hidden px-hero-x pb-8 pt-12 sm:pb-10 sm:pt-16 md:pt-20">
@@ -52,7 +69,9 @@ export default function Footer() {
 
       <div className="relative mx-auto grid max-w-hero gap-10 sm:gap-16 lg:grid-cols-[1fr_auto] lg:gap-20">
         <div className="flex max-w-[661px] flex-col items-start gap-6 sm:gap-10">
-          <img src={footerLogo} alt="Albanien Radreisen" className="h-auto w-[120px] sm:w-[140px]" />
+          <Link to="/">
+            <img src={footerLogo} alt="Albanien Radreisen" className="h-auto w-[120px] sm:w-[140px]" />
+          </Link>
           <p className="font-sans text-footer-body font-medium capitalize text-black">
             {t("footer.description")}
           </p>
@@ -64,7 +83,10 @@ export default function Footer() {
               <img src={socialIcons[0].src} alt={socialIcons[0].alt} className="h-10 w-10 sm:h-12 sm:w-12" />
               <img src={socialIcons[1].src} alt={socialIcons[1].alt} className="h-10 w-10 sm:h-12 sm:w-12" />
               {socialIcons.slice(2).map((icon) => (
-                <span key={icon.alt} className="relative inline-flex h-10 w-10 items-center justify-center sm:h-12 sm:w-12">
+                <span
+                  key={icon.alt}
+                  className="relative inline-flex h-10 w-10 items-center justify-center sm:h-12 sm:w-12"
+                >
                   <img
                     src={iconSocialCircleBg}
                     alt=""
@@ -82,11 +104,11 @@ export default function Footer() {
           <div className="flex flex-col items-start gap-5">
             <h3 className="font-serif text-footer-heading font-medium text-black">{t("footer.general")}</h3>
             <ul className="flex flex-col items-start gap-3">
-              {generalLinks.map((link) => (
-                <li key={link}>
-                  <a href="#" className="font-sans text-footer-link text-black">
-                    {link}
-                  </a>
+              {GENERAL_LINKS.map((link) => (
+                <li key={link.key}>
+                  <Link to={link.to} className="font-sans text-footer-link text-black no-underline hover:text-brand">
+                    {t(`footer.generalLinks.${link.key}`)}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -95,11 +117,11 @@ export default function Footer() {
           <div className="flex flex-col items-start gap-5">
             <h3 className="font-serif text-footer-heading font-medium text-black">{t("footer.about")}</h3>
             <ul className="flex flex-col items-start gap-3">
-              {aboutLinks.map((link) => (
-                <li key={link}>
-                  <a href="#" className="font-sans text-footer-link text-black">
-                    {link}
-                  </a>
+              {ABOUT_LINKS.map((link) => (
+                <li key={link.key}>
+                  <Link to={link.to} className="font-sans text-footer-link text-black no-underline hover:text-brand">
+                    {t(`footer.aboutLinks.${link.key}`)}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -108,12 +130,18 @@ export default function Footer() {
           <div className="flex max-w-full flex-col items-start gap-4 sm:max-w-[348px]">
             <h3 className="font-serif text-footer-heading font-medium text-black">{t("footer.contact")}</h3>
             {contactDetails.map((item) => (
-              <div key={item.text} className="flex items-start gap-[6px] sm:items-center">
+              <a
+                key={item.text}
+                href={item.href}
+                target={item.href.startsWith("http") ? "_blank" : undefined}
+                rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                className="flex items-start gap-[6px] text-black no-underline hover:text-brand sm:items-center"
+              >
                 <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-brand-soft sm:h-[53px] sm:w-[53px]">
                   <img src={item.icon} alt="" aria-hidden className="h-5 w-5 sm:h-6 sm:w-6" />
                 </span>
-                <p className="min-w-0 font-sans text-sm text-black sm:text-footer-link">{item.text}</p>
-              </div>
+                <p className="min-w-0 font-sans text-sm sm:text-footer-link">{item.text}</p>
+              </a>
             ))}
           </div>
         </div>

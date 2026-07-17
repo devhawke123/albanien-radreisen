@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { cycleGirl } from "../../assets/shared";
 import { iconBicycle, iconMountain, iconPerson } from "../../assets/journey-icons";
@@ -34,12 +35,12 @@ export default function WhyChooseUs() {
             <h2 className="mt-4 max-w-[671px] font-serif text-section-title font-semibold capitalize text-black">
               {t("whyChooseUs.title")}
             </h2>
-            <button
-              type="button"
-              className="mt-6 h-btn-sm w-full cursor-pointer rounded-[11px] bg-brand px-10 text-btn leading-none text-white sm:mt-8 sm:w-auto"
+            <Link
+              to="/tours"
+              className="mt-6 inline-flex h-btn-sm w-full items-center justify-center rounded-[11px] bg-brand px-10 text-btn leading-none text-white no-underline sm:mt-8 sm:w-auto"
             >
               {t("whyChooseUs.exploreMore")}
-            </button>
+            </Link>
             <img
               src={cycleGirl}
               alt="Cyclist planning a route with a map"

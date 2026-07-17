@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { journeyMap } from "../../assets/journey";
 import { iconBicycle, iconBoat, iconMountain, iconPerson } from "../../assets/journey-icons";
@@ -52,12 +53,12 @@ export default function JourneyOverview() {
             <p className="mt-4 max-w-[866px] font-sans text-[clamp(1rem,2vw,1.625rem)] font-medium leading-relaxed text-black/80">
               {t("journey.body")}
             </p>
-            <button
-              type="button"
-              className="mt-5 h-btn-sm w-full cursor-pointer rounded-[11px] bg-brand px-10 text-btn leading-none text-white sm:mt-6 sm:w-auto"
+            <Link
+              to="/tours"
+              className="mt-5 inline-flex h-btn-sm w-full items-center justify-center rounded-[11px] bg-brand px-10 text-btn leading-none text-white no-underline sm:mt-6 sm:w-auto"
             >
               {t("journey.getStarted")}
-            </button>
+            </Link>
 
             <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:mt-10">
               {activities.map((activity) => (

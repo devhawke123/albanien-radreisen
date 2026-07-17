@@ -3,13 +3,12 @@ import { useTranslation } from "react-i18next";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import useCart from "../hooks/useCart";
-import { tourPhoto1 } from "../assets/tourPage";
+import { getTourBySlug } from "../data/toursCatalog";
 import { removeCartItem } from "../utils/cartStore";
 import { formatDisplayDate, formatEuro } from "../utils/bookingPricing";
 
 export default function CartPage() {
-  const { t, i18n } = useTranslation();
-  const locale = i18n.language?.startsWith("de") ? "de" : "en";
+  const { t } = useTranslation();
   const cartItems = useCart();
   const estimatedTotal = cartItems.reduce((sum, item) => sum + item.total, 0);
 
@@ -51,71 +50,80 @@ export default function CartPage() {
                 </div>
 
                 <div className="divide-y divide-gray-200">
-                  {cartItems.map((item) => (
-                    <article
-                      key={item.id}
-                      className="grid gap-4 py-6 sm:grid-cols-[120px_minmax(0,1fr)_auto] sm:gap-5"
-                    >
-                      <img
-                        src={tourPhoto1}
-                        alt={t("tourCard.imageAlt")}
-                        className="h-24 w-full rounded-xl object-cover sm:h-24 sm:w-[120px]"
-                      />
+                  {cartItems.map((item) => {
+                    const tour = getTourBySlug(item.tourId);
+                    const content = t(`toursContent.${item.tourId}`, { returnObjects: true });
+                    const card = content?.card ?? {};
 
-                      <div className="min-w-0">
-                        <Link
-                          to="/tours/8-day-cycling"
-                          className="font-sans text-base font-semibold leading-snug text-brand no-underline hover:underline sm:text-lg"
-                        >
-                          {t("tourPage.title")}
-                        </Link>
-                        <p className="m-0 mt-1 font-sans text-sm font-medium text-gray-500">
-                          {formatEuro(1290)} {t("tourCard.priceSuffix")}
+                    return (
+                      <article
+                        key={item.id}
+                        className="grid gap-4 py-6 sm:grid-cols-[120px_minmax(0,1fr)_auto] sm:gap-5"
+                      >
+                        <img
+                          src={tour?.cardImage}
+                          alt={card.imageAlt ?? ""}
+                          className="h-24 w-full rounded-xl object-cover sm:h-24 sm:w-[120px]"
+                        />
+
+                        <div className="min-w-0">
+                          <Link
+                            to={`/tours/${item.tourId}`}
+                            className="font-sans text-base font-semibold leading-snug text-brand no-underline hover:underline sm:text-lg"
+                          >
+                            {content.title}
+                          </Link>
+                          <p className="m-0 mt-1 font-sans text-sm font-medium text-gray-500">
+                            {formatEuro(tour?.basePrice ?? 1290)} {t("tourCard.priceSuffix")}
+                          </p>
+                          <p className="mt-2 line-clamp-2 font-sans text-sm leading-relaxed text-gray-500">
+                            {content.quickDescription}
+                          </p>
+                          <dl className="mt-3 flex flex-wrap gap-x-4 gap-y-1 font-sans text-xs text-gray-600 sm:text-sm">
+                            <div>
+                              <dt className="inline font-semibold">{t("cartPage.checkIn")}:</dt>{" "}
+                              <dd className="inline">{formatDisplayDate(item.checkIn)}</dd>
+                            </div>
+                            <div>
+                              <dt className="inline font-semibold">{t("cartPage.checkOut")}:</dt>{" "}
+                              <dd className="inline">{formatDisplayDate(item.checkOut)}</dd>
+                            </div>
+                            <div>
+                              <dt className="inline font-semibold">{t("cartPage.adults")}:</dt>{" "}
+                              <dd className="inline">{item.guests}</dd>
+                            </div>
+                          </dl>
+
+                          {item.addons.length > 0 && (
+                            <ul className="mt-2 list-none space-y-1 p-0 font-sans text-xs text-gray-500">
+                              {item.addons.map((addon) => (
+                                <li key={addon.id}>
+                                  {t(`tourPage.booking.addons.${addon.id}.label`, {
+                                    price: addon.unitPrice,
+                                  })}{" "}
+                                  × {addon.quantity}
+                                </li>
+                              ))}
+                            </ul>
+                          )}
+
+                          <button
+                            type="button"
+                            onClick={() => removeCartItem(item.id)}
+                            className="mt-3 inline-flex cursor-pointer items-center gap-1.5 border-0 bg-transparent p-0 font-sans text-sm text-gray-500 hover:text-brand"
+                            aria-label={t("cartPage.removeItem")}
+                          >
+                            <span aria-hidden>⌫</span>
+                            {t("cartPage.remove")}
+                          </button>
+                        </div>
+
+                        <p className="m-0 text-right font-sans text-base font-semibold text-black">
+                          {formatEuro(item.total)}
                         </p>
-                        <p className="mt-2 line-clamp-2 font-sans text-sm leading-relaxed text-gray-500">
-                          {t("tourPage.quickDescription")}
-                        </p>
-                        <dl className="mt-3 flex flex-wrap gap-x-4 gap-y-1 font-sans text-xs text-gray-600 sm:text-sm">
-                          <div>
-                            <dt className="inline font-semibold">{t("cartPage.checkIn")}:</dt>{" "}
-                            <dd className="inline">{formatDisplayDate(item.checkIn, locale)}</dd>
-                          </div>
-                          <div>
-                            <dt className="inline font-semibold">{t("cartPage.checkOut")}:</dt>{" "}
-                            <dd className="inline">{formatDisplayDate(item.checkOut, locale)}</dd>
-                          </div>
-                          <div>
-                            <dt className="inline font-semibold">{t("cartPage.adults")}:</dt>{" "}
-                            <dd className="inline">{item.guests}</dd>
-                          </div>
-                        </dl>
-
-                        {item.addons.length > 0 && (
-                          <ul className="mt-2 list-none space-y-1 p-0 font-sans text-xs text-gray-500">
-                            {item.addons.map((addon) => (
-                              <li key={addon.id}>
-                                {t(`tourPage.booking.addons.${addon.id}.label`)} × {addon.quantity}
-                              </li>
-                            ))}
-                          </ul>
-                        )}
-
-                        <button
-                          type="button"
-                          onClick={() => removeCartItem(item.id)}
-                          className="mt-3 inline-flex cursor-pointer items-center gap-1.5 border-0 bg-transparent p-0 font-sans text-sm text-gray-500 hover:text-brand"
-                          aria-label={t("cartPage.removeItem")}
-                        >
-                          <span aria-hidden>⌫</span>
-                          {t("cartPage.remove")}
-                        </button>
-                      </div>
-
-                      <p className="m-0 text-right font-sans text-base font-semibold text-black">
-                        {formatEuro(item.total)}
-                      </p>
-                    </article>
-                  ))}
+                      </article>
+                    );
+                  })}
                 </div>
               </section>
 

@@ -46,7 +46,7 @@ export default function ExploreCta() {
   }
 
   return (
-    <section ref={sectionRef} className="relative overflow-hidden px-hero-x py-16 md:py-50 lg:py-60">
+    <section ref={sectionRef} id="cta" className="relative overflow-hidden px-hero-x py-16 md:py-50 lg:py-60">
       <img src={heroPoster} alt="" aria-hidden className="absolute inset-0 h-full w-full object-cover" />
 
       {videoEnabled && (

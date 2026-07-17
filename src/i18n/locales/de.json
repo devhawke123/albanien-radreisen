@@ -415,6 +415,8 @@
     "privacyLink": "Datenschutzerklärung",
     "backToCart": "Zurück zum Warenkorb",
     "placeOrder": "Zustimmung zur Zahlung der Bestellung",
+    "placingOrder": "Bestellung wird aufgegeben…",
+    "submitError": "Beim Aufgeben deiner Bestellung ist ein Fehler aufgetreten. Bitte versuche es erneut.",
     "orderOverview": "Bestellübersicht",
     "subtotal": "Zwischensumme",
     "total": "gesamt",
@@ -484,18 +486,18 @@
     "general": "Allgemein",
     "about": "Über Uns",
     "contact": "Kontakt",
-    "generalLinks": [
-      "Startseite",
-      "Touren",
-      "Leistungen",
-      "Erfahrungsberichte"
-    ],
-    "aboutLinks": [
-      "Über Uns",
-      "Galerie",
-      "Kontakt",
-      "Datenschutz"
-    ],
+    "generalLinks": {
+      "home": "Startseite",
+      "tours": "Touren",
+      "services": "Leistungen",
+      "testimonials": "Erfahrungsberichte"
+    },
+    "aboutLinks": {
+      "aboutUs": "Über Uns",
+      "gallery": "Galerie",
+      "contact": "Kontakt",
+      "privacy": "Datenschutz"
+    },
     "copyright": "© 2026 Albanien Radreisen. Design und Entwicklung von Blue Hawke."
   },
   "toursContent": {

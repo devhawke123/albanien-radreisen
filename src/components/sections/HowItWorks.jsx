@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { howItWorksCardBg, howItWorksStep3 } from "../../assets/sections";
 import { journeyBackground } from "../../assets/shared";
@@ -70,12 +71,12 @@ export default function HowItWorks() {
           <h2 className="mt-4 font-serif text-section-title font-semibold capitalize text-black">
             {t("howItWorks.title")}
           </h2>
-          <button
-            type="button"
-            className="mt-5 h-btn-sm w-full cursor-pointer rounded-[11px] bg-brand px-10 text-btn leading-none text-white sm:mt-7 sm:w-auto"
+          <Link
+            to="/tours"
+            className="mt-5 inline-flex h-btn-sm w-full items-center justify-center rounded-[11px] bg-brand px-10 text-btn leading-none text-white no-underline sm:mt-7 sm:w-auto"
           >
             {t("howItWorks.bookYourTour")}
-          </button>
+          </Link>
         </div>
 
         <div className="mt-8 grid grid-cols-1 justify-items-center gap-6 sm:mt-12 sm:gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-10 xl:gap-16">

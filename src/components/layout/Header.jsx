@@ -220,11 +220,13 @@ export default function Header({ light = false }) {
   return (
     <>
       <header className="relative z-50 mx-auto grid w-full max-w-hero shrink-0 grid-cols-[1fr_auto] items-center gap-3 xs:gap-4 md:grid-cols-[auto_1fr_auto] md:gap-6 lg:gap-8">
-        <img
-          className="h-auto w-24 justify-self-start xs:w-28 sm:w-32 md:w-36 lg:w-[168px]"
-          src={logo}
-          alt="Albanien Radreisen"
-        />
+        <Link to="/" className="justify-self-start">
+          <img
+            className="h-auto w-24 xs:w-28 sm:w-32 md:w-36 lg:w-[168px]"
+            src={logo}
+            alt="Albanien Radreisen"
+          />
+        </Link>
 
         <nav
           className={`hidden min-h-0 w-full flex-wrap items-center justify-center gap-3 rounded-[21px] px-3 py-1.5 backdrop-blur-sm sm:gap-5 sm:px-5 sm:py-2 md:flex md:w-auto lg:gap-7 lg:px-6 ${
@@ -262,12 +264,12 @@ export default function Header({ light = false }) {
               </span>
             )}
           </Link>
-          <button
-            className="hidden h-btn-lg cursor-pointer rounded-[11px] bg-white/80 px-6 text-btn leading-none text-black sm:px-8 md:inline-flex md:items-center lg:px-[39px]"
-            type="button"
+          <Link
+            to="/tours"
+            className="hidden h-btn-lg items-center rounded-[11px] bg-white/80 px-6 text-btn leading-none text-black no-underline sm:px-8 md:inline-flex lg:px-[39px]"
           >
             {t("nav.getStarted")}
-          </button>
+          </Link>
           <button
             type="button"
             onClick={() => setMenuOpen(true)}

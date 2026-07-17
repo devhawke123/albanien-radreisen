@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { aboutIntroPhoto } from "../../../assets/aboutPage";
 import { mountainIllustration } from "../../../assets/shared";
@@ -55,12 +56,12 @@ export default function AboutIntro() {
         </div>
 
     
-        <button
-          type="button"
-          className="mt-8 h-btn-sm w-full cursor-pointer rounded-[11px] bg-brand px-10 text-btn leading-none text-white sm:mt-10 sm:w-auto"
+        <Link
+          to="/tours"
+          className="mt-8 inline-flex h-btn-sm w-full items-center justify-center rounded-[11px] bg-brand px-10 text-btn leading-none text-white no-underline sm:mt-10 sm:w-auto"
         >
           {t("aboutIntro.exploreNow")}
-        </button>
+        </Link>
       </div>
     </section>
   );

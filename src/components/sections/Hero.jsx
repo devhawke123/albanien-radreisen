@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { heroBackground, heroBackground2, heroBackground3, iconCalendar, iconLocation, iconPeople } from "../../assets/hero";
 import Header from "../layout/Header";
@@ -24,10 +25,6 @@ export default function Hero() {
 
     return () => clearInterval(timer);
   }, []);
-
-  function goTo(index) {
-    setActiveIndex((index + heroSlides.length) % heroSlides.length);
-  }
 
   return (
     <section className="relative flex h-dvh flex-col px-hero-x py-hero-y text-white">
@@ -56,50 +53,39 @@ export default function Hero() {
         </p>
 
         <div className="mt-[clamp(0.5rem,1.5vh,1.5rem)] flex flex-wrap justify-center gap-3 sm:gap-[15px]">
-          <button
-            className="h-btn-sm cursor-pointer rounded-[11px] bg-brand px-6 text-btn leading-none text-white sm:px-8 lg:px-[39px]"
-            type="button"
+          <Link
+            to="/tours"
+            className="inline-flex h-btn-sm items-center justify-center rounded-[11px] bg-brand px-6 text-btn leading-none text-white no-underline sm:px-8 lg:px-[39px]"
           >
             {t("hero.exploreNow")}
-          </button>
-          <button
-            className="h-btn-sm cursor-pointer rounded-[11px] border border-white bg-transparent px-6 text-btn leading-none text-white sm:px-8 lg:px-[39px]"
-            type="button"
+          </Link>
+          <a
+            href="#cta"
+            className="inline-flex h-btn-sm items-center justify-center rounded-[11px] border border-white bg-transparent px-6 text-btn leading-none text-white no-underline sm:px-8 lg:px-[39px]"
           >
             {t("hero.watchVideos")}
-          </button>
+          </a>
         </div>
-      
 
-      <div className="relative z-10 mx-auto flex h-auto w-[min(100%,808px)] mt-20 shrink-0 flex-col items-stretch justify-center gap-2 rounded-xl border border-white/30 bg-white/15 px-3 py-0 backdrop-blur-sm xs:h-search-bar xs:flex-row xs:flex-wrap xs:items-center sm:gap-3 sm:px-4 lg:gap-4">
-       
-        <button
-          type="button"
-          className="inline-flex shrink-0 cursor-pointer items-center gap-2 rounded-lg border-0 bg-transparent px-2 py-1 text-nav text-white sm:gap-2.5 sm:px-4"
-        >
+      <div className="relative z-10 mx-auto mt-20 flex h-auto w-[min(100%,808px)] shrink-0 flex-col items-stretch justify-center gap-2 rounded-xl border border-white/30 bg-white/15 px-3 py-0 backdrop-blur-sm xs:h-search-bar xs:flex-row xs:flex-wrap xs:items-center sm:gap-3 sm:px-4 lg:gap-4">
+        <span className="inline-flex shrink-0 items-center gap-2 rounded-lg px-2 py-1 text-nav text-white sm:gap-2.5 sm:px-4">
           <img className="h-5 w-5 sm:h-6 sm:w-6" src={iconLocation} alt="" aria-hidden />
           <span>{t("hero.destination")}</span>
-        </button>
-        <button
-          type="button"
-          className="inline-flex shrink-0 cursor-pointer items-center gap-2 rounded-lg border-0 bg-transparent px-2 py-1 text-nav text-white sm:gap-2.5 sm:px-4"
-        >
+        </span>
+        <span className="inline-flex shrink-0 items-center gap-2 rounded-lg px-2 py-1 text-nav text-white sm:gap-2.5 sm:px-4">
           <img className="h-5 w-5 sm:h-6 sm:w-6" src={iconPeople} alt="" aria-hidden />
           <span>{t("hero.people")}</span>
-        </button>
-        <button
-          type="button"
-          className="inline-flex shrink-0 cursor-pointer items-center gap-2 rounded-lg border-0 bg-transparent px-2 py-1 text-nav text-white sm:gap-2.5 sm:px-4"
-        >
+        </span>
+        <span className="inline-flex shrink-0 items-center gap-2 rounded-lg px-2 py-1 text-nav text-white sm:gap-2.5 sm:px-4">
           <img className="h-5 w-5 sm:h-6 sm:w-6" src={iconCalendar} alt="" aria-hidden />
           <span>{t("hero.date")}</span>
-        </button>
-        <button
-          className="h-btn-sm w-full shrink-0 cursor-pointer rounded-[15px] border border-white bg-brand/45 px-4 text-nav text-white xs:w-auto sm:px-6"
-          type="button"
+        </span>
+        <Link
+          to="/tours"
+          className="inline-flex h-btn-sm w-full shrink-0 items-center justify-center rounded-[15px] border border-white bg-brand/45 px-4 text-nav text-white no-underline xs:w-auto sm:px-6"
         >
           {t("hero.exploreTours")}
-        </button>
+        </Link>
       </div>
     </div>
     </section>

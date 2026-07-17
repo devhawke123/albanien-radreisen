@@ -7,6 +7,7 @@ import useCart from "../hooks/useCart";
 import { clearCart } from "../utils/cartStore";
 import { getTourBySlug } from "../data/toursCatalog";
 import { formatDisplayDate, formatEuro } from "../utils/bookingPricing";
+import { submitOrder } from "../services/submitOrder";
 
 const COUNTRIES = [
   "Germany",
@@ -58,6 +59,9 @@ export default function CheckoutPage() {
   const [showApartment, setShowApartment] = useState(false);
   const [showNote, setShowNote] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
+  const [orderNumber, setOrderNumber] = useState("");
 
   const subtotal = cartItems.reduce((sum, item) => sum + item.total, 0);
 
@@ -65,11 +69,30 @@ export default function CheckoutPage() {
     setForm((current) => ({ ...current, [key]: value }));
   }
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
-    // ponytail: email/order API deferred — clear cart and show confirmation for now
-    clearCart();
-    setSubmitted(true);
+    setSubmitError("");
+    setSubmitting(true);
+    try {
+      const items = cartItems.map((item) => ({
+        tourId: item.tourId,
+        tourTitle: t(`toursContent.${item.tourId}.title`),
+        departureId: item.departureId,
+        checkIn: item.checkIn,
+        checkOut: item.checkOut,
+        guests: item.guests,
+        addons: item.addons,
+        total: item.total,
+      }));
+      const result = await submitOrder({ form, items, subtotal, locale });
+      clearCart();
+      setOrderNumber(result.orderNumber);
+      setSubmitted(true);
+    } catch {
+      setSubmitError(t("checkoutPage.submitError"));
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   if (!submitted && cartItems.length === 0) {
@@ -88,6 +111,7 @@ export default function CheckoutPage() {
               {t("checkoutPage.successTitle")}
             </h1>
             <p className="mt-4 font-sans text-base text-gray-600">{t("checkoutPage.successBody")}</p>
+            <p className="mt-2 font-sans text-sm font-semibold text-black">{orderNumber}</p>
             <button
               type="button"
               onClick={() => navigate("/tours")}
@@ -308,6 +332,10 @@ export default function CheckoutPage() {
                 </Link>
               </p>
 
+              {submitError && (
+                <p className="m-0 font-sans text-sm text-brand">{submitError}</p>
+              )}
+
               <div className="flex flex-col gap-4 border-t border-gray-100 pt-6 sm:flex-row sm:items-center sm:justify-between">
                 <Link
                   to="/cart"
@@ -317,9 +345,10 @@ export default function CheckoutPage() {
                 </Link>
                 <button
                   type="submit"
-                  className="cursor-pointer rounded-md bg-brand px-6 py-3.5 font-sans text-sm font-semibold text-white sm:max-w-md"
+                  disabled={submitting}
+                  className="cursor-pointer rounded-md bg-brand px-6 py-3.5 font-sans text-sm font-semibold text-white disabled:cursor-not-allowed disabled:opacity-70 sm:max-w-md"
                 >
-                  {t("checkoutPage.placeOrder")}
+                  {submitting ? t("checkoutPage.placingOrder") : t("checkoutPage.placeOrder")}
                 </button>
               </div>
             </form>

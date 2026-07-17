@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { cycleGirl, mountainIllustration } from "../../assets/shared";
 import FaqAccordionItem from "../ui/FaqAccordionItem";
@@ -17,12 +18,12 @@ export default function FaqSection() {
             <h2 className="mt-4 max-w-[671px] font-serif text-section-title font-semibold capitalize text-black">
               {t("faq.title")}
             </h2>
-            <button
-              type="button"
-              className="mt-5 h-btn-sm w-full cursor-pointer rounded-[11px] bg-brand px-10 text-btn leading-none text-white sm:mt-6 sm:w-auto"
+            <Link
+              to="/faq"
+              className="mt-5 inline-flex h-btn-sm w-full items-center justify-center rounded-[11px] bg-brand px-10 text-btn leading-none text-white no-underline sm:mt-6 sm:w-auto"
             >
               {t("faq.viewAll")}
-            </button>
+            </Link>
 
             <img
               src={mountainIllustration}

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import {
   cyclePinkGirl,
@@ -32,12 +33,12 @@ export default function Testimonials() {
             {t("testimonials.title")}
           </h2>
           <p className="mt-4 font-sans text-body-lead text-text-muted">{t("testimonials.body")}</p>
-          <button
-            type="button"
-            className="mt-5 h-btn-sm w-full cursor-pointer rounded-[11px] bg-brand px-10 text-btn leading-none text-white sm:mt-6 sm:w-auto"
+          <Link
+            to="/testimonials"
+            className="mt-5 inline-flex h-btn-sm w-full items-center justify-center rounded-[11px] bg-brand px-10 text-btn leading-none text-white no-underline sm:mt-6 sm:w-auto"
           >
             {t("testimonials.exploreMore")}
-          </button>
+          </Link>
         </div>
 
         <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[20px] sm:aspect-[1458/685] sm:rounded-[31px]">

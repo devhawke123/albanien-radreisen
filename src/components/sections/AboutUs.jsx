@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { aboutUsImage } from "../../assets/about";
 
@@ -24,12 +25,12 @@ export default function AboutUs() {
           />
         </div>
 
-        <button
-          type="button"
-          className="mt-8 h-btn-sm w-full cursor-pointer rounded-[11px] bg-brand px-10 text-btn leading-none text-white sm:mt-10 sm:w-auto lg:ml-[248px]"
+        <Link
+          to="/about"
+          className="mt-8 inline-flex h-btn-sm w-full items-center justify-center rounded-[11px] bg-brand px-10 text-btn leading-none text-white no-underline sm:mt-10 sm:w-auto lg:ml-[248px]"
         >
           {t("about.exploreMore")}
-        </button>
+        </Link>
       </div>
     </section>
   );

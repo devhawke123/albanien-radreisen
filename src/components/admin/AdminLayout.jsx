@@ -1,10 +1,12 @@
 import { NavLink } from "react-router-dom";
 import { logo } from "../../assets/hero";
 import { useAdminAuth } from "../../hooks/useAdminAuth";
-import { DashboardIcon, LogoutIcon } from "./icons";
+import { BookingsIcon, DashboardIcon, LogoutIcon } from "./icons";
 
-// ponytail: only the Dashboard link exists — add more entries here once those pages are built.
-const NAV_ITEMS = [{ to: "/admin/dashboard", label: "Dashboard", icon: DashboardIcon, end: true }];
+const NAV_ITEMS = [
+  { to: "/admin/dashboard", label: "Dashboard", icon: DashboardIcon, end: true },
+  { to: "/admin/dashboard/bookings", label: "Bookings", icon: BookingsIcon, end: false },
+];
 
 function navLinkClass({ isActive }) {
   return `flex items-center gap-3 rounded-[11px] px-4 py-2.5 font-sans text-sm no-underline transition-colors ${

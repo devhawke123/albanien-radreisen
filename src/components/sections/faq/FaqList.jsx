@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import FaqAccordionItem from "../../ui/FaqAccordionItem";
 
@@ -14,12 +15,12 @@ export default function FaqList() {
         <h2 className="mt-4 font-serif text-section-title font-semibold capitalize text-black">
           {t("faq.title")}
         </h2>
-        <button
-          type="button"
-          className="mt-5 h-btn-sm cursor-pointer rounded-[11px] bg-brand px-10 text-btn leading-none text-white sm:mt-6"
+        <Link
+          to="/tours"
+          className="mt-5 inline-flex h-btn-sm items-center justify-center rounded-[11px] bg-brand px-10 text-btn leading-none text-white no-underline sm:mt-6"
         >
           {t("nav.getStarted")}
-        </button>
+        </Link>
       </div>
 
       <div className="mx-auto mt-10 flex max-w-[872px] flex-col gap-6 sm:mt-12 sm:gap-8">

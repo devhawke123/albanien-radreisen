@@ -415,6 +415,8 @@
     "privacyLink": "Privacy Policy",
     "backToCart": "Back to shopping cart",
     "placeOrder": "Agreement to pay for the order you are placing",
+    "placingOrder": "Placing order…",
+    "submitError": "Something went wrong placing your order. Please try again.",
     "orderOverview": "Order overview",
     "subtotal": "Subtotal",
     "total": "total",
@@ -484,18 +486,18 @@
     "general": "General",
     "about": "About",
     "contact": "Contact",
-    "generalLinks": [
-      "Home",
-      "Tours",
-      "Services",
-      "Testimonials"
-    ],
-    "aboutLinks": [
-      "About Us",
-      "Gallery",
-      "Contact us",
-      "Privacy policy"
-    ],
+    "generalLinks": {
+      "home": "Home",
+      "tours": "Tours",
+      "services": "Services",
+      "testimonials": "Testimonials"
+    },
+    "aboutLinks": {
+      "aboutUs": "About Us",
+      "gallery": "Gallery",
+      "contact": "Contact us",
+      "privacy": "Privacy policy"
+    },
     "copyright": "© 2026 Albanien Radreisen. Design and Developed bY Blue Hawke."
   },
   "toursContent": {
