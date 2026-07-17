@@ -52,7 +52,10 @@
     "mobileLabel": "Mobile",
     "mobile": "+355 6838 16 275",
     "emailLabel": "Email",
-    "emails": ["alba.reisen@yahoo.de", "tarkogezim@gmail.com"],
+    "emails": [
+      "alba.reisen@yahoo.de",
+      "tarkogezim@gmail.com"
+    ],
     "websiteLabel": "Website",
     "website": "www.albanien-radreisen.de",
     "legalRepTitle": "Legal Representative",
@@ -93,10 +96,22 @@
   },
   "stats": {
     "items": [
-      { "value": "20+", "label": "Scenic Cycling Routes" },
-      { "value": "20+", "label": "Scenic Cycling Routes" },
-      { "value": "20+", "label": "Scenic Cycling Routes" },
-      { "value": "20+", "label": "Scenic Cycling Routes" }
+      {
+        "value": "20+",
+        "label": "Scenic Cycling Routes"
+      },
+      {
+        "value": "20+",
+        "label": "Scenic Cycling Routes"
+      },
+      {
+        "value": "20+",
+        "label": "Scenic Cycling Routes"
+      },
+      {
+        "value": "20+",
+        "label": "Scenic Cycling Routes"
+      }
     ]
   },
   "tours": {
@@ -113,18 +128,10 @@
     ]
   },
   "tourCard": {
-    "location": "Albania",
-    "people": "12 People",
-    "date": "12 Sep 2025",
-    "duration": "8 days",
-    "reviews": "reviews",
-    "title": "8-day cycling & discovery tour through Albania (2026)",
     "from": "From",
     "priceSuffix": "/ person",
     "bookNow": "Book Now",
-    "amenities": ["Hotel", "Guide", "Bike"],
-    "moreAmenities": "+3 more",
-    "imageAlt": "Cycling tour in Albania",
+    "reviews": "reviews",
     "saveTour": "Save tour"
   },
   "whyChooseUs": {
@@ -262,10 +269,22 @@
     "getStarted": "Get Started",
     "mapAlt": "Illustrated map of Albanian cycling tour routes",
     "activities": [
-      { "title": "Cycling Routes", "description": "Pedal through breathtaking landscapes and hidden villages." },
-      { "title": "Boat Crossings", "description": "Enjoy scenic ferry rides across lakes and coastal waters." },
-      { "title": "Mountain Hiking", "description": "Walk beautiful trails with panoramic mountain viewpoints." },
-      { "title": "Local Transfers", "description": "Comfortable transport between selected tour stages." }
+      {
+        "title": "Cycling Routes",
+        "description": "Pedal through breathtaking landscapes and hidden villages."
+      },
+      {
+        "title": "Boat Crossings",
+        "description": "Enjoy scenic ferry rides across lakes and coastal waters."
+      },
+      {
+        "title": "Mountain Hiking",
+        "description": "Walk beautiful trails with panoramic mountain viewpoints."
+      },
+      {
+        "title": "Local Transfers",
+        "description": "Comfortable transport between selected tour stages."
+      }
     ]
   },
   "cta": {
@@ -276,154 +295,145 @@
   },
   "tourPage": {
     "back": "Back to tours",
-    "title": "8-Day Cycling & Discovery Tour Through Albania (2026)",
     "bookNow": "Book Now",
-    "rating": "4.9",
-    "reviewsMeta": "· 38 reviews",
-    "meta": {
-      "duration": "8 days",
-      "group": "Up to 12 people",
-      "next": "Next: 12 Sep 2026"
-    },
     "tabs": {
       "overview": "Overview",
       "itinerary": "Itinerary",
       "included": "Included",
       "reviews": "Reviews"
     },
-    "stats": [
-      { "label": "Duration", "value": "8 days" },
-      { "label": "Location", "value": "Tirana Airport" },
-      { "label": "Group Size", "value": "Max 12" },
-      { "label": "Next Departure", "value": "12 Sep 2026" }
-    ],
-    "aboutTitle": "About This Tour",
-    "aboutBody": "Experience the hidden gem of the Balkans on two wheels. This 8-day tour takes you through Albania's most breathtaking landscapes, from the rugged mountains of the north to the pristine Riviera coast. Ride through ancient villages, taste local cuisine, and connect with Albania's rich history and culture — all guided by our expert local team.",
-    "highlightsTitle": "Tour Highlights",
-    "highlights": [
-      "Cycle through the UNESCO-listed city of Berat",
-      "Ride along the stunning Albanian Riviera coastline",
-      "Visit the ancient ruins of Butrint National Park",
-      "Experience the traditional mountain villages of the Accursed Mountains",
-      "Taste authentic Albanian cuisine at local family restaurants",
-      "Professional support vehicle throughout the journey"
-    ],
+    "quickDescriptionTitle": "Quick Description",
+    "aboutTitle": "Tour Overview",
+    "tourInfoTitle": "Tour Information",
+    "highlightsTitle": "Highlights",
+    "pricingTitle": "Pricing",
+    "pricingBaseTitle": "Base Package",
+    "pricingSupplementsTitle": "Supplements",
+    "pricingBikesTitle": "Bike Rental",
+    "importantNotesTitle": "Important Notes",
     "photosTitle": "Photos",
     "itineraryTitle": "Day-by-Day Itinerary",
-    "itinerary": [
-      { "title": "Arrival in Tirana", "body": "Welcome dinner and briefing. Explore the colorful bazaars and settle into your hotel." },
-      { "title": "Tirana to Kruja", "body": "Ride to historic Kruja with castle views and a visit to the traditional bazaar." },
-      { "title": "Lake Komani & Valbona", "body": "Scenic ferry crossing on Lake Komani, then continue into the Valbona valley." },
-      { "title": "Valbona Valley Ride", "body": "Cycle through alpine scenery and remote mountain villages in Valbona." },
-      { "title": "Valbona to Theth", "body": "Cross the mountain pass into Theth with dramatic peaks and local guesthouses." },
-      { "title": "Descent to Berat", "body": "Transfer south and ride into the UNESCO city of Berat, the city of a thousand windows." },
-      { "title": "Berat to Gjirokastër", "body": "Coastal and highland riding toward the stone city of Gjirokastër." },
-      { "title": "Butrint & Departure", "body": "Visit Butrint National Park, then transfer to the airport for departure." }
-    ],
+    "itineraryLabels": {
+      "distance": "Distance",
+      "cyclingDistance": "Cycling Distance",
+      "elevation": "Elevation",
+      "highlights": "Highlights",
+      "overnight": "Overnight",
+      "transfer": "Transfer",
+      "boatRide": "Boat Ride",
+      "hiking": "Hiking"
+    },
     "includedTitle": "What's Included",
     "includedLabel": "Included",
     "notIncludedLabel": "Not Included",
-    "included": [
-      "7 nights accommodation (3★–4★ hotels & guesthouses)",
-      "Daily breakfast and 4 dinners",
-      "Quality road/gravel bike rental",
-      "Experienced English-speaking guide",
-      "Support van with luggage transfer",
-      "Helmets, water bottles, panniers",
-      "Airport transfers",
-      "24/7 emergency support",
-      "Entry fees to national parks and monuments"
-    ],
-    "notIncluded": [
-      "Flights to/from Albania",
-      "Travel insurance",
-      "Lunches (days 2–7)",
-      "Personal expenses",
-      "Optional activities"
-    ],
     "featuresTitle": "Tour Features",
-    "features": ["Hotel", "Guide", "Bike", "Transfer", "Meals", "Activities"],
     "reviewsTitle": "Guest Reviews",
-    "reviews": [
-      {
-        "rating": "5.0",
-        "quote": "The routes were breathtaking, the organization was excellent, and our guide made every day unforgettable. Albania completely exceeded our expectations.",
-        "name": "Sarah Mitchell",
-        "role": "Adventure Traveler · New York, USA"
-      },
-      {
-        "rating": "4.9",
-        "quote": "Every detail was taken care of. The scenery, the food, the people — riding through Albania felt like discovering a country most tourists never see.",
-        "name": "James Carter",
-        "role": "Adventure Traveler · London, UK"
-      },
-      {
-        "rating": "5.0",
-        "quote": "Our guide's local knowledge turned every stop into a story. This was hands down the best cycling trip our group has ever taken.",
-        "name": "Elena Rossi",
-        "role": "Adventure Traveler · Milan, Italy"
-      }
-    ],
+    "relatedLabel": "Related Tours",
+    "relatedTitle": "You May Also Like",
+    "viewTour": "View Tour →",
     "booking": {
       "from": "From",
-      "price": "€ 1,290.00",
       "bookingTab": "Booking Form",
       "requestTab": "Request Form",
       "chooseTime": "Choose time",
-      "timeOption": "From June 10, 2027 to June 17, 2027",
-      "checkIn": "Check in",
-      "checkOut": "Check out",
-      "checkInValue": "10-06-2027",
-      "checkOutValue": "17-06-2027",
+      "checkIn": "check in",
+      "checkOut": "check out",
       "guests": "Guests",
       "adult": "Adult",
+      "perPerson": "/per person",
       "decreaseGuests": "Decrease guests",
       "increaseGuests": "Increase guests",
+      "decreaseAddon": "Decrease add-on quantity",
+      "increaseAddon": "Increase add-on quantity",
+      "minGuestsError": "Minimum 2 people required for individual bookings.",
       "addonsTitle": "Additional services",
-      "addons": [
-        { "id": "bike", "label": "Unisex bikes (brands KTM & Pegasus, among others): surcharge 120 EUR" },
-        { "id": "ebike", "label": "E-bikes (brand KTM & Pegasus etc.): surcharge 225 EUR" },
-        { "id": "single", "label": "Single room supplement: EUR 200 per person" }
-      ],
+      "addons": {
+        "bike": {
+          "label": "Unisex bikes (brands KTM & Pegasus, among others): surcharge {{price}} EUR"
+        },
+        "ebike": {
+          "label": "E-bikes (brand KTM & Pegasus etc.): surcharge {{price}} EUR"
+        },
+        "single": {
+          "label": "Single room supplement: EUR {{price}} per person"
+        }
+      },
       "name": "Name",
       "email": "Email",
       "message": "Message",
       "total": "Total:",
       "submit": "Book now",
-      "sendRequest": "Send request"
-    },
-    "relatedLabel": "Related Tours",
-    "relatedTitle": "You May Also Like",
-    "viewTour": "View Tour →",
-    "related": [
-      {
-        "title": "5-Day Albanian Riviera Coastal Cycling",
-        "location": "Albania",
-        "duration": "5 days",
-        "group": "12 max",
-        "rating": "4.8",
-        "reviews": "24",
-        "price": "€790"
-      },
-      {
-        "title": "7-Day Northern Albania Mountain Adventure",
-        "location": "Albania",
-        "duration": "7 days",
-        "group": "10 max",
-        "rating": "5",
-        "reviews": "16",
-        "price": "€1,150"
-      },
-      {
-        "title": "5-Day Albanian Riviera Coastal Cycling",
-        "location": "Albania",
-        "duration": "5 days",
-        "group": "12 max",
-        "rating": "4.8",
-        "reviews": "24",
-        "price": "€790"
-      }
-    ]
+      "sendRequest": "Send request",
+      "submitting": "Sending...",
+      "successBooking": "Your booking request was sent. We will contact you shortly.",
+      "successRequest": "Your request was sent. We will get back to you soon.",
+      "error": "Something went wrong. Please try again or contact us directly."
+    }
+  },
+  "cartPage": {
+    "title": "Cart",
+    "product": "Product",
+    "total": "Total",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "adults": "Adults",
+    "remove": "Remove",
+    "removeItem": "Remove tour from cart",
+    "summaryTitle": "Shopping cart total",
+    "estimatedTotal": "Estimated total amount",
+    "proceedToCheckout": "Proceed to checkout",
+    "emptyTitle": "Your cart is empty",
+    "emptyBody": "Choose a tour and select your preferred departure to start a booking.",
+    "browseTours": "Browse tours"
+  },
+  "checkoutPage": {
+    "title": "Checkout",
+    "contactTitle": "Contact information",
+    "email": "E-mail address",
+    "guestNote": "You are currently ordering as a guest.",
+    "billingTitle": "Billing address",
+    "country": "Country/Region",
+    "countryPlaceholder": "Select country/region",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "company": "Company (optional)",
+    "address": "Address",
+    "addApartment": "+ Add apartment, suite, etc.",
+    "apartment": "Apartment, suite, etc.",
+    "city": "City",
+    "state": "Federal State",
+    "postalCode": "Postal code",
+    "phone": "Phone",
+    "paymentTitle": "Payment options",
+    "cashOnDelivery": "Cash on delivery",
+    "cashOnDeliveryHint": "Pay with cash upon delivery.",
+    "addNote": "Add a note to your order",
+    "notePlaceholder": "Notes about your order",
+    "termsPrefix": "By continuing to shop, you agree to our",
+    "termsLink": "Terms and Conditions",
+    "termsAnd": "and",
+    "privacyLink": "Privacy Policy",
+    "backToCart": "Back to shopping cart",
+    "placeOrder": "Agreement to pay for the order you are placing",
+    "orderOverview": "Order overview",
+    "subtotal": "Subtotal",
+    "total": "total",
+    "successTitle": "Order placed",
+    "successBody": "Thank you. Your booking request has been received. We will contact you shortly to confirm the details.",
+    "backToTours": "Back to tours",
+    "countries": {
+      "Germany": "Germany",
+      "Austria": "Austria",
+      "Switzerland": "Switzerland",
+      "Albania": "Albania",
+      "Italy": "Italy",
+      "France": "France",
+      "Netherlands": "Netherlands",
+      "Belgium": "Belgium",
+      "United Kingdom": "United Kingdom",
+      "United States": "United States",
+      "Other": "Other"
+    }
   },
   "aboutHero": {
     "title": "About Us"
@@ -435,9 +445,18 @@
     "paragraph2": "With years of experience, local knowledge and a dedicated team we create tailor-made tours to fit your needs. From cultural and historical tours to cycling trips and hiking — we handle every detail so you can focus on the journey.",
     "exploreNow": "Explore Now",
     "stats": [
-      { "value": "15+", "label": "Years of Experience" },
-      { "value": "20+", "label": "Scenic Cycling Routes" },
-      { "value": "100%", "label": "Guided Tours" }
+      {
+        "value": "15+",
+        "label": "Years of Experience"
+      },
+      {
+        "value": "20+",
+        "label": "Scenic Cycling Routes"
+      },
+      {
+        "value": "100%",
+        "label": "Guided Tours"
+      }
     ]
   },
   "team": {
@@ -445,9 +464,18 @@
     "title": "Meet the Team",
     "body": "Our passionate team of cycling guides and travel professionals is dedicated to making every journey safe, enjoyable, and unforgettable.",
     "members": [
-      { "name": "Artan Koci", "role": "Founder & Head Guide" },
-      { "name": "Elira Hoxha", "role": "Senior Cycling Guide" },
-      { "name": "Driton Berisha", "role": "Tour Operations Manager" }
+      {
+        "name": "Artan Koci",
+        "role": "Founder & Head Guide"
+      },
+      {
+        "name": "Elira Hoxha",
+        "role": "Senior Cycling Guide"
+      },
+      {
+        "name": "Driton Berisha",
+        "role": "Tour Operations Manager"
+      }
     ]
   },
   "footer": {
@@ -456,8 +484,548 @@
     "general": "General",
     "about": "About",
     "contact": "Contact",
-    "generalLinks": ["Home", "Tours", "Services", "Testimonials"],
-    "aboutLinks": ["About Us", "Gallery", "Contact us", "Privacy policy"],
+    "generalLinks": [
+      "Home",
+      "Tours",
+      "Services",
+      "Testimonials"
+    ],
+    "aboutLinks": [
+      "About Us",
+      "Gallery",
+      "Contact us",
+      "Privacy policy"
+    ],
     "copyright": "© 2026 Albanien Radreisen. Design and Developed bY Blue Hawke."
+  },
+  "toursContent": {
+    "8-day-cycling": {
+      "title": "8-Day Cycling & Discovery Tour Through Albania (2026)",
+      "rating": "4.9",
+      "reviewsMeta": "· 38 reviews",
+      "meta": {
+        "duration": "8 / 9 / 10 days",
+        "group": "Individual 2–3 · Groups 4+",
+        "season": "Apr 1 – Oct 31, 2026"
+      },
+      "stats": [
+        {
+          "label": "Duration",
+          "value": "8 / 9 / 10 days"
+        },
+        {
+          "label": "Pickup",
+          "value": "Tirana Airport"
+        },
+        {
+          "label": "Group Size",
+          "value": "2–3 or 4+"
+        },
+        {
+          "label": "Booking Season",
+          "value": "Apr–Oct 2026"
+        }
+      ],
+      "quickDescription": "Discover Albania, often called the \"Last Secret of Europe,\" on an unforgettable guided cycling adventure. Ride through mountain passes, UNESCO World Heritage cities, breathtaking coastlines, and picturesque valleys while experiencing authentic Albanian culture and hospitality.",
+      "quickDescriptionAudience": "Suitable for couples, families, friends, solo travelers, and small groups.",
+      "aboutBody": "Experience an eight-day guided cycling journey across Albania covering approximately 350 km through mountains, valleys, lakes, and the stunning Ionian and Adriatic coastlines. The route combines scenic cycling, cultural exploration, UNESCO heritage sites, and comfortable hotel stays, making it ideal for travelers with a moderate level of fitness.",
+      "tourInfo": [
+        {
+          "field": "Tour Type",
+          "value": "Guided Cycling Tour"
+        },
+        {
+          "field": "Difficulty",
+          "value": "Moderate"
+        },
+        {
+          "field": "Total Distance",
+          "value": "350 km"
+        },
+        {
+          "field": "Daily Distance",
+          "value": "40–60 km"
+        },
+        {
+          "field": "Terrain",
+          "value": "Mountains, valleys, coastline"
+        },
+        {
+          "field": "Roads",
+          "value": "Mostly paved secondary roads with some gravel sections"
+        },
+        {
+          "field": "Support Vehicle",
+          "value": "Yes"
+        },
+        {
+          "field": "Helmet Recommended",
+          "value": "Yes"
+        }
+      ],
+      "highlights": [
+        "Cycle around Lake Ohrid, Europe's deepest lake",
+        "Ride through the Vjosa Valley National Park",
+        "Explore the Albanian Riviera",
+        "Cross the spectacular Caesar (Logara) Pass",
+        "Visit three UNESCO World Heritage cities",
+        "Stay in beautiful coastal hotels on the Ionian and Adriatic Seas",
+        "Experience authentic Albanian culture and cuisine"
+      ],
+      "pricingBase": [
+        {
+          "package": "7 Nights / Half Board / Double Room",
+          "price": "€1,290 per person"
+        }
+      ],
+      "pricingSupplements": [
+        {
+          "option": "Single Room",
+          "price": "€200"
+        },
+        {
+          "option": "July & August Surcharge",
+          "price": "€100"
+        }
+      ],
+      "pricingBikes": [
+        {
+          "bike": "Standard Bike",
+          "price": "€120"
+        },
+        {
+          "bike": "E-Bike",
+          "price": "€225"
+        }
+      ],
+      "importantNotes": [
+        "Program is subject to change.",
+        "Moderate fitness level required.",
+        "Some cycling days exceed 1,000 m elevation gain.",
+        "Support vehicle available during selected uphill sections.",
+        "Mostly paved roads with limited gravel sections.",
+        "Increased traffic near major cities."
+      ],
+      "itinerary": [
+        {
+          "title": "Day 1 – Arrival in Tirana",
+          "items": [
+            "Independent arrival",
+            "Airport transfer",
+            "Hotel check-in",
+            "Guided city tour of Tirana"
+          ],
+          "overnight": "Tirana"
+        },
+        {
+          "title": "Day 2 – Tirana → Lake Ohrid",
+          "distance": "100 km transfer · 40 km cycling",
+          "elevation": "50 m",
+          "highlights": [
+            "Mountain pass transfer",
+            "Cycle along Lake Ohrid",
+            "Finish in Pogradec"
+          ],
+          "overnight": "Pogradec"
+        },
+        {
+          "title": "Day 3 – Pogradec → Korça → Vjosa Valley → Përmet",
+          "distance": "150 km transfer · 60 km cycling",
+          "elevation": "600 m",
+          "highlights": [
+            "Korça city tour",
+            "Barmash Pass",
+            "Leskovik",
+            "Vjosa Valley National Park"
+          ],
+          "overnight": "Përmet"
+        },
+        {
+          "title": "Day 4 – Përmet → Gjirokastër → Saranda",
+          "distance": "130 km transfer · 45 km cycling",
+          "elevation": "150 m",
+          "highlights": [
+            "Vjosa Valley",
+            "Gjirokastër (City of Stone)",
+            "Saranda Bay",
+            "Views of Corfu"
+          ],
+          "overnight": "Saranda"
+        },
+        {
+          "title": "Day 5 – Saranda → Butrint → Himara",
+          "cyclingDistance": "50 km",
+          "elevation": "750 m",
+          "highlights": [
+            "UNESCO Butrint",
+            "Ionian Coast",
+            "Scenic Riviera",
+            "Himara Beach"
+          ],
+          "overnight": "Himara"
+        },
+        {
+          "title": "Day 6 – Himara → Caesar Pass → Vlora",
+          "cyclingDistance": "45 km",
+          "elevation": "1,300 m",
+          "highlights": [
+            "Logara National Park",
+            "Caesar Pass",
+            "Spectacular mountain scenery",
+            "Descent to Vlora"
+          ],
+          "overnight": "Vlora"
+        },
+        {
+          "title": "Day 7 – Vlora → Zvernec Lagoon → Durrës → Tirana",
+          "distance": "200 km transfer · 35 km cycling",
+          "elevation": "200 m",
+          "highlights": [
+            "Vlora Bay",
+            "Zvernec Lagoon",
+            "Pine Forest",
+            "Roman Amphitheater in Durrës"
+          ],
+          "overnight": "Tirana"
+        },
+        {
+          "title": "Day 8 – Departure",
+          "items": [
+            "Breakfast",
+            "Airport transfer",
+            "Return flight"
+          ]
+        }
+      ],
+      "included": [
+        "7 nights accommodation in 3★ and 4★ hotels",
+        "Half board (breakfast buffet + 3-course dinner)",
+        "Airport transfers",
+        "Luggage transport vehicle with bicycle trailer",
+        "Entrance fees to included attractions",
+        "German-speaking local cycling guide",
+        "GPS navigation device",
+        "Maps and route documentation",
+        "24/7 service hotline"
+      ],
+      "notIncluded": [
+        "Flights",
+        "Additional meals",
+        "Drinks",
+        "Personal expenses",
+        "Tips",
+        "Bike rental (available as optional supplement)"
+      ],
+      "features": [
+        "Hotel",
+        "Guide",
+        "Half Board",
+        "Transfer",
+        "GPS",
+        "Support Vehicle"
+      ],
+      "reviews": [
+        {
+          "rating": "5.0",
+          "quote": "The routes were breathtaking, the organization was excellent, and our guide made every day unforgettable. Albania completely exceeded our expectations.",
+          "name": "Sarah Mitchell",
+          "role": "Adventure Traveler · New York, USA"
+        },
+        {
+          "rating": "4.9",
+          "quote": "Every detail was taken care of. The scenery, the food, the people — riding through Albania felt like discovering a country most tourists never see.",
+          "name": "James Carter",
+          "role": "Adventure Traveler · London, UK"
+        },
+        {
+          "rating": "5.0",
+          "quote": "Our guide's local knowledge turned every stop into a story. This was hands down the best cycling trip our group has ever taken.",
+          "name": "Elena Rossi",
+          "role": "Adventure Traveler · Milan, Italy"
+        }
+      ],
+      "card": {
+        "location": "Albania",
+        "people": "2+ people",
+        "date": "Apr–Oct 2026",
+        "duration": "8 days",
+        "title": "8-Day Cycling & Discovery Tour Through Albania (2026)",
+        "amenities": [
+          "Hotel",
+          "Guide",
+          "Half Board"
+        ],
+        "moreAmenities": "+5 more",
+        "imageAlt": "Cycling tour in Albania"
+      }
+    },
+    "8-day-albania-montenegro": {
+      "title": "8-Day Albania – Montenegro Cycling Adventure Tour (2026)",
+      "rating": "4.9",
+      "reviewsMeta": "· 24 reviews",
+      "meta": {
+        "duration": "8 / 9 / 10 days",
+        "group": "Individual 2–3 · Groups 4+",
+        "season": "Apr 1 – Oct 31, 2026"
+      },
+      "stats": [
+        {
+          "label": "Duration",
+          "value": "8 / 9 / 10 days"
+        },
+        {
+          "label": "Pickup",
+          "value": "Tirana Airport"
+        },
+        {
+          "label": "Group Size",
+          "value": "2–3 or 4+"
+        },
+        {
+          "label": "Booking Season",
+          "value": "Apr–Oct 2026"
+        }
+      ],
+      "quickDescription": "Experience the breathtaking landscapes of Albania and Montenegro on an unforgettable cycling adventure through the Balkans. Ride across mountain passes, crystal-clear lakes, alpine valleys, and charming villages while enjoying local hospitality, scenic boat rides, and hiking in the spectacular Albanian Alps.",
+      "quickDescriptionAudience": "Ideal for couples, families, solo travelers, and small groups looking for an active adventure.",
+      "aboutBody": "This 8-day guided cycling and adventure tour combines cycling, hiking, and boating across Albania and Montenegro. Explore the Albanian Alps, Lake Skadar, the Valbona Valley, and remote Balkan villages while covering scenic routes through mountains, rivers, and lakes. The tour is designed for travelers with a moderate fitness level and is supported by a luggage transfer vehicle throughout the journey.",
+      "tourInfo": [
+        {
+          "field": "Tour Type",
+          "value": "Guided Cycling & Adventure Tour"
+        },
+        {
+          "field": "Difficulty",
+          "value": "Moderate"
+        },
+        {
+          "field": "Activities",
+          "value": "Cycling, Hiking, Boating"
+        },
+        {
+          "field": "Terrain",
+          "value": "Mountains, lakes, valleys, villages"
+        },
+        {
+          "field": "Roads",
+          "value": "Mostly paved secondary roads with some gravel sections"
+        },
+        {
+          "field": "Support Vehicle",
+          "value": "Yes"
+        },
+        {
+          "field": "Helmet Recommended",
+          "value": "Yes"
+        }
+      ],
+      "highlights": [
+        "Cycle through Albania and Montenegro",
+        "Visit Lake Skadar, the largest lake in the Balkans",
+        "Explore the Albanian Alps",
+        "Boat trip across the Koman Reservoir",
+        "Hike through the beautiful Valbona Valley",
+        "Visit Rozafa Fortress",
+        "Ride through mountain villages and alpine passes",
+        "Experience breathtaking Balkan landscapes",
+        "Discover authentic local culture and hospitality"
+      ],
+      "pricingBase": [
+        {
+          "package": "7 Nights / Half Board / Double Room",
+          "price": "€1,290 per person"
+        }
+      ],
+      "pricingSupplements": [
+        {
+          "option": "Single Room",
+          "price": "€190"
+        },
+        {
+          "option": "July & August Surcharge",
+          "price": "€100"
+        }
+      ],
+      "pricingBikes": [
+        {
+          "bike": "Standard Bike",
+          "price": "€120"
+        },
+        {
+          "bike": "E-Bike",
+          "price": "€225"
+        }
+      ],
+      "importantNotes": [
+        "Program schedule is subject to change.",
+        "Moderate fitness level required.",
+        "Some stages exceed 1,000 meters of elevation gain.",
+        "Support vehicle accompanies the group throughout the tour.",
+        "Cycling takes place primarily on paved secondary roads with occasional gravel sections.",
+        "Increased traffic may be encountered near cities.",
+        "Helmet use is strongly recommended."
+      ],
+      "itinerary": [
+        {
+          "title": "Day 1 – Arrival in Tirana",
+          "highlights": [
+            "Arrival at Tirana Airport",
+            "City tour of Tirana",
+            "Skanderbeg Square",
+            "Et'hem Bey Mosque",
+            "Former Communist Quarter (Blloku)"
+          ],
+          "overnight": "Tirana"
+        },
+        {
+          "title": "Day 2 – Tirana → Shkodra",
+          "distance": "100 km transfer · 65 km cycling",
+          "elevation": "100–150 m",
+          "highlights": [
+            "Lezha",
+            "Vineyards",
+            "Lake Skadar",
+            "Rozafa Fortress"
+          ],
+          "overnight": "Shkodra"
+        },
+        {
+          "title": "Day 3 – Shkodra → Lake Skadar → Virpazar (Montenegro)",
+          "distance": "80 km transfer · 50 km cycling",
+          "elevation": "600 m",
+          "highlights": [
+            "Buna River",
+            "Montenegro Border",
+            "Lake Skadar",
+            "Albanian Alps viewpoints",
+            "Virpazar"
+          ],
+          "overnight": "Virpazar, Montenegro"
+        },
+        {
+          "title": "Day 4 – Virpazar → Tamara → Shkodra",
+          "distance": "80 km transfer · 55 km cycling",
+          "elevation": "900 m",
+          "highlights": [
+            "Tuzi Region",
+            "Cem River Gorge",
+            "Tamara Village",
+            "Hoti Mountains"
+          ],
+          "overnight": "Shkodra"
+        },
+        {
+          "title": "Day 5 – Shkodra → Koman Reservoir → Valbona Valley",
+          "distance": "100 km transfer · ~2 h boat · 60 km cycling",
+          "elevation": "600–650 m",
+          "highlights": [
+            "Vau i Deja Reservoir",
+            "Koman Lake Boat Cruise",
+            "Valbona River",
+            "Albanian Alps",
+            "Optional Afternoon Hike"
+          ],
+          "overnight": "Valbona Valley"
+        },
+        {
+          "title": "Day 6 – Hiking in Valbona Valley",
+          "cyclingDistance": "20 km",
+          "elevation": "Approximately 1,000 m",
+          "highlights": [
+            "Valbona Valley",
+            "Rrogam Village",
+            "Valbona Pass",
+            "Mountain Forests",
+            "Alpine Meadows",
+            "Hiking 4–5 hours"
+          ],
+          "overnight": "Valbona Valley"
+        },
+        {
+          "title": "Day 7 – Valbona Valley → Kosovo → Tirana",
+          "distance": "200 km transfer · 60 km cycling",
+          "elevation": "300–350 m",
+          "highlights": [
+            "Kosovo Border",
+            "Scenic Mountain Roads",
+            "Return to Tirana",
+            "Free Time for Sightseeing"
+          ],
+          "overnight": "Tirana"
+        },
+        {
+          "title": "Day 8 – Departure",
+          "items": [
+            "Breakfast",
+            "Airport Transfer",
+            "Return Flight"
+          ]
+        }
+      ],
+      "included": [
+        "7 nights accommodation in 3★ and 4★ hotels",
+        "Half board (breakfast buffet + 3-course dinner)",
+        "Airport transfers",
+        "Support vehicle with bicycle trailer",
+        "Luggage transfer between hotels",
+        "Entrance fees according to itinerary",
+        "German-speaking local cycling guide",
+        "GPS navigation device",
+        "Maps and detailed route descriptions",
+        "24/7 service hotline",
+        "Bicycle equipment (handlebar bags, pannier bags)",
+        "Additional nights available upon request"
+      ],
+      "notIncluded": [
+        "Flights",
+        "Additional meals",
+        "Drinks",
+        "Personal expenses",
+        "Tips",
+        "Bike rental (available as optional supplement)"
+      ],
+      "features": [
+        "Hotel",
+        "Guide",
+        "Half Board",
+        "Hiking",
+        "Boating",
+        "Support Vehicle"
+      ],
+      "reviews": [
+        {
+          "rating": "5.0",
+          "quote": "The mix of cycling, hiking, and the Koman boat trip made this the most memorable adventure we have ever taken in the Balkans.",
+          "name": "Anna Keller",
+          "role": "Adventure Traveler · Munich, Germany"
+        },
+        {
+          "rating": "4.9",
+          "quote": "Lake Skadar, the Albanian Alps, and Valbona were breathtaking. Organization and support were excellent throughout.",
+          "name": "Thomas Weber",
+          "role": "Adventure Traveler · Vienna, Austria"
+        },
+        {
+          "rating": "5.0",
+          "quote": "Crossing into Montenegro and exploring remote mountain villages felt like discovering a different world. Highly recommended.",
+          "name": "Laura Bianchi",
+          "role": "Adventure Traveler · Rome, Italy"
+        }
+      ],
+      "card": {
+        "location": "Albania & Montenegro",
+        "people": "2+ people",
+        "date": "Apr–Oct 2026",
+        "duration": "8 days",
+        "title": "8-Day Albania – Montenegro Cycling Adventure Tour (2026)",
+        "amenities": [
+          "Hotel",
+          "Guide",
+          "Half Board"
+        ],
+        "moreAmenities": "+5 more",
+        "imageAlt": "Cycling adventure through Albania and Montenegro"
+      }
+    }
   }
 }

@@ -52,7 +52,10 @@
     "mobileLabel": "Mobil",
     "mobile": "+355 6838 16 275",
     "emailLabel": "E-Mail",
-    "emails": ["alba.reisen@yahoo.de", "tarkogezim@gmail.com"],
+    "emails": [
+      "alba.reisen@yahoo.de",
+      "tarkogezim@gmail.com"
+    ],
     "websiteLabel": "Webseite",
     "website": "www.albanien-radreisen.de",
     "legalRepTitle": "Gesetzlicher Vertreter",
@@ -93,10 +96,22 @@
   },
   "stats": {
     "items": [
-      { "value": "20+", "label": "Malerische Radrouten" },
-      { "value": "20+", "label": "Malerische Radrouten" },
-      { "value": "20+", "label": "Malerische Radrouten" },
-      { "value": "20+", "label": "Malerische Radrouten" }
+      {
+        "value": "20+",
+        "label": "Malerische Radrouten"
+      },
+      {
+        "value": "20+",
+        "label": "Malerische Radrouten"
+      },
+      {
+        "value": "20+",
+        "label": "Malerische Radrouten"
+      },
+      {
+        "value": "20+",
+        "label": "Malerische Radrouten"
+      }
     ]
   },
   "tours": {
@@ -113,18 +128,10 @@
     ]
   },
   "tourCard": {
-    "location": "Albanien",
-    "people": "12 Personen",
-    "date": "12. Sep. 2025",
-    "duration": "8 Tage",
-    "reviews": "Bewertungen",
-    "title": "8-tägige Rad- und Entdeckungstour durch Albanien (2026)",
     "from": "Ab",
     "priceSuffix": "/ Person",
     "bookNow": "Jetzt Buchen",
-    "amenities": ["Hotel", "Guide", "Fahrrad"],
-    "moreAmenities": "+3 weitere",
-    "imageAlt": "Radtour in Albanien",
+    "reviews": "Bewertungen",
     "saveTour": "Tour merken"
   },
   "whyChooseUs": {
@@ -262,10 +269,22 @@
     "getStarted": "Jetzt Starten",
     "mapAlt": "Illustrierte Karte der albanischen Radtourrouten",
     "activities": [
-      { "title": "Radrouten", "description": "Fahre durch atemberaubende Landschaften und versteckte Dörfer." },
-      { "title": "Bootsüberfahrten", "description": "Genieße malerische Fährfahrten über Seen und Küstengewässer." },
-      { "title": "Bergwandern", "description": "Wandere auf schönen Pfaden mit herrlichem Bergpanorama." },
-      { "title": "Lokale Transfers", "description": "Komfortabler Transport zwischen den ausgewählten Touretappen." }
+      {
+        "title": "Radrouten",
+        "description": "Fahre durch atemberaubende Landschaften und versteckte Dörfer."
+      },
+      {
+        "title": "Bootsüberfahrten",
+        "description": "Genieße malerische Fährfahrten über Seen und Küstengewässer."
+      },
+      {
+        "title": "Bergwandern",
+        "description": "Wandere auf schönen Pfaden mit herrlichem Bergpanorama."
+      },
+      {
+        "title": "Lokale Transfers",
+        "description": "Komfortabler Transport zwischen den ausgewählten Touretappen."
+      }
     ]
   },
   "cta": {
@@ -276,154 +295,145 @@
   },
   "tourPage": {
     "back": "Zurück zu den Touren",
-    "title": "8-Tage Rad- & Entdeckungstour durch Albanien (2026)",
     "bookNow": "Jetzt Buchen",
-    "rating": "4.9",
-    "reviewsMeta": "· 38 Bewertungen",
-    "meta": {
-      "duration": "8 Tage",
-      "group": "Bis zu 12 Personen",
-      "next": "Nächster: 12. Sep 2026"
-    },
     "tabs": {
       "overview": "Übersicht",
       "itinerary": "Reiseverlauf",
       "included": "Inklusive",
       "reviews": "Bewertungen"
     },
-    "stats": [
-      { "label": "Dauer", "value": "8 Tage" },
-      { "label": "Treffpunkt", "value": "Flughafen Tirana" },
-      { "label": "Gruppengröße", "value": "Max. 12" },
-      { "label": "Nächster Start", "value": "12. Sep 2026" }
-    ],
-    "aboutTitle": "Über Diese Tour",
-    "aboutBody": "Erlebe das Hidden Gem des Balkans auf zwei Rädern. Diese 8-Tage-Tour führt dich durch Albaniens atemberaubendste Landschaften — von den rauen Bergen im Norden bis zur unberührten Riviera. Fahre durch alte Dörfer, genieße lokale Küche und tauche ein in Geschichte und Kultur — begleitet von unserem erfahrenen lokalen Team.",
-    "highlightsTitle": "Tour-Highlights",
-    "highlights": [
-      "Radeln durch die UNESCO-Stadt Berat",
-      "Entlang der atemberaubenden albanischen Riviera",
-      "Besuch der antiken Ruinen im Nationalpark Butrint",
-      "Traditionelle Bergdörfer der Accursed Mountains",
-      "Authentische albanische Küche in lokalen Familienrestaurants",
-      "Professionelles Begleitfahrzeug während der gesamten Tour"
-    ],
+    "quickDescriptionTitle": "Kurzbeschreibung",
+    "aboutTitle": "Tour-Überblick",
+    "tourInfoTitle": "Tour-Informationen",
+    "highlightsTitle": "Highlights",
+    "pricingTitle": "Preise",
+    "pricingBaseTitle": "Basispaket",
+    "pricingSupplementsTitle": "Zuschläge",
+    "pricingBikesTitle": "Fahrradverleih",
+    "importantNotesTitle": "Wichtige Hinweise",
     "photosTitle": "Fotos",
     "itineraryTitle": "Tagesablauf",
-    "itinerary": [
-      { "title": "Ankunft in Tirana", "body": "Willkommensabendessen und Briefing. Erkunde die bunten Basare und checke im Hotel ein." },
-      { "title": "Tirana nach Kruja", "body": "Fahrt nach historischem Kruja mit Burgblick und Besuch des traditionellen Basars." },
-      { "title": "Komani-See & Valbona", "body": "Malerische Fährfahrt auf dem Komani-See, weiter ins Valbona-Tal." },
-      { "title": "Valbona-Tal", "body": "Radeln durch alpine Landschaft und abgelegene Bergdörfer in Valbona." },
-      { "title": "Valbona nach Theth", "body": "Über den Gebirgspass nach Theth mit dramatischen Gipfeln und lokalen Gästehäusern." },
-      { "title": "Abfahrt nach Berat", "body": "Transfer nach Süden und Einfahrt in die UNESCO-Stadt Berat." },
-      { "title": "Berat nach Gjirokastër", "body": "Küsten- und Hochlandfahrt zur Steinstadt Gjirokastër." },
-      { "title": "Butrint & Abreise", "body": "Besuch des Nationalparks Butrint, danach Transfer zum Flughafen." }
-    ],
+    "itineraryLabels": {
+      "distance": "Strecke",
+      "cyclingDistance": "Radstrecke",
+      "elevation": "Höhenmeter",
+      "highlights": "Highlights",
+      "overnight": "Übernachtung",
+      "transfer": "Transfer",
+      "boatRide": "Bootsfahrt",
+      "hiking": "Wandern"
+    },
     "includedTitle": "Was ist inklusive",
     "includedLabel": "Inklusivleistungen",
     "notIncludedLabel": "Nicht inklusive",
-    "included": [
-      "7 Übernachtungen (3★–4★ Hotels & Gästehäuser)",
-      "Tägliches Frühstück und 4 Abendessen",
-      "Qualitäts-Road-/Gravelbike",
-      "Erfahrener englischsprachiger Guide",
-      "Begleitfahrzeug mit Gepäcktransfer",
-      "Helme, Trinkflaschen, Packtaschen",
-      "Flughafentransfers",
-      "24/7 Notfall-Support",
-      "Eintrittsgelder für Nationalparks und Denkmäler"
-    ],
-    "notIncluded": [
-      "Flüge von/nach Albanien",
-      "Reiseversicherung",
-      "Mittagessen (Tag 2–7)",
-      "Persönliche Ausgaben",
-      "Optionale Aktivitäten"
-    ],
     "featuresTitle": "Tour-Features",
-    "features": ["Hotel", "Guide", "Bike", "Transfer", "Mahlzeiten", "Aktivitäten"],
     "reviewsTitle": "Gästebewertungen",
-    "reviews": [
-      {
-        "rating": "5.0",
-        "quote": "Die Routen waren atemberaubend, die Organisation exzellent, und unser Guide machte jeden Tag unvergesslich. Albanien hat unsere Erwartungen übertroffen.",
-        "name": "Sarah Mitchell",
-        "role": "Abenteuerreisende · New York, USA"
-      },
-      {
-        "rating": "4.9",
-        "quote": "Jedes Detail war durchdacht. Landschaft, Essen, Menschen — Albanien mit dem Rad fühlte sich an wie eine Entdeckung.",
-        "name": "James Carter",
-        "role": "Abenteuerreisender · London, UK"
-      },
-      {
-        "rating": "5.0",
-        "quote": "Das lokale Wissen unseres Guides machte jeden Stopp zu einer Geschichte. Die beste Radreise unserer Gruppe.",
-        "name": "Elena Rossi",
-        "role": "Abenteuerreisende · Mailand, Italien"
-      }
-    ],
+    "relatedLabel": "Ähnliche Touren",
+    "relatedTitle": "Das Könnte Dir Auch Gefallen",
+    "viewTour": "Tour ansehen →",
     "booking": {
       "from": "Ab",
-      "price": "€ 1.290,00",
       "bookingTab": "Buchungsformular",
       "requestTab": "Anfrageformular",
       "chooseTime": "Zeitraum wählen",
-      "timeOption": "Vom 10. Juni 2027 bis 17. Juni 2027",
       "checkIn": "Check-in",
       "checkOut": "Check-out",
-      "checkInValue": "10-06-2027",
-      "checkOutValue": "17-06-2027",
       "guests": "Gäste",
       "adult": "Erwachsener",
+      "perPerson": "/pro Person",
       "decreaseGuests": "Gäste verringern",
       "increaseGuests": "Gäste erhöhen",
+      "decreaseAddon": "Zusatzleistung verringern",
+      "increaseAddon": "Zusatzleistung erhöhen",
+      "minGuestsError": "Mindestens 2 Personen bei Einzelbuchungen erforderlich.",
       "addonsTitle": "Zusatzleistungen",
-      "addons": [
-        { "id": "bike", "label": "Unisex-Räder (Marken KTM & Pegasus u. a.): Aufpreis 120 EUR" },
-        { "id": "ebike", "label": "E-Bikes (Marken KTM & Pegasus u. a.): Aufpreis 225 EUR" },
-        { "id": "single", "label": "Einzelzimmerzuschlag: 200 EUR pro Person" }
-      ],
+      "addons": {
+        "bike": {
+          "label": "Unisex-Räder (Marken KTM & Pegasus u. a.): Aufpreis {{price}} EUR"
+        },
+        "ebike": {
+          "label": "E-Bikes (Marken KTM & Pegasus u. a.): Aufpreis {{price}} EUR"
+        },
+        "single": {
+          "label": "Einzelzimmerzuschlag: {{price}} EUR pro Person"
+        }
+      },
       "name": "Name",
       "email": "E-Mail",
       "message": "Nachricht",
       "total": "Gesamt:",
       "submit": "Jetzt buchen",
-      "sendRequest": "Anfrage senden"
-    },
-    "relatedLabel": "Ähnliche Touren",
-    "relatedTitle": "Das Könnte Dir Auch Gefallen",
-    "viewTour": "Tour ansehen →",
-    "related": [
-      {
-        "title": "5-Tage Radtour an der albanischen Riviera",
-        "location": "Albanien",
-        "duration": "5 Tage",
-        "group": "Max. 12",
-        "rating": "4.8",
-        "reviews": "24",
-        "price": "€790"
-      },
-      {
-        "title": "7-Tage Bergabenteuer Nordalbanien",
-        "location": "Albanien",
-        "duration": "7 Tage",
-        "group": "Max. 10",
-        "rating": "5",
-        "reviews": "16",
-        "price": "€1.150"
-      },
-      {
-        "title": "5-Tage Radtour an der albanischen Riviera",
-        "location": "Albanien",
-        "duration": "5 Tage",
-        "group": "Max. 12",
-        "rating": "4.8",
-        "reviews": "24",
-        "price": "€790"
-      }
-    ]
+      "sendRequest": "Anfrage senden",
+      "submitting": "Wird gesendet...",
+      "successBooking": "Ihre Buchungsanfrage wurde gesendet. Wir melden uns in Kürze.",
+      "successRequest": "Ihre Anfrage wurde gesendet. Wir melden uns bald bei Ihnen.",
+      "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt."
+    }
+  },
+  "cartPage": {
+    "title": "Warenkorb",
+    "product": "Produkt",
+    "total": "Gesamt",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "adults": "Erwachsene",
+    "remove": "Entfernen",
+    "removeItem": "Tour aus dem Warenkorb entfernen",
+    "summaryTitle": "Warenkorbsumme",
+    "estimatedTotal": "Voraussichtlicher Gesamtbetrag",
+    "proceedToCheckout": "Weiter zur Kasse",
+    "emptyTitle": "Dein Warenkorb ist leer",
+    "emptyBody": "Wähle eine Tour und deinen gewünschten Reisetermin, um eine Buchung zu beginnen.",
+    "browseTours": "Touren ansehen"
+  },
+  "checkoutPage": {
+    "title": "Kasse",
+    "contactTitle": "Kontaktinformationen",
+    "email": "E-Mail-Adresse",
+    "guestNote": "Du bestellst derzeit als Gast.",
+    "billingTitle": "Rechnungsadresse",
+    "country": "Land/Region",
+    "countryPlaceholder": "Land/Region auswählen",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "company": "Firma (optional)",
+    "address": "Adresse",
+    "addApartment": "+ Wohnung, Suite usw. hinzufügen",
+    "apartment": "Wohnung, Suite usw.",
+    "city": "Stadt",
+    "state": "Bundesland",
+    "postalCode": "Postleitzahl",
+    "phone": "Telefon",
+    "paymentTitle": "Zahlungsoptionen",
+    "cashOnDelivery": "Zahlung bei Lieferung",
+    "cashOnDeliveryHint": "Barzahlung bei Lieferung.",
+    "addNote": "Notiz zur Bestellung hinzufügen",
+    "notePlaceholder": "Hinweise zu deiner Bestellung",
+    "termsPrefix": "Mit dem Fortfahren stimmst du unseren",
+    "termsLink": "AGB",
+    "termsAnd": "und der",
+    "privacyLink": "Datenschutzerklärung",
+    "backToCart": "Zurück zum Warenkorb",
+    "placeOrder": "Zustimmung zur Zahlung der Bestellung",
+    "orderOverview": "Bestellübersicht",
+    "subtotal": "Zwischensumme",
+    "total": "gesamt",
+    "successTitle": "Bestellung aufgegeben",
+    "successBody": "Vielen Dank. Deine Buchungsanfrage ist eingegangen. Wir melden uns in Kürze zur Bestätigung.",
+    "backToTours": "Zurück zu den Touren",
+    "countries": {
+      "Germany": "Deutschland",
+      "Austria": "Österreich",
+      "Switzerland": "Schweiz",
+      "Albania": "Albanien",
+      "Italy": "Italien",
+      "France": "Frankreich",
+      "Netherlands": "Niederlande",
+      "Belgium": "Belgien",
+      "United Kingdom": "Vereinigtes Königreich",
+      "United States": "Vereinigte Staaten",
+      "Other": "Sonstiges"
+    }
   },
   "aboutHero": {
     "title": "Über Uns"
@@ -435,9 +445,18 @@
     "paragraph2": "Mit langjähriger Erfahrung, lokalem Wissen und einem engagierten Team gestalten wir maßgeschneiderte Touren, die zu deinen Bedürfnissen passen. Von Kultur- und Geschichtstouren bis hin zu Rad- und Wanderreisen — wir kümmern uns um jedes Detail, damit du dich auf die Reise konzentrieren kannst.",
     "exploreNow": "Jetzt Entdecken",
     "stats": [
-      { "value": "15+", "label": "Jahre Erfahrung" },
-      { "value": "20+", "label": "Malerische Radrouten" },
-      { "value": "100%", "label": "Geführte Touren" }
+      {
+        "value": "15+",
+        "label": "Jahre Erfahrung"
+      },
+      {
+        "value": "20+",
+        "label": "Malerische Radrouten"
+      },
+      {
+        "value": "100%",
+        "label": "Geführte Touren"
+      }
     ]
   },
   "team": {
@@ -445,9 +464,18 @@
     "title": "Lerne Das Team Kennen",
     "body": "Unser leidenschaftliches Team aus Radreiseleitern und Reiseprofis sorgt dafür, dass jede Reise sicher, angenehm und unvergesslich wird.",
     "members": [
-      { "name": "Artan Koci", "role": "Gründer & Chefguide" },
-      { "name": "Elira Hoxha", "role": "Leitende Radreiseleiterin" },
-      { "name": "Driton Berisha", "role": "Leiter Tourorganisation" }
+      {
+        "name": "Artan Koci",
+        "role": "Gründer & Chefguide"
+      },
+      {
+        "name": "Elira Hoxha",
+        "role": "Leitende Radreiseleiterin"
+      },
+      {
+        "name": "Driton Berisha",
+        "role": "Leiter Tourorganisation"
+      }
     ]
   },
   "footer": {
@@ -456,8 +484,548 @@
     "general": "Allgemein",
     "about": "Über Uns",
     "contact": "Kontakt",
-    "generalLinks": ["Startseite", "Touren", "Leistungen", "Erfahrungsberichte"],
-    "aboutLinks": ["Über Uns", "Galerie", "Kontakt", "Datenschutz"],
+    "generalLinks": [
+      "Startseite",
+      "Touren",
+      "Leistungen",
+      "Erfahrungsberichte"
+    ],
+    "aboutLinks": [
+      "Über Uns",
+      "Galerie",
+      "Kontakt",
+      "Datenschutz"
+    ],
     "copyright": "© 2026 Albanien Radreisen. Design und Entwicklung von Blue Hawke."
+  },
+  "toursContent": {
+    "8-day-cycling": {
+      "title": "8-Tage Rad- & Entdeckungstour durch Albanien (2026)",
+      "rating": "4.9",
+      "reviewsMeta": "· 38 Bewertungen",
+      "meta": {
+        "duration": "8 / 9 / 10 Tage",
+        "group": "Einzel 2–3 · Gruppen 4+",
+        "season": "1. Apr – 31. Okt 2026"
+      },
+      "stats": [
+        {
+          "label": "Dauer",
+          "value": "8 / 9 / 10 Tage"
+        },
+        {
+          "label": "Abholung",
+          "value": "Flughafen Tirana"
+        },
+        {
+          "label": "Gruppengröße",
+          "value": "2–3 oder 4+"
+        },
+        {
+          "label": "Buchungssaison",
+          "value": "Apr–Okt 2026"
+        }
+      ],
+      "quickDescription": "Entdecke Albanien, oft als „Letztes Geheimnis Europas“ bezeichnet, auf einem unvergesslichen geführten Radabenteuer. Fahre über Gebirgspässe, UNESCO-Welterbestädte, atemberaubende Küsten und malerische Täler und erlebe authentische albanische Kultur und Gastfreundschaft.",
+      "quickDescriptionAudience": "Geeignet für Paare, Familien, Freunde, Alleinreisende und kleine Gruppen.",
+      "aboutBody": "Erlebe eine achttägige geführte Radreise durch Albanien mit rund 350 km durch Berge, Täler, Seen und die beeindruckende ionische und adriatische Küste. Die Route verbindet landschaftlich reizvolles Radfahren, kulturelle Entdeckungen, UNESCO-Welterbestätten und komfortable Hotelübernachtungen – ideal für Reisende mit moderater Fitness.",
+      "tourInfo": [
+        {
+          "field": "Tourtyp",
+          "value": "Geführte Radtour"
+        },
+        {
+          "field": "Schwierigkeit",
+          "value": "Mittel"
+        },
+        {
+          "field": "Gesamtstrecke",
+          "value": "350 km"
+        },
+        {
+          "field": "Tagesstrecke",
+          "value": "40–60 km"
+        },
+        {
+          "field": "Terrain",
+          "value": "Berge, Täler, Küste"
+        },
+        {
+          "field": "Straßen",
+          "value": "Überwiegend asphaltierte Nebenstraßen mit einigen Schotterabschnitten"
+        },
+        {
+          "field": "Begleitfahrzeug",
+          "value": "Ja"
+        },
+        {
+          "field": "Helm empfohlen",
+          "value": "Ja"
+        }
+      ],
+      "highlights": [
+        "Radfahren am Ohridsee, Europas tiefstem See",
+        "Fahrt durch den Nationalpark Vjosatal",
+        "Erkundung der Albanischen Riviera",
+        "Überquerung des spektakulären Caesar-Passes (Logara)",
+        "Besuch dreier UNESCO-Welterbestädte",
+        "Übernachtung in schönen Küstenhotels an Ionischem und Adriatischem Meer",
+        "Authentische albanische Kultur und Küche erleben"
+      ],
+      "pricingBase": [
+        {
+          "package": "7 Nächte / Halbpension / Doppelzimmer",
+          "price": "€1.290 pro Person"
+        }
+      ],
+      "pricingSupplements": [
+        {
+          "option": "Einzelzimmer",
+          "price": "€200"
+        },
+        {
+          "option": "Zuschlag Juli & August",
+          "price": "€100"
+        }
+      ],
+      "pricingBikes": [
+        {
+          "bike": "Standardrad",
+          "price": "€120"
+        },
+        {
+          "bike": "E-Bike",
+          "price": "€225"
+        }
+      ],
+      "importantNotes": [
+        "Programmänderungen vorbehalten.",
+        "Moderate Fitness erforderlich.",
+        "An einigen Radtagen über 1.000 m Höhenmeter.",
+        "Begleitfahrzeug bei ausgewählten Anstiegsabschnitten verfügbar.",
+        "Überwiegend asphaltierte Straßen mit wenigen Schotterabschnitten.",
+        "Erhöhter Verkehr in der Nähe größerer Städte."
+      ],
+      "itinerary": [
+        {
+          "title": "Tag 1 – Ankunft in Tirana",
+          "items": [
+            "Selbstständige Anreise",
+            "Flughafentransfer",
+            "Hotel-Check-in",
+            "Geführte Stadttour durch Tirana"
+          ],
+          "overnight": "Tirana"
+        },
+        {
+          "title": "Tag 2 – Tirana → Ohridsee",
+          "distance": "100 km Transfer · 40 km Radfahren",
+          "elevation": "50 m",
+          "highlights": [
+            "Transfer über Gebirgspass",
+            "Radfahren am Ohridsee",
+            "Ankunft in Pogradec"
+          ],
+          "overnight": "Pogradec"
+        },
+        {
+          "title": "Tag 3 – Pogradec → Korça → Vjosatal → Përmet",
+          "distance": "150 km Transfer · 60 km Radfahren",
+          "elevation": "600 m",
+          "highlights": [
+            "Stadttour Korça",
+            "Barmash-Pass",
+            "Leskovik",
+            "Nationalpark Vjosatal"
+          ],
+          "overnight": "Përmet"
+        },
+        {
+          "title": "Tag 4 – Përmet → Gjirokastër → Saranda",
+          "distance": "130 km Transfer · 45 km Radfahren",
+          "elevation": "150 m",
+          "highlights": [
+            "Vjosatal",
+            "Gjirokastër (Steinstadt)",
+            "Bucht von Saranda",
+            "Blick auf Korfu"
+          ],
+          "overnight": "Saranda"
+        },
+        {
+          "title": "Tag 5 – Saranda → Butrint → Himara",
+          "cyclingDistance": "50 km",
+          "elevation": "750 m",
+          "highlights": [
+            "UNESCO Butrint",
+            "Ionische Küste",
+            "Malerische Riviera",
+            "Strand von Himara"
+          ],
+          "overnight": "Himara"
+        },
+        {
+          "title": "Tag 6 – Himara → Caesar-Pass → Vlora",
+          "cyclingDistance": "45 km",
+          "elevation": "1.300 m",
+          "highlights": [
+            "Nationalpark Logara",
+            "Caesar-Pass",
+            "Spektakuläre Berglandschaft",
+            "Abfahrt nach Vlora"
+          ],
+          "overnight": "Vlora"
+        },
+        {
+          "title": "Tag 7 – Vlora → Lagune Zvernec → Durrës → Tirana",
+          "distance": "200 km Transfer · 35 km Radfahren",
+          "elevation": "200 m",
+          "highlights": [
+            "Bucht von Vlora",
+            "Lagune Zvernec",
+            "Pinienwald",
+            "Römisches Amphitheater in Durrës"
+          ],
+          "overnight": "Tirana"
+        },
+        {
+          "title": "Tag 8 – Abreise",
+          "items": [
+            "Frühstück",
+            "Flughafentransfer",
+            "Rückflug"
+          ]
+        }
+      ],
+      "included": [
+        "7 Übernachtungen in 3★- und 4★-Hotels",
+        "Halbpension (Frühstücksbuffet + 3-Gang-Abendessen)",
+        "Flughafentransfers",
+        "Gepäcktransportfahrzeug mit Fahrradanhänger",
+        "Eintrittsgelder zu inkludierten Attraktionen",
+        "Deutschsprachiger lokaler Radführer",
+        "GPS-Navigationsgerät",
+        "Karten und Routendokumentation",
+        "24/7 Service-Hotline"
+      ],
+      "notIncluded": [
+        "Flüge",
+        "Zusätzliche Mahlzeiten",
+        "Getränke",
+        "Persönliche Ausgaben",
+        "Trinkgelder",
+        "Fahrradverleih (optional als Zusatzleistung)"
+      ],
+      "features": [
+        "Hotel",
+        "Guide",
+        "Halbpension",
+        "Transfer",
+        "GPS",
+        "Begleitfahrzeug"
+      ],
+      "reviews": [
+        {
+          "rating": "5.0",
+          "quote": "Die Routen waren atemberaubend, die Organisation exzellent, und unser Guide machte jeden Tag unvergesslich. Albanien hat unsere Erwartungen übertroffen.",
+          "name": "Sarah Mitchell",
+          "role": "Abenteuerreisende · New York, USA"
+        },
+        {
+          "rating": "4.9",
+          "quote": "Jedes Detail war durchdacht. Landschaft, Essen, Menschen — Albanien mit dem Rad fühlte sich an wie eine Entdeckung.",
+          "name": "James Carter",
+          "role": "Abenteuerreisender · London, UK"
+        },
+        {
+          "rating": "5.0",
+          "quote": "Das lokale Wissen unseres Guides machte jeden Stopp zu einer Geschichte. Die beste Radreise unserer Gruppe.",
+          "name": "Elena Rossi",
+          "role": "Abenteuerreisende · Mailand, Italien"
+        }
+      ],
+      "card": {
+        "location": "Albanien",
+        "people": "Ab 2 Personen",
+        "date": "Apr–Okt 2026",
+        "duration": "8 Tage",
+        "title": "8-Tage Rad- & Entdeckungstour durch Albanien (2026)",
+        "amenities": [
+          "Hotel",
+          "Guide",
+          "Halbpension"
+        ],
+        "moreAmenities": "+5 weitere",
+        "imageAlt": "Radtour in Albanien"
+      }
+    },
+    "8-day-albania-montenegro": {
+      "title": "8-Tage Radabenteuer Albanien – Montenegro (2026)",
+      "rating": "4.9",
+      "reviewsMeta": "· 24 Bewertungen",
+      "meta": {
+        "duration": "8 / 9 / 10 Tage",
+        "group": "Einzel 2–3 · Gruppen 4+",
+        "season": "1. Apr – 31. Okt 2026"
+      },
+      "stats": [
+        {
+          "label": "Dauer",
+          "value": "8 / 9 / 10 Tage"
+        },
+        {
+          "label": "Abholung",
+          "value": "Flughafen Tirana"
+        },
+        {
+          "label": "Gruppengröße",
+          "value": "2–3 oder 4+"
+        },
+        {
+          "label": "Buchungssaison",
+          "value": "Apr–Okt 2026"
+        }
+      ],
+      "quickDescription": "Erlebe die atemberaubenden Landschaften Albaniens und Montenegros auf einem unvergesslichen Radabenteuer durch den Balkan. Fahre über Gebirgspässe, kristallklare Seen, alpine Täler und charmante Dörfer und genieße lokale Gastfreundschaft, malerische Bootsfahrten und Wanderungen in den spektakulären Albanischen Alpen.",
+      "quickDescriptionAudience": "Ideal für Paare, Familien, Alleinreisende und kleine Gruppen, die ein aktives Abenteuer suchen.",
+      "aboutBody": "Diese 8-tägige geführte Rad- und Abenteuerreise kombiniert Radfahren, Wandern und Bootsfahrten in Albanien und Montenegro. Entdecke die Albanischen Alpen, den Skadarsee, das Valbona-Tal und abgelegene Balkandörfer auf landschaftlich reizvollen Routen durch Berge, Flüsse und Seen. Die Tour ist für Reisende mit moderater Fitness konzipiert und wird durchgehend von einem Gepäcktransferfahrzeug begleitet.",
+      "tourInfo": [
+        {
+          "field": "Tourtyp",
+          "value": "Geführte Rad- und Abenteuertour"
+        },
+        {
+          "field": "Schwierigkeit",
+          "value": "Mittel"
+        },
+        {
+          "field": "Aktivitäten",
+          "value": "Radfahren, Wandern, Bootsfahrten"
+        },
+        {
+          "field": "Terrain",
+          "value": "Berge, Seen, Täler, Dörfer"
+        },
+        {
+          "field": "Straßen",
+          "value": "Überwiegend asphaltierte Nebenstraßen mit einigen Schotterabschnitten"
+        },
+        {
+          "field": "Begleitfahrzeug",
+          "value": "Ja"
+        },
+        {
+          "field": "Helm empfohlen",
+          "value": "Ja"
+        }
+      ],
+      "highlights": [
+        "Radfahren durch Albanien und Montenegro",
+        "Besuch des Skadarsees, dem größten See des Balkans",
+        "Erkundung der Albanischen Alpen",
+        "Bootsfahrt über den Koman-Stausee",
+        "Wandern durch das wunderschöne Valbona-Tal",
+        "Besuch der Festung Rozafa",
+        "Fahrt durch Bergdörfer und Alpenpässe",
+        "Atemberaubende Balkanlandschaften erleben",
+        "Authentische lokale Kultur und Gastfreundschaft entdecken"
+      ],
+      "pricingBase": [
+        {
+          "package": "7 Nächte / Halbpension / Doppelzimmer",
+          "price": "€1.290 pro Person"
+        }
+      ],
+      "pricingSupplements": [
+        {
+          "option": "Einzelzimmer",
+          "price": "€190"
+        },
+        {
+          "option": "Zuschlag Juli und August",
+          "price": "€100"
+        }
+      ],
+      "pricingBikes": [
+        {
+          "bike": "Standardrad",
+          "price": "€120"
+        },
+        {
+          "bike": "E-Bike",
+          "price": "€225"
+        }
+      ],
+      "importantNotes": [
+        "Programmänderungen vorbehalten.",
+        "Moderate Fitness erforderlich.",
+        "An einigen Etappen über 1.000 Höhenmeter.",
+        "Begleitfahrzeug begleitet die Gruppe während der gesamten Tour.",
+        "Radfahren überwiegend auf asphaltierten Nebenstraßen mit gelegentlichen Schotterabschnitten.",
+        "Erhöhter Verkehr in der Nähe von Städten möglich.",
+        "Helmpflicht wird dringend empfohlen."
+      ],
+      "itinerary": [
+        {
+          "title": "Tag 1 – Ankunft in Tirana",
+          "highlights": [
+            "Ankunft am Flughafen Tirana",
+            "Stadttour durch Tirana",
+            "Skanderbeg-Platz",
+            "Et'hem-Bey-Moschee",
+            "Ehemaliges kommunistisches Viertel (Blloku)"
+          ],
+          "overnight": "Tirana"
+        },
+        {
+          "title": "Tag 2 – Tirana → Shkodra",
+          "distance": "100 km Transfer · 65 km Radfahren",
+          "elevation": "100–150 m",
+          "highlights": [
+            "Lezha",
+            "Weinberge",
+            "Skadarsee",
+            "Festung Rozafa"
+          ],
+          "overnight": "Shkodra"
+        },
+        {
+          "title": "Tag 3 – Shkodra → Skadarsee → Virpazar (Montenegro)",
+          "distance": "80 km Transfer · 50 km Radfahren",
+          "elevation": "600 m",
+          "highlights": [
+            "Buna-Fluss",
+            "Grenze zu Montenegro",
+            "Skadarsee",
+            "Ausblicke auf die Albanischen Alpen",
+            "Virpazar"
+          ],
+          "overnight": "Virpazar, Montenegro"
+        },
+        {
+          "title": "Tag 4 – Virpazar → Tamara → Shkodra",
+          "distance": "80 km Transfer · 55 km Radfahren",
+          "elevation": "900 m",
+          "highlights": [
+            "Region Tuzi",
+            "Cem-Schlucht",
+            "Dorf Tamara",
+            "Hoti-Berge"
+          ],
+          "overnight": "Shkodra"
+        },
+        {
+          "title": "Tag 5 – Shkodra → Koman-Stausee → Valbona-Tal",
+          "distance": "100 km Transfer · ca. 2 Std. Boot · 60 km Radfahren",
+          "elevation": "600–650 m",
+          "highlights": [
+            "Stausee Vau i Deja",
+            "Bootsfahrt auf dem Koman-See",
+            "Valbona-Fluss",
+            "Albanische Alpen",
+            "Optionale Nachmittagswanderung"
+          ],
+          "overnight": "Valbona-Tal"
+        },
+        {
+          "title": "Tag 6 – Wandern im Valbona-Tal",
+          "cyclingDistance": "20 km",
+          "elevation": "Etwa 1.000 m",
+          "highlights": [
+            "Valbona-Tal",
+            "Dorf Rrogam",
+            "Valbona-Pass",
+            "Bergwälder",
+            "Alpine Wiesen",
+            "Wanderung 4–5 Stunden"
+          ],
+          "overnight": "Valbona-Tal"
+        },
+        {
+          "title": "Tag 7 – Valbona-Tal → Kosovo → Tirana",
+          "distance": "200 km Transfer · 60 km Radfahren",
+          "elevation": "300–350 m",
+          "highlights": [
+            "Grenze zu Kosovo",
+            "Malerische Bergstraßen",
+            "Rückkehr nach Tirana",
+            "Freizeit zum Sightseeing"
+          ],
+          "overnight": "Tirana"
+        },
+        {
+          "title": "Tag 8 – Abreise",
+          "items": [
+            "Frühstück",
+            "Flughafentransfer",
+            "Rückflug"
+          ]
+        }
+      ],
+      "included": [
+        "7 Übernachtungen in 3★- und 4★-Hotels",
+        "Halbpension (Frühstücksbuffet + 3-Gang-Abendessen)",
+        "Flughafentransfers",
+        "Begleitfahrzeug mit Fahrradanhänger",
+        "Gepäcktransfer zwischen den Hotels",
+        "Eintrittsgelder laut Reiseverlauf",
+        "Deutschsprachiger lokaler Radführer",
+        "GPS-Navigationsgerät",
+        "Karten und detaillierte Routenbeschreibungen",
+        "24/7 Service-Hotline",
+        "Fahrradausrüstung (Lenkertaschen, Packtaschen)",
+        "Zusätzliche Nächte auf Anfrage"
+      ],
+      "notIncluded": [
+        "Flüge",
+        "Zusätzliche Mahlzeiten",
+        "Getränke",
+        "Persönliche Ausgaben",
+        "Trinkgelder",
+        "Fahrradverleih (optional als Zusatzleistung)"
+      ],
+      "features": [
+        "Hotel",
+        "Guide",
+        "Halbpension",
+        "Wandern",
+        "Bootsfahrt",
+        "Begleitfahrzeug"
+      ],
+      "reviews": [
+        {
+          "rating": "5.0",
+          "quote": "Die Mischung aus Radfahren, Wandern und der Bootsfahrt auf dem Koman-See war unser schönstes Balkan-Abenteuer.",
+          "name": "Anna Keller",
+          "role": "Abenteuerreisende · München, Deutschland"
+        },
+        {
+          "rating": "4.9",
+          "quote": "Skadarsee, Albanische Alpen und Valbona waren atemberaubend. Organisation und Support waren durchgehend hervorragend.",
+          "name": "Thomas Weber",
+          "role": "Abenteuerreisender · Wien, Österreich"
+        },
+        {
+          "rating": "5.0",
+          "quote": "Der Übergang nach Montenegro und die abgelegenen Bergdörfer fühlten sich an wie eine andere Welt. Sehr empfehlenswert.",
+          "name": "Laura Bianchi",
+          "role": "Abenteuerreisende · Rom, Italien"
+        }
+      ],
+      "card": {
+        "location": "Albanien und Montenegro",
+        "people": "Ab 2 Personen",
+        "date": "Apr–Okt 2026",
+        "duration": "8 Tage",
+        "title": "8-Tage Radabenteuer Albanien – Montenegro (2026)",
+        "amenities": [
+          "Hotel",
+          "Guide",
+          "Halbpension"
+        ],
+        "moreAmenities": "+5 weitere",
+        "imageAlt": "Radabenteuer durch Albanien und Montenegro"
+      }
+    }
   }
 }

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Navigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import {
   iconTourCalendar,
@@ -6,19 +7,43 @@ import {
   iconTourDuration,
   iconTourGroup,
   iconTourLocation,
-  tourPhoto1,
-  tourPhoto2,
 } from "../../../assets/tourPage";
 import { iconStar } from "../../../assets/shared";
+import { useTour } from "../../../hooks/useTour";
+import BookingCard from "./BookingCard";
 
 const TABS = ["overview", "itinerary", "included", "reviews"];
 const STAT_ICONS = [iconTourDuration, iconTourLocation, iconTourGroup, iconTourCalendar];
 
-function OverviewPanel() {
+function PricingTable({ title, rows, labelKey, valueKey }) {
+  return (
+    <div>
+      <h3 className="m-0 font-sans text-lg font-semibold text-black sm:text-xl">{title}</h3>
+      <div className="mt-4 overflow-hidden rounded-2xl border border-gray-200">
+        <table className="w-full border-collapse font-sans text-sm sm:text-base">
+          <tbody>
+            {rows.map((row) => (
+              <tr key={row[labelKey]} className="border-b border-gray-200 last:border-b-0">
+                <td className="px-4 py-3 text-[#364153] sm:px-5">{row[labelKey]}</td>
+                <td className="px-4 py-3 text-right font-semibold text-black sm:px-5">{row[valueKey]}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
+function OverviewPanel({ content, photos }) {
   const { t } = useTranslation();
-  const stats = t("tourPage.stats", { returnObjects: true });
-  const highlights = t("tourPage.highlights", { returnObjects: true });
-  const photos = [tourPhoto1, tourPhoto2, tourPhoto2];
+  const stats = content.stats ?? [];
+  const highlights = content.highlights ?? [];
+  const tourInfo = content.tourInfo ?? [];
+  const pricingBase = content.pricingBase ?? [];
+  const pricingSupplements = content.pricingSupplements ?? [];
+  const pricingBikes = content.pricingBikes ?? [];
+  const importantNotes = content.importantNotes ?? [];
 
   return (
     <div className="flex flex-col gap-10 sm:gap-12">
@@ -39,11 +64,41 @@ function OverviewPanel() {
 
       <div>
         <h2 className="m-0 font-sans text-xl font-bold text-black sm:text-[28px] sm:leading-8">
+          {t("tourPage.quickDescriptionTitle")}
+        </h2>
+        <p className="mt-4 font-sans text-base leading-relaxed text-[#4a5565] sm:text-xl sm:leading-[1.6]">
+          {content.quickDescription}
+        </p>
+        <p className="mt-3 font-sans text-base text-[#364153] sm:text-lg">
+          {content.quickDescriptionAudience}
+        </p>
+      </div>
+
+      <div>
+        <h2 className="m-0 font-sans text-xl font-bold text-black sm:text-[28px] sm:leading-8">
           {t("tourPage.aboutTitle")}
         </h2>
         <p className="mt-4 font-sans text-base leading-relaxed text-[#4a5565] sm:text-xl sm:leading-[1.6]">
-          {t("tourPage.aboutBody")}
+          {content.aboutBody}
         </p>
+      </div>
+
+      <div>
+        <h2 className="m-0 font-sans text-xl font-bold text-black sm:text-[28px] sm:leading-8">
+          {t("tourPage.tourInfoTitle")}
+        </h2>
+        <div className="mt-4 overflow-hidden rounded-2xl border border-gray-200">
+          <table className="w-full border-collapse font-sans text-sm sm:text-base">
+            <tbody>
+              {tourInfo.map((row) => (
+                <tr key={row.field} className="border-b border-gray-200 last:border-b-0">
+                  <td className="bg-gray-50 px-4 py-3 font-medium text-black sm:px-5">{row.field}</td>
+                  <td className="px-4 py-3 text-[#364153] sm:px-5">{row.value}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
 
       <div>
@@ -60,16 +115,52 @@ function OverviewPanel() {
         </ul>
       </div>
 
+      <div className="flex flex-col gap-6">
+        <h2 className="m-0 font-sans text-xl font-bold text-black sm:text-[28px] sm:leading-8">
+          {t("tourPage.pricingTitle")}
+        </h2>
+        <PricingTable
+          title={t("tourPage.pricingBaseTitle")}
+          rows={pricingBase}
+          labelKey="package"
+          valueKey="price"
+        />
+        <PricingTable
+          title={t("tourPage.pricingSupplementsTitle")}
+          rows={pricingSupplements}
+          labelKey="option"
+          valueKey="price"
+        />
+        <PricingTable
+          title={t("tourPage.pricingBikesTitle")}
+          rows={pricingBikes}
+          labelKey="bike"
+          valueKey="price"
+        />
+      </div>
+
+      <div>
+        <h2 className="m-0 font-sans text-xl font-bold text-black sm:text-[28px] sm:leading-8">
+          {t("tourPage.importantNotesTitle")}
+        </h2>
+        <ul className="mt-4 list-none space-y-2 p-0">
+          {importantNotes.map((note) => (
+            <li key={note} className="flex gap-3 font-sans text-base text-[#364153] sm:text-lg">
+              <span className="mt-1 text-brand" aria-hidden>
+                •
+              </span>
+              <span>{note}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
       <div>
         <h2 className="m-0 font-sans text-xl font-bold text-black sm:text-[28px] sm:leading-8">
           {t("tourPage.photosTitle")}
         </h2>
         <div className="mt-5 grid gap-3 sm:grid-cols-[1.4fr_1fr] sm:gap-4">
-          <img
-            src={photos[0]}
-            alt=""
-            className="h-56 w-full rounded-2xl object-cover sm:h-[434px]"
-          />
+          <img src={photos[0]} alt="" className="h-56 w-full rounded-2xl object-cover sm:h-[434px]" />
           <div className="grid gap-3 sm:gap-4">
             <img src={photos[1]} alt="" className="h-40 w-full rounded-2xl object-cover sm:h-[200px]" />
             <img src={photos[2]} alt="" className="h-40 w-full rounded-2xl object-cover sm:h-[218px]" />
@@ -80,9 +171,54 @@ function OverviewPanel() {
   );
 }
 
-function ItineraryPanel() {
+function ItineraryDayContent({ day, labels }) {
+  return (
+    <div className="space-y-3 px-4 pb-4 pl-[4.25rem] font-sans text-sm leading-relaxed text-[#4a5565] sm:px-5 sm:text-base">
+      {day.items && (
+        <ul className="m-0 list-disc space-y-1 pl-5">
+          {day.items.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+      )}
+      {day.distance && (
+        <p className="m-0">
+          <strong>{labels.distance}:</strong> {day.distance}
+        </p>
+      )}
+      {day.cyclingDistance && (
+        <p className="m-0">
+          <strong>{labels.cyclingDistance}:</strong> {day.cyclingDistance}
+        </p>
+      )}
+      {day.elevation && (
+        <p className="m-0">
+          <strong>{labels.elevation}:</strong> {day.elevation}
+        </p>
+      )}
+      {day.highlights && (
+        <div>
+          <p className="m-0 mb-1 font-semibold text-black">{labels.highlights}:</p>
+          <ul className="m-0 list-disc space-y-1 pl-5">
+            {day.highlights.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+      {day.overnight && (
+        <p className="m-0 font-medium text-black">
+          {labels.overnight}: {day.overnight}
+        </p>
+      )}
+    </div>
+  );
+}
+
+function ItineraryPanel({ content }) {
   const { t } = useTranslation();
-  const days = t("tourPage.itinerary", { returnObjects: true });
+  const days = content.itinerary ?? [];
+  const labels = t("tourPage.itineraryLabels", { returnObjects: true });
   const [openDay, setOpenDay] = useState(0);
 
   return (
@@ -110,11 +246,7 @@ function ItineraryPanel() {
                   {isOpen ? "▴" : "▾"}
                 </span>
               </button>
-              {isOpen && (
-                <p className="m-0 px-4 pb-4 pl-[4.25rem] font-sans text-sm leading-relaxed text-[#4a5565] sm:px-5 sm:text-base">
-                  {day.body}
-                </p>
-              )}
+              {isOpen && <ItineraryDayContent day={day} labels={labels} />}
             </div>
           );
         })}
@@ -123,11 +255,11 @@ function ItineraryPanel() {
   );
 }
 
-function IncludedPanel() {
+function IncludedPanel({ content }) {
   const { t } = useTranslation();
-  const included = t("tourPage.included", { returnObjects: true });
-  const notIncluded = t("tourPage.notIncluded", { returnObjects: true });
-  const features = t("tourPage.features", { returnObjects: true });
+  const included = content.included ?? [];
+  const notIncluded = content.notIncluded ?? [];
+  const features = content.features ?? [];
 
   return (
     <div className="flex flex-col gap-8">
@@ -192,9 +324,9 @@ function IncludedPanel() {
   );
 }
 
-function ReviewsPanel() {
+function ReviewsPanel({ content }) {
   const { t } = useTranslation();
-  const reviews = t("tourPage.reviews", { returnObjects: true });
+  const reviews = content.reviews ?? [];
 
   return (
     <div>
@@ -222,209 +354,12 @@ function ReviewsPanel() {
   );
 }
 
-function BookingCard() {
-  const { t } = useTranslation();
-  const [formTab, setFormTab] = useState("booking");
-  const [guests, setGuests] = useState(1);
-  const [addons, setAddons] = useState([]);
-  const addonItems = t("tourPage.booking.addons", { returnObjects: true });
-
-  function toggleAddon(id) {
-    setAddons((current) =>
-      current.includes(id) ? current.filter((item) => item !== id) : [...current, id],
-    );
-  }
-
-  function handleSubmit(event) {
-    event.preventDefault();
-    // ponytail: no booking API yet — wire up when backend exists
-  }
-
-  return (
-    <aside
-      id="tour-booking"
-      className="rounded-[24px] border border-gray-100 bg-white p-5 shadow-[0_8px_40px_-8px_rgba(0,0,0,0.14)] sm:p-6 lg:sticky lg:top-6"
-    >
-      <div className="flex items-start gap-2">
-        <span className="mt-1 text-brand" aria-hidden>
-          📍
-        </span>
-        <div>
-          <p className="m-0 font-sans text-sm text-gray-500">{t("tourPage.booking.from")}</p>
-          <p className="m-0 font-sans text-3xl font-bold text-emerald-600 sm:text-4xl">
-            {t("tourPage.booking.price")}
-          </p>
-        </div>
-      </div>
-
-      <div className="my-5 flex items-center gap-2">
-        <span className="h-px flex-1 bg-gray-200" />
-        <span className="text-brand" aria-hidden>
-          ✈
-        </span>
-        <span className="h-px flex-1 bg-gray-200" />
-      </div>
-
-      <div className="mb-5 flex justify-center gap-6 border-b border-gray-200">
-        {["booking", "request"].map((tab) => (
-          <button
-            key={tab}
-            type="button"
-            onClick={() => setFormTab(tab)}
-            className={`pb-2 font-sans text-sm font-semibold ${
-              formTab === tab
-                ? "border-b-2 border-emerald-600 text-emerald-600"
-                : "text-gray-400"
-            }`}
-          >
-            {t(`tourPage.booking.${tab}Tab`)}
-          </button>
-        ))}
-      </div>
-
-      <form onSubmit={handleSubmit} className="space-y-4">
-        {formTab === "booking" ? (
-          <>
-            <label className="block">
-              <span className="mb-1.5 block font-sans text-sm text-gray-600">
-                {t("tourPage.booking.chooseTime")} <span className="text-brand">*</span>
-              </span>
-              <select className="w-full rounded-xl border border-gray-200 bg-white px-3 py-3 font-sans text-sm text-gray-800">
-                <option>{t("tourPage.booking.timeOption")}</option>
-              </select>
-            </label>
-
-            <label className="block">
-              <span className="mb-1.5 block font-sans text-sm text-gray-600">
-                {t("tourPage.booking.checkIn")} <span className="text-brand">*</span>
-              </span>
-              <input
-                type="text"
-                defaultValue={t("tourPage.booking.checkInValue")}
-                className="w-full rounded-xl border border-gray-200 bg-gray-50 px-3 py-3 font-sans text-sm"
-              />
-            </label>
-
-            <label className="block">
-              <span className="mb-1.5 block font-sans text-sm text-gray-600">
-                {t("tourPage.booking.checkOut")} <span className="text-brand">*</span>
-              </span>
-              <input
-                type="text"
-                defaultValue={t("tourPage.booking.checkOutValue")}
-                className="w-full rounded-xl border border-gray-200 bg-gray-50 px-3 py-3 font-sans text-sm"
-              />
-            </label>
-
-            <div>
-              <span className="mb-1.5 block font-sans text-sm text-gray-600">
-                {t("tourPage.booking.guests")} <span className="text-brand">*</span>
-              </span>
-              <div className="flex items-center justify-between rounded-xl border border-gray-200 px-3 py-2">
-                <span className="font-sans text-sm text-gray-700">
-                  {t("tourPage.booking.adult")}{" "}
-                  <strong>{t("tourPage.booking.price")}</strong>
-                </span>
-                <div className="flex items-center gap-2">
-                  <button
-                    type="button"
-                    onClick={() => setGuests((n) => Math.max(1, n - 1))}
-                    className="flex h-8 w-8 items-center justify-center rounded-lg bg-gray-100"
-                    aria-label={t("tourPage.booking.decreaseGuests")}
-                  >
-                    −
-                  </button>
-                  <span className="w-6 text-center font-sans text-sm font-semibold">{guests}</span>
-                  <button
-                    type="button"
-                    onClick={() => setGuests((n) => n + 1)}
-                    className="flex h-8 w-8 items-center justify-center rounded-lg bg-gray-100"
-                    aria-label={t("tourPage.booking.increaseGuests")}
-                  >
-                    +
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <p className="m-0 mb-2 font-sans text-sm font-semibold text-gray-700">
-                {t("tourPage.booking.addonsTitle")}
-              </p>
-              <ul className="list-none space-y-2 p-0">
-                {addonItems.map((addon) => (
-                  <li key={addon.id}>
-                    <label className="flex cursor-pointer gap-2 font-sans text-sm text-gray-600">
-                      <input
-                        type="checkbox"
-                        checked={addons.includes(addon.id)}
-                        onChange={() => toggleAddon(addon.id)}
-                        className="mt-0.5"
-                      />
-                      <span>{addon.label}</span>
-                    </label>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </>
-        ) : (
-          <>
-            <label className="block">
-              <span className="mb-1.5 block font-sans text-sm text-gray-600">
-                {t("tourPage.booking.name")} <span className="text-brand">*</span>
-              </span>
-              <input
-                type="text"
-                required
-                className="w-full rounded-xl border border-gray-200 bg-gray-50 px-3 py-3 font-sans text-sm"
-              />
-            </label>
-            <label className="block">
-              <span className="mb-1.5 block font-sans text-sm text-gray-600">
-                {t("tourPage.booking.email")} <span className="text-brand">*</span>
-              </span>
-              <input
-                type="email"
-                required
-                className="w-full rounded-xl border border-gray-200 bg-gray-50 px-3 py-3 font-sans text-sm"
-              />
-            </label>
-            <label className="block">
-              <span className="mb-1.5 block font-sans text-sm text-gray-600">
-                {t("tourPage.booking.message")}
-              </span>
-              <textarea
-                rows={4}
-                className="w-full rounded-xl border border-gray-200 bg-gray-50 px-3 py-3 font-sans text-sm"
-              />
-            </label>
-          </>
-        )}
-
-        <div className="flex items-center justify-between border-t border-gray-100 pt-4">
-          <span className="font-sans text-sm font-semibold text-gray-700">
-            {t("tourPage.booking.total")}
-          </span>
-          <span className="font-sans text-lg font-bold text-black">
-            {t("tourPage.booking.price")}
-          </span>
-        </div>
-
-        <button
-          type="submit"
-          className="w-full cursor-pointer rounded-2xl bg-brand py-3.5 font-sans text-base font-semibold text-white"
-        >
-          {formTab === "booking" ? t("tourPage.booking.submit") : t("tourPage.booking.sendRequest")}
-        </button>
-      </form>
-    </aside>
-  );
-}
-
 export default function TourDetails() {
   const { t } = useTranslation();
+  const { tour, content } = useTour();
   const [activeTab, setActiveTab] = useState("overview");
+
+  if (!tour) return <Navigate to="/tours" replace />;
 
   return (
     <section className="bg-white px-hero-x py-10 sm:py-14 lg:py-16">
@@ -445,13 +380,13 @@ export default function TourDetails() {
             ))}
           </div>
 
-          {activeTab === "overview" && <OverviewPanel />}
-          {activeTab === "itinerary" && <ItineraryPanel />}
-          {activeTab === "included" && <IncludedPanel />}
-          {activeTab === "reviews" && <ReviewsPanel />}
+          {activeTab === "overview" && <OverviewPanel content={content} photos={tour.photos} />}
+          {activeTab === "itinerary" && <ItineraryPanel content={content} />}
+          {activeTab === "included" && <IncludedPanel content={content} />}
+          {activeTab === "reviews" && <ReviewsPanel content={content} />}
         </div>
 
-        <BookingCard />
+        <BookingCard key={tour.slug} />
       </div>
     </section>
   );

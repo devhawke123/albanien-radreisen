@@ -1,17 +1,20 @@
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Header from "../../layout/Header";
-import { tourHeroImage } from "../../../assets/tourPage";
 import { iconCalendar, iconPeople } from "../../../assets/hero";
 import { iconClock, iconStar } from "../../../assets/shared";
+import { useTour } from "../../../hooks/useTour";
 
 export default function TourHero() {
   const { t } = useTranslation();
+  const { tour, content } = useTour();
+
+  if (!tour) return <Navigate to="/tours" replace />;
 
   return (
     <section className="relative flex min-h-[420px] flex-col px-hero-x py-hero-y text-white xs:min-h-[480px] sm:min-h-[560px] lg:min-h-[640px]">
       <img
-        src={tourHeroImage}
+        src={tour.heroImage}
         alt=""
         aria-hidden
         className="absolute inset-0 h-full w-full object-cover object-center"
@@ -33,7 +36,7 @@ export default function TourHero() {
       <div className="relative z-10 mx-auto flex w-full max-w-hero flex-1 flex-col justify-end pb-8 sm:pb-12 lg:pb-14">
         <div className="max-w-[1100px]">
           <h1 className="m-0 font-sans text-[clamp(2rem,5vw,5rem)] font-medium capitalize leading-[0.92] tracking-[-0.03em] text-white">
-            {t("tourPage.title")}
+            {content.title}
           </h1>
 
           <a
@@ -46,20 +49,20 @@ export default function TourHero() {
           <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 font-sans text-sm text-white/90 sm:text-lg lg:text-xl">
             <span className="inline-flex items-center gap-1.5">
               <img src={iconStar} alt="" className="h-5 w-5" aria-hidden />
-              <span className="font-semibold text-white">{t("tourPage.rating")}</span>
-              <span className="text-white/70">{t("tourPage.reviewsMeta")}</span>
+              <span className="font-semibold text-white">{content.rating}</span>
+              <span className="text-white/70">{content.reviewsMeta}</span>
             </span>
             <span className="inline-flex items-center gap-1.5">
               <img src={iconClock} alt="" className="h-3.5 w-3.5" aria-hidden />
-              {t("tourPage.meta.duration")}
+              {content.meta?.duration}
             </span>
             <span className="inline-flex items-center gap-1.5">
               <img src={iconPeople} alt="" className="h-3.5 w-3.5" aria-hidden />
-              {t("tourPage.meta.group")}
+              {content.meta?.group}
             </span>
             <span className="inline-flex items-center gap-1.5">
               <img src={iconCalendar} alt="" className="h-3.5 w-3.5" aria-hidden />
-              {t("tourPage.meta.next")}
+              {content.meta?.season}
             </span>
           </div>
         </div>

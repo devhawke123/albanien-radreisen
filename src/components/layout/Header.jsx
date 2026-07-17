@@ -3,9 +3,16 @@ import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
 import { logo } from "../../assets/hero";
 import { iconCart } from "../../assets/shared";
+import useCart from "../../hooks/useCart";
 import LanguageSwitcher from "../ui/LanguageSwitcher";
 
-function navPillClass(isActive) {
+function navPillClass(isActive, light = false) {
+  if (light) {
+    return isActive
+      ? "rounded-[18px] bg-brand-soft px-4 py-1 font-sans text-nav leading-snug text-brand no-underline sm:px-5 lg:px-[23px]"
+      : "text-nav leading-snug text-gray-700 no-underline hover:text-brand";
+  }
+
   return isActive
     ? "rounded-[18px] bg-white px-4 py-1 font-sans text-nav leading-snug text-brand-light no-underline sm:px-5 lg:px-[23px]"
     : "text-nav leading-snug text-white/85 no-underline";
@@ -13,14 +20,10 @@ function navPillClass(isActive) {
 
 const ABOUT_DROPDOWN_PATHS = ["/about", "/gallery", "/faq", "/testimonials"];
 
-function AboutDropdown({ pathname, t }) {
+function AboutDropdown({ pathname, t, light = false }) {
   const isActive = ABOUT_DROPDOWN_PATHS.includes(pathname);
   const [open, setOpen] = useState(false);
   const containerRef = useRef(null);
-
-  useEffect(() => {
-    setOpen(false);
-  }, [pathname]);
 
   useEffect(() => {
     if (!open) return;
@@ -39,7 +42,7 @@ function AboutDropdown({ pathname, t }) {
         type="button"
         onClick={() => setOpen((prev) => !prev)}
         aria-expanded={open}
-        className={`inline-flex cursor-pointer items-center gap-1 ${navPillClass(isActive)}`}
+        className={`inline-flex cursor-pointer items-center gap-1 ${navPillClass(isActive, light)}`}
       >
         {t("nav.about")}
         <span
@@ -51,32 +54,44 @@ function AboutDropdown({ pathname, t }) {
       </button>
       {open && (
         <div className="absolute left-1/2 top-full z-20 -translate-x-1/2 pt-3">
-          <div className="flex min-w-[140px] flex-col gap-1 rounded-[12px] border border-white/30 bg-black/60 p-2 text-center shadow-lg backdrop-blur-md">
+          <div
+            className={`flex min-w-[140px] flex-col gap-1 rounded-[12px] p-2 text-center shadow-lg backdrop-blur-md ${
+              light ? "border border-gray-200 bg-white" : "border border-white/30 bg-black/60"
+            }`}
+          >
             <Link
               to="/about"
               onClick={() => setOpen(false)}
-              className="rounded-md px-3 py-1.5 text-nav leading-snug text-white/85 no-underline hover:bg-white/15"
+              className={`rounded-md px-3 py-1.5 text-nav leading-snug no-underline ${
+                light ? "text-gray-700 hover:bg-gray-100" : "text-white/85 hover:bg-white/15"
+              }`}
             >
               {t("nav.about")}
             </Link>
             <Link
               to="/gallery"
               onClick={() => setOpen(false)}
-              className="rounded-md px-3 py-1.5 text-nav leading-snug text-white/85 no-underline hover:bg-white/15"
+              className={`rounded-md px-3 py-1.5 text-nav leading-snug no-underline ${
+                light ? "text-gray-700 hover:bg-gray-100" : "text-white/85 hover:bg-white/15"
+              }`}
             >
               {t("nav.gallery")}
             </Link>
             <Link
               to="/faq"
               onClick={() => setOpen(false)}
-              className="rounded-md px-3 py-1.5 text-nav leading-snug text-white/85 no-underline hover:bg-white/15"
+              className={`rounded-md px-3 py-1.5 text-nav leading-snug no-underline ${
+                light ? "text-gray-700 hover:bg-gray-100" : "text-white/85 hover:bg-white/15"
+              }`}
             >
               {t("nav.faq")}
             </Link>
             <Link
               to="/testimonials"
               onClick={() => setOpen(false)}
-              className="rounded-md px-3 py-1.5 text-nav leading-snug text-white/85 no-underline hover:bg-white/15"
+              className={`rounded-md px-3 py-1.5 text-nav leading-snug no-underline ${
+                light ? "text-gray-700 hover:bg-gray-100" : "text-white/85 hover:bg-white/15"
+              }`}
             >
               {t("nav.testimonials")}
             </Link>
@@ -196,10 +211,11 @@ function MobileSidebar({ open, onClose, pathname, t }) {
   );
 }
 
-export default function Header() {
+export default function Header({ light = false }) {
   const { t } = useTranslation();
   const { pathname } = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
+  const cartItems = useCart();
 
   return (
     <>
@@ -210,31 +226,42 @@ export default function Header() {
           alt="Albanien Radreisen"
         />
 
-        <nav className="hidden min-h-0 w-full flex-wrap items-center justify-center gap-3 rounded-[21px] border border-white/30 bg-white/15 px-3 py-1.5 backdrop-blur-sm sm:gap-5 sm:px-5 sm:py-2 md:flex md:w-auto lg:gap-7 lg:px-6">
-          <Link to="/" className={navPillClass(pathname === "/")}>
+        <nav
+          className={`hidden min-h-0 w-full flex-wrap items-center justify-center gap-3 rounded-[21px] px-3 py-1.5 backdrop-blur-sm sm:gap-5 sm:px-5 sm:py-2 md:flex md:w-auto lg:gap-7 lg:px-6 ${
+            light ? "border border-gray-200 bg-white" : "border border-white/30 bg-white/15"
+          }`}
+        >
+          <Link to="/" className={navPillClass(pathname === "/", light)}>
             {t("nav.home")}
           </Link>
-          <AboutDropdown pathname={pathname} t={t} />
-          <Link to="/tours" className={navPillClass(pathname.startsWith("/tours"))}>
+          <AboutDropdown pathname={pathname} t={t} light={light} />
+          <Link to="/tours" className={navPillClass(pathname.startsWith("/tours"), light)}>
             {t("nav.cyclingTours")}
           </Link>
-          <Link to="/imprint" className={navPillClass(pathname === "/imprint")}>
+          <Link to="/imprint" className={navPillClass(pathname === "/imprint", light)}>
             {t("nav.imprint")}
           </Link>
-          <Link to="/contact" className={navPillClass(pathname === "/contact")}>
+          <Link to="/contact" className={navPillClass(pathname === "/contact", light)}>
             {t("nav.contact")}
           </Link>
         </nav>
 
         <div className="flex shrink-0 items-center gap-2 justify-self-end sm:gap-2.5">
-          <LanguageSwitcher />
-          <button
-            type="button"
-            className="flex h-11 w-11 shrink-0 cursor-pointer items-center justify-center rounded-lg border border-white bg-white/16 backdrop-blur-sm"
+          <LanguageSwitcher light={light} />
+          <Link
+            to="/cart"
+            className={`relative flex h-11 w-11 shrink-0 cursor-pointer items-center justify-center rounded-lg backdrop-blur-sm ${
+              light ? "border border-gray-200 bg-white" : "border border-white bg-white/16"
+            }`}
             aria-label={t("nav.cartLabel")}
           >
             <img src={iconCart} alt="" className="h-6 w-6" aria-hidden />
-          </button>
+            {cartItems.length > 0 && (
+              <span className="absolute -right-1.5 -top-1.5 flex h-5 min-w-5 items-center justify-center rounded-full bg-brand px-1 text-[10px] font-bold text-white">
+                {cartItems.length}
+              </span>
+            )}
+          </Link>
           <button
             className="hidden h-btn-lg cursor-pointer rounded-[11px] bg-white/80 px-6 text-btn leading-none text-black sm:px-8 md:inline-flex md:items-center lg:px-[39px]"
             type="button"
@@ -244,13 +271,15 @@ export default function Header() {
           <button
             type="button"
             onClick={() => setMenuOpen(true)}
-            className="flex h-11 w-11 shrink-0 cursor-pointer flex-col items-center justify-center gap-1.5 rounded-lg border border-white bg-white/16 backdrop-blur-sm md:hidden"
+            className={`flex h-11 w-11 shrink-0 cursor-pointer flex-col items-center justify-center gap-1.5 rounded-lg backdrop-blur-sm md:hidden ${
+              light ? "border border-gray-200 bg-white" : "border border-white bg-white/16"
+            }`}
             aria-label={t("nav.openMenu")}
             aria-expanded={menuOpen}
           >
-            <span className="block h-0.5 w-5 rounded-full bg-white" />
-            <span className="block h-0.5 w-5 rounded-full bg-white" />
-            <span className="block h-0.5 w-5 rounded-full bg-white" />
+            <span className={`block h-0.5 w-5 rounded-full ${light ? "bg-gray-800" : "bg-white"}`} />
+            <span className={`block h-0.5 w-5 rounded-full ${light ? "bg-gray-800" : "bg-white"}`} />
+            <span className={`block h-0.5 w-5 rounded-full ${light ? "bg-gray-800" : "bg-white"}`} />
           </button>
         </div>
       </header>

@@ -3,3 +3,4 @@ dist
 .DS_Store
 *.log
 _unused_assets_review/
+.env

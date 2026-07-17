@@ -6,10 +6,11 @@ import {
   featuredSlide2,
   featuredSlide3,
   featuredSlideHero,
-  hilltopGroupPic,
 } from "../../assets/tours";
 import { iconPhoto } from "../../assets/shared";
 import TourCard from "../ui/TourCard";
+import { TOURS } from "../../data/toursCatalog";
+import { formatEuro } from "../../utils/bookingPricing";
 
 const ROTATION_MS = 10_000;
 
@@ -20,7 +21,6 @@ const featuredSlideSources = [
   { src: featuredSlide3, objectPosition: "center center" },
 ];
 
-const tourImages = [hilltopGroupPic, hilltopGroupPic, hilltopGroupPic, hilltopGroupPic];
 
 function SlideImage({ slide, isActive }) {
   if (slide.position) {
@@ -112,7 +112,7 @@ function FeaturedTourShowcase() {
           })}
 
           <Link
-            to="/tours/8-day-cycling"
+            to="/tours"
             className="inline-flex h-12 items-center gap-2 rounded-lg bg-black/45 px-3 text-xs text-white no-underline sm:h-16 sm:rounded-xl sm:px-4 sm:text-sm md:h-20"
           >
             <img src={iconPhoto} alt="" className="h-4 w-4" aria-hidden />
@@ -140,10 +140,26 @@ export default function FeaturedTours() {
         <div className="mt-10 grid gap-6 sm:mt-12 lg:grid-cols-[minmax(0,1.1fr)_1fr] lg:gap-10 xl:grid-cols-[minmax(0,788px)_1fr] xl:gap-[61px]">
           <FeaturedTourShowcase />
 
-          <div className="grid grid-cols-1 gap-4 xs:grid-cols-2 xs:gap-5 sm:gap-6 lg:grid-cols-2">
-            {tourImages.map((image, index) => (
-              <TourCard key={index} image={image} faded={index >= 2} />
-            ))}
+          <div className="grid grid-cols-1 gap-4 xs:grid-cols-2 xs:gap-5 sm:gap-6 lg:grid-cols-1 xl:grid-cols-1">
+            {TOURS.map((tour) => {
+              const card = t(`toursContent.${tour.slug}.card`, { returnObjects: true });
+              return (
+                <TourCard
+                  key={tour.slug}
+                  image={tour.cardImage}
+                  imageAlt={card.imageAlt}
+                  location={card.location}
+                  people={card.people}
+                  date={card.date}
+                  duration={card.duration}
+                  title={card.title}
+                  price={formatEuro(tour.basePrice).replace("€ ", "€")}
+                  amenities={card.amenities}
+                  moreAmenitiesLabel={card.moreAmenities}
+                  to={`/tours/${tour.slug}`}
+                />
+              );
+            })}
           </div>
         </div>
       </div>
