@@ -13,9 +13,13 @@ export default function ContactLocation() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={t("contactPage.mapLabel")}
-      className=""
+      className="block w-full overflow-hidden py-0 md:py-5 lg:py-14"
     >
-      <img src={contactMapImage} alt={t("contactPage.mapAlt")} className="h-full w-full object-cover py-0 md:py-5 lg:py-14" />
+      <img
+        src={contactMapImage}
+        alt={t("contactPage.mapAlt")}
+        className="block h-auto w-full object-cover object-center"
+      />
     </a>
   );
 }
