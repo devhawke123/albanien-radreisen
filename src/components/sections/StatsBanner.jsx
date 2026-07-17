@@ -19,7 +19,7 @@ export default function StatsBanner() {
           src={mountainIllustration}
           alt=""
           aria-hidden
-          className="pointer-events-none absolute right-0 top-1/2 hidden h-24 w-auto -translate-y-1/2 sm:block md:h-28 lg:h-[112px]"
+          className="pointer-events-none absolute right-0 -bottom-1/4 hidden h-24 w-auto -translate-y-1/2 sm:block md:h-28 lg:h-[112px]"
         />
 
         <div className="relative z-10 grid grid-cols-2 gap-4 xs:gap-6 sm:grid-cols-4 sm:gap-8 lg:gap-[43px]">
