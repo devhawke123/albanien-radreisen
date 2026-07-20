@@ -11,7 +11,6 @@ import ToursPage from "./pages/ToursPage";
 import CartPage from "./pages/CartPage";
 import CheckoutPage from "./pages/CheckoutPage";
 import AdminLoginPage from "./pages/admin/AdminLoginPage";
-import AdminDashboardPage from "./pages/admin/AdminDashboardPage";
 import AdminBookingsPage from "./pages/admin/AdminBookingsPage";
 import AdminProtectedRoute from "./components/admin/AdminProtectedRoute";
 import { AdminAuthProvider } from "./hooks/useAdminAuth";
@@ -23,32 +22,24 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
-          {/* <Route path="/gallery" element={<GalleryPage />} /> */}
+          <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/tours" element={<ToursPage />} />
           <Route path="/tours/:slug" element={<TourPage />} />
-          {/* <Route path="/cart" element={<CartPage />} /> */}
-          {/* <Route path="/checkout" element={<CheckoutPage />} /> */}
-          {/* <Route path="/testimonials" element={<ReviewsPage />} /> */}
-          {/* <Route path="/faq" element={<FaqPage />} /> */}
+          <Route path="/cart" element={<CartPage />} />
+          <Route path="/checkout" element={<CheckoutPage />} />
+          <Route path="/testimonials" element={<ReviewsPage />} />
+          <Route path="/faq" element={<FaqPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/imprint" element={<ImprintPage />} />
 
-          {/* <Route
+          <Route
             path="/admin/*"
             element={
               <AdminAuthProvider>
                 <Routes>
                   <Route path="/" element={<AdminLoginPage />} />
                   <Route
-                    path="/dashboard"
-                    element={
-                      <AdminProtectedRoute>
-                        <AdminDashboardPage />
-                      </AdminProtectedRoute>
-                    }
-                  />
-                  <Route
-                    path="/dashboard/bookings"
+                    path="/bookings"
                     element={
                       <AdminProtectedRoute>
                         <AdminBookingsPage />
@@ -58,7 +49,7 @@ function App() {
                 </Routes>
               </AdminAuthProvider>
             }
-          /> */}
+          />
         </Routes>
       </main>
     </BrowserRouter>

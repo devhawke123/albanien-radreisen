@@ -13,7 +13,7 @@ export default function AdminLoginPage() {
   const [submitting, setSubmitting] = useState(false);
 
   if (status === "authenticated") {
-    return <Navigate to="/admin/dashboard" replace />;
+    return <Navigate to="/admin/bookings" replace />;
   }
 
   async function handleSubmit(event) {

@@ -1,5 +1,6 @@
 import { hilltopGroupPic, featuredSlide2 } from "../assets/tours";
-import { tourHeroImage, tourPhoto1, tourPhoto2 } from "../assets/tourPage";
+import { tourHeroImage } from "../assets/tourPage";
+import { tourDetailPhotos } from "../assets/gallery/index.js";
 
 /** Shared departure windows for the 2026 booking season. */
 export const SHARED_DEPARTURES = [
@@ -21,7 +22,7 @@ export const TOURS = [
     basePrice: 1290,
     cardImage: hilltopGroupPic,
     heroImage: tourHeroImage,
-    photos: [tourPhoto1, tourPhoto2, tourPhoto2],
+    photos: tourDetailPhotos,
     departures: SHARED_DEPARTURES,
     addons: [
       { id: "bike", price: 120 },
@@ -35,7 +36,7 @@ export const TOURS = [
     basePrice: 1290,
     cardImage: featuredSlide2,
     heroImage: featuredSlide2,
-    photos: [tourPhoto2, tourPhoto1, tourPhoto2],
+    photos: tourDetailPhotos,
     departures: SHARED_DEPARTURES,
     addons: [
       { id: "bike", price: 120 },

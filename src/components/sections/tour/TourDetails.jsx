@@ -166,6 +166,11 @@ function OverviewPanel({ content, photos }) {
             <img src={photos[2]} alt="" className="h-40 w-full rounded-2xl object-cover sm:h-[218px]" />
           </div>
         </div>
+        <div className="mt-3 grid grid-cols-1 gap-3 xs:grid-cols-3 sm:gap-4">
+          <img src={photos[3]} alt="" className="h-40 w-full rounded-2xl object-cover sm:h-[218px]" />
+          <img src={photos[4]} alt="" className="h-40 w-full rounded-2xl object-cover sm:h-[218px]" />
+          <img src={photos[5]} alt="" className="h-40 w-full rounded-2xl object-cover sm:h-[218px]" />
+        </div>
       </div>
     </div>
   );

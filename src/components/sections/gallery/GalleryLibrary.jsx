@@ -1,32 +1,9 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import {
-  galleryFeatured,
-  galleryGrid1,
-  galleryGrid2,
-  galleryGrid3,
-  galleryGrid4,
-  galleryGrid5,
-  galleryGrid6,
-  galleryGrid7,
-  galleryGrid8,
-  galleryGrid9,
-} from "../../../assets/galleryPage";
+import { galleryImages } from "../../../assets/galleryPage";
 import { cyclepinkGirl } from "../../../assets/shared";
 
 const PAGE_SIZE = 9;
-
-const GALLERY_ITEMS = [
-  galleryGrid1,
-  galleryGrid2,
-  galleryGrid3,
-  galleryGrid4,
-  galleryGrid5,
-  galleryGrid6,
-  galleryGrid7,
-  galleryGrid8,
-  galleryGrid9,
-];
 
 function PageArrow({ direction }) {
   return (
@@ -46,8 +23,8 @@ export default function GalleryLibrary() {
   const alts = t("galleryPage.alts", { returnObjects: true });
   const altList = Array.isArray(alts) ? alts : [];
 
-  const totalPages = Math.max(1, Math.ceil(GALLERY_ITEMS.length / PAGE_SIZE));
-  const pageItems = GALLERY_ITEMS.slice(page * PAGE_SIZE, page * PAGE_SIZE + PAGE_SIZE);
+  const totalPages = Math.max(1, Math.ceil(galleryImages.length / PAGE_SIZE));
+  const pageItems = galleryImages.slice(page * PAGE_SIZE, page * PAGE_SIZE + PAGE_SIZE);
 
   function goTo(nextPage) {
     setPage(((nextPage % totalPages) + totalPages) % totalPages);

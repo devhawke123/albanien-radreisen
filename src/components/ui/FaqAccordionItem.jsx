@@ -3,7 +3,7 @@ function ChevronIcon({ open }) {
     <svg
       viewBox="0 0 24 24"
       aria-hidden
-      className={`h-4 w-4 transition-transform duration-200 sm:h-5 sm:w-5 ${open ? "rotate-0 text-white" : "rotate-180 text-brand"}`}
+      className={`h-4 w-4 transition-transform duration-200 sm:h-5 sm:w-5 ${open ? "rotate-0 text-white" : "rotate-360 text-brand"}`}
       fill="none"
       stroke="currentColor"
       strokeWidth="2"

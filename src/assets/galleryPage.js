@@ -1,11 +1,2 @@
-export { default as galleryPageHero } from "@assets/images/featured-slide-3.jpg";
-export { default as galleryFeatured } from "@assets/images/hilltopGroupPic.png";
-export { default as galleryGrid1 } from "@assets/images/Rectangle 161125057.png";
-export { default as galleryGrid2 } from "@assets/images/Rectangle 161125055.png";
-export { default as galleryGrid3 } from "@assets/images/lovedByTravelersHero.jpg";
-export { default as galleryGrid4 } from "@assets/images/Rectangle 161125054.png";
-export { default as galleryGrid5 } from "@assets/images/featured-slide-1.jpg";
-export { default as galleryGrid6 } from "@assets/images/featured-slide-2.jpg";
-export { default as galleryGrid7 } from "@assets/images/Rectangle 161125056.png";
-export { default as galleryGrid8 } from "@assets/images/about-photo.jpg";
-export { default as galleryGrid9 } from "@assets/images/team-photo.jpg";
+export { default as galleryPageHero } from "@assets/images/galleryHero.png";
+export { galleryImages } from "./gallery/index.js";
