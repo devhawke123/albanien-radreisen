@@ -5,14 +5,17 @@ export function formatEuro(amount) {
   })}`;
 }
 
-export function formatDisplayDate(isoDate) {
+export function formatDisplayDate(isoDate, locale = "en") {
   const [year, month, day] = isoDate.split("-");
+  if (locale === "de") {
+    return `${day}.${month}.${year}`;
+  }
   return `${day}-${month}-${year}`;
 }
 
 export function formatDepartureLabel(checkIn, checkOut, locale) {
-  const from = formatDisplayDate(checkIn);
-  const to = formatDisplayDate(checkOut);
+  const from = formatDisplayDate(checkIn, locale);
+  const to = formatDisplayDate(checkOut, locale);
   if (locale === "de") {
     return `Von ${from} bis ${to}`;
   }
