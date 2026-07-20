@@ -4,3 +4,4 @@ dist
 *.log
 _unused_assets_review/
 .env
+albania/
