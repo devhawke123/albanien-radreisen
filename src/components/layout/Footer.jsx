@@ -42,7 +42,7 @@ const ABOUT_LINKS = [
   { key: "aboutUs", to: "/about" },
   { key: "gallery", to: "/gallery" },
   { key: "contact", to: "/contact" },
-  { key: "privacy", to: "/imprint" },
+  { key: "termsLegal", to: "/terms" },
 ];
 
 export default function Footer() {

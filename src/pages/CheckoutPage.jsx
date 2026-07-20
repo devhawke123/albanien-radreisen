@@ -8,6 +8,7 @@ import { clearCart } from "../utils/cartStore";
 import { getTourBySlug } from "../data/toursCatalog";
 import { formatDisplayDate, formatEuro } from "../utils/bookingPricing";
 import { submitOrder } from "../services/submitOrder";
+import { submitOrderNotification } from "../services/bookingSubmit";
 
 const COUNTRIES = [
   "Germany",
@@ -85,6 +86,19 @@ export default function CheckoutPage() {
         total: item.total,
       }));
       const result = await submitOrder({ form, items, subtotal, locale });
+      try {
+        await submitOrderNotification({
+          orderNumber: result.orderNumber,
+          form,
+          items,
+          subtotal,
+          autoresponseMessage: t("checkoutPage.confirmationEmail", {
+            orderNumber: result.orderNumber,
+          }),
+        });
+      } catch {
+        // Order is already saved — don't block success if email delivery fails.
+      }
       clearCart();
       setOrderNumber(result.orderNumber);
       setSubmitted(true);
@@ -323,7 +337,7 @@ export default function CheckoutPage() {
 
               <p className="m-0 font-sans text-sm text-gray-500">
                 {t("checkoutPage.termsPrefix")}{" "}
-                <Link to="/imprint" className="text-brand no-underline hover:underline">
+                <Link to="/terms" className="text-brand no-underline hover:underline">
                   {t("checkoutPage.termsLink")}
                 </Link>{" "}
                 {t("checkoutPage.termsAnd")}{" "}

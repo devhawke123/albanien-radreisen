@@ -7,11 +7,13 @@ import ReviewsPage from "./pages/ReviewsPage";
 import FaqPage from "./pages/FaqPage";
 import ContactPage from "./pages/ContactPage";
 import ImprintPage from "./pages/ImprintPage";
+import TermsPage from "./pages/TermsPage";
 import ToursPage from "./pages/ToursPage";
 import CartPage from "./pages/CartPage";
 import CheckoutPage from "./pages/CheckoutPage";
 import AdminLoginPage from "./pages/admin/AdminLoginPage";
 import AdminBookingsPage from "./pages/admin/AdminBookingsPage";
+import AdminRequestsPage from "./pages/admin/AdminRequestsPage";
 import AdminProtectedRoute from "./components/admin/AdminProtectedRoute";
 import { AdminAuthProvider } from "./hooks/useAdminAuth";
 
@@ -31,6 +33,7 @@ function App() {
           <Route path="/faq" element={<FaqPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/imprint" element={<ImprintPage />} />
+          <Route path="/terms" element={<TermsPage />} />
 
           <Route
             path="/admin/*"
@@ -43,6 +46,14 @@ function App() {
                     element={
                       <AdminProtectedRoute>
                         <AdminBookingsPage />
+                      </AdminProtectedRoute>
+                    }
+                  />
+                  <Route
+                    path="/requests"
+                    element={
+                      <AdminProtectedRoute>
+                        <AdminRequestsPage />
                       </AdminProtectedRoute>
                     }
                   />

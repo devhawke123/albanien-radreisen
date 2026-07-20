@@ -32,6 +32,9 @@
     "messageLabel": "Deine Nachricht *",
     "messagePlaceholder": "Erzähl uns von deinem Radfahrniveau, bevorzugten Terminen, Gruppengröße und besonderen Wünschen...",
     "submit": "Nachricht Senden",
+    "submitting": "Wird gesendet...",
+    "success": "Danke! Deine Nachricht wurde gesendet — wir melden uns bald bei dir.",
+    "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut oder schreibe uns direkt eine E-Mail.",
     "note": "Wir antworten in der Regel innerhalb von 24 Stunden an Werktagen.",
     "mapAlt": "Karte mit unserem Bürostandort in Tirana, Albanien",
     "mapLabel": "Unseren Standort in Google Maps öffnen"
@@ -73,6 +76,81 @@
     "copyrightBody": "Alle auf dieser Website veröffentlichten Inhalte, Texte, Bilder und Materialien sind durch das deutsche Urheberrecht geschützt. Vervielfältigung, Verbreitung oder kommerzielle Nutzung ohne vorherige schriftliche Genehmigung sind untersagt. Solltest du glauben, dass Inhalte Urheberrechte verletzen, kontaktiere uns bitte, damit wir dies prüfen und entsprechend handeln können.",
     "contactTitle": "Brauchst Du Weitere Informationen?",
     "contactCta": "Kontaktiere Uns"
+  },
+  "termsPage": {
+    "back": "Zurück",
+    "title": "AGB & Rechtliche Informationen",
+    "packageTravelTitle": "Informationen Zur Pauschalreise",
+    "packageTravelParagraphs": [
+      "Die von ADA – Reiseagentur Tarko angebotenen Reiseleistungen können eine Pauschalreise im Sinne der Richtlinie (EU) 2015/2302 sowie des § 651a BGB darstellen.",
+      "Sofern zutreffend, stehen Reisenden alle Rechte zu, die durch die einschlägigen europäischen und deutschen Vorschriften zur Pauschalreise gewährt werden.",
+      "ADA – Reiseagentur Tarko trägt die volle Verantwortung für die ordnungsgemäße Erbringung aller im gebuchten Paket enthaltenen Reiseleistungen.",
+      "Darüber hinaus unterhält das Unternehmen den gesetzlich vorgeschriebenen Insolvenzschutz, um Kundenzahlungen abzusichern und, sofern eine Beförderung eingeschlossen ist, im Insolvenzfall die Rückreise zu gewährleisten."
+    ],
+    "travellerRightsTitle": "Wichtigste Reiserechte",
+    "travellerRightsIntro": "Reisende haben das Recht auf:",
+    "travellerRightsList": [
+      "Erhalt aller wesentlichen Informationen vor Abschluss eines Pauschalreisevertrags.",
+      "Mindestens einen Veranstalter, der für die ordnungsgemäße Erbringung aller gebuchten Reiseleistungen verantwortlich ist.",
+      "Zugang zu Notfallkontaktdaten während der gesamten Reise.",
+      "Übertragung der Pauschalreisebuchung auf eine andere Person unter den geltenden Bedingungen.",
+      "Erstattungen oder Entschädigungen, sofern gesetzlich vorgeschrieben.",
+      "Stornierung oder Kündigung einer Buchung unter den gesetzlich vorgesehenen Umständen.",
+      "Unterstützung bei Schwierigkeiten während der Reise."
+    ],
+    "travellerRightsFooter": "Vollständige Informationen zu den Reiserechten finden Sie in der Richtlinie (EU) 2015/2302.",
+    "cancellationTitle": "Stornierungsbedingungen",
+    "cancellationHeaders": {
+      "period": "Stornierungszeitraum",
+      "fee": "Stornogebühr"
+    },
+    "cancellationFlightsSubtitle": "Pauschalreisen Inklusive Flug",
+    "cancellationFlightsRows": [
+      { "period": "Bis 32 Tage vor Abreise", "fee": "25%" },
+      { "period": "31–22 Tage vor Abreise", "fee": "40%" },
+      { "period": "21–15 Tage vor Abreise", "fee": "60%" },
+      { "period": "14–8 Tage vor Abreise", "fee": "70%" },
+      { "period": "7–1 Tag vor Abreise", "fee": "80%" },
+      { "period": "Abreisetag oder Nichterscheinen", "fee": "90%" }
+    ],
+    "cancellationCruiseSubtitle": "Kreuzfahrten",
+    "cancellationCruiseRows": [
+      { "period": "Bis 45 Tage vor Abreise", "fee": "25%" },
+      { "period": "44–22 Tage vor Abreise", "fee": "45%" },
+      { "period": "21–15 Tage vor Abreise", "fee": "65%" },
+      { "period": "14–1 Tag vor Abreise", "fee": "85%" },
+      { "period": "Abreisetag oder Nichterscheinen", "fee": "90%" }
+    ],
+    "cancellationNote": "Maßgeblich für das Stornierungsdatum ist der Tag, an dem die schriftliche Stornierungsmitteilung eingeht.",
+    "insolvencyTitle": "Insolvenzschutz",
+    "insolvencyParagraphs": [
+      "ADA – Reiseagentur Tarko unterhält Insolvenzschutz bei:",
+      "SIGAL Tirana – Albanien",
+      "Im Falle einer Insolvenz des Unternehmens können sich Kunden bezüglich der Erstattung von Zahlungen oder der Rückreise, sofern zutreffend, an den Insolvenzschutzanbieter wenden."
+    ],
+    "liabilityTitle": "Haftungsausschluss",
+    "liabilityContentTitle": "Haftung für Inhalte",
+    "liabilityContentParagraphs": [
+      "Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Vollständigkeit, Richtigkeit und Aktualität der bereitgestellten Informationen kann jedoch keine Gewähr übernommen werden.",
+      "Als Diensteanbieter sind wir gemäß den geltenden Gesetzen für unsere eigenen Inhalte verantwortlich. Eine darüberhinausgehende Haftung ist ausgeschlossen."
+    ],
+    "liabilityLinksTitle": "Haftung für externe Links",
+    "liabilityLinksParagraphs": [
+      "Unsere Website enthält Links zu externen, von Dritten betriebenen Websites.",
+      "Wir haben keinen Einfluss auf die Inhalte dieser Websites und übernehmen daher keine Verantwortung oder Haftung für deren Inhalte. Die Verantwortung für verlinkte Websites liegt stets bei deren jeweiligen Betreibern.",
+      "Sollten uns Rechtsverletzungen bekannt werden, werden die betreffenden Links umgehend entfernt."
+    ],
+    "copyrightTitle": "Urheberrecht",
+    "copyrightParagraphs": [
+      "Alle auf dieser Website veröffentlichten Inhalte, Texte, Grafiken, Bilder und sonstigen Materialien sind urheberrechtlich geschützt.",
+      "Jede Vervielfältigung, Bearbeitung, Verbreitung oder kommerzielle Nutzung bedarf der vorherigen schriftlichen Zustimmung, sofern gesetzlich nicht anders zulässig.",
+      "Werden Inhalte Dritter verwendet, verbleiben die jeweiligen Urheberrechte bei deren Inhabern.",
+      "Sollten Sie eine Urheberrechtsverletzung feststellen, kontaktieren Sie uns bitte, damit das betreffende Material umgehend entfernt werden kann."
+    ],
+    "applicableLawTitle": "Anwendbares Recht",
+    "applicableLawParagraphs": [
+      "Diese Bedingungen unterliegen den geltenden Gesetzen zur Pauschalreise und zum Verbraucherschutz, einschließlich der Richtlinie (EU) 2015/2302 sowie den einschlägigen Vorschriften des BGB, soweit anwendbar."
+    ]
   },
   "toursPage": {
     "title": "Finde Dein Perfektes Radabenteuer",
@@ -296,6 +374,8 @@
   "tourPage": {
     "back": "Zurück zu den Touren",
     "bookNow": "Jetzt Buchen",
+    "seeVideo": "Video Ansehen",
+    "closeVideo": "Video schließen",
     "tabs": {
       "overview": "Übersicht",
       "itinerary": "Reiseverlauf",
@@ -422,6 +502,7 @@
     "total": "gesamt",
     "successTitle": "Bestellung aufgegeben",
     "successBody": "Vielen Dank. Deine Buchungsanfrage ist eingegangen. Wir melden uns in Kürze zur Bestätigung.",
+    "confirmationEmail": "Vielen Dank für deine Buchung bei Albanien Radreisen. Deine Bestellnummer lautet {{orderNumber}}. Wir melden uns in Kürze zur Bestätigung.",
     "backToTours": "Zurück zu den Touren",
     "countries": {
       "Germany": "Deutschland",
@@ -496,7 +577,7 @@
       "aboutUs": "Über Uns",
       "gallery": "Galerie",
       "contact": "Kontakt",
-      "privacy": "Datenschutz"
+      "termsLegal": "AGB & Rechtliches"
     },
     "copyright": "© 2026 Albanien Radreisen. Design und Entwicklung von Blue Hawke."
   },

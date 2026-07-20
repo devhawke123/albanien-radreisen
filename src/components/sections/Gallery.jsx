@@ -1,11 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import {
-  galleryImageBottom,
-  galleryImageLeft,
-  galleryImageRight,
-  galleryImageTop,
-} from "../../assets/gallery";
+import { galleryImages } from "../../assets/gallery/index.js";
 
 function GalleryTile({ src, alt, className, imageClassName }) {
   return (
@@ -17,7 +12,8 @@ function GalleryTile({ src, alt, className, imageClassName }) {
 
 export default function Gallery() {
   const { t } = useTranslation();
-  const alts = t("gallery.alts", { returnObjects: true });
+  const alts = t("galleryPage.alts", { returnObjects: true });
+  const [galleryImageLeft, galleryImageTop, galleryImageBottom, galleryImageRight] = galleryImages;
 
   return (
     <section id="gallery" className="bg-white px-hero-x py-16 md:py-20 lg:py-24">

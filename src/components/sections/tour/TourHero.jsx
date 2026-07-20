@@ -1,13 +1,18 @@
+import { useState } from "react";
 import { Link, Navigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Header from "../../layout/Header";
+import VideoModal from "../../common/VideoModal";
 import { iconCalendar, iconPeople } from "../../../assets/hero";
 import { iconClock, iconStar } from "../../../assets/shared";
 import { useTour } from "../../../hooks/useTour";
 
+const TOUR_VIDEO_ID = "nG-dSvg6Aj4";
+
 export default function TourHero() {
   const { t } = useTranslation();
   const { tour, content } = useTour();
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   if (!tour) return <Navigate to="/tours" replace />;
 
@@ -39,12 +44,21 @@ export default function TourHero() {
             {content.title}
           </h1>
 
-          <a
-            href="#tour-booking"
-            className="mt-5 inline-flex h-14 items-center justify-center rounded-2xl bg-brand px-8 font-sans text-btn font-medium text-white no-underline"
-          >
-            {t("tourPage.bookNow")}
-          </a>
+          <div className="mt-5 flex flex-wrap items-center gap-4">
+            <a
+              href="#tour-booking"
+              className="inline-flex h-14 items-center justify-center rounded-2xl bg-brand px-8 font-sans text-btn font-medium text-white no-underline"
+            >
+              {t("tourPage.bookNow")}
+            </a>
+            <button
+              type="button"
+              onClick={() => setIsVideoOpen(true)}
+              className="inline-flex h-14 items-center justify-center rounded-2xl border border-white bg-white/10 px-8 font-sans text-btn font-medium text-white backdrop-blur-sm"
+            >
+              {t("tourPage.seeVideo")}
+            </button>
+          </div>
 
           <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 font-sans text-sm text-white/90 sm:text-lg lg:text-xl">
             <span className="inline-flex items-center gap-1.5">
@@ -67,6 +81,10 @@ export default function TourHero() {
           </div>
         </div>
       </div>
+
+      {isVideoOpen && (
+        <VideoModal youtubeId={TOUR_VIDEO_ID} onClose={() => setIsVideoOpen(false)} />
+      )}
     </section>
   );
 }

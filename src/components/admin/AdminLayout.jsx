@@ -1,9 +1,16 @@
+import { Link, useLocation } from "react-router-dom";
 import { logo } from "../../assets/hero";
 import { useAdminAuth } from "../../hooks/useAdminAuth";
 import { LogoutIcon } from "./icons";
 
+const NAV_LINKS = [
+  { to: "/admin/bookings", label: "Bookings" },
+  { to: "/admin/requests", label: "Requests" },
+];
+
 export default function AdminLayout({ children }) {
   const { username, logout } = useAdminAuth();
+  const { pathname } = useLocation();
 
   return (
     <div className="min-h-screen bg-[#f9f7f6]">
@@ -12,9 +19,21 @@ export default function AdminLayout({ children }) {
           <div className="flex items-center gap-3">
             <img src={logo} alt="Albanien Radreisen" className="h-auto w-28" />
             <span className="hidden h-6 w-px bg-gray-200 sm:block" />
-            <span className="hidden font-serif text-lg font-semibold text-black sm:block">
-              Bookings
-            </span>
+            <nav className="hidden items-center gap-1 sm:flex">
+              {NAV_LINKS.map((link) => (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  className={`rounded-lg px-3 py-1.5 font-sans text-sm font-medium no-underline ${
+                    pathname === link.to
+                      ? "bg-brand-pale text-brand"
+                      : "text-text-muted hover:text-black"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
           </div>
 
           <div className="flex items-center gap-3">

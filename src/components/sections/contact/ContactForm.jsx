@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { iconPhone, iconMail, iconPin } from "../../../assets/shared";
+import { submitRequest } from "../../../services/submitRequest";
 
 const contactDetails = [
   { icon: iconPhone, text: "+355 (0) 68 381 6275" },
@@ -29,16 +30,33 @@ function SendIcon() {
 }
 
 export default function ContactForm() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [form, setForm] = useState({ name: "", email: "", phone: "", subject: "", message: "" });
+  const [status, setStatus] = useState("idle");
 
   function updateField(field) {
     return (event) => setForm((prev) => ({ ...prev, [field]: event.target.value }));
   }
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
-    // ponytail: no submit handler wired up yet, add when the contact endpoint exists
+    setStatus("submitting");
+
+    try {
+      await submitRequest({
+        type: "contact",
+        name: form.name,
+        email: form.email,
+        phone: form.phone,
+        subject: form.subject,
+        message: form.message,
+        locale: i18n.language?.startsWith("de") ? "de" : "en",
+      });
+      setStatus("success");
+      setForm({ name: "", email: "", phone: "", subject: "", message: "" });
+    } catch {
+      setStatus("error");
+    }
   }
 
   return (
@@ -108,11 +126,23 @@ export default function ContactForm() {
 
             <button
               type="submit"
-              className="mt-2 flex h-btn-lg cursor-pointer items-center justify-center gap-2 rounded-2xl bg-brand text-btn font-bold leading-none text-white shadow-[0_4px_8px_rgba(204,22,8,0.3)]"
+              disabled={status === "submitting"}
+              className="mt-2 flex h-btn-lg cursor-pointer items-center justify-center gap-2 rounded-2xl bg-brand text-btn font-bold leading-none text-white shadow-[0_4px_8px_rgba(204,22,8,0.3)] disabled:cursor-not-allowed disabled:opacity-70"
             >
               <SendIcon />
-              {t("contactPage.submit")}
+              {status === "submitting" ? t("contactPage.submitting") : t("contactPage.submit")}
             </button>
+
+            {status === "success" && (
+              <p className="rounded-xl bg-emerald-50 px-3 py-2 text-center font-sans text-sm text-emerald-700">
+                {t("contactPage.success")}
+              </p>
+            )}
+            {status === "error" && (
+              <p className="rounded-xl bg-red-50 px-3 py-2 text-center font-sans text-sm text-red-700">
+                {t("contactPage.error")}
+              </p>
+            )}
 
             <p className="text-center font-sans text-sm text-[#99a1af]">{t("contactPage.note")}</p>
           </form>

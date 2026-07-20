@@ -32,6 +32,9 @@
     "messageLabel": "Your Message *",
     "messagePlaceholder": "Tell us about your cycling experience level, preferred dates, group size, and any special requirements...",
     "submit": "Send Message",
+    "submitting": "Sending...",
+    "success": "Thanks! Your message has been sent — we'll get back to you soon.",
+    "error": "Something went wrong. Please try again or email us directly.",
     "note": "We typically reply within 24 hours during business days.",
     "mapAlt": "Map showing our office location in Tirana, Albania",
     "mapLabel": "Open our location in Google Maps"
@@ -73,6 +76,81 @@
     "copyrightBody": "All content, text, images, and materials published on this website are protected by German copyright law. Reproduction, distribution, or commercial use without prior written permission is prohibited. If you believe any content infringes copyright, please contact us so we can investigate and take appropriate action.",
     "contactTitle": "Need More Information?",
     "contactCta": "Contact Us"
+  },
+  "termsPage": {
+    "back": "Back",
+    "title": "Terms & Legal Information",
+    "packageTravelTitle": "Package Travel Information",
+    "packageTravelParagraphs": [
+      "The travel services offered by ADA – Travel Agency Tarko may constitute a package holiday within the meaning of Directive (EU) 2015/2302 and Section 651a of the German Civil Code (BGB).",
+      "Where applicable, travellers are entitled to all rights granted under the relevant European and German legislation governing package travel.",
+      "ADA – Travel Agency Tarko bears full responsibility for the proper performance of all travel services included in the booked package.",
+      "Furthermore, the company maintains the legally required insolvency protection to safeguard customer payments and, where transport is included, to ensure repatriation in the event of insolvency."
+    ],
+    "travellerRightsTitle": "Main Traveller Rights",
+    "travellerRightsIntro": "Travellers are entitled to:",
+    "travellerRightsList": [
+      "Receive all essential information before concluding a package travel contract.",
+      "Have at least one organiser responsible for the proper performance of all booked travel services.",
+      "Access emergency contact details throughout the journey.",
+      "Transfer the package booking to another traveller under applicable conditions.",
+      "Receive refunds or compensation where required by law.",
+      "Cancel or terminate a booking under the circumstances provided by applicable legislation.",
+      "Receive assistance if difficulties arise during the trip."
+    ],
+    "travellerRightsFooter": "For complete information regarding traveller rights, please refer to Directive (EU) 2015/2302.",
+    "cancellationTitle": "Cancellation Policy",
+    "cancellationHeaders": {
+      "period": "Cancellation Period",
+      "fee": "Cancellation Fee"
+    },
+    "cancellationFlightsSubtitle": "Package Holidays Including Flights",
+    "cancellationFlightsRows": [
+      { "period": "Up to 32 days before departure", "fee": "25%" },
+      { "period": "31–22 days before departure", "fee": "40%" },
+      { "period": "21–15 days before departure", "fee": "60%" },
+      { "period": "14–8 days before departure", "fee": "70%" },
+      { "period": "7–1 day before departure", "fee": "80%" },
+      { "period": "Departure day or no-show", "fee": "90%" }
+    ],
+    "cancellationCruiseSubtitle": "Cruise Holidays",
+    "cancellationCruiseRows": [
+      { "period": "Up to 45 days before departure", "fee": "25%" },
+      { "period": "44–22 days before departure", "fee": "45%" },
+      { "period": "21–15 days before departure", "fee": "65%" },
+      { "period": "14–1 day before departure", "fee": "85%" },
+      { "period": "Departure day or no-show", "fee": "90%" }
+    ],
+    "cancellationNote": "The effective cancellation date is the date on which the written cancellation notice is received.",
+    "insolvencyTitle": "Insolvency Protection",
+    "insolvencyParagraphs": [
+      "ADA – Travel Agency Tarko maintains insolvency protection with:",
+      "SIGAL Tirana – Albania",
+      "Should the company become insolvent, customers may contact the insolvency protection provider regarding reimbursement of payments or repatriation where applicable."
+    ],
+    "liabilityTitle": "Liability Disclaimer",
+    "liabilityContentTitle": "Liability for Content",
+    "liabilityContentParagraphs": [
+      "The content of this website has been prepared with great care. However, no guarantee can be given for the completeness, accuracy, or timeliness of the information provided.",
+      "As a service provider, we are responsible for our own content in accordance with applicable law. Any liability beyond the statutory provisions is excluded."
+    ],
+    "liabilityLinksTitle": "Liability for External Links",
+    "liabilityLinksParagraphs": [
+      "Our website contains links to external websites operated by third parties.",
+      "We have no influence over the content of these websites and therefore accept no responsibility or liability for their content. Responsibility for linked websites always lies with their respective operators.",
+      "If we become aware of any legal infringement, the relevant links will be removed promptly."
+    ],
+    "copyrightTitle": "Copyright",
+    "copyrightParagraphs": [
+      "All content, text, graphics, images, and other materials published on this website are protected by copyright.",
+      "Any reproduction, modification, distribution, or commercial use requires prior written permission unless otherwise permitted by law.",
+      "Where third-party content is used, the respective copyrights remain with their owners.",
+      "Should you become aware of any copyright infringement, please contact us so that the relevant material can be removed without delay."
+    ],
+    "applicableLawTitle": "Applicable Law",
+    "applicableLawParagraphs": [
+      "These terms are governed by the applicable laws relating to package travel and consumer protection, including Directive (EU) 2015/2302 and relevant provisions of the German Civil Code (BGB) where applicable."
+    ]
   },
   "toursPage": {
     "title": "Find Your Perfect Cycling Adventure",
@@ -296,6 +374,8 @@
   "tourPage": {
     "back": "Back to tours",
     "bookNow": "Book Now",
+    "seeVideo": "See Video",
+    "closeVideo": "Close video",
     "tabs": {
       "overview": "Overview",
       "itinerary": "Itinerary",
@@ -422,6 +502,7 @@
     "total": "total",
     "successTitle": "Order placed",
     "successBody": "Thank you. Your booking request has been received. We will contact you shortly to confirm the details.",
+    "confirmationEmail": "Thank you for your booking with Albanien Radreisen. Your order reference is {{orderNumber}}. We will contact you shortly to confirm the details.",
     "backToTours": "Back to tours",
     "countries": {
       "Germany": "Germany",
@@ -496,7 +577,7 @@
       "aboutUs": "About Us",
       "gallery": "Gallery",
       "contact": "Contact us",
-      "privacy": "Privacy policy"
+      "termsLegal": "Terms & Legal Information"
     },
     "copyright": "© 2026 Albanien Radreisen. Design and Developed bY Blue Hawke."
   },

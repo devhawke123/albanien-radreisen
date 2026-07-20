@@ -29,7 +29,7 @@ function computeStats(orders) {
     { label: "Total bookings", value: String(orders.length), icon: BookingsIcon },
     { label: "Pending", value: String(pending), icon: ClockIcon },
     { label: "Confirmed", value: String(confirmed), icon: CheckCircleIcon },
-    { label: "PotentialRevenue", value: `€ ${(revenueCents / 100).toFixed(2)}`, icon: EuroIcon },
+    { label: "Potential Revenue", value: `€ ${(revenueCents / 100).toFixed(2)}`, icon: EuroIcon },
   ];
 }
 

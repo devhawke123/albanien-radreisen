@@ -2,7 +2,6 @@
 export { default as iconClock } from "@assets/icons/Icon.svg";
 export { default as iconHeart } from "@assets/icons/Icon-2.svg";
 export { default as iconStar } from "@assets/icons/Icon-5.svg";
-export { default as iconStarAlt } from "@assets/icons/Icon-6.svg";
 export { default as iconPhoto } from "@assets/icons/tabler_photo.svg";
 export { default as iconCart } from "@assets/icons/cart.svg";
 

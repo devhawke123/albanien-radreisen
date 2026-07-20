@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Navigate, useNavigate } from "react-router-dom";
-import { submitBooking } from "../../../services/bookingSubmit";
+import { submitRequest } from "../../../services/submitRequest";
 import { addCartItem } from "../../../utils/cartStore";
 import {
   calculateBookingTotal,
@@ -129,20 +129,16 @@ export default function BookingCard() {
         return `${addonLabel(t, addon)} × ${qty} (${formatEuro(addon.price * qty)})`;
       });
 
-      const fields = {
-        Type: "Tour Request",
-        Tour: content.title,
-        PreferredDeparture: departureLabel,
-        "Additional services": selectedAddonLines.length ? selectedAddonLines.join("; ") : "None",
-        Name: requestForm.name,
-        Email: requestForm.email,
-        Message: requestForm.message || "—",
-      };
-
-      await submitBooking({
-        subject: `New tour request: ${content.title}`,
-        replyTo: requestForm.email,
-        fields,
+      await submitRequest({
+        type: "tour_request",
+        name: requestForm.name,
+        email: requestForm.email,
+        message: requestForm.message,
+        tourSlug: slug,
+        tourTitle: content.title,
+        preferredDeparture: departureLabel,
+        addonsSummary: selectedAddonLines.length ? selectedAddonLines.join("; ") : "None",
+        locale,
       });
 
       setStatus("success");
