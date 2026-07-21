@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import {
-  cyclePinkGirl,
   lovedByTravelersHero,
   testimonialAvatar1,
   iconStarFilled,
@@ -45,22 +44,16 @@ export default function Testimonials() {
           <img
             src={lovedByTravelersHero}
             alt="Travelers exploring an Albanian old town"
-            className="absolute inset-0 h-full w-full object-cover object-bottom sm:h-auto sm:w-full sm:max-w-none sm:-bottom-80 sm:inset-x-0 sm:top-auto"
+            className="absolute inset-0 h-full w-full object-cover object-center"
           />
         </div>
 
         <div className="relative w-full rounded-bl-[24px] rounded-br-[20px] bg-brand-pale/60 px-4 py-8 sm:rounded-bl-[40px] sm:rounded-br-[30px] sm:px-10 sm:py-10 lg:px-14 lg:py-12">
-          <img
-            src={cyclePinkGirl}
-            alt=""
-            aria-hidden
-            className="pointer-events-none absolute -right-1 -top-8 hidden w-[120px] rotate-[13deg] opacity-95 sm:-right-2 sm:-top-10 sm:w-[150px] md:block lg:w-[190px]"
-          />
 
-          <div className="relative max-w-[1323px] rounded-2xl bg-white p-4 shadow-[0_1px_1.5px_rgba(0,0,0,0.1),0_1px_1px_rgba(0,0,0,0.1)] sm:p-6 md:p-8">
+          <div className="relative mx-auto max-w-[1323px] rounded-2xl bg-white p-4 text-center shadow-[0_1px_1.5px_rgba(0,0,0,0.1),0_1px_1px_rgba(0,0,0,0.1)] sm:p-6 md:p-8">
             <p className="font-serif text-testimonial-quote italic text-[#1a1714]">{`"${active.quote}"`}</p>
 
-            <div className="mt-6 flex flex-wrap items-center gap-3 sm:mt-8 sm:gap-4">
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-3 sm:mt-8 sm:gap-4">
               <img
                 src={active.avatar}
                 alt=""
@@ -68,8 +61,8 @@ export default function Testimonials() {
                 className="h-14 w-14 shrink-0 rounded-full object-cover sm:h-[74px] sm:w-[72px]"
               />
               <div className="h-[2px] w-8 shrink-0 bg-[#d94f3d]" />
-              <div>
-                <div className="flex items-center gap-[2px]">
+              <div className="text-center">
+                <div className="flex items-center justify-center gap-[2px]">
                   {Array.from({ length: active.rating }).map((_, i) => (
                     <img key={i} src={iconStarFilled} alt="" aria-hidden className="h-[14px] w-[14px]" />
                   ))}
@@ -116,6 +109,8 @@ export default function Testimonials() {
               <img src={iconCarouselArrowRight} alt="" aria-hidden className="h-[18px] w-5" />
             </button>
           </div>
+
+          
         </div>
       </div>
     </section>

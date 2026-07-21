@@ -1,24 +1,23 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { howItWorksCardBg, howItWorksStep3 } from "../../assets/sections";
-import { journeyBackground } from "../../assets/shared";
+import { howItWorksStep1, howItWorksStep2, howItWorksStep3 } from "../../assets/sections";
 
 const stepAssets = [
   {
-    image: howItWorksCardBg,
-    imageClass: "h-[158%] w-full max-w-none object-cover object-top",
+    image: howItWorksStep1,
+    imageClass: "h-full w-full object-cover object-center",
     gradient: "from-white to-[#c6eafd]",
     imageHeight: "h-[180px] sm:h-[220px] md:h-[248px] lg:h-[255px]",
   },
   {
-    image: journeyBackground,
+    image: howItWorksStep2,
     imageClass: "h-full w-full object-cover object-center",
     gradient: "from-white to-[#aedcf9]/85",
     imageHeight: "h-[180px] sm:h-[220px] md:h-[248px]",
   },
   {
     image: howItWorksStep3,
-    imageClass: "h-[254%] w-full max-w-none object-cover object-top",
+    imageClass: "h-full w-full object-cover object-center",
     gradient: "from-white to-[#9cd2fa]",
     imageHeight: "h-[180px] sm:h-[220px] md:h-[248px]",
   },
