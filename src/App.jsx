@@ -33,7 +33,7 @@ function App() {
           <Route path="/faq" element={<FaqPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/imprint" element={<ImprintPage />} />
-          <Route path="/terms" element={<TermsPage />} />
+          {/* <Route path="/terms" element={<TermsPage />} /> */}
 
           <Route
             path="/admin/*"
