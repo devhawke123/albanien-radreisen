@@ -219,7 +219,8 @@ export default function Header({ light = false }) {
 
   return (
     <>
-      <header className="relative z-50 mx-auto grid w-full max-w-hero shrink-0 grid-cols-[1fr_auto] items-center gap-3 xs:gap-4 lg:grid-cols-[auto_1fr_auto] lg:gap-8">
+      <header  className={`relative z-50 mx-auto grid w-full max-w-hero shrink-0 grid-cols-[1fr_auto] items-center gap-3 xs:gap-4 lg:grid-cols-[auto_1fr_auto] lg:gap-8 
+      ${light ? " bg-gray-900" : ""}`}>
         <Link to="/" className="justify-self-start">
           <img
             className="h-auto w-24 xs:w-28 sm:w-32 md:w-36 lg:w-[168px]"
@@ -253,7 +254,7 @@ export default function Header({ light = false }) {
           <Link
             to="/cart"
             className={`relative flex h-11 w-11 shrink-0 cursor-pointer items-center justify-center rounded-lg backdrop-blur-sm ${
-              light ? "border border-gray-200 bg-white" : "border border-white bg-white/16"
+              light ? "border border-gray-200 bg-gray-200" : "border border-white bg-gray-500"
             }`}
             aria-label={t("nav.cartLabel")}
           >
@@ -266,7 +267,7 @@ export default function Header({ light = false }) {
           </Link>
           <Link
             to="/tours"
-            className="hidden h-btn-lg items-center rounded-[11px] bg-white/80 px-6 text-btn leading-none text-black no-underline sm:px-8 lg:inline-flex lg:px-[39px]"
+            className="hidden h-btn-lg items-center rounded-[11px] bg-white/80 px-6 mr-2 text-btn leading-none text-black no-underline sm:px-8 lg:inline-flex lg:px-[39px]"
           >
             {t("nav.getStarted")}
           </Link>
@@ -274,7 +275,7 @@ export default function Header({ light = false }) {
             type="button"
             onClick={() => setMenuOpen(true)}
             className={`flex h-11 w-11 shrink-0 cursor-pointer flex-col items-center justify-center gap-1.5 rounded-lg backdrop-blur-sm lg:hidden ${
-              light ? "border border-gray-200 bg-white" : "border border-white bg-white/16"
+              light ? "border border-gray-200 bg-white-100" : "border border-white bg-white/16"
             }`}
             aria-label={t("nav.openMenu")}
             aria-expanded={menuOpen}

@@ -1,5 +1,23 @@
 import { useEffect, useState } from "react";
 import AdminLayout from "../../components/admin/AdminLayout";
+import {
+  adminCard,
+  adminDetailBody,
+  adminDetailLabel,
+  adminDetailLink,
+  adminEmptyText,
+  adminErrorText,
+  adminPageSubtitle,
+  adminPageTitle,
+  adminSelect,
+  adminStatLabel,
+  adminStatValue,
+  adminStatusBadge,
+  adminTableCell,
+  adminTableCellMuted,
+  adminTableCellStrong,
+  adminTableHead,
+} from "../../components/admin/adminStyles";
 import { CheckCircleIcon, ClockIcon, MailIcon, SpinnerIcon } from "../../components/admin/icons";
 import { fetchRequests, updateRequestStatus } from "../../services/adminRequests";
 import { formatDisplayDate } from "../../utils/bookingPricing";
@@ -7,9 +25,9 @@ import { formatDisplayDate } from "../../utils/bookingPricing";
 const STATUSES = ["new", "contacted", "closed"];
 
 const STATUS_STYLES = {
-  new: "bg-amber-50 text-amber-700",
-  contacted: "bg-blue-50 text-blue-700",
-  closed: "bg-gray-100 text-gray-500",
+  new: "bg-amber-50 text-amber-800 ring-1 ring-amber-200/60",
+  contacted: "bg-blue-50 text-blue-800 ring-1 ring-blue-200/60",
+  closed: "bg-gray-100 text-gray-600 ring-1 ring-gray-200/80",
 };
 
 const TYPE_LABELS = {
@@ -29,11 +47,7 @@ function computeStats(requests) {
 }
 
 function StatusBadge({ status }) {
-  return (
-    <span className={`inline-block rounded-full px-2.5 py-1 font-sans text-xs font-semibold capitalize ${STATUS_STYLES[status]}`}>
-      {status}
-    </span>
-  );
+  return <span className={`${adminStatusBadge} ${STATUS_STYLES[status]}`}>{status}</span>;
 }
 
 function RequestRow({ request, expanded, onToggle, onStatusChange }) {
@@ -41,16 +55,12 @@ function RequestRow({ request, expanded, onToggle, onStatusChange }) {
     <>
       <tr
         onClick={onToggle}
-        className="cursor-pointer border-b border-gray-100 transition-colors hover:bg-brand-pale/40"
+        className="cursor-pointer border-b border-gray-100 transition-colors hover:bg-gray-50"
       >
-        <td className="px-5 py-4 font-sans text-sm text-text-muted">
-          {formatDisplayDate(request.created_at.slice(0, 10))}
-        </td>
-        <td className="px-5 py-4 font-sans text-sm font-semibold text-black">
-          {TYPE_LABELS[request.type] ?? request.type}
-        </td>
-        <td className="px-5 py-4 font-sans text-sm text-black">{request.name}</td>
-        <td className="max-w-[260px] truncate px-5 py-4 font-sans text-sm text-text-muted">
+        <td className={adminTableCellMuted}>{formatDisplayDate(request.created_at.slice(0, 10))}</td>
+        <td className={adminTableCellStrong}>{TYPE_LABELS[request.type] ?? request.type}</td>
+        <td className={adminTableCell}>{request.name}</td>
+        <td className={`max-w-[280px] truncate ${adminTableCellMuted}`}>
           {request.type === "tour_request" ? request.tour_title : request.subject}
         </td>
         <td className="px-5 py-4">
@@ -58,79 +68,73 @@ function RequestRow({ request, expanded, onToggle, onStatusChange }) {
         </td>
       </tr>
       {expanded && (
-        <tr className="border-b border-gray-100 bg-[#f9f7f6]">
-          <td colSpan={5} className="px-5 py-6">
-            <div className="grid gap-8 sm:grid-cols-2">
-              <div>
-                <h3 className="m-0 font-sans text-xs font-semibold uppercase tracking-wide text-text-muted">
-                  Contact
-                </h3>
-                <p className="mt-2 font-sans text-sm text-black">
-                  <a href={`mailto:${request.email}`} className="text-brand no-underline hover:underline">
-                    {request.email}
-                  </a>
-                  {request.phone && (
-                    <>
-                      <br />
-                      <a href={`tel:${request.phone}`} className="text-brand no-underline hover:underline">
-                        {request.phone}
-                      </a>
-                    </>
-                  )}
-                </p>
+        <tr className="border-b border-gray-100 bg-gray-50/80">
+          <td colSpan={5} className="px-5 py-7">
+            <div className="grid gap-10 sm:grid-cols-2">
+              <div className="space-y-5">
+                <div>
+                  <h3 className={adminDetailLabel}>Contact</h3>
+                  <p className={adminDetailBody}>
+                    <a href={`mailto:${request.email}`} className={adminDetailLink}>
+                      {request.email}
+                    </a>
+                    {request.phone && (
+                      <>
+                        <br />
+                        <a href={`tel:${request.phone}`} className={adminDetailLink}>
+                          {request.phone}
+                        </a>
+                      </>
+                    )}
+                  </p>
+                </div>
 
                 {request.type === "tour_request" ? (
                   <>
-                    <h3 className="m-0 mt-4 font-sans text-xs font-semibold uppercase tracking-wide text-text-muted">
-                      Tour
-                    </h3>
-                    <p className="mt-2 font-sans text-sm text-black">
-                      {request.tour_title}
-                      <br />
-                      <span className="text-text-muted">{request.preferred_departure}</span>
-                    </p>
+                    <div>
+                      <h3 className={adminDetailLabel}>Tour</h3>
+                      <p className={adminDetailBody}>
+                        <span className="font-medium text-gray-900">{request.tour_title}</span>
+                        <br />
+                        <span className="text-[14px] text-gray-600">{request.preferred_departure}</span>
+                      </p>
+                    </div>
                     {request.addons_summary && request.addons_summary !== "None" && (
-                      <>
-                        <h3 className="m-0 mt-4 font-sans text-xs font-semibold uppercase tracking-wide text-text-muted">
-                          Add-ons
-                        </h3>
-                        <p className="mt-2 font-sans text-sm text-black">{request.addons_summary}</p>
-                      </>
+                      <div>
+                        <h3 className={adminDetailLabel}>Add-ons</h3>
+                        <p className={adminDetailBody}>{request.addons_summary}</p>
+                      </div>
                     )}
                   </>
                 ) : (
-                  <>
-                    <h3 className="m-0 mt-4 font-sans text-xs font-semibold uppercase tracking-wide text-text-muted">
-                      Subject
-                    </h3>
-                    <p className="mt-2 font-sans text-sm text-black">{request.subject}</p>
-                  </>
+                  <div>
+                    <h3 className={adminDetailLabel}>Subject</h3>
+                    <p className={adminDetailBody}>{request.subject}</p>
+                  </div>
                 )}
               </div>
 
-              <div>
-                <h3 className="m-0 font-sans text-xs font-semibold uppercase tracking-wide text-text-muted">
-                  Message
-                </h3>
-                <p className="mt-2 whitespace-pre-wrap font-sans text-sm text-black">
-                  {request.message || "—"}
-                </p>
+              <div className="space-y-5">
+                <div>
+                  <h3 className={adminDetailLabel}>Message</h3>
+                  <p className={`whitespace-pre-wrap ${adminDetailBody}`}>{request.message || "—"}</p>
+                </div>
 
-                <h3 className="m-0 mt-4 font-sans text-xs font-semibold uppercase tracking-wide text-text-muted">
-                  Status
-                </h3>
-                <select
-                  value={request.status}
-                  onClick={(event) => event.stopPropagation()}
-                  onChange={(event) => onStatusChange(request.id, event.target.value)}
-                  className="mt-2 rounded-lg border border-gray-200 bg-white px-3 py-2 font-sans text-sm text-black capitalize outline-none focus:border-brand"
-                >
-                  {STATUSES.map((status) => (
-                    <option key={status} value={status} className="capitalize">
-                      {status}
-                    </option>
-                  ))}
-                </select>
+                <div>
+                  <h3 className={adminDetailLabel}>Status</h3>
+                  <select
+                    value={request.status}
+                    onClick={(event) => event.stopPropagation()}
+                    onChange={(event) => onStatusChange(request.id, event.target.value)}
+                    className={adminSelect}
+                  >
+                    {STATUSES.map((status) => (
+                      <option key={status} value={status} className="capitalize">
+                        {status}
+                      </option>
+                    ))}
+                  </select>
+                </div>
               </div>
             </div>
           </td>
@@ -171,24 +175,22 @@ export default function AdminRequestsPage() {
 
   return (
     <AdminLayout>
-      <div className="mb-8 flex items-center justify-between">
-        <div>
-          <h1 className="m-0 font-serif text-3xl font-semibold text-black">Requests</h1>
-          <p className="mt-1 font-sans text-sm text-text-muted">
-            Contact form messages and tour requests submitted through the site.
-          </p>
-        </div>
+      <div className="mb-8">
+        <h1 className={adminPageTitle}>Requests</h1>
+        <p className={adminPageSubtitle}>
+          Contact form messages and tour requests submitted through the site.
+        </p>
       </div>
 
       {requests && (
         <div className="mb-6 grid grid-cols-2 gap-4 lg:grid-cols-3">
           {computeStats(requests).map((stat) => (
-            <div key={stat.label} className="rounded-[16px] border border-gray-100 bg-white p-5 shadow-[0_2px_16px_-8px_rgba(0,0,0,0.08)]">
+            <div key={stat.label} className={`${adminCard} p-5`}>
               <div className="flex h-9 w-9 items-center justify-center rounded-[10px] bg-brand-pale text-brand">
                 <stat.icon className="h-4.5 w-4.5" />
               </div>
-              <p className="mt-3 font-sans text-2xl font-bold text-black">{stat.value}</p>
-              <p className="mt-0.5 font-sans text-sm text-text-muted">{stat.label}</p>
+              <p className={adminStatValue}>{stat.value}</p>
+              <p className={adminStatLabel}>{stat.label}</p>
             </div>
           ))}
         </div>
@@ -200,34 +202,24 @@ export default function AdminRequestsPage() {
         </div>
       )}
 
-      {error && <p className="font-sans text-sm text-brand">{error}</p>}
+      {error && <p className={adminErrorText}>{error}</p>}
 
       {requests && requests.length === 0 && (
-        <div className="rounded-[16px] border border-gray-100 bg-white px-6 py-16 text-center shadow-[0_2px_16px_-8px_rgba(0,0,0,0.08)]">
-          <p className="m-0 font-sans text-sm text-text-muted">No requests yet.</p>
+        <div className={`${adminCard} px-6 py-16 text-center`}>
+          <p className={adminEmptyText}>No requests yet.</p>
         </div>
       )}
 
       {requests && requests.length > 0 && (
-        <div className="overflow-x-auto rounded-[16px] border border-gray-100 bg-white shadow-[0_2px_16px_-8px_rgba(0,0,0,0.08)]">
+        <div className={`overflow-x-auto ${adminCard}`}>
           <table className="w-full min-w-[720px] border-collapse">
             <thead>
-              <tr className="border-b border-gray-100 bg-[#fafafa] text-left">
-                <th className="px-5 py-3.5 font-sans text-xs font-semibold uppercase tracking-wide text-text-muted">
-                  Date
-                </th>
-                <th className="px-5 py-3.5 font-sans text-xs font-semibold uppercase tracking-wide text-text-muted">
-                  Type
-                </th>
-                <th className="px-5 py-3.5 font-sans text-xs font-semibold uppercase tracking-wide text-text-muted">
-                  Name
-                </th>
-                <th className="px-5 py-3.5 font-sans text-xs font-semibold uppercase tracking-wide text-text-muted">
-                  Subject / Tour
-                </th>
-                <th className="px-5 py-3.5 font-sans text-xs font-semibold uppercase tracking-wide text-text-muted">
-                  Status
-                </th>
+              <tr className="border-b border-gray-200 bg-gray-50 text-left">
+                <th className={adminTableHead}>Date</th>
+                <th className={adminTableHead}>Type</th>
+                <th className={adminTableHead}>Name</th>
+                <th className={adminTableHead}>Subject / Tour</th>
+                <th className={adminTableHead}>Status</th>
               </tr>
             </thead>
             <tbody>

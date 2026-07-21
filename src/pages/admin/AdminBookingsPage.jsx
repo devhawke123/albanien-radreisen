@@ -1,5 +1,23 @@
 import { useEffect, useState } from "react";
 import AdminLayout from "../../components/admin/AdminLayout";
+import {
+  adminCard,
+  adminDetailBody,
+  adminDetailLabel,
+  adminDetailLink,
+  adminEmptyText,
+  adminErrorText,
+  adminPageSubtitle,
+  adminPageTitle,
+  adminSelect,
+  adminStatLabel,
+  adminStatValue,
+  adminStatusBadge,
+  adminTableCell,
+  adminTableCellMuted,
+  adminTableCellStrong,
+  adminTableHead,
+} from "../../components/admin/adminStyles";
 import { BookingsIcon, CheckCircleIcon, ClockIcon, EuroIcon, SpinnerIcon } from "../../components/admin/icons";
 import { fetchOrders, updateOrderStatus } from "../../services/adminOrders";
 import { formatDisplayDate } from "../../utils/bookingPricing";
@@ -7,10 +25,10 @@ import { formatDisplayDate } from "../../utils/bookingPricing";
 const STATUSES = ["pending", "contacted", "confirmed", "cancelled"];
 
 const STATUS_STYLES = {
-  pending: "bg-amber-50 text-amber-700",
-  contacted: "bg-blue-50 text-blue-700",
-  confirmed: "bg-emerald-50 text-emerald-700",
-  cancelled: "bg-gray-100 text-gray-500",
+  pending: "bg-amber-50 text-amber-800 ring-1 ring-amber-200/60",
+  contacted: "bg-blue-50 text-blue-800 ring-1 ring-blue-200/60",
+  confirmed: "bg-emerald-50 text-emerald-800 ring-1 ring-emerald-200/60",
+  cancelled: "bg-gray-100 text-gray-600 ring-1 ring-gray-200/80",
 };
 
 function formatEuroFromCents(cents) {
@@ -34,11 +52,7 @@ function computeStats(orders) {
 }
 
 function StatusBadge({ status }) {
-  return (
-    <span className={`inline-block rounded-full px-2.5 py-1 font-sans text-xs font-semibold capitalize ${STATUS_STYLES[status]}`}>
-      {status}
-    </span>
-  );
+  return <span className={`${adminStatusBadge} ${STATUS_STYLES[status]}`}>{status}</span>;
 }
 
 function OrderRow({ order, expanded, onToggle, onStatusChange }) {
@@ -48,17 +62,15 @@ function OrderRow({ order, expanded, onToggle, onStatusChange }) {
     <>
       <tr
         onClick={onToggle}
-        className="cursor-pointer border-b border-gray-100 transition-colors hover:bg-brand-pale/40"
+        className="cursor-pointer border-b border-gray-100 transition-colors hover:bg-gray-50"
       >
-        <td className="px-5 py-4 font-sans text-sm font-semibold text-black">{order.order_number}</td>
-        <td className="px-5 py-4 font-sans text-sm text-text-muted">
-          {formatDisplayDate(order.created_at.slice(0, 10))}
-        </td>
-        <td className="px-5 py-4 font-sans text-sm text-black">
+        <td className={`${adminTableCellStrong} tabular-nums`}>{order.order_number}</td>
+        <td className={adminTableCellMuted}>{formatDisplayDate(order.created_at.slice(0, 10))}</td>
+        <td className={adminTableCell}>
           {order.first_name} {order.last_name}
         </td>
-        <td className="max-w-[260px] truncate px-5 py-4 font-sans text-sm text-text-muted">{tourSummary}</td>
-        <td className="px-5 py-4 font-sans text-sm font-semibold text-black">
+        <td className={`max-w-[280px] truncate ${adminTableCellMuted}`}>{tourSummary}</td>
+        <td className={`${adminTableCellStrong} tabular-nums`}>
           {formatEuroFromCents(order.subtotal_cents)}
         </td>
         <td className="px-5 py-4">
@@ -66,81 +78,80 @@ function OrderRow({ order, expanded, onToggle, onStatusChange }) {
         </td>
       </tr>
       {expanded && (
-        <tr className="border-b border-gray-100 bg-[#f9f7f6]">
-          <td colSpan={6} className="px-5 py-6">
-            <div className="grid gap-8 sm:grid-cols-2">
-              <div>
-                <h3 className="m-0 font-sans text-xs font-semibold uppercase tracking-wide text-text-muted">
-                  Contact
-                </h3>
-                <p className="mt-2 font-sans text-sm text-black">
-                  <a href={`mailto:${order.email}`} className="text-brand no-underline hover:underline">
-                    {order.email}
-                  </a>
-                  <br />
-                  <a href={`tel:${order.phone}`} className="text-brand no-underline hover:underline">
-                    {order.phone}
-                  </a>
-                </p>
-                <h3 className="m-0 mt-4 font-sans text-xs font-semibold uppercase tracking-wide text-text-muted">
-                  Billing address
-                </h3>
-                <p className="mt-2 font-sans text-sm text-black">
-                  {order.address}
-                  {order.apartment ? `, ${order.apartment}` : ""}
-                  <br />
-                  {order.city}, {order.postal_code} {order.state}
-                  <br />
-                  {order.country}
-                  {order.company ? ` · ${order.company}` : ""}
-                </p>
+        <tr className="border-b border-gray-100 bg-gray-50/80">
+          <td colSpan={6} className="px-5 py-7">
+            <div className="grid gap-10 sm:grid-cols-2">
+              <div className="space-y-5">
+                <div>
+                  <h3 className={adminDetailLabel}>Contact</h3>
+                  <p className={adminDetailBody}>
+                    <a href={`mailto:${order.email}`} className={adminDetailLink}>
+                      {order.email}
+                    </a>
+                    <br />
+                    <a href={`tel:${order.phone}`} className={adminDetailLink}>
+                      {order.phone}
+                    </a>
+                  </p>
+                </div>
+                <div>
+                  <h3 className={adminDetailLabel}>Billing address</h3>
+                  <p className={adminDetailBody}>
+                    {order.address}
+                    {order.apartment ? `, ${order.apartment}` : ""}
+                    <br />
+                    {order.city}, {order.postal_code} {order.state}
+                    <br />
+                    {order.country}
+                    {order.company ? ` · ${order.company}` : ""}
+                  </p>
+                </div>
                 {order.note && (
-                  <>
-                    <h3 className="m-0 mt-4 font-sans text-xs font-semibold uppercase tracking-wide text-text-muted">
-                      Note
-                    </h3>
-                    <p className="mt-2 font-sans text-sm text-black">{order.note}</p>
-                  </>
+                  <div>
+                    <h3 className={adminDetailLabel}>Note</h3>
+                    <p className={adminDetailBody}>{order.note}</p>
+                  </div>
                 )}
               </div>
 
-              <div>
-                <h3 className="m-0 font-sans text-xs font-semibold uppercase tracking-wide text-text-muted">
-                  Items
-                </h3>
-                <ul className="m-0 mt-2 list-none space-y-3 p-0">
-                  {order.order_items.map((item) => (
-                    <li key={item.id} className="font-sans text-sm text-black">
-                      <strong>{item.tour_title}</strong> — {item.guests} guest(s)
-                      <br />
-                      <span className="text-text-muted">
-                        {formatDisplayDate(item.check_in)} → {formatDisplayDate(item.check_out)}
-                      </span>
-                      {item.addons?.length > 0 && (
-                        <span className="text-text-muted">
-                          {" "}
-                          · add-ons: {item.addons.map((addon) => `${addon.id} ×${addon.quantity}`).join(", ")}
+              <div className="space-y-5">
+                <div>
+                  <h3 className={adminDetailLabel}>Items</h3>
+                  <ul className="m-0 mt-2 list-none space-y-4 p-0">
+                    {order.order_items.map((item) => (
+                      <li key={item.id} className={adminDetailBody}>
+                        <span className="font-medium text-gray-900">{item.tour_title}</span>
+                        <span className="text-gray-600"> — {item.guests} guest(s)</span>
+                        <br />
+                        <span className="text-[14px] text-gray-600">
+                          {formatDisplayDate(item.check_in)} → {formatDisplayDate(item.check_out)}
                         </span>
-                      )}
-                    </li>
-                  ))}
-                </ul>
+                        {item.addons?.length > 0 && (
+                          <span className="text-[14px] text-gray-600">
+                            {" "}
+                            · add-ons: {item.addons.map((addon) => `${addon.id} ×${addon.quantity}`).join(", ")}
+                          </span>
+                        )}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
 
-                <h3 className="m-0 mt-4 font-sans text-xs font-semibold uppercase tracking-wide text-text-muted">
-                  Status
-                </h3>
-                <select
-                  value={order.status}
-                  onClick={(event) => event.stopPropagation()}
-                  onChange={(event) => onStatusChange(order.id, event.target.value)}
-                  className="mt-2 rounded-lg border border-gray-200 bg-white px-3 py-2 font-sans text-sm text-black capitalize outline-none focus:border-brand"
-                >
-                  {STATUSES.map((status) => (
-                    <option key={status} value={status} className="capitalize">
-                      {status}
-                    </option>
-                  ))}
-                </select>
+                <div>
+                  <h3 className={adminDetailLabel}>Status</h3>
+                  <select
+                    value={order.status}
+                    onClick={(event) => event.stopPropagation()}
+                    onChange={(event) => onStatusChange(order.id, event.target.value)}
+                    className={adminSelect}
+                  >
+                    {STATUSES.map((status) => (
+                      <option key={status} value={status} className="capitalize">
+                        {status}
+                      </option>
+                    ))}
+                  </select>
+                </div>
               </div>
             </div>
           </td>
@@ -181,24 +192,20 @@ export default function AdminBookingsPage() {
 
   return (
     <AdminLayout>
-      <div className="mb-8 flex items-center justify-between">
-        <div>
-          <h1 className="m-0 font-serif text-3xl font-semibold text-black">Bookings</h1>
-          <p className="mt-1 font-sans text-sm text-text-muted">
-            Every booking placed through the site, in one place.
-          </p>
-        </div>
+      <div className="mb-8">
+        <h1 className={adminPageTitle}>Bookings</h1>
+        <p className={adminPageSubtitle}>Every booking placed through the site, in one place.</p>
       </div>
 
       {orders && (
         <div className="mb-6 grid grid-cols-2 gap-4 lg:grid-cols-4">
           {computeStats(orders).map((stat) => (
-            <div key={stat.label} className="rounded-[16px] border border-gray-100 bg-white p-5 shadow-[0_2px_16px_-8px_rgba(0,0,0,0.08)]">
+            <div key={stat.label} className={`${adminCard} p-5`}>
               <div className="flex h-9 w-9 items-center justify-center rounded-[10px] bg-brand-pale text-brand">
                 <stat.icon className="h-4.5 w-4.5" />
               </div>
-              <p className="mt-3 font-sans text-2xl font-bold text-black">{stat.value}</p>
-              <p className="mt-0.5 font-sans text-sm text-text-muted">{stat.label}</p>
+              <p className={adminStatValue}>{stat.value}</p>
+              <p className={adminStatLabel}>{stat.label}</p>
             </div>
           ))}
         </div>
@@ -210,37 +217,25 @@ export default function AdminBookingsPage() {
         </div>
       )}
 
-      {error && <p className="font-sans text-sm text-brand">{error}</p>}
+      {error && <p className={adminErrorText}>{error}</p>}
 
       {orders && orders.length === 0 && (
-        <div className="rounded-[16px] border border-gray-100 bg-white px-6 py-16 text-center shadow-[0_2px_16px_-8px_rgba(0,0,0,0.08)]">
-          <p className="m-0 font-sans text-sm text-text-muted">No bookings yet.</p>
+        <div className={`${adminCard} px-6 py-16 text-center`}>
+          <p className={adminEmptyText}>No bookings yet.</p>
         </div>
       )}
 
       {orders && orders.length > 0 && (
-        <div className="overflow-x-auto rounded-[16px] border border-gray-100 bg-white shadow-[0_2px_16px_-8px_rgba(0,0,0,0.08)]">
+        <div className={`overflow-x-auto ${adminCard}`}>
           <table className="w-full min-w-[760px] border-collapse">
             <thead>
-              <tr className="border-b border-gray-100 bg-[#fafafa] text-left">
-                <th className="px-5 py-3.5 font-sans text-xs font-semibold uppercase tracking-wide text-text-muted">
-                  Order
-                </th>
-                <th className="px-5 py-3.5 font-sans text-xs font-semibold uppercase tracking-wide text-text-muted">
-                  Date
-                </th>
-                <th className="px-5 py-3.5 font-sans text-xs font-semibold uppercase tracking-wide text-text-muted">
-                  Customer
-                </th>
-                <th className="px-5 py-3.5 font-sans text-xs font-semibold uppercase tracking-wide text-text-muted">
-                  Tour
-                </th>
-                <th className="px-5 py-3.5 font-sans text-xs font-semibold uppercase tracking-wide text-text-muted">
-                  Total
-                </th>
-                <th className="px-5 py-3.5 font-sans text-xs font-semibold uppercase tracking-wide text-text-muted">
-                  Status
-                </th>
+              <tr className="border-b border-gray-200 bg-gray-50 text-left">
+                <th className={adminTableHead}>Order</th>
+                <th className={adminTableHead}>Date</th>
+                <th className={adminTableHead}>Customer</th>
+                <th className={adminTableHead}>Tour</th>
+                <th className={adminTableHead}>Total</th>
+                <th className={adminTableHead}>Status</th>
               </tr>
             </thead>
             <tbody>
