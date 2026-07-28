@@ -1,15 +1,55 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { heroBackground, heroBackground2, heroBackground3, iconCalendar, iconLocation, iconPeople } from "../../assets/hero";
+import {
+  heroBackground,
+  heroBackground2,
+  heroBackground3,
+  heroBackground4,
+  heroBackground5,
+  heroBackground6,
+  heroBackground7,
+  iconCalendar,
+  iconLocation,
+  iconPeople,
+} from "../../assets/hero";
 import Header from "../layout/Header";
 
-const ROTATION_MS = 2_000;
+const ROTATION_MS = 5_000;
 
 const heroSlides = [
-  { src: heroBackground, alt: "Albanian coastal cliffs" },
-  { src: heroBackground2, alt: "Albanian mountain landscape" },
-  { src: heroBackground3, alt: "Albanian valley scenery" },
+  {
+    src: heroBackground,
+    alt: "Albanian cycling landscape",
+    titleLine2Key: "hero.slides.slide1.titleLine2",
+    hasContent: true,
+  },
+  {
+    src: heroBackground2,
+    alt: "Albanian coastal scenery",
+    titleLine2Key: "hero.slides.slide2.titleLine2",
+    hasContent: true,
+  },
+  {
+    src: heroBackground3,
+    alt: "Albanian mountain landscape",
+    titleLine2Key: "hero.slides.slide3.titleLine2",
+    hasContent: true,
+  },
+  {
+    src: heroBackground4,
+    alt: "Albanian valley scenery",
+    titleLine2Key: "hero.slides.slide4.titleLine2",
+    hasContent: true,
+  },
+  {
+    src: heroBackground5,
+    alt: "Albanian countryside",
+    titleLine2Key: "hero.slides.slide5.titleLine2",
+    hasContent: true,
+  },
+  { src: heroBackground6, alt: "Albanian bike tour view", hasContent: false },
+  { src: heroBackground7, alt: "Albanian adventure scenery", hasContent: false },
 ];
 
 
@@ -44,30 +84,39 @@ export default function Hero() {
       <Header />
 
       <div className="relative z-10 mx-auto flex w-full max-w-content flex-1 flex-col items-center justify-center text-center">
-        <h1 className="m-0 leading-[0.92]">
-          <span className="block font-sans text-hero-title font-medium">{t("hero.titleLine1")}</span>
-          <span className="block font-serif text-hero-title-accent font-medium">{t("hero.titleLine2")}</span>
-        </h1>
-        <p className="mx-auto mt-[clamp(0.5rem,1.5vh,1.875rem)] max-w-content font-sans text-hero-body tracking-wide short:leading-tight">
-          {t("hero.body")}
-        </p>
+        {heroSlides[activeIndex].hasContent && (
+          <>
+            <h1
+              key={activeIndex}
+              className="m-0 leading-[0.92] transition-opacity duration-700 ease-in-out"
+            >
+              <span className="block font-sans text-hero-title font-medium">{t("hero.titleLine1")}</span>
+              <span className="block font-serif text-hero-title-accent font-medium">
+                {t(heroSlides[activeIndex].titleLine2Key)}
+              </span>
+            </h1>
+            <p className="mx-auto mt-[clamp(0.5rem,1.5vh,1.875rem)] max-w-content font-sans text-hero-body tracking-wide short:leading-tight">
+              {t("hero.body")}
+            </p>
 
-        <div className="mt-[clamp(0.5rem,1.5vh,1.5rem)] flex flex-wrap justify-center gap-3 sm:gap-[15px]">
-          <Link
-            to="/tours"
-            className="inline-flex h-btn-sm items-center justify-center rounded-[11px] bg-brand px-6 text-btn leading-none text-white no-underline sm:px-8 lg:px-[39px]"
-          >
-            {t("hero.exploreNow")}
-          </Link>
-          <a
-            href="#cta"
-            className="inline-flex h-btn-sm items-center justify-center rounded-[11px] border border-white bg-transparent px-6 text-btn leading-none text-white no-underline sm:px-8 lg:px-[39px]"
-          >
-            {t("hero.watchVideos")}
-          </a>
-        </div>
+            <div className="mt-[clamp(0.5rem,1.5vh,1.5rem)] flex flex-wrap justify-center gap-3 sm:gap-[15px]">
+              <Link
+                to="/tours"
+                className="inline-flex h-btn-sm items-center justify-center rounded-[11px] bg-brand px-6 text-btn leading-none text-white no-underline sm:px-8 lg:px-[39px]"
+              >
+                {t("hero.exploreNow")}
+              </Link>
+              <a
+                href="#cta"
+                className="inline-flex h-btn-sm items-center justify-center rounded-[11px] border border-white bg-transparent px-6 text-btn leading-none text-white no-underline sm:px-8 lg:px-[39px]"
+              >
+                {t("hero.watchVideos")}
+              </a>
+            </div>
+          </>
+        )}
 
-      <div className="relative z-10 mx-auto mt-20 flex h-auto w-[min(100%,808px)] shrink-0 flex-col items-stretch justify-center gap-2 rounded-xl border border-white/30 bg-white/15 px-3 py-0 backdrop-blur-sm xs:h-search-bar xs:flex-row xs:flex-wrap xs:items-center sm:gap-3 sm:px-4 lg:gap-4">
+      {/* <div className="relative z-10 mx-auto mt-20 flex h-auto w-[min(100%,808px)] shrink-0 flex-col items-stretch justify-center gap-2 rounded-xl border border-white/30 bg-white/15 px-3 py-0 backdrop-blur-sm xs:h-search-bar xs:flex-row xs:flex-wrap xs:items-center sm:gap-3 sm:px-4 lg:gap-4">
         <span className="inline-flex shrink-0 items-center gap-2 rounded-lg px-2 py-1 text-nav text-white sm:gap-2.5 sm:px-4">
           <img className="h-5 w-5 sm:h-6 sm:w-6" src={iconLocation} alt="" aria-hidden />
           <span>{t("hero.destination")}</span>
@@ -86,7 +135,7 @@ export default function Hero() {
         >
           {t("hero.exploreTours")}
         </Link>
-      </div>
+      </div> */}
     </div>
     </section>
   );

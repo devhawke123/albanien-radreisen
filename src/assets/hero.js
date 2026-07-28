@@ -1,8 +1,11 @@
-export { default as heroBackground } from "@assets/images/HeroSection.jpg";
-export { default as heroBackground2 } from "@assets/images/HeroSectionPic2.png";
-export { default as heroBackground3 } from "@assets/images/HeroSectionPic3.png";
+export { default as heroBackground } from "@assets/homeHeroSlide/heroImage-1.jpg";
+export { default as heroBackground2 } from "@assets/homeHeroSlide/heroImage2.jpg";
+export { default as heroBackground3 } from "@assets/homeHeroSlide/heroImage-3.jpg";
+export { default as heroBackground4 } from "@assets/homeHeroSlide/heroImage-4.jpg";
+export { default as heroBackground5 } from "@assets/homeHeroSlide/heroImage-5.png";
+export { default as heroBackground6 } from "@assets/homeHeroSlide/heroImage-6.jpg";
+export { default as heroBackground7 } from "@assets/homeHeroSlide/heroImage-7.jpg";
 export { default as logo } from "@assets/images/logo.png";
 export { default as iconCalendar } from "@assets/icons/Icon-1.svg";
 export { default as iconPeople } from "@assets/icons/Icon-3.svg";
 export { default as iconLocation } from "@assets/icons/Icon-4.svg";
-

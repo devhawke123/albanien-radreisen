@@ -157,7 +157,7 @@
     "body": "Von Küstenfahrten bis zu Bergabenteuern – entdecke unsere sorgfältig gestalteten Radreisen durch ganz Albanien."
   },
   "hero": {
-    "titleLine1": "Entdecke Albanien,",
+    "titleLine1": "Albanien",
     "titleLine2": "Eine Fahrt nach der Anderen",
     "body": "Erkunde Albaniens atemberaubende Berge, malerische Küsten und historische Dörfer auf fachkundig geführten Radtouren für unvergessliche Abenteuer.",
     "exploreNow": "Jetzt Entdecken",
@@ -165,7 +165,24 @@
     "destination": "Reiseziel",
     "people": "2 Personen",
     "date": "Datum",
-    "exploreTours": "Touren Entdecken"
+    "exploreTours": "Touren Entdecken",
+    "slides": {
+      "slide1": {
+        "titleLine2": "Das sonnenreichste Land Europas per Rad entdecken"
+      },
+      "slide2": {
+        "titleLine2": "Sonne & Flair des Mittelmeers"
+      },
+      "slide3": {
+        "titleLine2": "Juwel an der Adria & am Ionischen Meer"
+      },
+      "slide4": {
+        "titleLine2": "Berge – Seen – Flüsse – Meere – Küsten – Radwege"
+      },
+      "slide5": {
+        "titleLine2": "Albanien – Mazedonien – Montenegro – Dubrovnik – Korfu per Rad entdecken"
+      }
+    }
   },
   "about": {
     "label": "Über Uns",
@@ -337,7 +354,28 @@
       "Malerische Route durch die albanische Landschaft",
       "Radfahrer ruhen sich auf einem Hügelweg aus",
       "Reisende genießen einen Kulturstopp",
-      "Unser Radreise-Team gemeinsam"
+      "Unser Radreise-Team gemeinsam",
+      "Radfahrer im Gespräch an einem Aussichtspunkt über der ionischen Küste",
+      "Radfahrer bewundern den Ohridsee",
+      "Radfahrer mit Blick auf den Skutarisee",
+      "Wandergruppe überquert eine Hängebrücke über den Vjosa-Fluss",
+      "Radfahrer posieren mit der albanischen Flagge in den Bergen",
+      "Wanderer entdecken einen Wasserfall in den albanischen Bergen",
+      "Wanderer ruhen sich im Nationalpark Vjosatal aus",
+      "Wanderer machen Pause an einem Bergwasserfall",
+      "E-Bike-Gruppe rastet an einem Aussichtspunkt in den Bergen",
+      "Zwei E-Bikes mit Blick auf die albanische Riviera-Küste",
+      "E-Bike-Gruppenbriefing oberhalb der ionischen Küste",
+      "Radfahrer auf der Promenade am Ohrid-See",
+      "E-Bike-Gruppe rastet am Ohrid-See",
+      "E-Bike-Reisegruppe posiert oberhalb der Straße von Korfu",
+      "Fähre überquert den Koman-Stausee mit dem Reisebus an Bord",
+      "Radfahrer mit Rädern am verschneiten Ausgangspunkt des Valbona-Tals",
+      "Radgruppe posiert mit einem Albanien-Montenegro-Tourbanner über dem Skutarisee",
+      "Radfahrer rasten an einem Aussichtspunkt mit der albanischen Flagge",
+      "Radfahrer machen Pause mit Alpenblick",
+      "Fahrräder verladen am Anlegesteg der Koman-Fähre",
+      "Fahrgäste auf dem Fährdeck bei der Überquerung des Koman-Stausees"
     ]
   },
   "journey": {
@@ -851,18 +889,18 @@
       }
     },
     "8-day-albania-montenegro": {
-      "title": "8-Tage Radabenteuer Albanien – Montenegro (2026)",
+      "title": "8-Tage Radabenteuer Albanien – Montenegro (2026/27)",
       "rating": "4.9",
       "reviewsMeta": "· 24 Bewertungen",
       "meta": {
-        "duration": "8 / 9 / 10 Tage",
+        "duration": "8 Tage / 7 Nächte",
         "group": "Einzel 2–3 · Gruppen 4+",
-        "season": "1. Apr – 31. Okt 2026"
+        "season": "1. Apr – 31. Okt 2026/27"
       },
       "stats": [
         {
           "label": "Dauer",
-          "value": "8 / 9 / 10 Tage"
+          "value": "8 Tage / 7 Nächte"
         },
         {
           "label": "Abholung",
@@ -874,7 +912,7 @@
         },
         {
           "label": "Buchungssaison",
-          "value": "Apr–Okt 2026"
+          "value": "Apr–Okt 2026/27"
         }
       ],
       "quickDescription": "Erlebe die atemberaubenden Landschaften Albaniens und Montenegros auf einem unvergesslichen Radabenteuer durch den Balkan. Fahre über Gebirgspässe, kristallklare Seen, alpine Täler und charmante Dörfer und genieße lokale Gastfreundschaft, malerische Bootsfahrten und Wanderungen in den spektakulären Albanischen Alpen.",
@@ -970,51 +1008,48 @@
         },
         {
           "title": "Tag 2 – Tirana → Shkodra",
-          "distance": "100 km Transfer · 65 km Radfahren",
-          "elevation": "100–150 m",
+          "distance": "100 km Transfer · 40 km Radfahren",
+          "elevation": "150 m",
           "highlights": [
-            "Lezha",
-            "Weinberge",
-            "Skadarsee",
-            "Festung Rozafa"
+            "Busfahrt nach Lezha, Startpunkt der Radetappe",
+            "Unberührte Natur und Weinberge",
+            "Skadarsee, der größte See des Balkans",
+            "Festung Rozafa in Shkodra"
           ],
           "overnight": "Shkodra"
         },
         {
           "title": "Tag 3 – Shkodra → Skadarsee → Virpazar (Montenegro)",
-          "distance": "80 km Transfer · 50 km Radfahren",
-          "elevation": "600 m",
+          "distance": "80 km Transfer · 40 km Radfahren",
+          "elevation": "300 m",
           "highlights": [
-            "Buna-Fluss",
-            "Grenze zu Montenegro",
-            "Skadarsee",
-            "Ausblicke auf die Albanischen Alpen",
-            "Virpazar"
+            "Entlang des Buna-Flusses zur Grenze Montenegros",
+            "Höchster Punkt der Tour mit Ausblick auf Skadarsee, Shkodra und die Albanischen Alpen",
+            "Entlang des Ufers des Skadarsees",
+            "Ankunft in Virpazar"
           ],
           "overnight": "Virpazar, Montenegro"
         },
         {
-          "title": "Tag 4 – Virpazar → Tamara → Shkodra",
-          "distance": "80 km Transfer · 55 km Radfahren",
-          "elevation": "900 m",
+          "title": "Tag 4 – Virpazar → Skutarisee → Shkodra",
+          "distance": "80 km Transfer · 50 km Radfahren",
+          "elevation": "700 m",
           "highlights": [
-            "Region Tuzi",
-            "Cem-Schlucht",
-            "Dorf Tamara",
-            "Hoti-Berge"
+            "Busfahrt in die Region Tuzi",
+            "Cem-Schlucht bis zum Alpendorf Tamara",
+            "Serpentinen des Hoti-Gebirges mit grandiosem Alpenpanorama"
           ],
           "overnight": "Shkodra"
         },
         {
           "title": "Tag 5 – Shkodra → Koman-Stausee → Valbona-Tal",
-          "distance": "100 km Transfer · ca. 2 Std. Boot · 60 km Radfahren",
-          "elevation": "600–650 m",
+          "distance": "100 km Transfer · ca. 2 Std. Boot · 40 km Radfahren",
+          "elevation": "650 m",
           "highlights": [
-            "Stausee Vau i Deja",
-            "Bootsfahrt auf dem Koman-See",
-            "Valbona-Fluss",
-            "Albanische Alpen",
-            "Optionale Nachmittagswanderung"
+            "Busfahrt durch idyllische Dörfer zum Stausee Vau i Deja",
+            "Zweistündige Bootsfahrt über den Koman-Stausee, umgeben von steilen Felswänden",
+            "Radfahrt entlang des Valbona-Flusses tief in den Albanischen Alpen",
+            "Optionale kurze Nachmittagswanderung"
           ],
           "overnight": "Valbona-Tal"
         },
@@ -1023,24 +1058,21 @@
           "cyclingDistance": "20 km",
           "elevation": "Etwa 1.000 m",
           "highlights": [
-            "Valbona-Tal",
+            "Fünfstündige Wanderung im Valbona-Tal",
             "Dorf Rrogam",
             "Valbona-Pass",
-            "Bergwälder",
-            "Alpine Wiesen",
-            "Wanderung 4–5 Stunden"
+            "Wilde Berglandschaften, Wälder und Weiden"
           ],
           "overnight": "Valbona-Tal"
         },
         {
-          "title": "Tag 7 – Valbona-Tal → Kosovo → Tirana",
-          "distance": "200 km Transfer · 60 km Radfahren",
-          "elevation": "300–350 m",
+          "title": "Tag 7 – Valbona-Tal → Grenze Kosovo → Tirana",
+          "distance": "200 km Transfer · 40 km Radfahren",
+          "elevation": "350 m",
           "highlights": [
-            "Grenze zu Kosovo",
-            "Malerische Bergstraßen",
-            "Rückkehr nach Tirana",
-            "Freizeit zum Sightseeing"
+            "Morgens Radfahrt durch das Valbona-Tal Richtung Kosovo-Grenze",
+            "Gegen Mittag Busfahrt nach Tirana",
+            "Freier Nachmittag zum Stadtbummel"
           ],
           "overnight": "Tirana"
         },
@@ -1106,9 +1138,9 @@
       "card": {
         "location": "Albanien und Montenegro",
         "people": "Ab 2 Personen",
-        "date": "Apr–Okt 2026",
+        "date": "Apr–Okt 2026/27",
         "duration": "8 Tage",
-        "title": "8-Tage Radabenteuer Albanien – Montenegro (2026)",
+        "title": "8-Tage Radabenteuer Albanien – Montenegro (2026/27)",
         "amenities": [
           "Hotel",
           "Guide",
@@ -1116,6 +1148,1413 @@
         ],
         "moreAmenities": "+5 weitere",
         "imageAlt": "Radabenteuer durch Albanien und Montenegro"
+      }
+    },
+    "8-day-balkan-adventure": {
+      "title": "Albanien Radabenteuer Balkan: Berge – Seen + Alpen – Seen – Rad – Schiff – Wandern (2026/27)",
+      "rating": "4.9",
+      "reviewsMeta": "· 24 Bewertungen",
+      "meta": {
+        "duration": "8 Tage / 7 Nächte",
+        "group": "Einzel 2–3 · Gruppen 4+",
+        "season": "1. Apr – 31. Okt 2026/27"
+      },
+      "stats": [
+        {
+          "label": "Dauer",
+          "value": "8 Tage / 7 Nächte"
+        },
+        {
+          "label": "Abholung",
+          "value": "Flughafen Tirana"
+        },
+        {
+          "label": "Gruppengröße",
+          "value": "2–3 oder 4+"
+        },
+        {
+          "label": "Buchungssaison",
+          "value": "Apr–Okt 2026/27"
+        }
+      ],
+      "quickDescription": "Erlebe die atemberaubenden Landschaften Albaniens und Montenegros auf einem unvergesslichen Radabenteuer durch den Balkan. Fahre über Gebirgspässe, kristallklare Seen, alpine Täler und charmante Dörfer und genieße lokale Gastfreundschaft, malerische Bootsfahrten und Wanderungen in den spektakulären Albanischen Alpen.",
+      "quickDescriptionAudience": "Ideal für Paare, Familien, Alleinreisende und kleine Gruppen, die ein aktives Abenteuer suchen.",
+      "aboutBody": "Diese 8-tägige geführte Rad- und Abenteuerreise kombiniert Radfahren, Wandern und Bootsfahrten in Albanien und Montenegro. Entdecke die Albanischen Alpen, den Skadarsee, das Valbona-Tal und abgelegene Balkandörfer auf landschaftlich reizvollen Routen durch Berge, Flüsse und Seen. Die Tour ist für Reisende mit moderater Fitness konzipiert und wird durchgehend von einem Gepäcktransferfahrzeug begleitet.",
+      "tourInfo": [
+        {
+          "field": "Tourtyp",
+          "value": "Geführte Rad- und Abenteuertour"
+        },
+        {
+          "field": "Schwierigkeit",
+          "value": "Mittel"
+        },
+        {
+          "field": "Aktivitäten",
+          "value": "Radfahren, Wandern, Bootsfahrten"
+        },
+        {
+          "field": "Terrain",
+          "value": "Berge, Seen, Täler, Dörfer"
+        },
+        {
+          "field": "Straßen",
+          "value": "Überwiegend asphaltierte Nebenstraßen mit einigen Schotterabschnitten"
+        },
+        {
+          "field": "Begleitfahrzeug",
+          "value": "Ja"
+        },
+        {
+          "field": "Helm empfohlen",
+          "value": "Ja"
+        }
+      ],
+      "highlights": [
+        "Radfahren durch Albanien und Montenegro",
+        "Besuch des Skadarsees, dem größten See des Balkans",
+        "Erkundung der Albanischen Alpen",
+        "Bootsfahrt über den Koman-Stausee",
+        "Wandern durch das wunderschöne Valbona-Tal",
+        "Besuch der Festung Rozafa",
+        "Fahrt durch Bergdörfer und Alpenpässe",
+        "Atemberaubende Balkanlandschaften erleben",
+        "Authentische lokale Kultur und Gastfreundschaft entdecken"
+      ],
+      "pricingBase": [
+        {
+          "package": "7 Nächte / Halbpension / Doppelzimmer",
+          "price": "€1.290 pro Person"
+        }
+      ],
+      "pricingSupplements": [
+        {
+          "option": "Einzelzimmer",
+          "price": "€190"
+        },
+        {
+          "option": "Zuschlag Juli und August",
+          "price": "€100"
+        }
+      ],
+      "pricingBikes": [
+        {
+          "bike": "Standardrad",
+          "price": "€120"
+        },
+        {
+          "bike": "E-Bike",
+          "price": "€225"
+        }
+      ],
+      "importantNotes": [
+        "Programmänderungen vorbehalten.",
+        "Moderate Fitness erforderlich.",
+        "An einigen Etappen über 1.000 Höhenmeter.",
+        "Begleitfahrzeug begleitet die Gruppe während der gesamten Tour.",
+        "Radfahren überwiegend auf asphaltierten Nebenstraßen mit gelegentlichen Schotterabschnitten.",
+        "Erhöhter Verkehr in der Nähe von Städten möglich.",
+        "Helmpflicht wird dringend empfohlen."
+      ],
+      "itinerary": [
+        {
+          "title": "Tag 1 – Ankunft in Tirana",
+          "highlights": [
+            "Ankunft am Flughafen Tirana",
+            "Stadttour durch Tirana",
+            "Skanderbeg-Platz",
+            "Et'hem-Bey-Moschee",
+            "Ehemaliges kommunistisches Viertel (Blloku)"
+          ],
+          "overnight": "Tirana"
+        },
+        {
+          "title": "Tag 2 – Tirana → Shkodra",
+          "distance": "100 km Transfer · 40 km Radfahren",
+          "elevation": "150 m",
+          "highlights": [
+            "Busfahrt nach Lezha, Startpunkt der Radetappe",
+            "Unberührte Natur und Weinberge",
+            "Skadarsee, der größte See des Balkans",
+            "Festung Rozafa in Shkodra"
+          ],
+          "overnight": "Shkodra"
+        },
+        {
+          "title": "Tag 3 – Shkodra → Skadarsee → Virpazar (Montenegro)",
+          "distance": "80 km Transfer · 40 km Radfahren",
+          "elevation": "300 m",
+          "highlights": [
+            "Entlang des Buna-Flusses zur Grenze Montenegros",
+            "Höchster Punkt der Tour mit Ausblick auf Skadarsee, Shkodra und die Albanischen Alpen",
+            "Entlang des Ufers des Skadarsees",
+            "Ankunft in Virpazar"
+          ],
+          "overnight": "Virpazar, Montenegro"
+        },
+        {
+          "title": "Tag 4 – Virpazar → Skutarisee → Shkodra",
+          "distance": "80 km Transfer · 50 km Radfahren",
+          "elevation": "700 m",
+          "highlights": [
+            "Busfahrt in die Region Tuzi",
+            "Cem-Schlucht bis zum Alpendorf Tamara",
+            "Serpentinen des Hoti-Gebirges mit grandiosem Alpenpanorama"
+          ],
+          "overnight": "Shkodra"
+        },
+        {
+          "title": "Tag 5 – Shkodra → Koman-Stausee → Valbona-Tal",
+          "distance": "100 km Transfer · ca. 2 Std. Boot · 40 km Radfahren",
+          "elevation": "650 m",
+          "highlights": [
+            "Busfahrt durch idyllische Dörfer zum Stausee Vau i Deja",
+            "Zweistündige Bootsfahrt über den Koman-Stausee, umgeben von steilen Felswänden",
+            "Radfahrt entlang des Valbona-Flusses tief in den Albanischen Alpen",
+            "Optionale kurze Nachmittagswanderung"
+          ],
+          "overnight": "Valbona-Tal"
+        },
+        {
+          "title": "Tag 6 – Wandern im Valbona-Tal",
+          "cyclingDistance": "20 km",
+          "elevation": "Etwa 1.000 m",
+          "highlights": [
+            "Fünfstündige Wanderung im Valbona-Tal",
+            "Dorf Rrogam",
+            "Valbona-Pass",
+            "Wilde Berglandschaften, Wälder und Weiden"
+          ],
+          "overnight": "Valbona-Tal"
+        },
+        {
+          "title": "Tag 7 – Valbona-Tal → Grenze Kosovo → Tirana",
+          "distance": "200 km Transfer · 40 km Radfahren",
+          "elevation": "350 m",
+          "highlights": [
+            "Morgens Radfahrt durch das Valbona-Tal Richtung Kosovo-Grenze",
+            "Gegen Mittag Busfahrt nach Tirana",
+            "Freier Nachmittag zum Stadtbummel"
+          ],
+          "overnight": "Tirana"
+        },
+        {
+          "title": "Tag 8 – Abreise",
+          "items": [
+            "Frühstück",
+            "Flughafentransfer",
+            "Rückflug"
+          ]
+        }
+      ],
+      "included": [
+        "7 Übernachtungen in 3★- und 4★-Hotels",
+        "Halbpension (Frühstücksbuffet + 3-Gang-Abendessen)",
+        "Flughafentransfers",
+        "Begleitfahrzeug mit Fahrradanhänger",
+        "Gepäcktransfer zwischen den Hotels",
+        "Eintrittsgelder laut Reiseverlauf",
+        "Deutschsprachiger lokaler Radführer",
+        "GPS-Navigationsgerät",
+        "Karten und detaillierte Routenbeschreibungen",
+        "24/7 Service-Hotline",
+        "Fahrradausrüstung (Lenkertaschen, Packtaschen)",
+        "Zusätzliche Nächte auf Anfrage"
+      ],
+      "notIncluded": [
+        "Flüge",
+        "Zusätzliche Mahlzeiten",
+        "Getränke",
+        "Persönliche Ausgaben",
+        "Trinkgelder",
+        "Fahrradverleih (optional als Zusatzleistung)"
+      ],
+      "features": [
+        "Hotel",
+        "Guide",
+        "Halbpension",
+        "Wandern",
+        "Bootsfahrt",
+        "Begleitfahrzeug"
+      ],
+      "reviews": [
+        {
+          "rating": "5.0",
+          "quote": "Die Mischung aus Radfahren, Wandern und der Bootsfahrt auf dem Koman-See war unser schönstes Balkan-Abenteuer.",
+          "name": "Anna Keller",
+          "role": "Abenteuerreisende · München, Deutschland"
+        },
+        {
+          "rating": "4.9",
+          "quote": "Skadarsee, Albanische Alpen und Valbona waren atemberaubend. Organisation und Support waren durchgehend hervorragend.",
+          "name": "Thomas Weber",
+          "role": "Abenteuerreisender · Wien, Österreich"
+        },
+        {
+          "rating": "5.0",
+          "quote": "Der Übergang nach Montenegro und die abgelegenen Bergdörfer fühlten sich an wie eine andere Welt. Sehr empfehlenswert.",
+          "name": "Laura Bianchi",
+          "role": "Abenteuerreisende · Rom, Italien"
+        }
+      ],
+      "card": {
+        "location": "Albanien und Montenegro",
+        "people": "Ab 2 Personen",
+        "date": "Apr–Okt 2026/27",
+        "duration": "8 Tage",
+        "title": "Albanien Radabenteuer Balkan: Berge – Seen + Alpen – Seen – Rad – Schiff – Wandern (2026/27)",
+        "amenities": [
+          "Hotel",
+          "Guide",
+          "Halbpension"
+        ],
+        "moreAmenities": "+5 weitere",
+        "imageAlt": "Wandergruppe im winterlichen Valbona-Tal, Albanien"
+      }
+    },
+    "9-day-vjosa-valley": {
+      "title": "ADA – 9 Tage Astrid Radreise Prog. Vjosa-Tal (2027)",
+      "rating": "5.0",
+      "reviewsMeta": "· 12 Bewertungen",
+      "meta": {
+        "duration": "9 Tage / 8 Nächte",
+        "group": "Einzel 2–3 · Gruppen 4+",
+        "season": "1. Apr – 31. Okt 2027"
+      },
+      "stats": [
+        {
+          "label": "Dauer",
+          "value": "9 Tage / 8 Nächte"
+        },
+        {
+          "label": "Abholung",
+          "value": "Flughafen Tirana"
+        },
+        {
+          "label": "Gruppengröße",
+          "value": "2–3 oder 4+"
+        },
+        {
+          "label": "Buchungssaison",
+          "value": "Apr–Okt 2027"
+        }
+      ],
+      "quickDescription": "Das „letzte Geheimnis Europas“ per Rad kennenlernen. Eine 9-tägige Rad- und Erlebnisreise durch das albanische Vjosa-Tal, vom Ohridsee bis an die ionische und adriatische Küste.",
+      "quickDescriptionAudience": "Für Singles, zu zweit, Familien oder Freunde.",
+      "aboutBody": "Albanien, das „Sonnenland Europas“, ist ein wundervolles Urlaubsparadies an der Westküste des Balkans. Tauchen Sie ein in das Land der Skipetaren, wie sich die Albaner selbst gerne nennen – ein Land, das in der Vergangenheit des Balkans eine bedeutende Rolle gespielt hat, dann lange vergessen war und heute wieder den Anschluss an Europa sucht und findet. Die vielen architektonisch einzigartigen Bergketten, Schluchten, Flüsse und Täler sowie die von der UNESCO geschützten Städte und Bauwerke erzählen von der bewegten Geschichte dieses Landes. Unsere Radreise führt Sie entlang des Ohridsees, durch das beeindruckende Süd-Bergland und das Vjosa-Tal, die zerklüftete ionische Küste, über den Cäsar-Pass und in die Bucht von Vlora im Süd-Adria mit ihrer steinigen Küste und den Pinienwäldern.",
+      "tourInfo": [
+        {
+          "field": "Tourtyp",
+          "value": "Geführte Rad- & Wandertour"
+        },
+        {
+          "field": "Schwierigkeit",
+          "value": "Mittel"
+        },
+        {
+          "field": "Gesamtstrecke",
+          "value": "350 km"
+        },
+        {
+          "field": "Tagesstrecke",
+          "value": "15–65 km"
+        },
+        {
+          "field": "Terrain",
+          "value": "Berge, Flusstäler, Küste"
+        },
+        {
+          "field": "Straßen",
+          "value": "Überwiegend asphaltierte, wenig befahrene Nebenstraßen"
+        },
+        {
+          "field": "Begleitfahrzeug",
+          "value": "Ja"
+        },
+        {
+          "field": "Helm empfohlen",
+          "value": "Ja"
+        }
+      ],
+      "highlights": [
+        "50 km mit dem Rad um den Ohridsee, den tiefsten See Europas",
+        "200 km Süd – Bergland und Vjosa-Tal über Pässe und durch Wälder",
+        "150 km Ionische Meeres-Riviera durch kleine Buchten, Olivenhaine und Zypressenbäume",
+        "Cäsar-Pass (Logara) und Vlora-Bucht über kleine Straßen durch spektakuläre Berge",
+        "3 x UNESCO-Welterbestädte zu Fuß erkunden",
+        "Küstenhotels an Ionischem und Adriatischem Meer mit mediterranem Flair",
+        "Traditionelle mediterrane Küche mit Fisch, Wein, Zitronen und Olivenöl"
+      ],
+      "pricingBase": [
+        {
+          "package": "8 Nächte / Halbpension / Doppelzimmer",
+          "price": "€1.390 pro Person"
+        }
+      ],
+      "pricingSupplements": [
+        {
+          "option": "Einzelzimmer",
+          "price": "€220"
+        },
+        {
+          "option": "Hochsaison-Zuschlag (15. Juni – 15. September)",
+          "price": "€100"
+        }
+      ],
+      "pricingBikes": [
+        {
+          "bike": "Standardrad",
+          "price": "€120"
+        },
+        {
+          "bike": "E-Bike",
+          "price": "€225"
+        }
+      ],
+      "importantNotes": [
+        "Änderungen im Programmablauf vorbehalten.",
+        "Mittelschwere Radetappen durch Berge und Flusstäler entlang bergiger und flacher Riviera-Küste.",
+        "Gefahren wird überwiegend auf asphaltierten, wenig befahrenen Nebenstraßen.",
+        "In den Einfahrten der Städte ist mit erhöhtem Verkehr zu rechnen.",
+        "An einigen Radtagen über 1.000 Höhenmeter.",
+        "Der Bus steht für den einen oder anderen Anstieg zur Verfügung.",
+        "Das Tragen eines Fahrradhelms wird empfohlen."
+      ],
+      "itinerary": [
+        {
+          "title": "Tag 1 – Ankunft in Tirana",
+          "items": [
+            "Eigene Anreise",
+            "Flughafentransfer",
+            "Hotel-Check-in",
+            "Geführter Stadtrundgang durch Tirana",
+            "Scanderbeg-Platz, Ethem-Bey-Moschee, Viertel der kommunistischen Nomenklatura"
+          ],
+          "overnight": "Tirana"
+        },
+        {
+          "title": "Tag 2 – Tirana → Ohrid-See",
+          "distance": "100 km Transfer · 40 km Radfahren",
+          "elevation": "50 m",
+          "highlights": [
+            "Busfahrt mit Fahrrad-Anhänger über Pässe entlang der römischen Via Egnatia",
+            "Qafa-Thana-Pass (1.000 m)",
+            "Radfahren am Westufer des Ohrid-Sees",
+            "Ankunft in Pogradec"
+          ],
+          "overnight": "Pogradec"
+        },
+        {
+          "title": "Tag 3 – Pogradec → Korça → Germenj, Vjosa-Flusstal → Përmet",
+          "distance": "150 km Transfer · 60 km Radfahren",
+          "elevation": "600 m",
+          "highlights": [
+            "Stadtrundfahrt Korça",
+            "Hochebene von Korça, Apfelplantagen",
+            "Barmash-Pass (1.159 m) nach Gërmenjë",
+            "Leskovik (900 m)",
+            "Abfahrt nach Çarshovë entlang des Vjosa-Tals"
+          ],
+          "overnight": "Përmet"
+        },
+        {
+          "title": "Tag 4 – Wanderausflug Nationalpark Vjosa-Flusstal & Thermalbad Benje",
+          "cyclingDistance": "15 km",
+          "elevation": "200 m",
+          "highlights": [
+            "Morgens Wanderausflug zum Bergzug Dhëmbeli (ca. 5 Std.)",
+            "Nationalpark Vjosa, Dörfer mit Seilbrücken verbunden",
+            "Picknick-Mittagessen in freier Natur",
+            "Nachmittags Radfahrt zum Natur-Thermalbad Benje zum Baden"
+          ],
+          "overnight": "Përmet"
+        },
+        {
+          "title": "Tag 5 – Përmet, Vjosa-Flusstal → Gjirokastër → Saranda",
+          "distance": "130 km Transfer · 55 km Radfahren",
+          "elevation": "150 m",
+          "highlights": [
+            "Kelcyra und der zackige Trebeshina-Gipfel",
+            "Vjosa-Tal und Schlucht des Drinos",
+            "Gjirokastër, die „Stadt der Steine“",
+            "Muzina-Pass",
+            "Quelle „Blaues Auge“",
+            "Lekursi-Burg mit Blick auf Korfu"
+          ],
+          "overnight": "Saranda"
+        },
+        {
+          "title": "Tag 6 – Saranda → UNESCO Butrint → Himara",
+          "cyclingDistance": "52 km",
+          "elevation": "750 m",
+          "highlights": [
+            "UNESCO-geschützte antike Stadt Butrint",
+            "Löwentor, Theater, Forum und Aquädukt",
+            "Hügelige Küstenabschnitte der ionischen Küste",
+            "Abfahrt zum Strand von Himara"
+          ],
+          "overnight": "Himara"
+        },
+        {
+          "title": "Tag 7 – Himara → Cäsar-Pass (Logara) → Vlora-Bucht",
+          "cyclingDistance": "60 km",
+          "elevation": "1.600 m",
+          "highlights": [
+            "Aufstieg zum Logara-Pass, 1.000 m über dem Ionischen Meer",
+            "Nationalpark Logara – Schwarzkiefern, Fischotter, Steinadler",
+            "Lange Abfahrt zur Adriaküste"
+          ],
+          "overnight": "Vlora"
+        },
+        {
+          "title": "Tag 8 – Vlora → Zvernec-Lagune → Durrës → Tirana",
+          "distance": "200 km Transfer · 35 km Radfahren",
+          "elevation": "200 m",
+          "highlights": [
+            "Vlora-Bucht und Pinienwaldküste",
+            "Zvernec-Lagune",
+            "Römisches Amphitheater in Durrës",
+            "Weiterfahrt nach Tirana"
+          ],
+          "overnight": "Tirana"
+        },
+        {
+          "title": "Tag 9 – Abreise",
+          "items": [
+            "Frühstück",
+            "Transfer zum Flughafen Tirana",
+            "Rückflug"
+          ]
+        }
+      ],
+      "included": [
+        "8 x Übernachtung in 3★- und 4★-Hotels (Landeskategorie)",
+        "Halbpension (Frühstücksbuffet + 3-Gang-Menü, ausgenommen An- und Abreisetag)",
+        "Flughafentransfers hin und zurück",
+        "Begleitfahrzeug mit Fahrrad-Anhänger für Gepäcktransfer von Hotel zu Hotel",
+        "Geführter Wanderausflug im Nationalpark Vjosa-Flusstal",
+        "Eintritt Natur-Thermalbad Benje",
+        "Eintrittsgelder zu den genannten Sehenswürdigkeiten während der Reise",
+        "Deutschsprachiger, erfahrener lokaler Reiseleiter und Radguide",
+        "GPS-Navigationsgerät, Landkarten und ausführliches Infomaterial",
+        "9 Tage Service-Hotline, rund um die Uhr per Handy erreichbar",
+        "27-Gang Freilauf Unisex-Räder Marke KTM mit Federgabel, Shimano-Kettenschaltung, Lenker- und Gepäcktaschen",
+        "Zusatznächte auf Anfrage buchbar"
+      ],
+      "notIncluded": [
+        "Flüge",
+        "Zusätzliche Mahlzeiten",
+        "Getränke",
+        "Persönliche Ausgaben",
+        "Trinkgelder",
+        "Fahrradverleih (optional als Zusatzleistung)"
+      ],
+      "features": [
+        "Hotel",
+        "Guide",
+        "Halbpension",
+        "Wandern",
+        "Thermalbad",
+        "Begleitfahrzeug"
+      ],
+      "reviews": [
+        {
+          "rating": "5.0",
+          "quote": "Die Wanderung im Vjosa-Tal und das Thermalbad Benje waren die Highlights unserer Reise. Eine perfekte Mischung aus Radfahren, Wandern und Entspannung.",
+          "name": "Claire Dubois",
+          "role": "Abenteuerreisende · Lyon, Frankreich"
+        },
+        {
+          "rating": "5.0",
+          "quote": "Ohridsee, Gjirokastër und der Logara-Pass in einer Reise — jeder Tag brachte etwas völlig anderes. Hervorragend organisiert.",
+          "name": "Mark Johansson",
+          "role": "Abenteuerreisender · Stockholm, Schweden"
+        },
+        {
+          "rating": "4.9",
+          "quote": "Eine wildere, ruhigere Seite Albaniens. Die Riviera-Küste an den letzten Tagen war einfach spektakulär.",
+          "name": "Sofia Almeida",
+          "role": "Abenteuerreisende · Lissabon, Portugal"
+        }
+      ],
+      "card": {
+        "location": "Albanien",
+        "people": "Ab 2 Personen",
+        "date": "Apr–Okt 2027",
+        "duration": "9 Tage",
+        "title": "ADA – 9 Tage Astrid Radreise Prog. Vjosa-Tal (2027)",
+        "amenities": [
+          "Hotel",
+          "Guide",
+          "Halbpension"
+        ],
+        "moreAmenities": "+5 weitere",
+        "imageAlt": "Radfahrer im Vjosa-Tal und an der albanischen Riviera"
+      }
+    },
+    "8-day-ebike-mediterranean-flair": {
+      "title": "8 Tage E-Bike Reise „Mediterranes Flair“ entlang Albaniens Adria- & Ionischer Küste (2026/27)",
+      "rating": "4.9",
+      "reviewsMeta": "· 16 Bewertungen",
+      "meta": {
+        "duration": "8 Tage / 7 Nächte",
+        "group": "Gruppen 4–12",
+        "season": "1. Apr – 31. Okt 2026/27"
+      },
+      "stats": [
+        {
+          "label": "Dauer",
+          "value": "8 Tage / 7 Nächte"
+        },
+        {
+          "label": "Abholung",
+          "value": "Flughafen Tirana"
+        },
+        {
+          "label": "Gruppengröße",
+          "value": "4–12 Personen"
+        },
+        {
+          "label": "Buchungssaison",
+          "value": "Apr–Okt 2026/27"
+        }
+      ],
+      "quickDescription": "Das „letzte Geheimnis Europas“ per E-Bike kennenlernen. Eine 8-tägige geführte E-Bike-Reise mit mediterranem Flair entlang der albanischen Adria- und Ionischen Küste, vom Ohrid-See bis nach Durrës.",
+      "quickDescriptionAudience": "Geführte Radtouren in kleinen Gruppen, mit Reisebegleitung von Tag 1 bis Tag 8.",
+      "aboutBody": "Albanien, das „Sonnenland Europas“, ist ein wunderbares Urlaubsparadies an der Westküste des Balkans. Tauchen Sie ein in das Land der Skipetaren, wie sich die Albaner selbst gerne nennen – ein Land, das in der Vergangenheit des Balkans eine wichtige Rolle spielte, dann lange vergessen war und nun seinen Weg zurück nach Europa sucht und findet. Die vielen architektonisch einzigartigen Bergketten, Schluchten, Flüsse und Täler sowie die von der UNESCO geschützten Städte und Gebäude zeugen von der bewegten Geschichte dieses Landes. Unsere E-Bike-Reise führt Sie an die flache Küste des Adriatischen Meeres mit einer Länge von 250 km und die 200 km lange, wilde und schöne südliche Ionische Meer-Riviera – unvergesslich und dank elektrischer Unterstützung mühelos zu fahren.",
+      "tourInfo": [
+        {
+          "field": "Tourtyp",
+          "value": "Geführte E-Bike-Tour"
+        },
+        {
+          "field": "Schwierigkeit",
+          "value": "Mittel"
+        },
+        {
+          "field": "Gesamtstrecke",
+          "value": "350 km"
+        },
+        {
+          "field": "Tagesstrecke",
+          "value": "50–65 km"
+        },
+        {
+          "field": "Terrain",
+          "value": "Berge, Täler, Küste"
+        },
+        {
+          "field": "Straßen",
+          "value": "Überwiegend asphaltierte Nebenstraßen mit einigen Schotterabschnitten"
+        },
+        {
+          "field": "Begleitfahrzeug",
+          "value": "Ja, bis zu 20 Sitzplätze mit Fahrradanhänger"
+        },
+        {
+          "field": "Helm empfohlen",
+          "value": "Ja"
+        }
+      ],
+      "highlights": [
+        "50 km Radfahren rund um den Ohrid-See, den tiefsten See Europas",
+        "200 km durch die südlichen Berge und das Vjosa-Tal über Pässe und Wälder",
+        "150 km Ionisches Meer-Riviera durch kleine Buchten, Oliven- und Zypressenbäume",
+        "50 km Caesar-Pass und Vlora-Bucht über kleine Straßen durch spektakuläre Berge",
+        "3 UNESCO-Weltkulturerbe-Städte – antike Stätten zu Fuß erkunden",
+        "Küstenhotels am Ionischen und Adriatischen Meer mit mediterranem Flair",
+        "Traditionelle mediterrane Küche mit Fisch, Wein, Zitronen und Olivenöl"
+      ],
+      "pricingBase": [
+        {
+          "package": "7 Nächte / Halbpension / Doppelzimmer",
+          "price": "€1.290 pro Person"
+        }
+      ],
+      "pricingSupplements": [
+        {
+          "option": "Einzelzimmer",
+          "price": "€200"
+        },
+        {
+          "option": "Zuschlag Hochsaison (Juli – August)",
+          "price": "€100"
+        }
+      ],
+      "pricingBikes": [
+        {
+          "bike": "Standardrad (27-Gang, KTM & Pegasus)",
+          "price": "€120"
+        },
+        {
+          "bike": "E-Bike (CUBE, KTM & Pegasus)",
+          "price": "€200"
+        }
+      ],
+      "importantNotes": [
+        "Änderungen im Programmablauf vorbehalten.",
+        "Strecke größtenteils auf kleinen, asphaltierten Nebenstraßen, mit kurzen Abschnitten auf gut befestigten Schotterwegen.",
+        "Erhöhter Verkehr in den Einfahrten der Städte.",
+        "Mittleres Fitnessniveau erforderlich; an einigen Tagen über 1.000 Höhenmeter.",
+        "Begleitfahrzeug für den gelegentlichen Anstieg verfügbar.",
+        "Das Tragen eines Fahrradhelms wird empfohlen."
+      ],
+      "itinerary": [
+        {
+          "title": "Tag 1 – Ankunft in Tirana",
+          "items": [
+            "Treffen mit dem deutsch-/englischsprachigen Reiseleiter",
+            "Flughafentransfer zum Starthotel",
+            "Stadtrundfahrt: Skanderbeg-Platz, Ethem-Bey-Moschee, ehemaliges Nomenklatura-Viertel"
+          ],
+          "overnight": "Tirana"
+        },
+        {
+          "title": "Tag 2 – Tirana → Ohrid-See, Mazedonien",
+          "cyclingDistance": "60 km",
+          "highlights": [
+            "Busfahrt über Gebirgspässe entlang der römischen Via Egnatia",
+            "Qafa-Thana-Pass (1.000 m)",
+            "Abfahrt entlang des Westufers des Ohrid-Sees",
+            "Ankunft in Pogradec"
+          ],
+          "overnight": "Pogradec"
+        },
+        {
+          "title": "Tag 3 – Pogradec → Përmet",
+          "cyclingDistance": "60 km",
+          "highlights": [
+            "Stadtrundfahrt Korça",
+            "Erseke-Plateau, Apfelgärten und Wildblumen",
+            "Barmash-Pass (1.159 m) nach Gërmenjë",
+            "Leskovik (900 m)",
+            "Abfahrt über Çarshovë entlang des Vjosa-Tals"
+          ],
+          "overnight": "Përmet"
+        },
+        {
+          "title": "Tag 4 – Përmet → Saranda",
+          "cyclingDistance": "65 km",
+          "highlights": [
+            "Kelcyra und der Trebeshina-Gipfel",
+            "Vjosa-Tal und Nebenflüsse des Drinos",
+            "Gjirokastër, UNESCO „Stadt der Steine“",
+            "Lekursi-Burg mit Blick auf Korfu",
+            "Saranda-Bucht"
+          ],
+          "overnight": "Saranda"
+        },
+        {
+          "title": "Tag 5 – Saranda → Himara",
+          "cyclingDistance": "52 km",
+          "highlights": [
+            "UNESCO-geschützte antike Stadt Butrint",
+            "Löwentor, Theater, Forum und Aquädukt",
+            "Zerklüfteter Küstenanstieg zu einem Felsplateau",
+            "Türkisfarbene Buchten bis zum Strand von Himara"
+          ],
+          "overnight": "Himara"
+        },
+        {
+          "title": "Tag 6 – Himara → Vlora",
+          "cyclingDistance": "65 km",
+          "elevation": "1.000 m",
+          "highlights": [
+            "Logara-Pass („Caesar-Pass“), 1.000 m über dem Ionischen Meer",
+            "Nationalpark Logara – Schwarzkiefern, Otter, Steinadler",
+            "Lange Abfahrt entlang der Vlora-Bucht nach Radhimë-Vlora"
+          ],
+          "overnight": "Vlora"
+        },
+        {
+          "title": "Tag 7 – Vlora → Durrës",
+          "cyclingDistance": "50 km",
+          "highlights": [
+            "Promenade der Vlora-Bucht und Pinienwald bis zur Zvernec-Lagune",
+            "Ruinen von Apollonia (dorische Gründung aus dem 6. Jh. v. Chr.)",
+            "Römisches Amphitheater, Thermalbäder, byzantinisches Forum und venezianischer Turm in Durrës"
+          ],
+          "overnight": "Tirana"
+        },
+        {
+          "title": "Tag 8 – Abreise",
+          "items": [
+            "Frühstück",
+            "Flughafentransfer (je nach Flugzeit)",
+            "Rückflug"
+          ]
+        }
+      ],
+      "included": [
+        "7 Übernachtungen in 3★- und 4★-Hotels",
+        "Halbpension (außer An- und Abreisetag)",
+        "Begleitfahrzeug mit bis zu 20 Sitzplätzen und Fahrradanhänger für alle Transfers",
+        "Eintrittsgelder zu inkludierten Attraktionen",
+        "Deutschsprachiger lokaler Reiseleiter und Radguide",
+        "Flughafentransfers",
+        "Zusatznächte auf Anfrage buchbar"
+      ],
+      "notIncluded": [
+        "Flüge",
+        "Zusätzliche Mahlzeiten",
+        "Getränke",
+        "Persönliche Ausgaben",
+        "Trinkgelder"
+      ],
+      "features": [
+        "Hotel",
+        "Guide",
+        "Halbpension",
+        "E-Bike",
+        "Begleitfahrzeug",
+        "Transfer"
+      ],
+      "reviews": [
+        {
+          "rating": "5.0",
+          "quote": "Die E-Bikes haben die Bergpässe mühelos gemacht — man hat die Fahrt trotzdem gespürt, nur ohne die Schmerzen. Die Küste von Himara bis Vlora war unglaublich.",
+          "name": "Peter Novak",
+          "role": "Abenteuerreisender · Prag, Tschechien"
+        },
+        {
+          "rating": "4.9",
+          "quote": "Perfekt für unsere Gruppe — unterschiedliche Fitnesslevel, aber dank der E-Bikes kam jeder mit. Gjirokastër und Butrint waren die Highlights.",
+          "name": "Helen Marsh",
+          "role": "Abenteuerreisende · Manchester, UK"
+        },
+        {
+          "rating": "4.8",
+          "quote": "Kleine Gruppe, toller Guide und eine Route voller Überraschungen — Seen, Berge, antike Ruinen und das Meer, alles in einer Woche.",
+          "name": "Nadia Kovacs",
+          "role": "Abenteuerreisende · Budapest, Ungarn"
+        }
+      ],
+      "card": {
+        "location": "Albanien",
+        "people": "Ab 4 Personen",
+        "date": "Apr–Okt 2026/27",
+        "duration": "8 Tage",
+        "title": "8 Tage E-Bike Reise „Mediterranes Flair“ entlang Albaniens Adria- & Ionischer Küste (2026/27)",
+        "amenities": [
+          "Hotel",
+          "Guide",
+          "Halbpension"
+        ],
+        "moreAmenities": "+5 weitere",
+        "imageAlt": "E-Bike-Tour entlang der albanischen Adria- und Ionischen Küste"
+      }
+    },
+    "15-day-west-balkans": {
+      "title": "15-Tage West-Balkan Radreise: Kroatien – Montenegro – Albanien – Mazedonien – Korfu",
+      "rating": "4.9",
+      "reviewsMeta": "· 9 Bewertungen",
+      "meta": {
+        "duration": "15 Tage / 14 Nächte",
+        "group": "Gruppen 4–20",
+        "season": "1. Apr – 30. Okt 2027"
+      },
+      "stats": [
+        {
+          "label": "Dauer",
+          "value": "15 Tage / 14 Nächte"
+        },
+        {
+          "label": "Abholung",
+          "value": "Flughafen Cilipi-Dubrovnik"
+        },
+        {
+          "label": "Gruppengröße",
+          "value": "4–20 Personen"
+        },
+        {
+          "label": "Buchungssaison",
+          "value": "Apr–Okt 2027"
+        }
+      ],
+      "quickDescription": "Diese geführte Radreise lässt für Rad-Abenteurer und Erkunder unbekannter Wege alle Erwartungen offen. In 15 Tagen an der Adriaküste von Dubrovnik mit dem Rad durch Montenegro und Albanien bis nach Mazedonien und weiter zur Insel Korfu in Griechenland – fernab des allbekannten Tourismus.",
+      "quickDescriptionAudience": "Für erfahrene Gruppenreisende, die ein längeres, länderübergreifendes Radabenteuer durch den West-Balkan suchen.",
+      "aboutBody": "Altehrwürdige Bauten, inzwischen zu anerkanntem UNESCO-Weltkulturerbe erhoben, bizarre fast menschenleere Gegenden und dann wieder das turbulente Leben in den süd-osteuropäischen Städten mit der Herzlichkeit der Menschen hautnah spüren. Und als allabendlichem Highlight die Gastlichkeit und die kulinarischen Besonderheiten der Länder schmecken. Diese 15-tägige Reise verbindet fünf Länder mit dem Rad, per Schiff und Bus: die dalmatinische Küste Kroatiens, die Bucht von Kotor und den Skutarisee in Montenegro, die albanische Riviera und das Vjosa-Tal, den Ohrid-See an der Grenze zu Mazedonien und schließlich die Fährüberfahrt zur griechischen Insel Korfu.",
+      "tourInfo": [
+        {
+          "field": "Tourtyp",
+          "value": "Geführte Länderübergreifende Radtour"
+        },
+        {
+          "field": "Schwierigkeit",
+          "value": "Mittel bis anspruchsvoll"
+        },
+        {
+          "field": "Gesamtstrecke",
+          "value": "ca. 630 km Radstrecke"
+        },
+        {
+          "field": "Tagesstrecke",
+          "value": "45–70 km"
+        },
+        {
+          "field": "Terrain",
+          "value": "Küste, Berge, Seen, Täler"
+        },
+        {
+          "field": "Straßen",
+          "value": "Überwiegend asphaltierte Nebenstraßen mit einigen Schotterabschnitten"
+        },
+        {
+          "field": "Begleitfahrzeug",
+          "value": "Ja, bis zu 20 Sitzplätze mit Fahrradanhänger"
+        },
+        {
+          "field": "Helm empfohlen",
+          "value": "Ja"
+        }
+      ],
+      "highlights": [
+        "150 km lange Radetappen durch die Adria-Bergküste von Kroatien, Montenegro und Albanien",
+        "Das „letzte Geheimnis Europas“ kennenlernen",
+        "120 km Radetappe rund um den Ohrid-See an der Grenze Albanien/Mazedonien",
+        "60 km Radetappe entlang des Skutarisees, Montenegro/Albanien",
+        "200 km durch die wildschöne ionische Riviera Südalbaniens",
+        "Besichtigung von 6 UNESCO-Weltkulturerbe-Städten",
+        "Fährüberfahrt von Saranda zur griechischen Insel Korfu"
+      ],
+      "pricingBase": [
+        {
+          "package": "14 Nächte / Halbpension / Doppelzimmer",
+          "price": "€1.850 pro Person"
+        }
+      ],
+      "pricingSupplements": [
+        {
+          "option": "Einzelzimmer",
+          "price": "€250"
+        },
+        {
+          "option": "Zuschlag Juli & August",
+          "price": "€100"
+        }
+      ],
+      "pricingBikes": [
+        {
+          "bike": "Standardrad (KTM & Pegasus)",
+          "price": "€150"
+        },
+        {
+          "bike": "E-Bike (CUBE, KTM & Pegasus)",
+          "price": "€250"
+        }
+      ],
+      "importantNotes": [
+        "Änderungen im Programmablauf vorbehalten.",
+        "Überwiegend asphaltierte Nebenstraßen, mit einigen gut befestigten Schotterabschnitten.",
+        "In den Einfahrten der Städte ist mit erhöhtem Verkehr zu rechnen.",
+        "Mittlere Kondition erforderlich; an einigen Tagen über 1.000 Höhenmeter.",
+        "Begleitfahrzeug für Anstiege verfügbar.",
+        "Das Tragen eines Fahrradhelms wird empfohlen.",
+        "Im Allgemeinen nicht geeignet für Reisende mit eingeschränkter Mobilität – bitte kontaktieren Sie uns für individuelle Bedürfnisse.",
+        "Individuelle An- und Abreise über Flughafen Cilipi-Dubrovnik und Korfu."
+      ],
+      "itinerary": [
+        {
+          "title": "Tag 1 – Anreise nach Dubrovnik, Kroatien",
+          "items": [
+            "Individuelle Anreise zum Flughafen Cilipi-Dubrovnik",
+            "Treffen mit dem Reiseleiter und Transfer zum Hotel",
+            "Freier Nachmittag für die Altstadt von Dubrovnik oder zum Baden am Buža-Strand"
+          ],
+          "overnight": "Dubrovnik"
+        },
+        {
+          "title": "Tag 2 – Dubrovnik → Molunat → Igalo",
+          "distance": "65 km Transfer · 45 km Radfahren",
+          "elevation": "600 m",
+          "highlights": [
+            "Vormittags Besuch der Altstadt von Dubrovnik, Franziskanerkloster und Dom",
+            "Transfer zur Halbinsel Cavtat, Start der Radtour",
+            "Küstenfahrt durch Pinienwälder nach Molunat"
+          ],
+          "overnight": "Molunat / Igalo"
+        },
+        {
+          "title": "Tag 3 – Igalo → Herzeg-Novi → Kotor → Budva",
+          "distance": "90 km Transfer · 65 km Radfahren",
+          "elevation": "200 m",
+          "highlights": [
+            "Radfahrt entlang der Bucht von Kotor",
+            "Besichtigung der Altstadt von Kotor",
+            "Nachmittags Transfer zur Altstadt von Budva"
+          ],
+          "overnight": "Budva"
+        },
+        {
+          "title": "Tag 4 – Budva → Cetinje → Virpazar",
+          "distance": "70 km Transfer · 50 km Radfahren",
+          "elevation": "500 m",
+          "highlights": [
+            "Serpentinenfahrt zur alten montenegrinischen Hauptstadt Cetinje",
+            "Njeguši und Nationalpark Lovćen",
+            "Radfahrt durch Wälder zurück an die Adriaküste"
+          ],
+          "overnight": "Virpazar"
+        },
+        {
+          "title": "Tag 5 – Virpazar → Shkodra → Shengjin",
+          "distance": "110 km Transfer · 60 km Radfahren",
+          "elevation": "1.150 m",
+          "highlights": [
+            "Radfahrt entlang des Skutarisees, dem größten See des Balkans",
+            "Alte Esskastanienwälder und das Rumija-Gebirge",
+            "Grenzübertritt nach Albanien bei Shkodra"
+          ],
+          "overnight": "Shengjin"
+        },
+        {
+          "title": "Tag 6 – Shengjin → Tirana → Ohrid-See → Pogradec",
+          "distance": "130 km Transfer · 45 km Radfahren",
+          "elevation": "50 m",
+          "highlights": [
+            "Stadtrundfahrt Tirana: Skanderbeg-Platz und Uhrenturm von 1830",
+            "Römische Via Egnatia entlang des Shkumbin-Tals",
+            "Qafa-Thana-Pass und Westufer des Ohrid-Sees"
+          ],
+          "overnight": "Pogradec"
+        },
+        {
+          "title": "Tag 7 – Pogradec → rund um den Ohrid-See → Pogradec",
+          "distance": "50 km Transfer · 70 km Radfahren",
+          "elevation": "600 m",
+          "highlights": [
+            "Kurzer Stopp in Elbasan",
+            "Busfahrt mit Fahrradanhänger über Pässe und durch Täler",
+            "Vollständige Umrundung des Westufers des Ohrid-Sees"
+          ],
+          "overnight": "Pogradec"
+        },
+        {
+          "title": "Tag 8 – Pogradec → Korça → Gërmenjë → Përmet",
+          "distance": "100 km Transfer · 70 km Radfahren",
+          "elevation": "600 m",
+          "highlights": [
+            "Hochebene von Korça, Apfelplantagen und Wildpflanzen",
+            "Barmash-Pass zum Nationalpark Gërmenjë",
+            "Thermalquellen von Benje bei Petran",
+            "Vjosa-Tal bis Përmet"
+          ],
+          "overnight": "Përmet"
+        },
+        {
+          "title": "Tag 9 – Përmet → Gjirokastër → Vlora",
+          "distance": "130 km Transfer · 50 km Radfahren",
+          "elevation": "250 m",
+          "highlights": [
+            "Trebeshina-Gipfel und die Täler von Vjosa und Drino",
+            "Gjirokastër, UNESCO „Stadt der Steine“",
+            "Muzina-Pass bis zur Adria-Bucht von Vlora"
+          ],
+          "overnight": "Vlora"
+        },
+        {
+          "title": "Tag 10 – Küstenetappe: Vlora → Himara",
+          "cyclingDistance": "65 km",
+          "elevation": "1.600 m",
+          "highlights": [
+            "Aufstieg zum Logara-Pass, 1.000 m über dem Ionischen Meer",
+            "Nationalpark Logara – Schwarzkiefern, Otter, Steinadler",
+            "Ceraunisches Gebirge und abgelegene Buchten",
+            "Lange Abfahrt nach Himara"
+          ],
+          "overnight": "Himara"
+        },
+        {
+          "title": "Tag 11 – Küstenetappe: Himara → Saranda",
+          "cyclingDistance": "60 km",
+          "elevation": "1.300 m",
+          "highlights": [
+            "Zerklüftete Küste, Berge rechts, Meer links",
+            "Festung von Ali Pascha auf einer Halbinsel gegenüber Korfu",
+            "Lekursi-Burg mit Blick auf die Bucht von Saranda"
+          ],
+          "overnight": "Saranda"
+        },
+        {
+          "title": "Tag 12 – Küstenetappe: Saranda → Butrint → Saranda",
+          "cyclingDistance": "52 km",
+          "elevation": "750 m",
+          "highlights": [
+            "UNESCO-geschützte antike Stadt Butrint",
+            "Löwentor, Theater, Forum und Aquädukt",
+            "Freier Nachmittag zum Baden"
+          ],
+          "overnight": "Saranda"
+        },
+        {
+          "title": "Tag 13 – Saranda – Ruhetag",
+          "items": [
+            "Optionaler Vormittagsausflug zum Badeort Ksamil",
+            "Nachmittags Besuch der Lekursi-Burg mit Blick auf Korfu"
+          ],
+          "overnight": "Saranda"
+        },
+        {
+          "title": "Tag 14 – Fährüberfahrt: Saranda → Korfu",
+          "items": [
+            "Bootsüberfahrt von Saranda nach Korfu",
+            "Individuelle Stadtbesichtigung der venezianischen Altstadt von Korfu",
+            "Freizeit für letzte Souvenirs"
+          ],
+          "overnight": "Korfu"
+        },
+        {
+          "title": "Tag 15 – Abreise",
+          "items": [
+            "Individuelle Abreise",
+            "Taxitransfer zum Flughafen Korfu (ca. 3 km, nicht inklusive)"
+          ]
+        }
+      ],
+      "included": [
+        "14 Übernachtungen in 3★- und 4★-Hotels",
+        "Halbpension (ausgenommen An- und Abreisetag)",
+        "Begleitfahrzeug mit bis zu 20 Sitzplätzen und Fahrradanhänger für alle Transfers",
+        "Eintrittsgelder zu den genannten Sehenswürdigkeiten",
+        "Deutsch-/englischsprachiger lokaler Reiseleiter und Radguide",
+        "27-Gang KTM-Räder mit Federgabel, Shimano-Kettenschaltung, Lenker- und Gepäcktaschen"
+      ],
+      "notIncluded": [
+        "Flüge",
+        "Zusätzliche Mahlzeiten und Getränke",
+        "Persönliche Ausgaben und Trinkgelder",
+        "Taxitransfer zum Flughafen Korfu"
+      ],
+      "features": [
+        "Hotel",
+        "Guide",
+        "Halbpension",
+        "Begleitfahrzeug",
+        "Bootsfahrt",
+        "Mehrere Länder"
+      ],
+      "reviews": [
+        {
+          "rating": "5.0",
+          "quote": "Fünf Länder, ein Fahrrad — von den Mauern Dubrovniks bis zur Fähre nach Korfu. Das umfassendste Balkan-Abenteuer, das wir je erlebt haben.",
+          "name": "Robert Fischer",
+          "role": "Abenteuerreisender · Hamburg, Deutschland"
+        },
+        {
+          "rating": "4.8",
+          "quote": "Lang, anspruchsvoll und absolut lohnenswert. Die Bucht von Kotor, der Ohrid-See und die albanische Riviera in einer Reise zu erleben, ist kaum zu toppen.",
+          "name": "Isabelle Moreau",
+          "role": "Abenteuerreisende · Brüssel, Belgien"
+        },
+        {
+          "rating": "4.9",
+          "quote": "Unser Guide hat die Grenzübergänge und die Logistik völlig mühelos gemacht. Wir mussten uns nur um die Fahrt kümmern.",
+          "name": "David O'Connor",
+          "role": "Abenteuerreisender · Dublin, Irland"
+        }
+      ],
+      "card": {
+        "location": "Kroatien, Montenegro, Albanien, Mazedonien & Griechenland",
+        "people": "Ab 4 Personen",
+        "date": "Apr–Okt 2027",
+        "duration": "15 Tage",
+        "title": "15-Tage West-Balkan Radreise: Kroatien – Montenegro – Albanien – Mazedonien – Korfu",
+        "amenities": [
+          "Hotel",
+          "Guide",
+          "Halbpension"
+        ],
+        "moreAmenities": "+5 weitere",
+        "imageAlt": "Radfahrer auf der West-Balkan-Reise von Kroatien nach Korfu"
+      }
+    },
+    "10-day-vjosa-river-tour": {
+      "title": "10 Tage Vjosa-Fluss Rad- und Wanderreise, Albanien (2027)",
+      "rating": "4.9",
+      "reviewsMeta": "· 7 Bewertungen",
+      "meta": {
+        "duration": "10 Tage / 9 Nächte",
+        "group": "Einzel 2–3 · Gruppen 4+",
+        "season": "1. Apr – 31. Okt 2027"
+      },
+      "stats": [
+        {
+          "label": "Dauer",
+          "value": "10 Tage / 9 Nächte"
+        },
+        {
+          "label": "Abholung",
+          "value": "Flughafen Tirana"
+        },
+        {
+          "label": "Gruppengröße",
+          "value": "2–3 oder 4+"
+        },
+        {
+          "label": "Buchungssaison",
+          "value": "Apr–Okt 2027"
+        }
+      ],
+      "quickDescription": "Das „letzte Geheimnis Europas“ per Rad kennenlernen. Eine 10-tägige Rad- und Wandererlebnisreise entlang des albanischen Vjosa-Flusses, vom Ohrid-See über die Ionische Riviera und das Thermalbad Benje bis zu den antiken Ruinen von Apollonia und Berat.",
+      "quickDescriptionAudience": "Für Singles, zu zweit, Familien oder Freunde.",
+      "aboutBody": "Albanien, das „Sonnenland Europas“, ist ein wunderbares Urlaubsparadies an der Westküste des Balkans. Tauchen Sie ein in das Land der Skipetaren, wie sich die Albaner selbst gerne nennen – ein Land, das in der Vergangenheit des Balkans eine bedeutende Rolle spielte, dann lange vergessen war und heute wieder den Anschluss an Europa sucht und findet. Die vielen architektonisch einzigartigen Bergketten, Schluchten, Flüsse und Täler sowie die von der UNESCO geschützten Städte und Gebäude zeugen von der bewegten Geschichte dieses Landes. Unsere Radtour führt Sie an die flache Küste des Adriatischen Meeres mit 250 km Länge und die 200 km lange südliche Ionische Küste – die wilde und schöne Riviera macht diese Radtour unvergesslich. Die Route folgt dem Ohrid-See, den beeindruckenden südlichen Bergen, der zerklüfteten Ionischen Küste, dem Caesar-Pass und der Vlora-Bucht im südlichen Adriatischen Meer mit ihrer felsigen, kiefernbewaldeten Küste.",
+      "tourInfo": [
+        {
+          "field": "Tourtyp",
+          "value": "Geführte Rad- & Wandertour"
+        },
+        {
+          "field": "Schwierigkeit",
+          "value": "Mittel"
+        },
+        {
+          "field": "Gesamtstrecke",
+          "value": "350 km"
+        },
+        {
+          "field": "Tagesstrecke",
+          "value": "35–65 km"
+        },
+        {
+          "field": "Terrain",
+          "value": "Berge, Flusstäler, Küste"
+        },
+        {
+          "field": "Straßen",
+          "value": "Überwiegend asphaltierte, ruhige Nebenstraßen"
+        },
+        {
+          "field": "Begleitfahrzeug",
+          "value": "Ja"
+        },
+        {
+          "field": "Helm empfohlen",
+          "value": "Ja"
+        }
+      ],
+      "highlights": [
+        "50 km rund um den Ohrid-See, den tiefsten See Europas",
+        "200 km südwärts durch die Berge und das Vjosa-Tal über Pässe und Wälder",
+        "150 km entlang der Ionischen Meer-Riviera durch kleine Buchten, Oliven- und Zypressenbäume",
+        "Caesar-Pass (Logara) und Vlora-Bucht über kleine Straßen durch spektakuläre Berge",
+        "3 UNESCO-Weltkulturerbe-Städte zu Fuß erkunden",
+        "Antike Ruinen von Apollonia und die osmanische „Weiße Stadt“ Berat",
+        "Küstenhotels am Ionischen und Adriatischen Meer mit mediterranem Flair",
+        "Traditionelle mediterrane Küche mit Fisch, Wein, Zitronen und Olivenöl"
+      ],
+      "pricingBase": [
+        {
+          "package": "9 Nächte / Halbpension / Doppelzimmer",
+          "price": "€1.390 pro Person"
+        }
+      ],
+      "pricingSupplements": [
+        {
+          "option": "Einzelzimmer",
+          "price": "€220"
+        },
+        {
+          "option": "Zuschlag Juli & August",
+          "price": "€100"
+        }
+      ],
+      "pricingBikes": [
+        {
+          "bike": "Standardrad",
+          "price": "€120"
+        },
+        {
+          "bike": "E-Bike (CUBE, KTM & Pegasus)",
+          "price": "€225"
+        }
+      ],
+      "importantNotes": [
+        "Änderungen im Programmablauf vorbehalten.",
+        "Moderat schwierige Radetappen durch Berge und Flusstäler entlang bergiger und flacher Rivieraküsten.",
+        "Radfahren hauptsächlich auf asphaltierten, ruhigen Nebenstraßen.",
+        "Erhöhter Verkehr an den Einfahrten in die Städte zu erwarten.",
+        "An einigen Radtagen über 1.000 Höhenmeter.",
+        "Begleitfahrzeug bei ausgewählten Anstiegsabschnitten verfügbar.",
+        "Kinderrabatt auf Anfrage."
+      ],
+      "itinerary": [
+        {
+          "title": "Tag 1 – Ankunft in Tirana",
+          "items": [
+            "Eigene Anreise",
+            "Flughafentransfer",
+            "Hotel-Check-in",
+            "Geführter Stadtrundgang durch Tirana",
+            "Skanderbeg-Platz, Ethem-Bey-Moschee, Viertel der kommunistischen Nomenklatura"
+          ],
+          "overnight": "Tirana"
+        },
+        {
+          "title": "Tag 2 – Tirana → Ohrid-See",
+          "distance": "100 km Transfer · 60 km Radfahren",
+          "elevation": "50 m",
+          "highlights": [
+            "Busfahrt mit Fahrrad-Anhänger über Pässe entlang der römischen Via Egnatia",
+            "Qafa-Thana-Pass (1.000 m)",
+            "Radfahren am Westufer des Ohrid-Sees",
+            "Ankunft in Pogradec"
+          ],
+          "overnight": "Pogradec"
+        },
+        {
+          "title": "Tag 3 – Pogradec → Korça → Germenj, Vjosa-Flusstal → Përmet",
+          "distance": "150 km Transfer · 60 km Radfahren",
+          "elevation": "600 m",
+          "highlights": [
+            "Stadtrundfahrt Korça",
+            "Korça-Plateau, Apfelgärten und Wildblumen",
+            "Barmash-Pass (1.159 m) nach Gërmenjë",
+            "Leskovik (900 m)",
+            "Abfahrt nach Çarshovë entlang des Vjosa-Tals"
+          ],
+          "overnight": "Përmet"
+        },
+        {
+          "title": "Tag 4 – Wanderausflug im Vjosa-Flusstal-Nationalpark",
+          "items": [
+            "Morgens Wanderung zum Dhëmbeli-Gebirge entlang des Vjosa-Tals (ca. 5 Std.)",
+            "Vjosa-Nationalpark, Dörfer mit Seilbrücken verbunden",
+            "Picknick-Mittagessen in freier Natur",
+            "Rückkehr zum Hotel am Nachmittag"
+          ],
+          "overnight": "Përmet"
+        },
+        {
+          "title": "Tag 5 – Radfahren und Schwimmen im Natur-Thermalbad Benje",
+          "cyclingDistance": "35 km",
+          "elevation": "200 m",
+          "highlights": [
+            "Radfahrt zum Natur-Thermalbad Benje",
+            "Schwimmen und Entspannen am Fluss"
+          ],
+          "overnight": "Përmet"
+        },
+        {
+          "title": "Tag 6 – Përmet, Vjosa-Flusstal → Gjirokastër → Saranda",
+          "distance": "130 km Transfer · 65 km Radfahren",
+          "elevation": "150 m",
+          "highlights": [
+            "Kelcyra und der Trebeshina-Gipfel",
+            "Vjosa-Tal und Schlucht des Drinos",
+            "Gjirokastër, die „Stadt der Steine“",
+            "Muzina-Pass",
+            "Quelle „Blaues Auge“",
+            "Lekursi-Burg mit Blick auf Korfu"
+          ],
+          "overnight": "Saranda"
+        },
+        {
+          "title": "Tag 7 – Saranda → UNESCO Butrint → Himara",
+          "cyclingDistance": "52 km",
+          "elevation": "750 m",
+          "highlights": [
+            "UNESCO-geschützte antike Stadt Butrint",
+            "Löwentor, Theater, Forum und Aquädukt",
+            "Hügelige Küstenabschnitte der ionischen Küste",
+            "Festung von Ali Pascha gegenüber Korfu",
+            "Abfahrt zum Strand von Himara"
+          ],
+          "overnight": "Himara"
+        },
+        {
+          "title": "Tag 8 – Himara → Cäsar-Pass (Logara) → Vlora-Bucht",
+          "cyclingDistance": "65 km",
+          "elevation": "1.600 m",
+          "highlights": [
+            "Aufstieg zum Logara-Pass, 1.000 m über dem Ionischen Meer",
+            "Nationalpark Logara – Schwarzkiefern, Otter, Steinadler",
+            "Lange Abfahrt zur Adriaküste"
+          ],
+          "overnight": "Vlora"
+        },
+        {
+          "title": "Tag 9 – Vlora → Apollonia → Berat → Tirana",
+          "distance": "200 km Transfer · 50 km Radfahren",
+          "elevation": "200 m",
+          "highlights": [
+            "Vlora-Bucht und Pinienwälder bis zum Kloster Zvernec",
+            "Ruinen von Apollonia, einer dorischen Gründung aus dem 6. Jh. v. Chr.",
+            "Optionaler Besuch von Berat, der „Weißen Stadt der 1000 Fenster“",
+            "Weiterfahrt nach Tirana"
+          ],
+          "overnight": "Tirana"
+        },
+        {
+          "title": "Tag 10 – Abreise",
+          "items": [
+            "Frühstück",
+            "Flughafentransfer",
+            "Rückflug"
+          ]
+        }
+      ],
+      "included": [
+        "9 Übernachtungen in 3★- und 4★-Hotels",
+        "Halbpension (Frühstücksbuffet + 3-Gang-Menü, ausgenommen An- und Abreisetag)",
+        "Begleitfahrzeug mit Fahrradanhänger für den Gepäcktransfer von Hotel zu Hotel",
+        "Geführter Wanderausflug im Nationalpark Vjosa-Flusstal",
+        "Eintritt Natur-Thermalbad Benje",
+        "Eintrittsgelder zu den genannten Sehenswürdigkeiten während der Reise",
+        "Erfahrener deutschsprachiger lokaler Reiseleiter und Radguide",
+        "GPS-Navigationsgerät, Landkarten und ausführliches Infomaterial",
+        "10-Tage-Service-Hotline, rund um die Uhr erreichbar",
+        "Transfer vom und zum Flughafen",
+        "27-Gang Freilauf Unisex-Räder Marke KTM mit Federgabel, Shimano-Kettenschaltung, Lenker- und Gepäcktaschen",
+        "Zusatznächte auf Anfrage buchbar"
+      ],
+      "notIncluded": [
+        "Flüge",
+        "Zusätzliche Mahlzeiten",
+        "Getränke",
+        "Persönliche Ausgaben",
+        "Trinkgelder"
+      ],
+      "features": [
+        "Hotel",
+        "Guide",
+        "Halbpension",
+        "Wandern",
+        "Thermalbad",
+        "Begleitfahrzeug"
+      ],
+      "reviews": [
+        {
+          "rating": "5.0",
+          "quote": "Apollonia und Berat am Ende waren eine wunderbare Überraschung — antike Ruinen und eine osmanische Altstadt hatten wir bei einer Radreise nicht erwartet. Zwei großartige Extra-Tage.",
+          "name": "Julia Hoffmann",
+          "role": "Abenteuerreisende · Köln, Deutschland"
+        },
+        {
+          "rating": "4.9",
+          "quote": "Das Thermalbad Benje nach der Vjosa-Wanderung war die perfekte Belohnung. Jeder Tag brachte eine völlig andere Landschaft.",
+          "name": "Marco Bellini",
+          "role": "Abenteuerreisender · Turin, Italien"
+        },
+        {
+          "rating": "4.8",
+          "quote": "Zehn Tage waren für diese Route genau richtig — nie gehetzt, immer etwas Neues. Unser Guide war durchweg fantastisch.",
+          "name": "Emma Whitfield",
+          "role": "Abenteuerreisende · Bristol, UK"
+        }
+      ],
+      "card": {
+        "location": "Albanien",
+        "people": "Ab 2 Personen",
+        "date": "Apr–Okt 2027",
+        "duration": "10 Tage",
+        "title": "10 Tage Vjosa-Fluss Rad- und Wanderreise, Albanien (2027)",
+        "amenities": [
+          "Hotel",
+          "Guide",
+          "Halbpension"
+        ],
+        "moreAmenities": "+5 weitere",
+        "imageAlt": "Radfahrer im Vjosa-Flusstal Albaniens"
       }
     }
   }
