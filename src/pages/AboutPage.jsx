@@ -12,7 +12,7 @@ export default function AboutPage() {
       <AboutHero />
       <AboutIntro />
       <WhyChooseUs />
-      <MeetTheTeam />
+      {/* <MeetTheTeam /> */}
       <HowItWorks />
       <FaqSection />
       <PageFooter />
