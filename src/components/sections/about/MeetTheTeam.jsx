@@ -1,9 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import {
-  teamPhoto,
-  teamPhoto2,
-  teamPhoto3,
   iconFacebookFill,
   iconWhatsapp,
   iconInstagramFill,
@@ -16,12 +13,9 @@ const socialIcons = [
   { src: iconInstagramFill, alt: "Instagram" },
 ];
 
-const teamPhotos = [teamPhoto, teamPhoto2, teamPhoto3];
-
-function TeamCard({ name, role, photo }) {
+function TeamCard({ name, role }) {
   return (
-    <article className="flex w-full flex-col items-center gap-4 bg-[#fff9f9] pb-5 shadow-[0_4px_2px_rgba(0,0,0,0.25)]">
-      <img src={photo} alt={name} className="h-[220px] w-full object-cover xs:h-[260px] sm:h-[300px]" />
+    <article className="flex w-full flex-col items-center gap-4 bg-[#fff9f9] px-6 py-8 shadow-[0_4px_2px_rgba(0,0,0,0.25)]">
       <div className="flex flex-col items-center gap-1.5 text-center">
         <p className="font-sans text-[clamp(1.125rem,2vw,1.75rem)] font-bold text-black">{name}</p>
         <p className="font-sans text-[clamp(1rem,1.6vw,1.625rem)] font-semibold text-[#6a7282]">{role}</p>
@@ -59,13 +53,8 @@ export default function MeetTheTeam() {
         </div>
 
         <div className="grid w-full grid-cols-1 gap-6 xs:grid-cols-2 lg:grid-cols-3">
-          {visible.map((member, index) => (
-            <TeamCard
-              key={member.name}
-              name={member.name}
-              role={member.role}
-              photo={teamPhotos[(page * perPage + index) % teamPhotos.length]}
-            />
+          {visible.map((member) => (
+            <TeamCard key={member.name} name={member.name} role={member.role} />
           ))}
         </div>
 

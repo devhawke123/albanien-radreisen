@@ -28,7 +28,7 @@ export default function AboutUs() {
         <Link
           to="/about"
           className="mt-8 inline-flex h-btn-sm w-full items-center justify-center rounded-[11px] bg-brand px-10 text-btn leading-none text-white no-underline sm:mt-10 sm:w-auto lg:ml-[248px]"
-        >
+        > 
           {t("about.exploreMore")}
         </Link>
       </div>

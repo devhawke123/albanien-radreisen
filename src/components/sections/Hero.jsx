@@ -112,27 +112,7 @@ export default function Hero() {
             </div>
           </>
         )}
-
-      {/* <div className="relative z-10 mx-auto mt-20 flex h-auto w-[min(100%,808px)] shrink-0 flex-col items-stretch justify-center gap-2 rounded-xl border border-white/30 bg-white/15 px-3 py-0 backdrop-blur-sm xs:h-search-bar xs:flex-row xs:flex-wrap xs:items-center sm:gap-3 sm:px-4 lg:gap-4">
-        <span className="inline-flex shrink-0 items-center gap-2 rounded-lg px-2 py-1 text-nav text-white sm:gap-2.5 sm:px-4">
-          <img className="h-5 w-5 sm:h-6 sm:w-6" src={iconLocation} alt="" aria-hidden />
-          <span>{t("hero.destination")}</span>
-        </span>
-        <span className="inline-flex shrink-0 items-center gap-2 rounded-lg px-2 py-1 text-nav text-white sm:gap-2.5 sm:px-4">
-          <img className="h-5 w-5 sm:h-6 sm:w-6" src={iconPeople} alt="" aria-hidden />
-          <span>{t("hero.people")}</span>
-        </span>
-        <span className="inline-flex shrink-0 items-center gap-2 rounded-lg px-2 py-1 text-nav text-white sm:gap-2.5 sm:px-4">
-          <img className="h-5 w-5 sm:h-6 sm:w-6" src={iconCalendar} alt="" aria-hidden />
-          <span>{t("hero.date")}</span>
-        </span>
-        <Link
-          to="/tours"
-          className="inline-flex h-btn-sm w-full shrink-0 items-center justify-center rounded-[15px] border border-white bg-brand/45 px-4 text-nav text-white no-underline xs:w-auto sm:px-6"
-        >
-          {t("hero.exploreTours")}
-        </Link>
-      </div> */}
+        
     </div>
     </section>
   );
