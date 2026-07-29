@@ -215,6 +215,7 @@
     "showcaseTitle": "Explore Albania's Best Routes",
     "showcaseBody": "Discover scenic cycling journeys designed for adventure, culture, and nature lovers.",
     "seeAll": "See all",
+    "exploreMore": "Explore More Tours",
     "slideAlts": [
       "Hikers on an Albanian mountain trail",
       "Cyclists in an Albanian poppy field",
@@ -616,7 +617,7 @@
     "generalLinks": {
       "home": "Home",
       "tours": "Tours",
-      "services": "Services",
+      "imprint": "Imprint",
       "testimonials": "Testimonials"
     },
     "aboutLinks": {
@@ -2271,7 +2272,7 @@
       }
     },
     "10-day-vjosa-river-tour": {
-      "title": "10-Day Vjosa River Cycling & Hiking Tour, Albania (2027)",
+      "title": "9-Day Cycling and Hiking Adventure Trip – Albania by Bicycle: River Landscape of the Vjosa National Park",
       "rating": "4.9",
       "reviewsMeta": "· 7 reviews",
       "meta": {
@@ -2551,7 +2552,7 @@
         "people": "2+ people",
         "date": "Apr–Oct 2027",
         "duration": "10 days",
-        "title": "10-Day Vjosa River Cycling & Hiking Tour, Albania (2027)",
+        "title": "9-Day Cycling and Hiking Adventure Trip – Albania by Bicycle: River Landscape of the Vjosa National Park",
         "amenities": [
           "Hotel",
           "Guide",

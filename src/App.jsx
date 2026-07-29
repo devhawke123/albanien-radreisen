@@ -1,4 +1,5 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useEffect } from "react";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import GalleryPage from "./pages/GalleryPage";
@@ -17,9 +18,20 @@ import AdminRequestsPage from "./pages/admin/AdminRequestsPage";
 import AdminProtectedRoute from "./components/admin/AdminProtectedRoute";
 import { AdminAuthProvider } from "./hooks/useAdminAuth";
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <main className="bg-white">
         <Routes>
           <Route path="/" element={<HomePage />} />

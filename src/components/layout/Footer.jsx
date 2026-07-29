@@ -34,7 +34,7 @@ const contactDetails = [
 const GENERAL_LINKS = [
   { key: "home", to: "/" },
   { key: "tours", to: "/tours" },
-  { key: "services", to: "/#how-it-works" },
+  { key: "imprint", to: "/imprint" },
   { key: "testimonials", to: "/testimonials" },
 ];
 

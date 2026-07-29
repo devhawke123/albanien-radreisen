@@ -9,9 +9,6 @@ import {
   heroBackground5,
   heroBackground6,
   heroBackground7,
-  iconCalendar,
-  iconLocation,
-  iconPeople,
 } from "../../assets/hero";
 import Header from "../layout/Header";
 

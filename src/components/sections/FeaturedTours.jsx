@@ -140,26 +140,35 @@ export default function FeaturedTours() {
         <div className="mt-10 grid gap-6 sm:mt-12 lg:grid-cols-[minmax(0,1.1fr)_1fr] lg:gap-10 xl:grid-cols-[minmax(0,788px)_1fr] xl:gap-[61px]">
           <FeaturedTourShowcase />
 
-          <div className="grid grid-cols-1 gap-4 xs:grid-cols-2 xs:gap-5 sm:gap-6 lg:grid-cols-1 xl:grid-cols-1">
-            {TOURS.map((tour) => {
-              const card = t(`toursContent.${tour.slug}.card`, { returnObjects: true });
-              return (
-                <TourCard
-                  key={tour.slug}
-                  image={tour.cardImage}
-                  imageAlt={card.imageAlt}
-                  location={card.location}
-                  people={card.people}
-                  date={card.date}
-                  duration={card.duration}
-                  title={card.title}
-                  price={formatEuro(tour.basePrice).replace("€ ", "€")}
-                  amenities={card.amenities}
-                  moreAmenitiesLabel={card.moreAmenities}
-                  to={`/tours/${tour.slug}`}
-                />
-              );
-            })}
+          <div className="flex flex-col">
+            <div className="grid grid-cols-1 gap-4 xs:grid-cols-2 xs:gap-5 sm:gap-6 lg:grid-cols-1 xl:grid-cols-1">
+              {TOURS.slice(0, 2).map((tour) => {
+                const card = t(`toursContent.${tour.slug}.card`, { returnObjects: true });
+                return (
+                  <TourCard
+                    key={tour.slug}
+                    image={tour.cardImage}
+                    imageAlt={card.imageAlt}
+                    location={card.location}
+                    people={card.people}
+                    date={card.date}
+                    duration={card.duration}
+                    title={card.title}
+                    price={formatEuro(tour.basePrice).replace("€ ", "€")}
+                    amenities={card.amenities}
+                    moreAmenitiesLabel={card.moreAmenities}
+                    to={`/tours/${tour.slug}`}
+                  />
+                );
+              })}
+            </div>
+
+            <Link
+              to="/tours"
+              className="mt-6 inline-flex h-btn-sm w-full items-center justify-center rounded-[11px] bg-brand px-10 text-btn leading-none text-white no-underline sm:w-auto"
+            >
+              {t("tours.exploreMore")}
+            </Link>
           </div>
         </div>
       </div>

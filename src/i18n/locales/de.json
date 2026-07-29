@@ -215,6 +215,7 @@
     "showcaseTitle": "Entdecke Albaniens Schönste Routen",
     "showcaseBody": "Erlebe malerische Radreisen für Abenteuer-, Kultur- und Naturliebhaber.",
     "seeAll": "Alle ansehen",
+    "exploreMore": "Weitere Touren Entdecken",
     "slideAlts": [
       "Wanderer auf einem albanischen Bergpfad",
       "Radfahrer in einem albanischen Mohnfeld",
@@ -616,7 +617,7 @@
     "generalLinks": {
       "home": "Startseite",
       "tours": "Touren",
-      "services": "Leistungen",
+      "imprint": "Impressum",
       "testimonials": "Erfahrungsberichte"
     },
     "aboutLinks": {
@@ -2269,7 +2270,7 @@
       }
     },
     "10-day-vjosa-river-tour": {
-      "title": "10 Tage Vjosa-Fluss Rad- und Wanderreise, Albanien (2027)",
+      "title": "9-tägige Rad- und Wander-Abenteuerreise – Albanien per Rad: Flusslandschaft des Vjosa-Nationalparks",
       "rating": "4.9",
       "reviewsMeta": "· 7 Bewertungen",
       "meta": {
@@ -2547,7 +2548,7 @@
         "people": "Ab 2 Personen",
         "date": "Apr–Okt 2027",
         "duration": "10 Tage",
-        "title": "10 Tage Vjosa-Fluss Rad- und Wanderreise, Albanien (2027)",
+        "title": "9-tägige Rad- und Wander-Abenteuerreise – Albanien per Rad: Flusslandschaft des Vjosa-Nationalparks",
         "amenities": [
           "Hotel",
           "Guide",
