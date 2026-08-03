@@ -1,7 +1,11 @@
-const BOOKING_EMAIL = "dev@bluehawke.com";
+const BOOKING_EMAILS = [
+  "dev@bluehawke.com",
+  "alba.reisen@yahoo.de",
+  "tarkogezim@gmail.com",
+];
 
-async function postToFormSubmit(body) {
-  const response = await fetch(`https://formsubmit.co/ajax/${BOOKING_EMAIL}`, {
+async function postToFormSubmit(email, body) {
+  const response = await fetch(`https://formsubmit.co/ajax/${email}`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -45,7 +49,6 @@ export async function submitOrderNotification({
     _template: "table",
     _captcha: "false",
     _replyto: form.email,
-    _autoresponse: autoresponseMessage,
     Type: "Order",
     OrderNumber: orderNumber,
     email: form.email,
@@ -60,5 +63,13 @@ export async function submitOrderNotification({
     Subtotal: `€${subtotal}`,
   };
 
-  return postToFormSubmit(body);
+  // Only the first inbox triggers the customer auto-reply, so they get one confirmation.
+  await Promise.all(
+    BOOKING_EMAILS.map((email, index) =>
+      postToFormSubmit(email, {
+        ...body,
+        ...(index === 0 ? { _autoresponse: autoresponseMessage } : {}),
+      }),
+    ),
+  );
 }

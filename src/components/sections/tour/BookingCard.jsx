@@ -195,10 +195,6 @@ export default function BookingCard() {
     setErrorMessage("");
 
     try {
-      if (formTab === "booking" && guests < 2) {
-        throw new Error(t("tourPage.booking.minGuestsError"));
-      }
-
       if (formTab === "booking") {
         addCartItem({
           id: `${slug}-${selectedDeparture.id}`,

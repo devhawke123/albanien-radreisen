@@ -464,7 +464,6 @@
       "increaseGuests": "Increase guests",
       "decreaseAddon": "Decrease add-on quantity",
       "increaseAddon": "Increase add-on quantity",
-      "minGuestsError": "Minimum 2 people required for individual bookings.",
       "addonsTitle": "Additional services",
       "addons": {
         "bike": {

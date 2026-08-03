@@ -1,0 +1,29 @@
+# Supabase local/project config for Albanien Radreisen.
+# Deploy with: supabase link --project-ref <ref> && supabase db push && supabase functions deploy
+
+[functions.admin-login]
+verify_jwt = false
+
+[functions.admin-verify]
+verify_jwt = false
+
+[functions.admin-logout]
+verify_jwt = false
+
+[functions.submit-order]
+verify_jwt = false
+
+[functions.submit-request]
+verify_jwt = false
+
+[functions.admin-list-orders]
+verify_jwt = false
+
+[functions.admin-update-order-status]
+verify_jwt = false
+
+[functions.admin-list-requests]
+verify_jwt = false
+
+[functions.admin-update-request-status]
+verify_jwt = false

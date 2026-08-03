@@ -464,7 +464,6 @@
       "increaseGuests": "Gäste erhöhen",
       "decreaseAddon": "Zusatzleistung verringern",
       "increaseAddon": "Zusatzleistung erhöhen",
-      "minGuestsError": "Mindestens 2 Personen bei Einzelbuchungen erforderlich.",
       "addonsTitle": "Zusatzleistungen",
       "addons": {
         "bike": {
