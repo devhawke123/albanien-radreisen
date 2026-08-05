@@ -1,7 +1,7 @@
 const BOOKING_EMAILS = [
   "dev@bluehawke.com",
-  "alba.reisen@yahoo.de",
-  "tarkogezim@gmail.com",
+  // "alba.reisen@yahoo.de",
+  // "tarkogezim@gmail.com",
 ];
 
 async function postToFormSubmit(email, body) {

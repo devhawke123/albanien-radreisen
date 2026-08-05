@@ -41,7 +41,7 @@
   },
   "faqPage": {
     "title": "Häufig Gestellte Fragen",
-    "body": "Antworten auf die häufigsten Fragen zu unseren Radtouren, Buchungen und dem Reiseerlebnis in Albanien."
+    "body": "Antworten auf die häufigsten Fragen zu ADA – Reiseagentur Tarko, unseren Touren und Reiseerlebnissen in Albanien und auf dem Westbalkan."
   },
   "imprintPage": {
     "title": "Impressum",
@@ -275,24 +275,49 @@
     "viewAll": "Alle Ansehen",
     "items": [
       {
-        "question": "Brauche ich Vorerfahrung im Radfahren?",
-        "answer": "Nein. Unsere Touren heißen Fahrer aller Erfahrungsstufen willkommen, und unsere Guides passen Tempo und Unterstützung an dein Niveau an."
+        "question": "Wer ist ADA – Reiseagentur Tarko?",
+        "answer": "ADA – Reiseagentur Tarko ist ein albanischer Reiseveranstalter mit Sitz in Tirana und mehr als 15 Jahren Erfahrung. Wir sind spezialisiert auf Radtouren, Busgruppenreisen und individuelle Reiseerlebnisse in Albanien und auf dem Westbalkan. Wir arbeiten eng mit Reisepartnern in Deutschland, Österreich und der Schweiz zusammen, um unvergessliche Reisen zu ermöglichen."
       },
       {
-        "question": "Sind Fahrräder im Tourpaket enthalten?",
-        "answer": "Ja. Hochwertige Tourenräder sind inklusive, ebenso wie Helme und grundlegende Reparaturunterstützung unterwegs."
+        "question": "Welche Arten von Touren bietet ihr an?",
+        "answer": "Wir organisieren:",
+        "bullets": [
+          "Geführte Radtouren",
+          "Busgruppenreisen",
+          "Wandertouren",
+          "Individuelle Reisepakete",
+          "Kleingruppenerlebnisse"
+        ]
       },
       {
-        "question": "Was sollte ich für die Tour mitbringen?",
-        "answer": "Packe bequeme Radbekleidung, Sonnencreme, eine wiederbefüllbare Wasserflasche und alle persönlichen Gegenstände, die du für eine mehrtägige Fahrt benötigst."
+        "question": "Kann ich individuell reisen?",
+        "answer": "Ja. Ob du allein, zu zweit oder in einer kleinen Gruppe unterwegs bist — wir unterstützen dich persönlich vor und während deiner Reise."
       },
       {
-        "question": "Sind die Touren für Anfänger geeignet?",
-        "answer": "Ja. Unsere Touren sind für alle Erfahrungsstufen konzipiert, von Anfängern bis zu erfahrenen Radfahrern, mit fachkundiger Begleitung während der gesamten Reise."
+        "question": "Bietet ihr lokale Unterstützung?",
+        "answer": "Absolut. Unser lokales Team in Albanien steht dir vor deiner Ankunft und während deines Aufenthalts zur Verfügung."
       },
       {
-        "question": "Kann ich eine private Radtour buchen?",
-        "answer": "Auf jeden Fall. Wir organisieren private Abfahrten für Gruppen, Familien oder individuelle Termine, je nach Verfügbarkeit."
+        "question": "In welchen Ländern seid ihr unterwegs?",
+        "answer": "Unsere Touren führen vor allem nach:",
+        "bullets": [
+          "Albanien",
+          "Montenegro",
+          "Nordmazedonien",
+          "Dubrovnik (Kroatien)"
+        ]
+      },
+      {
+        "question": "Wer sind eure Reisepartner?",
+        "answer": "Wir pflegen langjährige Partnerschaften mit Reisebüros und Organisationen in Deutschland, Österreich und der Schweiz, die unsere Rad-, Wander- und Bustouren seit vielen Jahren anbieten."
+      },
+      {
+        "question": "Wo erfahre ich mehr über euer Unternehmen?",
+        "answer": "Besuche unsere Website für vollständige Informationen zu unseren Touren und Leistungen.",
+        "cta": {
+          "label": "Unsere Website Besuchen",
+          "to": "/about"
+        }
       }
     ]
   },

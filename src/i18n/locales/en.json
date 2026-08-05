@@ -41,7 +41,7 @@
   },
   "faqPage": {
     "title": "Frequently Asked Questions",
-    "body": "Answers to the most common questions about our cycling tours, bookings, and travel experience across Albania."
+    "body": "Answers to the most common questions about ADA – Travel Agency Tarko, our tours, and travel experiences across Albania and the Western Balkans."
   },
   "imprintPage": {
     "title": "Imprint",
@@ -275,24 +275,49 @@
     "viewAll": "View All",
     "items": [
       {
-        "question": "Do I need previous cycling experience?",
-        "answer": "No. Our tours welcome riders of all levels, and our guides adapt the pace and support to match your experience."
+        "question": "Who is ADA – Travel Agency Tarko?",
+        "answer": "ADA – Travel Agency Tarko is an Albanian tour operator based in Tirana with more than 15 years of experience. We specialise in cycling tours, group bus tours, and customised travel experiences across Albania and the Western Balkans. We work closely with travel partners in Germany, Austria, and Switzerland to deliver unforgettable journeys."
       },
       {
-        "question": "Are bikes included in the tour package?",
-        "answer": "Yes. High-quality touring bikes are included, along with helmets and basic repair support on the road."
+        "question": "What types of tours do you offer?",
+        "answer": "We organise:",
+        "bullets": [
+          "Guided Cycling Tours",
+          "Bus Group Tours",
+          "Hiking Tours",
+          "Individual Travel Packages",
+          "Small Group Experiences"
+        ]
       },
       {
-        "question": "What should I bring for the tour?",
-        "answer": "Pack comfortable cycling clothing, sunscreen, a refillable water bottle, and any personal items you need for a multi-day ride."
+        "question": "Can I travel individually?",
+        "answer": "Yes. Whether you're travelling alone, as a couple, or with a small group, we provide personalised support before and throughout your journey."
       },
       {
-        "question": "Are the tours suitable for beginners?",
-        "answer": "Yes. Our tours are designed for all experience levels, from beginners to experienced cyclists, with expert guidance throughout the journey."
+        "question": "Do you provide local support?",
+        "answer": "Absolutely. Our local team in Albania is available to assist you before your arrival and throughout your stay."
       },
       {
-        "question": "Can I book a private cycling tour?",
-        "answer": "Absolutely. We can arrange private departures for groups, families, or custom dates depending on availability."
+        "question": "Which countries do you operate in?",
+        "answer": "Our tours mainly cover:",
+        "bullets": [
+          "Albania",
+          "Montenegro",
+          "North Macedonia",
+          "Dubrovnik (Croatia)"
+        ]
+      },
+      {
+        "question": "Who are your travel partners?",
+        "answer": "We have long-standing partnerships with travel agencies and organisations in Germany, Austria, and Switzerland that have been offering our cycling, hiking, and bus tours for many years."
+      },
+      {
+        "question": "Where can I learn more about your company?",
+        "answer": "Visit our website for complete information about our tours and services.",
+        "cta": {
+          "label": "Visit Our Website",
+          "to": "/about"
+        }
       }
     ]
   },

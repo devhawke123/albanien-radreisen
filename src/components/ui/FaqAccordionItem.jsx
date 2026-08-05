@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function ChevronIcon({ open }) {
   return (
     <svg
@@ -10,6 +12,29 @@ function ChevronIcon({ open }) {
     >
       <path d="M6 9l6 6 6-6" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
+  );
+}
+
+function FaqAnswer({ item }) {
+  return (
+    <div className="mt-3 font-sans text-faq-answer text-black sm:mt-4">
+      <p>{item.answer}</p>
+      {Array.isArray(item.bullets) && item.bullets.length > 0 && (
+        <ul className="mt-2 list-disc space-y-1 pl-6">
+          {item.bullets.map((bullet) => (
+            <li key={bullet}>{bullet}</li>
+          ))}
+        </ul>
+      )}
+      {item.cta?.to && item.cta?.label && (
+        <Link
+          to={item.cta.to}
+          className="mt-4 inline-flex h-btn-sm items-center justify-center rounded-[11px] bg-brand px-8 text-btn leading-none text-white no-underline"
+        >
+          {item.cta.label}
+        </Link>
+      )}
+    </div>
   );
 }
 
@@ -30,7 +55,7 @@ export default function FaqAccordionItem({ item, isOpen, onToggle }) {
             <ChevronIcon open={isOpen} />
           </span>
         </button>
-        <p className="mt-3 font-sans text-faq-answer text-black sm:mt-4">{item.answer}</p>
+        <FaqAnswer item={item} />
       </div>
     );
   }
