@@ -46,8 +46,6 @@ export default function AboutIntro() {
             </div>
           </div>
 
-       
-
           <img
             src={aboutIntroPhoto}
             alt="Cyclists group photo in Albania"

@@ -1,10 +1,12 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
 import { logo } from "../../assets/hero";
 import { iconCart } from "../../assets/shared";
+import { TOURS } from "../../data/toursCatalog";
 import useCart from "../../hooks/useCart";
 import LanguageSwitcher from "../ui/LanguageSwitcher";
+import NavDropdown from "./NavDropdown";
 
 function navPillClass(isActive, light = false) {
   if (light) {
@@ -18,93 +20,50 @@ function navPillClass(isActive, light = false) {
     : "text-nav leading-snug text-white/85 no-underline";
 }
 
-const ABOUT_DROPDOWN_PATHS = ["/about", "/gallery", "/faq", "/testimonials"];
-
-function AboutDropdown({ pathname, t, light = false }) {
-  const isActive = ABOUT_DROPDOWN_PATHS.includes(pathname);
+function MobileNavGroup({ label, parentTo, isActive, items, linkClass, onClose }) {
   const [open, setOpen] = useState(false);
-  const containerRef = useRef(null);
-
-  useEffect(() => {
-    if (!open) return;
-
-    function handlePointerDown(event) {
-      if (!containerRef.current?.contains(event.target)) setOpen(false);
-    }
-
-    document.addEventListener("mousedown", handlePointerDown);
-    return () => document.removeEventListener("mousedown", handlePointerDown);
-  }, [open]);
 
   return (
-    <div ref={containerRef} className="relative">
-      <button
-        type="button"
-        onClick={() => setOpen((prev) => !prev)}
-        aria-expanded={open}
-        className={`inline-flex cursor-pointer items-center gap-1 ${navPillClass(isActive, light)}`}
+    <>
+      <div
+        className={`flex w-full items-center justify-between rounded-lg px-3 py-2.5 font-sans text-base ${
+          isActive ? "bg-white/15 font-semibold text-white" : "text-white/85 hover:bg-white/10"
+        }`}
       >
-        {t("nav.about")}
-        <span
-          aria-hidden
-          className={`text-[1em] leading-none transition-transform ${open ? "rotate-180" : ""}`}
+        <Link to={parentTo} onClick={onClose} className="flex-1 text-left no-underline text-inherit">
+          {label}
+        </Link>
+        <button
+          type="button"
+          onClick={() => setOpen((prev) => !prev)}
+          className="ml-2 inline-flex cursor-pointer items-center"
+          aria-expanded={open}
+          aria-label={`Toggle ${label} menu`}
         >
-          ▾
-        </span>
-      </button>
+          <span aria-hidden className={`transition-transform ${open ? "rotate-180" : ""}`}>
+            ▾
+          </span>
+        </button>
+      </div>
       {open && (
-        <div className="absolute left-1/2 top-full z-20 -translate-x-1/2 pt-3">
-          <div
-            className={`flex min-w-[140px] flex-col gap-1 rounded-[12px] p-2 text-center shadow-lg backdrop-blur-md ${
-              light ? "border border-gray-200 bg-white" : "border border-white/30 bg-black/60"
-            }`}
-          >
+        <div className="ml-3 flex flex-col gap-0.5 border-l border-white/20 pl-3">
+          {items.map((item) => (
             <Link
-              to="/about"
-              onClick={() => setOpen(false)}
-              className={`rounded-md px-3 py-1.5 text-nav leading-snug no-underline ${
-                light ? "text-gray-700 hover:bg-gray-100" : "text-white/85 hover:bg-white/15"
-              }`}
+              key={item.to}
+              to={item.to}
+              onClick={onClose}
+              className={linkClass(item.isActive)}
             >
-              {t("nav.about")}
+              {item.label}
             </Link>
-            <Link
-              to="/gallery"
-              onClick={() => setOpen(false)}
-              className={`rounded-md px-3 py-1.5 text-nav leading-snug no-underline ${
-                light ? "text-gray-700 hover:bg-gray-100" : "text-white/85 hover:bg-white/15"
-              }`}
-            >
-              {t("nav.gallery")}
-            </Link>
-            <Link
-              to="/faq"
-              onClick={() => setOpen(false)}
-              className={`rounded-md px-3 py-1.5 text-nav leading-snug no-underline ${
-                light ? "text-gray-700 hover:bg-gray-100" : "text-white/85 hover:bg-white/15"
-              }`}
-            >
-              {t("nav.faq")}
-            </Link>
-            <Link
-              to="/testimonials"
-              onClick={() => setOpen(false)}
-              className={`rounded-md px-3 py-1.5 text-nav leading-snug no-underline ${
-                light ? "text-gray-700 hover:bg-gray-100" : "text-white/85 hover:bg-white/15"
-              }`}
-            >
-              {t("nav.testimonials")}
-            </Link>
-          </div>
+          ))}
         </div>
       )}
-    </div>
+    </>
   );
 }
 
-function MobileSidebar({ open, onClose, pathname, t }) {
-  const [aboutOpen, setAboutOpen] = useState(false);
-
+function MobileSidebar({ open, onClose, pathname, t, navGroups }) {
   useEffect(() => {
     if (!open) return;
     const prev = document.body.style.overflow;
@@ -156,55 +115,20 @@ function MobileSidebar({ open, onClose, pathname, t }) {
             {t("nav.home")}
           </Link>
 
-          <button
-            type="button"
-            onClick={() => setAboutOpen((prev) => !prev)}
-            className={`flex w-full cursor-pointer items-center justify-between rounded-lg px-3 py-2.5 text-left font-sans text-base ${
-              ABOUT_DROPDOWN_PATHS.includes(pathname)
-                ? "bg-white/15 font-semibold text-white"
-                : "text-white/85 hover:bg-white/10"
-            }`}
-            aria-expanded={aboutOpen}
-          >
-            {t("nav.about")}
-            <span aria-hidden className={`transition-transform ${aboutOpen ? "rotate-180" : ""}`}>
-              ▾
-            </span>
-          </button>
-          {aboutOpen && (
-            <div className="ml-3 flex flex-col gap-0.5 border-l border-white/20 pl-3">
-              <Link to="/about" onClick={onClose} className={linkClass(pathname === "/about")}>
-                {t("nav.about")}
-              </Link>
-              <Link to="/gallery" onClick={onClose} className={linkClass(pathname === "/gallery")}>
-                {t("nav.gallery")}
-              </Link>
-              <Link to="/faq" onClick={onClose} className={linkClass(pathname === "/faq")}>
-                {t("nav.faq")}
-              </Link>
-              <Link
-                to="/testimonials"
-                onClick={onClose}
-                className={linkClass(pathname === "/testimonials")}
-              >
-                {t("nav.testimonials")}
-              </Link>
-            </div>
-          )}
-
-          <Link
-            to="/tours"
-            onClick={onClose}
-            className={linkClass(pathname.startsWith("/tours"))}
-          >
-            {t("nav.cyclingTours")}
-          </Link>
-          <Link to="/imprint" onClick={onClose} className={linkClass(pathname === "/imprint")}>
-            {t("nav.imprint")}
-          </Link>
-          <Link to="/contact" onClick={onClose} className={linkClass(pathname === "/contact")}>
-            {t("nav.contact")}
-          </Link>
+          {navGroups.map((group) => (
+            <MobileNavGroup
+              key={group.id}
+              label={group.label}
+              parentTo={group.parentTo}
+              isActive={group.isActive(pathname)}
+              items={group.items.map((item) => ({
+                ...item,
+                isActive: item.isActive(pathname),
+              }))}
+              linkClass={linkClass}
+              onClose={onClose}
+            />
+          ))}
         </nav>
       </aside>
     </>
@@ -217,10 +141,81 @@ export default function Header({ light = false }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const cartItems = useCart();
 
+  const navGroups = useMemo(() => {
+    const tourItems = TOURS.map((tour) => ({
+      to: `/tours/${tour.slug}`,
+      label: t(`nav.tourItems.${tour.slug}`),
+      isActive: (currentPath) => currentPath === `/tours/${tour.slug}`,
+    }));
+
+    return [
+      {
+        id: "cycling-tours",
+        label: t("nav.cyclingTours"),
+        parentTo: "/tours",
+        isActive: (currentPath) =>
+          currentPath === "/tours" || currentPath.startsWith("/tours/"),
+        items: tourItems,
+      },
+      {
+        id: "gallery",
+        label: t("nav.gallery"),
+        parentTo: "/gallery",
+        isActive: (currentPath) =>
+          currentPath === "/gallery" || currentPath === "/testimonials",
+        items: [
+          {
+            to: "/testimonials",
+            label: t("nav.guestbook"),
+            isActive: (currentPath) => currentPath === "/testimonials",
+          },
+        ],
+      },
+      {
+        id: "about",
+        label: t("nav.aboutUs"),
+        parentTo: "/about",
+        isActive: (currentPath) =>
+          currentPath === "/about" || currentPath === "/our-team",
+        items: [
+          {
+            to: "/our-team",
+            label: t("nav.ourTeam"),
+            isActive: (currentPath) => currentPath === "/our-team",
+          },
+        ],
+      },
+      {
+        id: "contact",
+        label: t("nav.contact"),
+        parentTo: "/contact",
+        isActive: (currentPath) =>
+          currentPath === "/contact" ||
+          currentPath === "/imprint" ||
+          currentPath === "/faq",
+        items: [
+          {
+            to: "/imprint",
+            label: t("nav.legalNotice"),
+            isActive: (currentPath) => currentPath === "/imprint",
+          },
+          {
+            to: "/faq",
+            label: t("nav.faq"),
+            isActive: (currentPath) => currentPath === "/faq",
+          },
+        ],
+      },
+    ];
+  }, [t]);
+
   return (
     <>
-      <header  className={`relative z-50 mx-auto grid w-full max-w-hero shrink-0 grid-cols-[1fr_auto] items-center gap-3 xs:gap-4 lg:grid-cols-[auto_1fr_auto] lg:gap-8 
-      ${light ? " bg-gray-900" : ""}`}>
+      <header
+        className={`relative z-50 mx-auto grid w-full max-w-hero shrink-0 grid-cols-[1fr_auto] items-center gap-3 xs:gap-4 lg:grid-cols-[auto_1fr_auto] lg:gap-8 ${
+          light ? " bg-gray-900" : ""
+        }`}
+      >
         <Link to="/" className="justify-self-start">
           <img
             className="h-auto w-24 xs:w-28 sm:w-32 md:w-36 lg:w-[168px]"
@@ -237,16 +232,18 @@ export default function Header({ light = false }) {
           <Link to="/" className={navPillClass(pathname === "/", light)}>
             {t("nav.home")}
           </Link>
-          <AboutDropdown pathname={pathname} t={t} light={light} />
-          <Link to="/tours" className={navPillClass(pathname.startsWith("/tours"), light)}>
-            {t("nav.cyclingTours")}
-          </Link>
-          <Link to="/imprint" className={navPillClass(pathname === "/imprint", light)}>
-            {t("nav.imprint")}
-          </Link>
-          <Link to="/contact" className={navPillClass(pathname === "/contact", light)}>
-            {t("nav.contact")}
-          </Link>
+
+          {navGroups.map((group) => (
+            <NavDropdown
+              key={group.id}
+              label={group.label}
+              parentTo={group.parentTo}
+              items={group.items}
+              isActive={group.isActive(pathname)}
+              light={light}
+              navPillClass={navPillClass}
+            />
+          ))}
         </nav>
 
         <div className="flex shrink-0 items-center gap-2 justify-self-end sm:gap-2.5">
@@ -292,6 +289,7 @@ export default function Header({ light = false }) {
         onClose={() => setMenuOpen(false)}
         pathname={pathname}
         t={t}
+        navGroups={navGroups}
       />
     </>
   );

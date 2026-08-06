@@ -6,3 +6,5 @@ export { default as testimonialAvatar1 } from "@assets/images/testimonial-avatar
 export { default as iconStarFilled } from "@assets/icons/star-filled.svg";
 export { default as iconCarouselArrowLeft } from "@assets/icons/carousel-arrow-left.svg";
 export { default as iconCarouselArrowRight } from "@assets/icons/carousel-arrow-right.svg";
+export { default as homeAboutAlbaniaCoast } from "@assets/images/home-about-albania-coast.png";
+export { default as homeAboutAlbaniaCyclists } from "@assets/images/home-about-albania-cyclists.png";

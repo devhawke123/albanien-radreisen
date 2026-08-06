@@ -2,16 +2,29 @@
   "nav": {
     "home": "Startseite",
     "about": "Über uns",
+    "aboutUs": "Über Uns",
     "cyclingTours": "Radtouren",
     "imprint": "Impressum",
+    "legalNotice": "Impressum",
     "contact": "Kontakt",
     "getStarted": "Jetzt Starten",
     "cartLabel": "Warenkorb",
     "gallery": "Galerie",
     "faq": "Häufige Fragen",
+    "guestbook": "Gästebuch",
+    "ourTeam": "Unser Team",
     "testimonials": "Erfahrungsberichte",
     "openMenu": "Menü öffnen",
-    "closeMenu": "Menü schließen"
+    "closeMenu": "Menü schließen",
+    "tourItems": {
+      "8-day-cycling": "Geführte Radtouren",
+      "8-day-ebike-mediterranean-flair": "Rad- & E-Bike-Touren",
+      "8-day-balkan-adventure": "Rad & Boot",
+      "8-day-albania-montenegro": "Albanien & Montenegro",
+      "9-day-vjosa-valley": "Vjosatal",
+      "10-day-vjosa-river-tour": "Radfahren & Wandern",
+      "15-day-west-balkans": "Westbalkan"
+    }
   },
   "reviewsPage": {
     "title": "Von Radfahrern Weltweit Geliebt",
@@ -192,20 +205,24 @@
   "stats": {
     "items": [
       {
-        "value": "20+",
-        "label": "Malerische Radrouten"
+        "value": "500+",
+        "label": "Radfahrer pro Jahr"
       },
       {
         "value": "20+",
-        "label": "Malerische Radrouten"
+        "label": "Jahre Tourismuserfahrung"
       },
       {
-        "value": "20+",
-        "label": "Malerische Radrouten"
+        "value": "8–14",
+        "label": "Tage Geführte Touren"
       },
       {
-        "value": "20+",
-        "label": "Malerische Radrouten"
+        "value": "300–500",
+        "label": "km Malerische Routen"
+      },
+      {
+        "value": "5",
+        "label": "Länder mit Service"
       }
     ]
   },
@@ -320,6 +337,16 @@
         }
       }
     ]
+  },
+  "homeAboutAlbania": {
+    "label": "Über Albanien",
+    "title": "Albanien - Das Sonnenland Europas",
+    "cta": "Erlebnis Starten",
+    "body1": "Entdecke eines der spannendsten noch verborgenen Reiseziele Europas.",
+    "body2": "Zwischen Adria und Ionischem Meer gelegen, bietet Albanien eine außergewöhnliche Kombination aus unberührten Stränden, dramatischen Bergen, UNESCO-Welterbestätten, historischen Städten und authentischer mediterraner Kultur.",
+    "body3": "Noch weitgehend vom Massentourismus verschont, ist es das perfekte Ziel für Radfahrer, die Abenteuer, Natur und echte lokale Erlebnisse suchen.",
+    "imageAltCoast": "Albanische Küstenstadt zwischen Meer und Hügeln",
+    "imageAltCyclists": "Radfahrer auf einer malerischen Bergstraße in Albanien"
   },
   "testimonials": {
     "label": "Erfahrungsberichte",
@@ -612,6 +639,10 @@
         "label": "Geführte Touren"
       }
     ]
+  },
+  "teamPage": {
+    "title": "Unser Team",
+    "body": "Lerne die leidenschaftlichen Guides und Reiseprofis kennen, die jede unvergessliche Radreise durch Albanien möglich machen."
   },
   "team": {
     "label": "Unser Team",

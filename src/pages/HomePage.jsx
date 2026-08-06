@@ -5,6 +5,7 @@ import Gallery from "../components/sections/Gallery";
 import Hero from "../components/sections/Hero";
 import HowItWorks from "../components/sections/HowItWorks";
 import JourneyOverview from "../components/sections/JourneyOverview";
+import HomeAboutAlbania from "../components/sections/HomeAboutAlbania";
 import PageFooter from "../components/layout/PageFooter";
 import StatsBanner from "../components/sections/StatsBanner";
 import Testimonials from "../components/sections/Testimonials";
@@ -16,10 +17,11 @@ export default function HomePage() {
       <Hero />
       <AboutUs />
       <StatsBanner />
-      <FeaturedTours />
       <WhyChooseUs />
       <HowItWorks />
       <FaqSection />
+      <HomeAboutAlbania />
+      <FeaturedTours />
       <Testimonials />
       <Gallery />
       <JourneyOverview />

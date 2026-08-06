@@ -2,16 +2,29 @@
   "nav": {
     "home": "Home",
     "about": "About",
+    "aboutUs": "About Us",
     "cyclingTours": "Cycling Tours",
     "imprint": "Imprint",
+    "legalNotice": "Legal Notice",
     "contact": "Contact",
     "getStarted": "Get Started",
     "cartLabel": "Cart",
     "gallery": "Gallery",
     "faq": "FAQ's",
+    "guestbook": "Guestbook",
+    "ourTeam": "Our Team",
     "testimonials": "Testimonials",
     "openMenu": "Open menu",
-    "closeMenu": "Close menu"
+    "closeMenu": "Close menu",
+    "tourItems": {
+      "8-day-cycling": "Guided Cycling Tours",
+      "8-day-ebike-mediterranean-flair": "Cycling & E-Bike Tours",
+      "8-day-balkan-adventure": "Bike & Boat",
+      "8-day-albania-montenegro": "Albania & Montenegro",
+      "9-day-vjosa-valley": "Vjosa Valley",
+      "10-day-vjosa-river-tour": "Cycling & Hiking",
+      "15-day-west-balkans": "West Balkans"
+    }
   },
   "reviewsPage": {
     "title": "Loved by Cyclists Worldwide",
@@ -185,27 +198,31 @@
     }
   },
   "about": {
-    "label": "About Us",
-    "quote": "“At Albanien Radreisen, we believe the best way to experience Albania is on two wheels. Our expertly guided cycling tours take you through breathtaking landscapes, historic towns, and authentic local communities, creating unforgettable adventures with comfort, safety, and local expertise”",
+    "label": "Welcome to ADA – Albania Travel Agency Tarko",
+    "quote": "For many years, we have been creating unforgettable cycling holidays for travelers from Germany, Austria, and Switzerland. From the Adriatic coast to the Ionian Riviera, our carefully designed routes combine spectacular scenery, cultural heritage, and authentic local hospitality",
     "exploreMore": "Explore More"
   },
   "stats": {
     "items": [
       {
-        "value": "20+",
-        "label": "Scenic Cycling Routes"
+        "value": "500+",
+        "label": "Cyclists Every Year"
       },
       {
         "value": "20+",
-        "label": "Scenic Cycling Routes"
+        "label": "Years Tourism Experience"
       },
       {
-        "value": "20+",
-        "label": "Scenic Cycling Routes"
+        "value": "8–14",
+        "label": "Day Guided Tours"
       },
       {
-        "value": "20+",
-        "label": "Scenic Cycling Routes"
+        "value": "300–500",
+        "label": "km Scenic Routes"
+      },
+      {
+        "value": "5",
+        "label": "Services in 5 Countries"
       }
     ]
   },
@@ -320,6 +337,16 @@
         }
       }
     ]
+  },
+  "homeAboutAlbania": {
+    "label": "About Albania",
+    "title": "Albania - The Sunshine Land of Europe",
+    "cta": "Get Experience",
+    "body1": "Discover one of Europe's most exciting hidden destinations.",
+    "body2": "Located between the Adriatic and Ionian Seas, Albania offers a remarkable combination of pristine beaches, dramatic mountains, UNESCO World Heritage Sites, historic towns, and authentic Mediterranean culture.",
+    "body3": "Still largely untouched by mass tourism, it is the perfect destination for cyclists seeking adventure, nature, and genuine local experiences.",
+    "imageAltCoast": "Albanian coastal town between sea and hills",
+    "imageAltCyclists": "Cyclists on a scenic mountain road in Albania"
   },
   "testimonials": {
     "label": "Testimonials",
@@ -612,6 +639,10 @@
         "label": "Guided Tours"
       }
     ]
+  },
+  "teamPage": {
+    "title": "Our Team",
+    "body": "Meet the passionate guides and travel professionals behind every unforgettable cycling journey across Albania."
   },
   "team": {
     "label": "Our People",

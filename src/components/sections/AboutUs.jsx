@@ -9,12 +9,12 @@ export default function AboutUs() {
     <section id="about" className="bg-white px-hero-x py-16 md:py-20 lg:py-24">
       <div className="mx-auto max-w-hero">
         <div className="flex flex-col items-start gap-6 sm:gap-8 lg:flex-row lg:items-center lg:gap-[30px]">
-          <div className="flex w-full flex-col gap-4 sm:gap-6 lg:flex-row lg:gap-[100px]">
-            <h2 className="shrink-0 font-sans text-section-label font-semibold text-brand lg:w-[148px]">
+          <div className="flex w-full flex-col gap-4 sm:gap-6">
+            <h2 className="font-sans text-section-label font-semibold text-brand">
               {t("about.label")}
             </h2>
-            <blockquote className="m-0 max-w-[941px] text-pretty text-black">
-              <span className="font-sans text-section-quote font-semibold">{t("about.quote")}</span>
+            <blockquote className="m-0 max-w-[941px] text-black">
+              <span className="font-sans text-section-quote font-semibold leading-relaxed">{t("about.quote")}</span>
             </blockquote>
           </div>
 
@@ -27,7 +27,7 @@ export default function AboutUs() {
 
         <Link
           to="/about"
-          className="mt-8 inline-flex h-btn-sm w-full items-center justify-center rounded-[11px] bg-brand px-10 text-btn leading-none text-white no-underline sm:mt-10 sm:w-auto lg:ml-[248px]"
+          className="mt-8 inline-flex h-btn-sm w-full items-center justify-center rounded-[11px] bg-brand px-10 text-btn leading-none text-white no-underline sm:mt-10 sm:w-auto"
         > 
           {t("about.exploreMore")}
         </Link>
