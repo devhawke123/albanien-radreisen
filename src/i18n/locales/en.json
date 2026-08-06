@@ -351,31 +351,62 @@
   "testimonials": {
     "label": "Testimonials",
     "title": "Loved By Travelers Like You",
-    "body": "Hear directly from our travelers — their stories, in their own words, on video.",
+    "body": "Hear directly from our travelers — real stories from real cycling adventures across Albania.",
     "exploreMore": "Explore More",
     "previous": "Previous testimonial",
     "next": "Next testimonial",
     "showTestimonial": "Show testimonial",
+    "travelDateLabel": "Travel Date",
     "items": [
       {
-        "quote": "The routes were breathtaking, the organization was excellent, and our guide made every day unforgettable. Albania completely exceeded our expectations.",
-        "name": "Sarah Mitchell",
-        "role": "Adventure Traveler · New York, USA"
+        "name": "Beate & Thomas, Berlin",
+        "travelDate": "September 2025",
+        "quote": "We had a wonderful week in Albania. We saw so much and shared many great laughs together. It was truly a memorable experience, and we will always associate Albania with these special moments. Thank you and all the best!"
       },
       {
-        "quote": "Every detail was taken care of. The scenery, the food, the people — riding through Albania felt like discovering a country most tourists never see.",
-        "name": "James Carter",
-        "role": "Adventure Traveler · London, UK"
+        "name": "Vivi, Zurich",
+        "travelDate": "October 2025",
+        "quote": "It was a fantastic trip! I often think back to our group and would love to get back on the bike right away. Warm regards and thank you for everything."
       },
       {
-        "quote": "Our guide's local knowledge turned every stop into a story. This was hands down the best cycling trip our group has ever taken.",
-        "name": "Elena Rossi",
-        "role": "Adventure Traveler · Milan, Italy"
+        "name": "Gabriele & Franz, Kitzbühel",
+        "travelDate": "May 2024",
+        "quote": "Thank you for the wonderful days we experienced during the cycling tour in Albania. This trip will always remain in our memories, and we speak about it with great enthusiasm. Best wishes from Kitzbühel!"
       },
       {
-        "quote": "From the mountain descents to the coastal villages, everything was paced perfectly for our group. We're already planning our next trip back.",
-        "name": "Marco Alves",
-        "role": "Adventure Traveler · Lisbon, Portugal"
+        "name": "Gabi & Hans, Vienna",
+        "travelDate": "May 2024",
+        "quote": "We truly enjoyed the cycling tour through Albania. Thank you for your excellent guidance, valuable insights, and support throughout the journey—even during the more challenging stages. This week will remain an unforgettable experience for us."
+      },
+      {
+        "name": "Mathias, Augsburg",
+        "travelDate": "July 2024",
+        "quote": "I thoroughly enjoyed the cycling trip through Albania and felt very comfortable throughout the entire journey. The warm and welcoming atmosphere you created made a big difference. I will not forget this trip or our interesting conversations."
+      },
+      {
+        "name": "Alexios & Iris, Berlin",
+        "travelDate": "July 2024",
+        "quote": "Thank you for the wonderful days in Albania. We truly appreciated the experience and are already looking forward to seeing you again—hopefully very soon!"
+      },
+      {
+        "name": "Anja & Anke, Kiel",
+        "travelDate": "October 2024",
+        "quote": "We really enjoyed the beautiful bike tours through Albania's wild landscapes and perfect weather. Your stories and insights made the experience even more special, and your team gave us a true sense of the country's hospitality. The impressions we gained were unforgettable, and we are already thinking about coming back again."
+      },
+      {
+        "name": "Dieter & Andi, Nuremberg",
+        "travelDate": "May 2026",
+        "quote": "Thank you again for your outstanding and dedicated tour guidance. Our journey through the Western Balkans has been a wonderful experience, and we leave with many great memories. All the best!"
+      },
+      {
+        "name": "Walter (Eurotours Group)",
+        "travelDate": "September 2025",
+        "quote": "Thank you for the great trip! Everything was very well organized, and we especially appreciated the excellent tour guidance. Please also pass on our thanks to the team."
+      },
+      {
+        "name": "Konrad Osl, Bavaria",
+        "travelDate": "May 2024",
+        "quote": "From the very beginning, the organization and attention to detail were outstanding. Our guide impressed us with deep knowledge, enthusiasm, and constant support throughout the tour. The small group atmosphere was friendly and personal, making the experience even more enjoyable. The routes were perfectly planned, the food and restaurants were excellent, and the overall logistics—including support vehicle and equipment—were flawless. This was by far one of the best tours we have ever experienced. A fantastic journey in a beautiful country—highly recommended!"
       }
     ]
   },

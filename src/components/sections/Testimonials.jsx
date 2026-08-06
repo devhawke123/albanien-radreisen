@@ -70,7 +70,9 @@ export default function Testimonials() {
                 <p className="mt-1 font-sans text-base font-semibold text-[#1a1714] sm:text-lg">
                   {active.name}
                 </p>
-                <p className="font-sans text-sm text-[#8a7670] sm:text-base">{active.role}</p>
+                <p className="font-sans text-sm text-[#8a7670] sm:text-base">
+                  {t("testimonials.travelDateLabel")}: {active.travelDate}
+                </p>
               </div>
             </div>
           </div>

@@ -351,31 +351,62 @@
   "testimonials": {
     "label": "Erfahrungsberichte",
     "title": "Von Reisenden Wie Dir Geliebt",
-    "body": "Höre direkt von unseren Reisenden — ihre Geschichten, in ihren eigenen Worten, auf Video.",
+    "body": "Höre direkt von unseren Reisenden — echte Geschichten von echten Radabenteuern in Albanien.",
     "exploreMore": "Mehr Entdecken",
     "previous": "Vorheriger Erfahrungsbericht",
     "next": "Nächster Erfahrungsbericht",
     "showTestimonial": "Erfahrungsbericht anzeigen",
+    "travelDateLabel": "Reisedatum",
     "items": [
       {
-        "quote": "Die Routen waren atemberaubend, die Organisation hervorragend, und unser Guide machte jeden Tag unvergesslich. Albanien hat unsere Erwartungen vollkommen übertroffen.",
-        "name": "Sarah Mitchell",
-        "role": "Abenteuerreisende · New York, USA"
+        "name": "Beate & Thomas, Berlin",
+        "travelDate": "September 2025",
+        "quote": "Wir hatten eine wunderbare Woche in Albanien. Wir haben so viel gesehen und viele schöne Momente und Lachen miteinander geteilt. Es war wirklich ein unvergessliches Erlebnis, und wir werden Albanien immer mit diesen besonderen Momenten verbinden. Danke und alles Gute!"
       },
       {
-        "quote": "Jedes Detail war durchdacht. Die Landschaft, das Essen, die Menschen — mit dem Rad durch Albanien zu fahren fühlte sich an, als würde man ein Land entdecken, das die meisten Touristen nie sehen.",
-        "name": "James Carter",
-        "role": "Abenteuerreisender · London, UK"
+        "name": "Vivi, Zürich",
+        "travelDate": "Oktober 2025",
+        "quote": "Es war eine fantastische Reise! Ich denke oft an unsere Gruppe zurück und würde am liebsten sofort wieder aufs Rad steigen. Herzliche Grüße und danke für alles."
       },
       {
-        "quote": "Die lokale Kenntnis unseres Guides machte aus jedem Halt eine Geschichte. Das war mit Abstand die beste Radreise, die unsere Gruppe je unternommen hat.",
-        "name": "Elena Rossi",
-        "role": "Abenteuerreisende · Mailand, Italien"
+        "name": "Gabriele & Franz, Kitzbühel",
+        "travelDate": "Mai 2024",
+        "quote": "Vielen Dank für die wunderbaren Tage, die wir bei der Radtour durch Albanien erlebt haben. Diese Reise wird uns immer in Erinnerung bleiben, und wir sprechen mit großer Begeisterung darüber. Beste Grüße aus Kitzbühel!"
       },
       {
-        "quote": "Von den Bergabfahrten bis zu den Küstendörfern war alles perfekt für unsere Gruppe getaktet. Wir planen schon unsere nächste Reise dorthin.",
-        "name": "Marco Alves",
-        "role": "Abenteuerreisender · Lissabon, Portugal"
+        "name": "Gabi & Hans, Wien",
+        "travelDate": "Mai 2024",
+        "quote": "Wir haben die Radtour durch Albanien wirklich genossen. Danke für eure hervorragende Führung, die wertvollen Einblicke und die Unterstützung während der gesamten Reise — auch in den anstrengenderen Etappen. Diese Woche wird für uns ein unvergessliches Erlebnis bleiben."
+      },
+      {
+        "name": "Mathias, Augsburg",
+        "travelDate": "Juli 2024",
+        "quote": "Ich habe die Radreise durch Albanien sehr genossen und mich während der gesamten Tour sehr wohlgefühlt. Die warme und einladende Atmosphäre, die ihr geschaffen habt, hat einen großen Unterschied gemacht. Ich werde diese Reise und unsere interessanten Gespräche nicht vergessen."
+      },
+      {
+        "name": "Alexios & Iris, Berlin",
+        "travelDate": "Juli 2024",
+        "quote": "Vielen Dank für die wunderbaren Tage in Albanien. Wir haben das Erlebnis wirklich geschätzt und freuen uns schon darauf, euch hoffentlich sehr bald wiederzusehen!"
+      },
+      {
+        "name": "Anja & Anke, Kiel",
+        "travelDate": "Oktober 2024",
+        "quote": "Wir haben die schönen Radtouren durch Albaniens wilde Landschaften und bei perfektem Wetter wirklich genossen. Eure Geschichten und Einblicke haben das Erlebnis noch besonderer gemacht, und euer Team hat uns die Gastfreundschaft des Landes wirklich spüren lassen. Die Eindrücke waren unvergesslich, und wir denken bereits darüber nach, wiederzukommen."
+      },
+      {
+        "name": "Dieter & Andi, Nürnberg",
+        "travelDate": "Mai 2026",
+        "quote": "Nochmals vielen Dank für eure herausragende und engagierte Tourführung. Unsere Reise durch den Westbalkan war ein wunderbares Erlebnis, und wir nehmen viele schöne Erinnerungen mit. Alles Gute!"
+      },
+      {
+        "name": "Walter (Eurotours Gruppe)",
+        "travelDate": "September 2025",
+        "quote": "Vielen Dank für die tolle Reise! Alles war sehr gut organisiert, und besonders die hervorragende Tourführung hat uns beeindruckt. Bitte richtet auch dem Team unseren Dank aus."
+      },
+      {
+        "name": "Konrad Osl, Bayern",
+        "travelDate": "Mai 2024",
+        "quote": "Von Anfang an waren die Organisation und die Liebe zum Detail herausragend. Unser Guide beeindruckte uns mit tiefem Wissen, Begeisterung und ständiger Unterstützung während der gesamten Tour. Die Atmosphäre in der kleinen Gruppe war freundlich und persönlich und machte das Erlebnis noch angenehmer. Die Routen waren perfekt geplant, das Essen und die Restaurants ausgezeichnet, und die gesamte Logistik — inklusive Begleitfahrzeug und Ausrüstung — war tadellos. Das war mit Abstand eine der besten Touren, die wir je erlebt haben. Eine fantastische Reise in einem wunderschönen Land — sehr empfehlenswert!"
       }
     ]
   },
