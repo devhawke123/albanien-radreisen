@@ -642,24 +642,62 @@
   },
   "teamPage": {
     "title": "Our Team",
-    "body": "Meet the passionate guides and travel professionals behind every unforgettable cycling journey across Albania."
+    "body": "The passionate people behind every unforgettable ride — local experts, avid cyclists, and dedicated hosts who make Albania come alive."
   },
   "team": {
-    "label": "Our People",
-    "title": "Meet the Team",
-    "body": "Our passionate team of cycling guides and travel professionals is dedicated to making every journey safe, enjoyable, and unforgettable.",
+    "label": "Gallery",
+    "title": "Meet the People Behind the Tours",
+    "memberPhotoAlt": "{{name}} portrait",
     "members": [
       {
-        "name": "Artan Koci",
-        "role": "Founder & Head Guide"
+        "name": "Denis",
+        "role": "Mountain Guide",
+        "imageKey": "denis"
       },
       {
-        "name": "Elira Hoxha",
-        "role": "Senior Cycling Guide"
+        "name": "Adion",
+        "role": "Mountain Guide",
+        "imageKey": "adion"
       },
       {
-        "name": "Driton Berisha",
-        "role": "Tour Operations Manager"
+        "name": "Algert",
+        "role": "Cycling Guide",
+        "imageKey": "algert"
+      },
+      {
+        "name": "Elia",
+        "role": "Cycling Guide",
+        "imageKey": "elia"
+      },
+      {
+        "name": "Tarko",
+        "role": "Cycling Guide",
+        "imageKey": "tarko"
+      },
+      {
+        "name": "Ardi",
+        "role": "Bus Driver",
+        "imageKey": "ardi"
+      },
+      {
+        "name": "Baci",
+        "role": "Bus Driver",
+        "imageKey": "baci"
+      },
+      {
+        "name": "Gezim Tarko",
+        "role": "Managing Director",
+        "imageKey": "gezimTarko"
+      },
+      {
+        "name": "Ela",
+        "role": "Travel Consultant",
+        "imageKey": "ela"
+      },
+      {
+        "name": "Viola",
+        "role": "Travel Consultant",
+        "imageKey": "viola"
       }
     ]
   },

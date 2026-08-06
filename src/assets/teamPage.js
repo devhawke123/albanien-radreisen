@@ -1,0 +1,11 @@
+export { default as teamHeroImage } from "@assets/images/team-hero.jpg";
+export { default as teamDenis } from "@assets/images/team-denis.jpg";
+export { default as teamAdion } from "@assets/images/team-adion.jpg";
+export { default as teamAlgert } from "@assets/images/team-algert.jpg";
+export { default as teamElia } from "@assets/images/team-elia.jpg";
+export { default as teamTarko } from "@assets/images/team-tarko.jpg";
+export { default as teamArdi } from "@assets/images/team-ardi.jpg";
+export { default as teamBaci } from "@assets/images/team-baci.jpg";
+export { default as teamGezimTarko } from "@assets/images/team-gezim-tarko.jpg";
+export { default as teamEla } from "@assets/images/team-ela.jpg";
+export { default as teamViola } from "@assets/images/team-viola.jpg";

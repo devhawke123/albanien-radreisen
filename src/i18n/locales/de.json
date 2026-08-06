@@ -642,24 +642,62 @@
   },
   "teamPage": {
     "title": "Unser Team",
-    "body": "Lerne die leidenschaftlichen Guides und Reiseprofis kennen, die jede unvergessliche Radreise durch Albanien möglich machen."
+    "body": "Die leidenschaftlichen Menschen hinter jeder unvergesslichen Fahrt — lokale Experten, begeisterte Radfahrer und engagierte Gastgeber, die Albanien zum Leben erwecken."
   },
   "team": {
-    "label": "Unser Team",
-    "title": "Lerne Das Team Kennen",
-    "body": "Unser leidenschaftliches Team aus Radreiseleitern und Reiseprofis sorgt dafür, dass jede Reise sicher, angenehm und unvergesslich wird.",
+    "label": "Galerie",
+    "title": "Lerne Die Menschen Hinter Den Touren Kennen",
+    "memberPhotoAlt": "Porträt von {{name}}",
     "members": [
       {
-        "name": "Artan Koci",
-        "role": "Gründer & Chefguide"
+        "name": "Denis",
+        "role": "Bergführer",
+        "imageKey": "denis"
       },
       {
-        "name": "Elira Hoxha",
-        "role": "Leitende Radreiseleiterin"
+        "name": "Adion",
+        "role": "Bergführer",
+        "imageKey": "adion"
       },
       {
-        "name": "Driton Berisha",
-        "role": "Leiter Tourorganisation"
+        "name": "Algert",
+        "role": "Radreiseleiter",
+        "imageKey": "algert"
+      },
+      {
+        "name": "Elia",
+        "role": "Radreiseleiter",
+        "imageKey": "elia"
+      },
+      {
+        "name": "Tarko",
+        "role": "Radreiseleiter",
+        "imageKey": "tarko"
+      },
+      {
+        "name": "Ardi",
+        "role": "Busfahrer",
+        "imageKey": "ardi"
+      },
+      {
+        "name": "Baci",
+        "role": "Busfahrer",
+        "imageKey": "baci"
+      },
+      {
+        "name": "Gezim Tarko",
+        "role": "Geschäftsführer",
+        "imageKey": "gezimTarko"
+      },
+      {
+        "name": "Ela",
+        "role": "Reiseberaterin",
+        "imageKey": "ela"
+      },
+      {
+        "name": "Viola",
+        "role": "Reiseberaterin",
+        "imageKey": "viola"
       }
     ]
   },

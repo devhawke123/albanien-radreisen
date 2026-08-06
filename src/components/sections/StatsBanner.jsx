@@ -13,7 +13,7 @@ export default function StatsBanner() {
           src={cyclistDecoration}
           alt=""
           aria-hidden
-          className="pointer-events-none absolute bottom-0 left-4 hidden h-24 w-auto sm:block md:left-8 md:h-28 lg:left-12 lg:h-[112px]"
+          className="pointer-events-none absolute bottom-0 left-0 hidden h-24 w-auto sm:block lg:h-[112px]"
         />
         <img
           src={mountainIllustration}
