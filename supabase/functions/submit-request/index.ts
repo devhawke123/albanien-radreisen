@@ -55,6 +55,9 @@ Deno.serve(async (req: Request) => {
     tourSlug,
     tourTitle,
     preferredDeparture,
+    preferredContactMethod,
+    customerType,
+    title,
     guests,
     addonsSummary,
     locale,
@@ -119,7 +122,10 @@ Deno.serve(async (req: Request) => {
            <strong>Address:</strong> ${escapeHtml(address || "")}<br/>
            <strong>Add-ons:</strong> ${escapeHtml(addonsSummary || "None")}</p>`
         : `<p><strong>Subject:</strong> ${escapeHtml(subject || "")}<br/>
-           <strong>Phone:</strong> ${escapeHtml(phone || "")}</p>`;
+           <strong>Phone:</strong> ${escapeHtml(phone || "")}<br/>
+           <strong>Preferred contact:</strong> ${escapeHtml(preferredContactMethod || "")}<br/>
+           <strong>Title:</strong> ${escapeHtml(title || "")}<br/>
+           <strong>Customer type:</strong> ${escapeHtml(customerType || "")}</p>`;
 
     const adminHtml = `
       <h2>New ${type === "tour_request" ? "tour request" : "contact"} submission</h2>

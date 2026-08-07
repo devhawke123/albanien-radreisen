@@ -23,6 +23,11 @@ export { default as iconLinkedin } from "@assets/icons/social-linkedin.svg";
 export { default as iconPhone } from "@assets/icons/footer-phone.svg";
 export { default as iconMail } from "@assets/icons/footer-mail.svg";
 export { default as iconPin } from "@assets/icons/footer-pin.svg";
+export { default as iconContactPhone } from "@assets/icons/contact-phone.svg";
+export { default as iconContactMail } from "@assets/icons/contact-mail.svg";
+export { default as iconContactPin } from "@assets/icons/contact-pin.svg";
+export { default as iconContactGlobe } from "@assets/icons/contact-globe.svg";
+export { default as iconContactClock } from "@assets/icons/contact-clock.svg";
 
 // CTA / newsletter section
 export { default as iconEnvelope } from "@assets/icons/cta-envelope.svg";

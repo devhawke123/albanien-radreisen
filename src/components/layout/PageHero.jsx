@@ -2,7 +2,7 @@ import Header from "./Header";
 
 export default function PageHero({ image, title, body, overlayClassName = "bg-black/40" }) {
   return (
-    <section className="relative flex min-h-[420px] flex-col px-hero-x py-hero-y text-white xs:min-h-[580px] sm:min-h-[660px] lg:min-h-[840px]">
+    <section className="relative flex h-dvh flex-col px-hero-x py-hero-y text-white">
       <img src={image} alt="" aria-hidden className="absolute inset-0 h-full w-full object-cover object-center" />
       <div className={`absolute inset-0 ${overlayClassName}`} />
 
