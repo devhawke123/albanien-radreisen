@@ -22,7 +22,7 @@ export default function ReviewsGrid() {
             <p className="mt-0.5 text-[12px] leading-snug text-[#8a7670]">
               {t("testimonials.travelDateLabel")}: {card.travelDate}
             </p>
-            <p className="mt-3 font-sans text-base leading-[1.6] text-[#1a1714] sm:text-lg sm:leading-[1.625]">
+            <p className="mt-3 whitespace-pre-line font-sans text-base leading-[1.6] text-[#1a1714] sm:text-lg sm:leading-[1.625]">
               {card.quote}
             </p>
           </article>

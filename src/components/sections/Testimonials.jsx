@@ -51,7 +51,7 @@ export default function Testimonials() {
         <div className="relative w-full rounded-bl-[24px] rounded-br-[20px] bg-brand-pale/60 px-4 py-8 sm:rounded-bl-[40px] sm:rounded-br-[30px] sm:px-10 sm:py-10 lg:px-14 lg:py-12">
 
           <div className="relative mx-auto max-w-[1323px] rounded-2xl bg-white p-4 text-center shadow-[0_1px_1.5px_rgba(0,0,0,0.1),0_1px_1px_rgba(0,0,0,0.1)] sm:p-6 md:p-8">
-            <p className="font-serif text-testimonial-quote italic text-[#1a1714]">{`"${active.quote}"`}</p>
+            <p className="whitespace-pre-line font-serif text-testimonial-quote italic text-[#1a1714]">{`"${active.quote}"`}</p>
 
             <div className="mt-6 flex flex-wrap items-center justify-center gap-3 sm:mt-8 sm:gap-4">
               <img
