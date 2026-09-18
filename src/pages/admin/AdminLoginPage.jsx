@@ -3,7 +3,7 @@ import { Navigate } from "react-router-dom";
 import { logo } from "../../assets/hero";
 import { useAdminAuth } from "../../hooks/useAdminAuth";
 import { LockIcon, SpinnerIcon } from "../../components/admin/icons";
-import loginBackground from "@assets/images/HeroSectionPic3.png";
+import loginBackground from "@assets/images/HeroSectionPic3.webp";
 
 export default function AdminLoginPage() {
   const { status, login } = useAdminAuth();

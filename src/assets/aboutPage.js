@@ -1,6 +1,6 @@
-export { default as aboutHeroImage } from "@assets/images/about-hero.jpg";
-export { default as aboutIntroPhoto } from "@assets/images/about-photo.jpg";
-export { default as teamPhoto } from "@assets/images/team-photo.jpg";
+export { default as aboutHeroImage } from "@assets/images/about-hero.webp";
+export { default as aboutIntroPhoto } from "@assets/images/about-photo.webp";
+export { default as teamPhoto } from "@assets/images/team-photo.webp";
 export { default as teamPhoto2 } from "@assets/images/team-photo-2.jpg";
 export { default as teamPhoto3 } from "@assets/images/team-photo-3.jpg";
 export { default as iconFacebookFill } from "@assets/icons/social-facebook-fill.svg";

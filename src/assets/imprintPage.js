@@ -1,1 +1,1 @@
-export { default as imprintHeroImage } from "@assets/images/imprintHero.png";
+export { default as imprintHeroImage } from "@assets/images/imprintHero.webp";

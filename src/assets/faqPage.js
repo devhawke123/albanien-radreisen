@@ -1,1 +1,1 @@
-export { default as faqHeroImage } from "@assets/images/HeroSectionPic2.png";
+export { default as faqHeroImage } from "@assets/images/HeroSectionPic2.webp";

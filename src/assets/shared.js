@@ -7,14 +7,14 @@ export { default as iconCart } from "@assets/icons/cart.svg";
 
 // Shared decorative images — each reused across multiple sections, so they
 // live here once instead of being re-exported under a different name per file.
-export { default as cycleGirl } from "@assets/images/cycleGirl.png";
-export { default as cyclepinkGirl } from "@assets/images/cyclepinkGirl.png";
+export { default as cycleGirl } from "@assets/images/cycleGirl.webp";
+export { default as cyclepinkGirl } from "@assets/images/cyclepinkGirl.webp";
 export { default as mountainIllustration } from "@assets/images/mountain-illustration.png";
-export { default as journeyBackground } from "@assets/images/journeybg.png";
+export { default as journeyBackground } from "@assets/images/journeybg.webp";
 
 // Footer assets
 export { default as footerLogo } from "@assets/images/footerLogo.png";
-export { default as footerCyclist } from "@assets/images/footer-cyclist-pointing.png";
+export { default as footerCyclist } from "@assets/images/footer-cyclist-pointing.webp";
 export { default as iconFacebook } from "@assets/icons/social-facebook.svg";
 export { default as iconTwitter } from "@assets/icons/social-twitter.svg";
 export { default as iconSocialCircleBg } from "@assets/icons/social-circle-bg.svg";

@@ -1,4 +1,4 @@
-export { default as tourHeroImage } from "@assets/images/tour-hero.jpg";
+export { default as tourHeroImage } from "@assets/images/tour-hero.webp";
 
 export { default as iconTourCheck } from "@assets/icons/tour-check.svg";
 export { default as iconTourDuration } from "@assets/icons/tour-stat-duration.svg";
